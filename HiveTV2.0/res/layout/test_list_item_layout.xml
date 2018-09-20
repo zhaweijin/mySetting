@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <com.hiveview.tv.view.TestViewPagerItemView
+        android:id="@+id/playerrecord_video_item1"
+        android:layout_width="190dip"
+        android:layout_height="270dip"
+        android:background="#55ff0000"
+        android:visibility="visible" >
+    </com.hiveview.tv.view.TestViewPagerItemView>
+
+    <com.hiveview.tv.view.TestViewPagerItemView
+        android:id="@+id/playerrecord_video_item2"
+        android:layout_width="190dip"
+        android:layout_height="270dip"
+        android:layout_toRightOf="@id/playerrecord_video_item1"
+        android:background="#55ff0000"
+        android:visibility="visible" >
+    </com.hiveview.tv.view.TestViewPagerItemView>
+
+    <com.hiveview.tv.view.TestViewPagerItemView
+        android:id="@+id/playerrecord_video_item3"
+        android:layout_width="190dip"
+        android:layout_height="270dip"
+        android:layout_toRightOf="@id/playerrecord_video_item2"
+        android:background="#55ff0000"
+        android:visibility="visible" >
+    </com.hiveview.tv.view.TestViewPagerItemView>
+
+    <com.hiveview.tv.view.TestViewPagerItemView
+        android:id="@+id/playerrecord_video_item4"
+        android:layout_width="190dip"
+        android:layout_height="270dip"
+        android:layout_toRightOf="@id/playerrecord_video_item3"
+        android:background="#55ff0000"
+        android:visibility="visible" >
+    </com.hiveview.tv.view.TestViewPagerItemView>
+
+    <com.hiveview.tv.view.TestViewPagerItemView
+        android:id="@+id/playerrecord_video_item5"
+        android:layout_width="190dip"
+        android:layout_height="270dip"
+        android:layout_toRightOf="@id/playerrecord_video_item4"
+        android:background="#55ff0000"
+        android:visibility="visible" >
+    </com.hiveview.tv.view.TestViewPagerItemView>
+
+    <com.hiveview.tv.view.TestViewPagerItemView
+        android:id="@+id/playerrecord_video_item6"
+        android:layout_width="190dip"
+        android:layout_height="270dip"
+        android:layout_toRightOf="@id/playerrecord_video_item5"
+        android:background="#55ff0000"
+        android:visibility="visible" >
+    </com.hiveview.tv.view.TestViewPagerItemView>
+
+    <com.hiveview.tv.view.TestViewPagerItemView
+        android:id="@+id/playerrecord_video_item7"
+        android:layout_width="190dip"
+        android:layout_height="270dip"
+        android:layout_below="@id/playerrecord_video_item1"
+        android:background="#55ff0000"
+        android:visibility="visible" >
+    </com.hiveview.tv.view.TestViewPagerItemView>
+
+    <com.hiveview.tv.view.TestViewPagerItemView
+        android:id="@+id/playerrecord_video_item8"
+        android:layout_width="190dip"
+        android:layout_height="270dip"
+        android:layout_below="@id/playerrecord_video_item1"
+        android:layout_toRightOf="@id/playerrecord_video_item7"
+        android:background="#55ff0000"
+        android:visibility="visible" >
+    </com.hiveview.tv.view.TestViewPagerItemView>
+
+    <com.hiveview.tv.view.TestViewPagerItemView
+        android:id="@+id/playerrecord_video_item9"
+        android:layout_width="190dip"
+        android:layout_height="270dip"
+        android:layout_below="@id/playerrecord_video_item1"
+        android:layout_toRightOf="@id/playerrecord_video_item8"
+        android:background="#55ff0000"
+        android:visibility="visible" >
+    </com.hiveview.tv.view.TestViewPagerItemView>
+
+    <com.hiveview.tv.view.TestViewPagerItemView
+        android:id="@+id/playerrecord_video_item10"
+        android:layout_width="190dip"
+        android:layout_height="270dip"
+        android:layout_below="@id/playerrecord_video_item1"
+        android:layout_toRightOf="@id/playerrecord_video_item9"
+        android:background="#55ff0000"
+        android:visibility="visible" >
+    </com.hiveview.tv.view.TestViewPagerItemView>
+
+    <com.hiveview.tv.view.TestViewPagerItemView
+        android:id="@+id/playerrecord_video_item11"
+        android:layout_width="190dip"
+        android:layout_height="270dip"
+        android:layout_below="@id/playerrecord_video_item1"
+        android:layout_toRightOf="@id/playerrecord_video_item10"
+        android:background="#55ff0000"
+        android:visibility="visible" >
+    </com.hiveview.tv.view.TestViewPagerItemView>
+
+    <com.hiveview.tv.view.TestViewPagerItemView
+        android:id="@+id/playerrecord_video_item12"
+        android:layout_width="190dip"
+        android:layout_height="270dip"
+        android:layout_below="@id/playerrecord_video_item1"
+        android:layout_toRightOf="@id/playerrecord_video_item11"
+        android:background="#55ff0000"
+        android:visibility="visible" >
+    </com.hiveview.tv.view.TestViewPagerItemView>
+
+</RelativeLayout>

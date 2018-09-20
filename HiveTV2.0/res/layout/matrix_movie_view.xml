@@ -1,0 +1,226 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/matrix_movie_layout_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <View
+            android:layout_width="309dp"
+            android:layout_height="468dp"
+            android:background="@drawable/matrix_movie_flipper_0_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_movie_flipper_0_out_layout"
+        android:layout_width="309dp"
+        android:layout_height="511dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="9dp"
+        android:focusable="false" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_movie_flipper_0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/matrix_movie_flipper_0_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignBottom="@id/matrix_movie_flipper_0"
+            android:layout_alignLeft="@id/matrix_movie_flipper_0"
+            android:layout_alignRight="@id/matrix_movie_flipper_0"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_movie_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-42dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/matrix_movie_layout_0"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_movie_flipper_1"
+            android:layout_width="472dp"
+            android:layout_height="229dp"
+            android:background="@drawable/matrix_movie_flipper_1_bg" />
+
+        <TextView
+            android:id="@+id/matrix_movie_flipper_1_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignBottom="@id/matrix_movie_flipper_1"
+            android:layout_alignLeft="@id/matrix_movie_flipper_1"
+            android:layout_alignRight="@id/matrix_movie_flipper_1"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_movie_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/matrix_movie_layout_1"
+        android:layout_alignTop="@id/matrix_movie_layout_1"
+        android:layout_marginLeft="-42dp"
+        android:layout_toRightOf="@id/matrix_movie_layout_1"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <View
+            android:layout_width="278dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/matrix_movie_flipper_2_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_movie_flipper_2_out_layout"
+        android:layout_width="278dp"
+        android:layout_height="269.73dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/matrix_movie_layout_1"
+        android:focusable="false" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_movie_flipper_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/matrix_movie_flipper_2_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignBottom="@id/matrix_movie_flipper_2"
+            android:layout_alignLeft="@id/matrix_movie_flipper_2"
+            android:layout_alignRight="@id/matrix_movie_flipper_2"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_movie_layout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/matrix_movie_layout_1"
+        android:layout_below="@+id/matrix_movie_layout_1"
+        android:layout_marginTop="-42dp"
+        android:layout_toRightOf="@id/matrix_movie_layout_0"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:visibility="visible" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_movie_flipper_3"
+            android:layout_width="231dp"
+            android:layout_height="231dp"
+            android:background="@drawable/matrix_movie_flipper_3_bg" />
+
+        <TextView
+            android:id="@+id/matrix_movie_flipper_3_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignBottom="@id/matrix_movie_flipper_3"
+            android:layout_alignLeft="@id/matrix_movie_flipper_3"
+            android:layout_alignRight="@id/matrix_movie_flipper_3"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_movie_layout_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/matrix_movie_layout_1"
+        android:layout_below="@+id/matrix_movie_layout_1"
+        android:layout_marginLeft="-42dp"
+        android:layout_marginTop="-42dp"
+        android:layout_toRightOf="@id/matrix_movie_layout_3"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_movie_flipper_4"
+            android:layout_width="231dp"
+            android:layout_height="231dp"
+            android:background="@drawable/matrix_movie_flipper_3_bg" />
+
+        <TextView
+            android:id="@+id/matrix_movie_flipper_4_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignBottom="@id/matrix_movie_flipper_4"
+            android:layout_alignLeft="@id/matrix_movie_flipper_4"
+            android:layout_alignRight="@id/matrix_movie_flipper_4"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_movie_layout_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/matrix_movie_layout_0"
+        android:layout_alignLeft="@id/matrix_movie_layout_2"
+        android:layout_alignRight="@id/matrix_movie_layout_2"
+        android:layout_alignTop="@id/matrix_movie_layout_4"
+        android:layout_below="@+id/matrix_movie_layout_2"
+        android:layout_toRightOf="@id/matrix_movie_layout_4"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_movie_flipper_5"
+            android:layout_width="278dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/matrix_movie_flipper_2_bg" />
+
+        <TextView
+            android:id="@+id/matrix_movie_flipper_5_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignBottom="@id/matrix_movie_flipper_5"
+            android:layout_alignLeft="@id/matrix_movie_flipper_5"
+            android:layout_alignRight="@id/matrix_movie_flipper_5"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

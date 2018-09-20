@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/channel_01_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-28dip"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:gravity="center"
+        android:tag="0" >
+
+        <View
+            android:layout_width="313dip"
+            android:layout_height="470dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/channel_0_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/channel_01_layout"
+        android:layout_marginBottom="28dip"
+        android:focusable="false"
+        android:gravity="center"
+        android:tag="0" >
+
+        <ImageView
+            android:layout_width="313dip"
+            android:layout_height="513dp"
+            android:focusable="false"
+            android:src="@drawable/channel_default_0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/channel_1_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-45dip"
+        android:layout_marginTop="46dip"
+        android:layout_toRightOf="@id/channel_01_layout"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:tag="1" >
+
+        <ImageView
+            android:layout_width="514dip"
+            android:layout_height="232dip"
+            android:src="@drawable/channel_default_1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/channel_2_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/channel_1_layout"
+        android:layout_marginLeft="-45dip"
+        android:layout_marginTop="-46dip"
+        android:layout_toRightOf="@id/channel_01_layout"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:tag="2" >
+
+        <ImageView
+            android:layout_width="251dip"
+            android:layout_height="232dip"
+            android:src="@drawable/channel_default_2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/channel_3_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/channel_1_layout"
+        android:layout_marginLeft="-45dip"
+        android:layout_marginTop="-46dip"
+        android:layout_toRightOf="@id/channel_2_layout"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:tag="3" >
+
+        <ImageView
+            android:layout_width="251dip"
+            android:layout_height="232dip"
+            android:src="@drawable/channel_default_2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/channel_41_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-45dip"
+        android:layout_marginTop="51dip"
+        android:layout_toRightOf="@id/channel_1_layout"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:tag="4" >
+
+        <View
+            android:layout_width="188dip"
+            android:layout_height="229dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/channel_4_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/channel_41_layout"
+        android:layout_marginBottom="3dip"
+        android:layout_marginLeft="-46dip"
+        android:layout_toRightOf="@id/channel_1_layout"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="false"
+        android:tag="4" >
+
+        <!-- channel_default_5, test_channel5 -->
+
+        <ImageView
+            android:layout_width="188dip"
+            android:layout_height="270dip"
+            android:src="@drawable/channel_default_5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/channel_5_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/channel_41_layout"
+        android:layout_marginLeft="-45dip"
+        android:layout_marginTop="-46dip"
+        android:layout_toRightOf="@id/channel_3_layout"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:tag="5" >
+
+        <ImageView
+            android:layout_width="188dip"
+            android:layout_height="232dip"
+            android:src="@drawable/channel_default_5" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,388 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 显示背景图的ImageView -->
+
+    <include layout="@layout/background_layout" />
+
+    <com.hiveview.tv.view.ProgressDialog
+        android:id="@+id/iv_hiveview_loading"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_select_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dip"
+            android:layout_marginTop="40dip"
+            android:text="@string/select_category"
+            android:textColor="#ffffff"
+            android:textSize="46sp" />
+
+        <TextView
+            android:id="@+id/tv_television_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_select_category"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/tv_select_category"
+            android:text="@string/television_count"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/fl_category"
+            android:layout_width="match_parent"
+            android:layout_height="75.3dip"
+            android:layout_below="@+id/tv_select_category"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_tab_menu"
+                android:layout_width="1165dp"
+                android:layout_height="75.3dip"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/fl_television"
+                    android:layout_width="129dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_list_channel_focus_bg"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:visibility="visible" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:background="@drawable/fast_selection_tab">
+                        <TextView
+                            android:id="@+id/tv_television"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/tv_count"
+                            android:textColor="#a8a8a8"
+                            android:textSize="24.6sp" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_film"
+                    android:layout_width="129dip"
+                    android:layout_height="75.3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_list_channel_focus_bg"
+                    android:focusable="true"
+                    android:visibility="visible" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fast_selection_tab" >
+
+                        <TextView
+                            android:id="@+id/tv_film"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/film_count"
+                            android:textColor="#a8a8a8"
+                            android:textSize="24.6sp" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_sports"
+                    android:layout_width="129dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_list_channel_focus_bg"
+                    android:focusable="true"
+                    android:visibility="visible" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fast_selection_tab" >
+
+                        <TextView
+                            android:id="@+id/tv_sports"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/sports_count"
+                            android:textColor="#a8a8a8"
+                            android:textSize="24.6sp" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_variety"
+                    android:layout_width="129dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_list_channel_focus_bg"
+                    android:focusable="true"
+                    android:visibility="visible" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fast_selection_tab" >
+
+                        <TextView
+                            android:id="@+id/tv_variety"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/variety_count"
+                            android:textColor="#a8a8a8"
+                            android:textSize="24.6sp" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_children"
+                    android:layout_width="129dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_list_channel_focus_bg"
+                    android:focusable="true"
+                    android:visibility="visible" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fast_selection_tab" >
+
+                        <TextView
+                            android:id="@+id/tv_children"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/children_count"
+                            android:textColor="#a8a8a8"
+                            android:textSize="24.6sp" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_technology"
+                    android:layout_width="129dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_list_channel_focus_bg"
+                    android:focusable="true"
+                    android:visibility="visible" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fast_selection_tab" >
+
+                        <TextView
+                            android:id="@+id/tv_technology"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/technology_count"
+                            android:textColor="#a8a8a8"
+                            android:textSize="24.6sp" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_economics"
+                    android:layout_width="129dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_list_channel_focus_bg"
+                    android:focusable="true"
+                    android:visibility="visible" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fast_selection_tab" >
+
+                        <TextView
+                            android:id="@+id/tv_economics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/economics_count"
+                            android:textColor="#a8a8a8"
+                            android:textSize="24.6sp" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_comprehensive"
+                    android:layout_width="129dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_list_channel_focus_bg"
+                    android:focusable="true"
+                    android:visibility="visible" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fast_selection_tab" >
+
+                        <TextView
+                            android:id="@+id/tv_comprehensive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/comprehensive_count"
+                            android:textColor="#a8a8a8"
+                            android:textSize="24.6sp" />
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_select_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/tv_select_category_menu_tips"
+            android:layout_below="@+id/fl_category"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="45dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="10dip" />
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_select_movie"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/tv_select_category_menu_tips"
+            android:layout_below="@+id/fl_category"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="45dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="10dip" />
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_select_sports"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/tv_select_category_menu_tips"
+            android:layout_below="@+id/fl_category"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="45dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="10dip" />
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_seleect_variety"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/tv_select_category_menu_tips"
+            android:layout_below="@+id/fl_category"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="45dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="10dip" />
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_seleect_children"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/tv_select_category_menu_tips"
+            android:layout_below="@+id/fl_category"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="45dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="10dip" />
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_select_technology"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/tv_select_category_menu_tips"
+            android:layout_below="@+id/fl_category"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="45dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="10dip" />
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_select_economics"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/tv_select_category_menu_tips"
+            android:layout_below="@+id/fl_category"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="45dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="10dip" />
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_select_comprehensive"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/tv_select_category_menu_tips"
+            android:layout_below="@+id/fl_category"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="45dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="10dip" />
+
+        <ImageView
+            android:id="@+id/iv_pager_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/vp_select_tv"
+            android:layout_alignTop="@id/vp_select_tv"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/iv_page_left"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_pager_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/vp_select_tv"
+            android:layout_alignTop="@id/vp_select_tv"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/iv_page_right"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_select_category_menu_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/fl_category"
+            android:layout_marginTop="650dip"
+            android:text="@string/select_category_menu_tips"
+            android:textColor="#9a9a9a"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <com.hiveview.tv.view.TipView
+        android:id="@+id/tipView"
+        android:layout_width="617dp"
+        android:layout_height="272dp"
+        android:layout_centerInParent="true"
+        android:background="#DD000000"
+        android:focusable="false"
+        android:visibility="gone" />
+
+</RelativeLayout>

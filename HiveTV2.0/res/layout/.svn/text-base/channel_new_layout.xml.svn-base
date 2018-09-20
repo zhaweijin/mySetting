@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/v_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false" >
+
+    <include layout="@layout/background_layout" />
+
+    <TextView
+        android:id="@+id/tvChannelLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="51dip"
+        android:layout_marginTop="46dp"
+        android:gravity="bottom"
+        android:text="点播频道"
+        android:textColor="#ffffff"
+        android:textSize="46sp" />
+
+    <TextView
+        android:id="@+id/tv_video_type_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvChannelLabel"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/tvChannelLabel"
+        android:text="(%s个)"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <com.hiveview.tv.view.ProgressDialog
+        android:id="@+id/pd_list_loading"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="1060dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvChannelLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dip"
+        android:clipChildren="false" />
+
+</RelativeLayout>

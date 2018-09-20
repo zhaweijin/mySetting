@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--阴影-->
+    <item
+        android:gravity="center"
+        >
+        <shape android:shape="rectangle">
+            <corners android:radius="45dip" />
+            <gradient
+                android:angle="180"
+                android:endColor="#780000FF"
+                android:startColor="#780000FF"
+                />
+
+            <corners
+                android:bottomLeftRadius="45dip"
+                android:bottomRightRadius="45dip"
+                android:topLeftRadius="45dip"
+                android:topRightRadius="45dip"/>
+        </shape>
+    </item>
+    <!--阴影-->
+
+    <!--白色背景-->
+    <item
+        android:left="4dp"
+        android:top="4dp"
+        android:bottom="4dp"
+        android:right="4dp">
+
+        <shape android:shape="rectangle">
+            <corners android:radius="45dip" />
+            <gradient
+                android:angle="180"
+                android:endColor="#4F4F4F"
+                android:startColor="#4F4F4F"/>
+
+            <corners
+                android:bottomLeftRadius="45dip"
+                android:bottomRightRadius="45dip"
+                android:topLeftRadius="45dip"
+                android:topRightRadius="45dip"/>
+        </shape>
+    </item>
+
+</layer-list>

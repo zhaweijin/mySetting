@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/movie_lr_rcm_1"
+        android:layout_width="390dip"
+        android:layout_height="581dip" >
+
+        <!-- 底部的focus 部分 -->
+
+        <RelativeLayout
+            android:id="@+id/movie_v_focus_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/select_focus_bg"
+            android:focusable="true" >
+
+            <View
+                android:layout_width="306dip"
+                android:layout_height="466dip"
+                android:background="#ff0000" />
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:id="@+id/movie_vf_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="27dip"
+            android:layout_marginRight="27dip"
+            android:autoStart="true"
+            android:flipInterval="2000" >
+        </ViewFlipper>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/movie_lr_rcm_2"
+        style="@style/overlay_negative_left_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip"
+        android:layout_toRightOf="@id/movie_lr_rcm_1"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ViewFlipper
+            android:id="@+id/movie_vf_2"
+            style="@style/movie_rcm_2"
+            android:background="#00ff00"
+            android:flipInterval="2000"
+            android:scaleType="fitXY" >
+        </ViewFlipper>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/movie_lr_rcm_4"
+        style="@style/overlay_negative_top_left_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_lr_rcm_2"
+        android:layout_toRightOf="@id/movie_lr_rcm_1"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ViewFlipper
+            android:id="@+id/movie_vf_4"
+            style="@style/movie_rcm_4"
+            android:flipInterval="2000"
+            android:scaleType="fitXY" >
+        </ViewFlipper>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/movie_lr_rcm_5"
+        style="@style/overlay_negative_top_left_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_lr_rcm_2"
+        android:layout_toRightOf="@id/movie_lr_rcm_4"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ViewFlipper
+            android:id="@+id/movie_vf_5"
+            style="@style/movie_rcm_4"
+            android:flipInterval="2000"
+            android:scaleType="fitXY" >
+        </ViewFlipper>
+    </RelativeLayout>
+
+    <!-- 推荐位3露头属性  276*227(焦点图未露头) -->
+
+    <RelativeLayout
+        android:id="@+id/movie_lr_rcm_3"
+        style="@style/overlay_negative_left_value"
+        android:layout_width="332dip"
+        android:layout_height="342dip"
+        android:layout_toRightOf="@id/movie_lr_rcm_2" >
+
+        <!-- 底部的focus 部分 -->
+
+        <RelativeLayout
+            android:id="@+id/movie_v_focus_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/select_focus_bg"
+            android:focusable="true" >
+
+            <View
+                android:layout_width="276dip"
+                android:layout_height="227dip"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:id="@+id/movie_vf_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="27dip"
+            android:layout_marginRight="27dip"
+            android:autoStart="true"
+            android:flipInterval="2000" >  
+        </ViewFlipper>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/movie_lr_rcm_6"
+        style="@style/overlay_negative_top_left_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_lr_rcm_3"
+        android:layout_toRightOf="@id/movie_lr_rcm_5"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ViewFlipper
+            android:id="@+id/movie_vf_6"
+            style="@style/movie_rcm_6"
+            android:flipInterval="2000"
+            android:scaleType="fitXY" >
+        </ViewFlipper>
+    </RelativeLayout>
+
+</RelativeLayout>

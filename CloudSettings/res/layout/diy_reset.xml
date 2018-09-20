@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="631dp"
+    android:layout_height="203dp"
+    android:background="@drawable/diy_back_1"
+     >
+   
+    <TextView 
+        android:id="@+id/message1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/line1"
+        android:textSize="@dimen/text_size_36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:lineSpacingMultiplier="1.3"
+        />
+
+    <LinearLayout 
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="184dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="64dp"
+        android:layout_height="117dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="135dp" 
+        >
+        <Button 
+            android:id="@+id/button1"
+            android:background="@drawable/button_selector"
+            android:text="@string/yes"
+            android:textColor="@color/settings_ffffff"
+            android:textSize="@dimen/text_size_36"
+            android:layout_width="145dp"            
+            android:layout_height="65dp"                  
+            android:layout_marginLeft="40dp"
+            android:visibility="visible"
+            android:paddingBottom="6dp"
+            ></Button>
+        <Button 
+            android:id="@+id/button2"
+            android:background="@drawable/button_selector"
+            android:text="@string/no"
+            android:textColor="@color/settings_ffffff"
+            android:textSize="@dimen/text_size_36"
+            android:layout_width="145dp"
+            android:layout_height="65dp"
+            android:visibility="visible"
+            android:layout_marginLeft="30dp"
+            android:paddingBottom="6dp"
+            ></Button>
+    </LinearLayout>
+    
+
+</RelativeLayout>

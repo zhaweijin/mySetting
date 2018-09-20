@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/center_view"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#00000000" />
+
+    <RelativeLayout
+        android:id="@+id/sub_navigation_recommend_record_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="42dp"
+        android:layout_toLeftOf="@id/center_view"
+        android:background="@drawable/sub_navigation_tab_focus"
+        android:focusable="true"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/sub_navigation_recommend_record_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_navigation_recommend_record_text"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sub_navigation_recommend_shop_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="83dp"
+        android:layout_toLeftOf="@id/sub_navigation_recommend_record_text_layout"
+        android:background="@drawable/sub_navigation_tab_focus"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusLeft="@id/sub_navigation_recommend_shop_text_layout"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/sub_navigation_recommend_shop_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_navigation_recommend_shop_text"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sub_navigation_recommend_user_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="42dp"
+        android:layout_toRightOf="@id/center_view"
+        android:background="@drawable/sub_navigation_tab_focus"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/sub_navigation_recommend_user_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_navigation_recommend_user_text"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sub_navigation_recommend_setting_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="83dp"
+        android:layout_toRightOf="@id/sub_navigation_recommend_user_text_layout"
+        android:background="@drawable/sub_navigation_tab_focus"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusRight="@id/sub_navigation_recommend_setting_text_layout" >
+
+        <TextView
+            android:id="@+id/sub_navigation_recommend_setting_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_navigation_recommend_setting_text"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

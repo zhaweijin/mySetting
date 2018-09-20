@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="272.7dip"
+        android:layout_height="113.3dip"
+        android:background="@drawable/select_tv_item_bg" >
+
+        <!-- 电台图片 -->
+
+        <TextView
+            android:id="@+id/iv_program_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:textColor="#8c8a92"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_television_logo"
+            android:layout_width="125dip"
+            android:layout_height="70dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/live_channel_logo_default" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@+id/iv_television_logo"
+            android:orientation="vertical" >
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:id="@+id/tv_television_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dip"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:id="@+id/tv_program"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="2"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:id="@+id/tv_program_thumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="27dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

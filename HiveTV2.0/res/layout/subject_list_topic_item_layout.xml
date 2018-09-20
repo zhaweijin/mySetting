@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/ll_item_first_line_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/ll_common_first_line_01"
+            style="@style/topic_item_poster_layout_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_common_first_line_01"
+                style="@style/subject_item_image_style" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_common_first_line_01"
+            style="@style/subject_item_text_style"
+            android:layout_below="@id/ll_common_first_line_01"
+            android:layout_marginTop="-15dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_item_first_line_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-15dip"
+        android:layout_toRightOf="@id/ll_item_first_line_01"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/ll_common_first_line_02"
+            style="@style/topic_item_poster_layout_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_common_first_line_02"
+                style="@style/subject_item_image_style" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_common_first_line_02"
+            style="@style/subject_item_text_style"
+            android:layout_below="@id/ll_common_first_line_02"
+            android:layout_marginTop="-15dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_item_first_line_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-15dip"
+        android:layout_toRightOf="@id/ll_item_first_line_02"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/ll_common_first_line_03"
+            style="@style/topic_item_poster_layout_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_common_first_line_03"
+                style="@style/subject_item_image_style" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_common_first_line_03"
+            style="@style/subject_item_text_style"
+            android:layout_below="@id/ll_common_first_line_03"
+            android:layout_marginTop="-15dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_item_second_line_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_item_first_line_01"
+        android:layout_marginTop="-15dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/ll_common_second_line_01"
+            style="@style/topic_item_poster_layout_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_common_second_line_01"
+                style="@style/subject_item_image_style" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_common_second_line_01"
+            style="@style/subject_item_text_style"
+            android:layout_below="@id/ll_common_second_line_01"
+            android:layout_marginTop="-15dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_item_second_line_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_item_first_line_02"
+        android:layout_marginLeft="-15dip"
+        android:layout_marginTop="-15dip"
+        android:layout_toRightOf="@id/ll_item_second_line_01"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/ll_common_second_line_02"
+            style="@style/topic_item_poster_layout_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_common_second_line_02"
+                style="@style/subject_item_image_style" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_common_second_line_02"
+            style="@style/subject_item_text_style"
+            android:layout_below="@id/ll_common_second_line_02"
+            android:layout_marginTop="-15dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_item_second_line_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_item_first_line_03"
+        android:layout_marginLeft="-15dip"
+        android:layout_marginTop="-15dip"
+        android:layout_toRightOf="@id/ll_item_second_line_02"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/ll_common_second_line_03"
+            style="@style/topic_item_poster_layout_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_common_second_line_03"
+                style="@style/subject_item_image_style" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_common_second_line_03"
+            style="@style/subject_item_text_style"
+            android:layout_below="@id/ll_common_second_line_03"
+            android:layout_marginTop="-15dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

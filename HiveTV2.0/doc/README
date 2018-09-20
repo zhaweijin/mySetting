@@ -1,0 +1,6 @@
+﻿接口文档地址  ： http://124.207.119.78/api/doc/index.html
+
+接口文档地址  ： http://192.168.0.85/api/doc/index.html
+2014-02-26: 添加了hdmiIn接口，编译完成后需要对apk进行签名，方法如下：
+将sign.bat，platform.pk8, platform.x509.pem, signapk.jar和生成的apk置
+于相同目录，点击sign.bat即可生成签名后的程序。

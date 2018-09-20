@@ -1,0 +1,67 @@
+10
+
+dir
+20256
+svn://svn-tech.domybox.com/hive_client/branches/HiveTV2.0/HiveTV2.0/res
+svn://svn-tech.domybox.com/hive_client
+
+
+
+2015-11-27T08:57:44.685923Z
+18783
+lihongji
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+875b5ffc-5164-4f5c-b552-29232dd75103
+
+anim
+dir
+
+drawable-ldpi
+dir
+
+drawable-zh
+dir
+
+drawable-zh-hdpi
+dir
+
+drawable-zh-mdpi
+dir
+
+drawable-zh-xhdpi
+dir
+
+drawable-zh-xxhdpi
+dir
+
+layout
+dir
+
+values
+dir
+
+values-sw600dp
+dir
+
+values-sw720dp-land
+dir
+
+values-v11
+dir
+
+values-v14
+dir
+

@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="300dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/sub_navigation_common_recommend_favourite_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sub_navigation_tab_focus"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusRight="@+id/sub_navigation_common_recommend_setting_text_layout" >
+
+                <TextView
+                    android:id="@+id/sub_navigation_common_recommend_favourite_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sub_navigation_common_favourite_text"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/sub_navigation_common_recommend_setting_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sub_navigation_tab_focus"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusLeft="@id/sub_navigation_common_recommend_favourite_text_layout"
+                android:nextFocusRight="@+id/sub_navigation_common_recommend_external_text_layout" >
+
+                <TextView
+                    android:id="@+id/sub_navigation_common_recommend_setting_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sub_navigation_common_setting_text"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!--
+    android:layout_marginLeft="10dp"
+    <RelativeLayout
+        android:id="@+id/sub_navigation_common_recommend_user_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/sub_navigation_common_recommend_setting_text_layout"
+        android:background="@drawable/sub_navigation_tab_focus"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusLeft="@id/sub_navigation_common_recommend_setting_text_layout"
+        android:nextFocusRight="@+id/sub_navigation_common_recommend_external_text_layout" >
+
+        <TextView
+            android:id="@+id/sub_navigation_common_recommend_user_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_navigation_common_user_text"
+            android:textSize="24sp" />
+    </RelativeLayout>
+        -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/sub_navigation_common_recommend_external_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sub_navigation_tab_focus"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusLeft="@id/sub_navigation_common_recommend_setting_text_layout" >
+
+                <TextView
+                    android:id="@+id/sub_navigation_common_recommend_external_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sub_navigation_common_external_text"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

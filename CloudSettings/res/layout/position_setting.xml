@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/domy_setting_position_bg">
+
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:src="@drawable/domy_setting_position_arrow_left"
+        android:scaleType="centerInside"/>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:src="@drawable/domy_setting_position_arrow_right"
+        android:scaleType="centerInside"/>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:src="@drawable/domy_setting_position_arrow_up"
+        android:scaleType="centerInside"/>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:src="@drawable/domy_setting_position_arrow_down"
+        android:scaleType="centerInside"/>
+ 
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/d_100">
+        <Button 
+            android:id="@+id/position_setting_top1_btn"
+            android:layout_width="@dimen/d_130"
+            android:layout_height="@dimen/d_75"
+            android:text="@string/domy_setting_position_set_up"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/d_10"
+            android:background="@drawable/domy_setting_button_selector"
+            style="@style/domy_setting_position_button_text"/>
+        
+        <Button
+            android:id="@+id/position_setting_top2_btn" 
+            android:layout_width="@dimen/d_130"
+            android:layout_height="@dimen/d_75"
+            android:text="@string/domy_setting_position_set_down"
+            android:gravity="center"
+            android:background="@drawable/domy_setting_button_selector"
+            style="@style/domy_setting_position_button_text"
+            android:nextFocusUp="@id/position_setting_top1_btn"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="@dimen/d_114">
+        <Button
+            android:id="@+id/position_setting_left1_btn" 
+            android:layout_width="@dimen/d_75"
+            android:layout_height="@dimen/d_130"
+            android:text="@string/domy_setting_position_set_l"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/d_13"
+            android:background="@drawable/domy_setting_button_selector"
+            style="@style/domy_setting_position_button_text"/>
+        
+        <Button
+            android:id="@+id/position_setting_left2_btn" 
+            android:layout_width="@dimen/d_75"
+            android:layout_height="@dimen/d_130"
+            android:text="@string/domy_setting_position_set_r"
+            android:gravity="center"
+            android:background="@drawable/domy_setting_button_selector"
+            style="@style/domy_setting_position_button_text"
+            android:nextFocusLeft="@id/position_setting_left1_btn"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/d_100">
+        <Button
+            android:id="@+id/position_setting_bottom2_btn" 
+            android:layout_width="@dimen/d_130"
+            android:layout_height="@dimen/d_75"
+            android:text="@string/domy_setting_position_set_up"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/d_13"
+            android:background="@drawable/domy_setting_button_selector"
+            style="@style/domy_setting_position_button_text"/>
+        
+        <Button
+            android:id="@+id/position_setting_bottom1_btn" 
+            android:layout_width="@dimen/d_130"
+            android:layout_height="@dimen/d_75"
+            android:text="@string/domy_setting_position_set_down"
+            android:gravity="center"
+            android:background="@drawable/domy_setting_button_selector"
+            style="@style/domy_setting_position_button_text"
+            android:nextFocusUp="@+id/position_setting_bottom2_btn"/>
+    </LinearLayout>
+        
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="@dimen/d_114">
+        <Button
+            android:id="@+id/position_setting_right2_btn" 
+            android:layout_width="@dimen/d_75"
+            android:layout_height="@dimen/d_130"
+            android:text="@string/domy_setting_position_set_l"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/d_10"
+            android:background="@drawable/domy_setting_button_selector"
+            style="@style/domy_setting_position_button_text"/>
+        
+        <Button
+            android:id="@+id/position_setting_right1_btn" 
+            android:layout_width="@dimen/d_75"
+            android:layout_height="@dimen/d_130"
+            android:text="@string/domy_setting_position_set_r"
+            android:gravity="center"
+            android:background="@drawable/domy_setting_button_selector"
+            style="@style/domy_setting_position_button_text"
+            android:nextFocusLeft="@id/position_setting_right2_btn"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/d_288">
+        <TextView 
+            android:text="@string/domy_setting_title_scope_message1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/domy_setting_position_message"/>
+        
+        <TextView 
+            android:text="@string/domy_setting_title_scope_message2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/domy_setting_position_message"/>
+           
+        <Button
+            android:id="@+id/position_setting_center_btn" 
+            android:layout_width="@dimen/d_285"
+            android:layout_height="@dimen/d_65"
+            android:layout_marginTop="@dimen/d_13"
+            android:layout_gravity="center"
+            android:text="@string/domy_setting_position_center_button_text"
+            style="@style/domy_setting_position_ok_button_text"
+            android:background="@drawable/domy_setting_button_selector"
+            android:nextFocusLeft="@id/position_setting_left2_btn"
+            android:nextFocusRight="@id/position_setting_right2_btn"
+            android:nextFocusUp="@id/position_setting_top2_btn"
+            android:nextFocusDown="@id/position_setting_bottom2_btn"/>
+   
+    </LinearLayout>
+    
+</FrameLayout>

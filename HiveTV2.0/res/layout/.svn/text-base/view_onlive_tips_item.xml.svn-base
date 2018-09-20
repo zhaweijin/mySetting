@@ -1,0 +1,1023 @@
+<com.hiveview.tv.view.CustomDrawingOrderLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_first_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dip"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/fl_first_line_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_focus_lives_bg"
+            android:focusable="true"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:layout_width="270dip"
+                android:layout_height="190dip"
+                android:background="@drawable/select_tv_item_bg" >
+
+                <LinearLayout
+                    android:layout_width="95dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_toRightOf="@+id/iv_thumb"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_television_logo"
+                        android:layout_width="95dip"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/live_channel_logo_default" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_television_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="13dip"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_program_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dip"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text=" "
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_thumb"
+                    android:layout_width="132dip"
+                    android:layout_height="174dip"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="8dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iv_focus_default" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_first_line_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="-12dip"
+            android:background="@drawable/select_focus_lives_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="270dip"
+                android:layout_height="190dip"
+                android:background="@drawable/select_tv_item_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_thumb"
+                    android:layout_width="132dip"
+                    android:layout_height="174dip"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="8dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iv_focus_default" />
+
+                <LinearLayout
+                    android:layout_width="95dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_toRightOf="@+id/iv_thumb"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_television_logo"
+                        android:layout_width="95dip"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/live_channel_logo_default" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_television_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:paddingTop="13dip"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_program_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingTop="16dip"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_first_line_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="-12dip"
+            android:background="@drawable/select_focus_lives_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="270dip"
+                android:layout_height="190dip"
+                android:background="@drawable/select_tv_item_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_thumb"
+                    android:layout_width="132dip"
+                    android:layout_height="174dip"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="8dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iv_focus_default" />
+
+                <LinearLayout
+                    android:layout_width="95dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_toRightOf="@+id/iv_thumb"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_television_logo"
+                        android:layout_width="95dip"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/live_channel_logo_default" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_television_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:paddingTop="13dip"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_program_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingTop="16dip"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_first_line_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="-12dip"
+            android:background="@drawable/select_focus_lives_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="270dip"
+                android:layout_height="190dip"
+                android:background="@drawable/select_tv_item_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_thumb"
+                    android:layout_width="132dip"
+                    android:layout_height="174dip"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="8dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iv_focus_default" />
+
+                <LinearLayout
+                    android:layout_width="95dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_toRightOf="@+id/iv_thumb"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_television_logo"
+                        android:layout_width="95dip"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/live_channel_logo_default" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_television_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:paddingTop="13dip"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_program_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingTop="16dip"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <!--
+        <FrameLayout
+            android:id="@+id/fl_first_line_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-40dip"
+            android:background="@drawable/select_focus_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="225dip"
+                android:layout_height="233dip"
+                android:background="@drawable/select_tv_item_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_thumb"
+                    android:layout_width="80dip"
+                    android:layout_height="120dip"
+                    android:paddingLeft="5dip"
+                    android:paddingTop="5dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iv_focus_default" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_thumb"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dip"
+                    android:paddingTop="20dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_television_logo"
+                        android:layout_width="80dip"
+                        android:layout_height="43dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/live_channel_logo_default" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_television_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dip"
+                        android:text="  "
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <com.hiveview.tv.view.television.MarqueeText
+                    android:id="@+id/tv_program_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/iv_thumb"
+                    android:layout_margin="10dip"
+                    android:gravity="center_vertical"
+                    android:text="快乐大本营"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </FrameLayout>
+        -->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_point"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_below="@+id/ll_first_01"
+        android:layout_marginBottom="-7dp"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="-22dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_focus_01"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="18dip"
+            android:layout_marginTop="-5dp"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:layout_width="2dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-12dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/iv_focus_point_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/epg_item_nomarl" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_focus_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="86dip"
+            android:layout_marginTop="30dip"
+            android:layout_toRightOf="@+id/ll_focus_01"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_focus_point_06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dip"
+                android:background="@drawable/epg_item_nomarl" />
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:layout_width="2dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-8dp"
+                android:background="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_focus_02"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="115dip"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@+id/ll_focus_06"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:layout_width="2dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-12dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/iv_focus_point_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/epg_item_nomarl" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_focus_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="86dip"
+            android:layout_marginTop="30dip"
+            android:layout_toRightOf="@+id/ll_focus_02"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_focus_point_07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dip"
+                android:background="@drawable/epg_item_nomarl" />
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:layout_width="2dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-8dp"
+                android:background="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_focus_03"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="115dip"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@+id/ll_focus_07"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:layout_width="2dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-12dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/iv_focus_point_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/epg_item_nomarl" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_focus_08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="86dip"
+            android:layout_marginTop="30dip"
+            android:layout_toRightOf="@+id/ll_focus_03"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_focus_point_08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dip"
+                android:background="@drawable/epg_item_nomarl" />
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:layout_width="2dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-8dp"
+                android:background="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_focus_04"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="115dip"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@+id/ll_focus_08"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:layout_width="2dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-12dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/iv_focus_point_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/epg_item_nomarl" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_focus_09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="86dip"
+            android:layout_marginTop="30dip"
+            android:layout_toRightOf="@+id/ll_focus_04"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_focus_point_09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dip"
+                android:background="@drawable/epg_item_nomarl" />
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:layout_width="2dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-8dp"
+                android:background="#ffffff" />
+        </LinearLayout>
+
+        <!--
+        <LinearLayout
+            android:id="@+id/ll_focus_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dip"
+            android:layout_toRightOf="@+id/ll_focus_09"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:layout_width="2dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/iv_focus_point_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/epg_item_nomarl" />
+        </LinearLayout>
+        -->
+
+
+        <!--
+        <LinearLayout
+            android:id="@+id/ll_focus_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="30dip"
+            android:layout_toRightOf="@+id/ll_focus_05"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_focus_point_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/epg_item_nomarl" />
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:layout_width="2dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:background="#ffffff" />
+        </LinearLayout>
+        -->
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_focus_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dip"
+            android:layout_marginTop="8dip"
+            android:layout_toRightOf="@id/ll_focus_01"
+            android:textColor="#ffffff"
+            android:textSize="14.5sp" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_focus_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dip"
+            android:layout_marginTop="8dip"
+            android:layout_toRightOf="@id/ll_focus_02"
+            android:textColor="#ffffff"
+            android:textSize="14.5sp" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_focus_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dip"
+            android:layout_marginTop="8dip"
+            android:layout_toRightOf="@id/ll_focus_03"
+            android:textColor="#ffffff"
+            android:textSize="14.5sp" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_focus_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dip"
+            android:layout_marginTop="8dip"
+            android:layout_toRightOf="@id/ll_focus_04"
+            android:textColor="#ffffff"
+            android:textSize="14.5sp" />
+
+        <!--
+            <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_focus_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/ll_focus_05"
+            android:textColor="#ffffff"
+            android:textSize="14.5sp" />
+        -->
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_focus_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ll_focus_06"
+            android:layout_marginTop="23dip"
+            android:layout_toRightOf="@id/ll_focus_06"
+            android:textColor="#ffffff"
+            android:textSize="14.5sp" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_focus_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ll_focus_07"
+            android:layout_marginTop="23dip"
+            android:layout_toRightOf="@id/ll_focus_07"
+            android:textColor="#ffffff"
+            android:textSize="14.5sp" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_focus_08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ll_focus_08"
+            android:layout_marginTop="23dip"
+            android:layout_toRightOf="@id/ll_focus_08"
+            android:textColor="#ffffff"
+            android:textSize="14.5sp" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_focus_09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ll_focus_09"
+            android:layout_marginTop="23dip"
+            android:layout_toRightOf="@id/ll_focus_09"
+            android:text=" "
+            android:textColor="#ffffff"
+            android:textSize="14.5sp" />
+
+        <!--
+             <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_focus_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ll_focus_10"
+            android:layout_marginTop="20dip"
+            android:layout_toRightOf="@id/ll_focus_10"
+            android:textColor="#ffffff"
+            android:textSize="14.5sp" />
+        -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_point"
+        android:layout_marginTop="-10dip"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/fl_second_line_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_focus_lives_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="270dip"
+                android:layout_height="190dip"
+                android:background="@drawable/select_tv_item_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_thumb"
+                    android:layout_width="132dip"
+                    android:layout_height="174dip"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="8dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iv_focus_default" />
+
+                <LinearLayout
+                    android:layout_width="95dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_toRightOf="@+id/iv_thumb"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_television_logo"
+                        android:layout_width="95dip"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/live_channel_logo_default" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_television_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:paddingTop="13dip"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_program_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingTop="16dip"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_second_line_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-12dip"
+            android:background="@drawable/select_focus_lives_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="270dip"
+                android:layout_height="190dip"
+                android:background="@drawable/select_tv_item_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_thumb"
+                    android:layout_width="132dip"
+                    android:layout_height="174dip"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="8dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iv_focus_default" />
+
+                <LinearLayout
+                    android:layout_width="95dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_toRightOf="@+id/iv_thumb"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_television_logo"
+                        android:layout_width="95dip"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/live_channel_logo_default" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_television_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:paddingTop="13dip"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_program_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingTop="16dip"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_second_line_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-12dip"
+            android:background="@drawable/select_focus_lives_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="270dip"
+                android:layout_height="190dip"
+                android:background="@drawable/select_tv_item_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_thumb"
+                    android:layout_width="132dip"
+                    android:layout_height="174dip"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="8dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iv_focus_default" />
+
+                <LinearLayout
+                    android:layout_width="95dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_toRightOf="@+id/iv_thumb"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_television_logo"
+                        android:layout_width="95dip"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/live_channel_logo_default" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_television_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:paddingTop="13dip"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_program_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingTop="16dip"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_second_line_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-12dip"
+            android:background="@drawable/select_focus_lives_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="270dip"
+                android:layout_height="190dip"
+                android:background="@drawable/select_tv_item_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_thumb"
+                    android:layout_width="132dip"
+                    android:layout_height="174dip"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="8dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iv_focus_default" />
+
+                <LinearLayout
+                    android:layout_width="95dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_toRightOf="@+id/iv_thumb"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_television_logo"
+                        android:layout_width="95dip"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/live_channel_logo_default" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_television_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:paddingTop="13dip"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_program_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingTop="16dip"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <!--
+        <FrameLayout
+            android:id="@+id/fl_second_line_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-40dip"
+            android:background="@drawable/select_focus_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="225dip"
+                android:layout_height="233dip"
+                android:background="@drawable/select_tv_item_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_thumb"
+                    android:layout_width="80dip"
+                    android:layout_height="120dip"
+                    android:paddingLeft="5dip"
+                    android:paddingTop="5dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iv_focus_default" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_thumb"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dip"
+                    android:paddingTop="20dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_television_logo"
+                        android:layout_width="80dip"
+                        android:layout_height="43dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/live_channel_logo_default" />
+
+                    <com.hiveview.tv.view.television.MarqueeText
+                        android:id="@+id/tv_television_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dip"
+                        android:text="  "
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <com.hiveview.tv.view.television.MarqueeText
+                    android:id="@+id/tv_program_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/iv_thumb"
+                    android:layout_margin="10dip"
+                    android:gravity="center_vertical"
+                    android:text="快乐大本营"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </FrameLayout>
+        -->
+    </LinearLayout>
+
+</com.hiveview.tv.view.CustomDrawingOrderLayout>

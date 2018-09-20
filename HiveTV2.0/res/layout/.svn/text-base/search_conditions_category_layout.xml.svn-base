@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l1"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恐怖" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l2"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="冒险" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l3"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爱情" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l4"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动作" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l5"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部类型" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l6"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="喜剧" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l7"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剧情" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l8"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="犯罪" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l9"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l10"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l11"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l12"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l13"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l14"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l15"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l16"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l17"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l18"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l19"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l20"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l21"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l22"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l23"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l24"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l25"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l26"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l27"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l28"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l29"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l30"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l31"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l32"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l33"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l34"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l35"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l36"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l37"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l38"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l39"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l40"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l41"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l42"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_c_c_l43"
+        android:layout_width="125.3dip"
+        android:layout_height="52dip"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/search_condition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灾难" />
+    </LinearLayout>
+
+</LinearLayout>

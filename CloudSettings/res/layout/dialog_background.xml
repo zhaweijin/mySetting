@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_gravity="center_vertical"
+              android:gravity="center"
+    >
+    <LinearLayout
+        android:id="@+id/background"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/testnet_height3"
+        android:layout_marginTop="@dimen/testnet_top6"
+        android:background="@drawable/ok_dialog"
+         android:paddingLeft="@dimen/testnet_top7"
+        android:paddingRight="@dimen/testnet_top7">
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/testnet_top7"
+            android:text="@string/domynetwork"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/testnet_textsize_34.66"/>
+        <TextView
+            android:id="@+id/wait_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/testnet_top8"
+            android:text="@string/netnormaltip"
+            android:textColor="#FFF"
+            android:textSize="@dimen/testnet_textsize_24" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="@dimen/testnet_left_right"
+            android:layout_height="@dimen/testnet_height2"
+            android:layout_marginTop="@dimen/testnet_top9"
+            android:background="@drawable/testnetbutton_focus"
+            android:layout_centerHorizontal="true"
+            android:text="@string/close"
+            android:textSize="@dimen/testnet_textsize_28"
+            android:visibility="gone"
+             android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:id="@+id/btn_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/testnet_top9"
+            android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="@dimen/testnet_left_right"
+            android:layout_height="@dimen/testnet_height2"
+            android:background="@drawable/testnetbutton_focus"
+            android:text="@string/close"
+            android:textSize="@dimen/testnet_textsize_28"
+            android:visibility="gone"
+            android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/adjust"
+                android:layout_width="@dimen/testnet_left_right"
+                android:layout_height="@dimen/testnet_height2"
+                android:layout_toRightOf="@+id/close_btn"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/testnetbutton_focus"
+                android:text="@string/repair"
+                android:textSize="@dimen/testnet_textsize_28"
+                 android:textColor="@color/white"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

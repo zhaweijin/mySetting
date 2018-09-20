@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hiveview.cloudtv.settings"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="20180713"
+    android:versionName="5.2.9">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="com.hiveview.cloudscreen.guide.permission.READ" />
+    <application
+        android:name=".SettingsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+
+	    <uses-library   
+	        android:name="AmlogicPPPoE">
+	    </uses-library>
+	     <uses-library   
+	        android:name="com.hiveview.server">
+	    </uses-library>
+
+        <service
+            android:name=".connectivity.ConnectivityStateService" >
+            <intent-filter>
+                <action android:name="com.hiveview.connectivity.action.Main" />
+            </intent-filter>
+        </service>
+
+
+
+        <!-- BY YIQIBANG -->
+        <activity
+            android:name="com.hiveview.cloudtv.settings.SettingActivity"
+            android:label="@string/app_name" 
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DeviceinfoActivity"
+            android:label="@string/title_activity_deviceinfo" >
+            <intent-filter>
+                <action android:name="android.intent.action.Actionname" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddWifiActivity"
+            android:label="@string/title_activity_add_wifi"
+            android:theme="@style/noTitle" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTIONTASK" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CommonActivity"
+            android:label="@string/title_activity_common" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ThreeDimenActivity"
+            android:label="@string/title_activity_three_dimen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DevloperModelActivity"
+            android:label="@string/title_activity_devloper_model" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VersionCheckActivity"
+            android:label="@string/title_activity_version_check" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdateActivity"
+            android:label="@string/title_activity_update" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BlueToothActivity"
+            android:label="@string/title_activity_blue_tooth" >
+        </activity>
+        <activity
+            android:name=".FeedbackProblemActivity"
+            android:label="@string/title_activity_feedback_problem"
+            android:theme="@android:style/Theme.Translucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OtherSettingActivity"
+            android:label="@string/title_activity_other_setting" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <!-- BY HEYOULIN -->
+        <activity android:name="com.hiveview.cloudtv.settings.NetworkSettingsActivity" 
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.settings.WIFI_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          <activity
+            android:name="com.hiveview.cloudtv.settings.NetWorkActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ManualAddWifiAcvitity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PppoeConnectActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WifiShareActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EthernetConnectedAcivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EthernetDisconnectedActivity" 
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EthernetModifyActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WifiConnectActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WifiModifyActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TestSpeedNewActivity" 
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WifiDisconnectedActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hiveview.cloudtv.settings.CheckNetworkActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".download.DownloadService" />
+        
+        <receiver
+            android:name=".BootCompletedReceiverS905"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.droidlogic.pppoe.PPPOE_STATE_CHANGED" />
+                <action android:name="com.hiveview.linkstatus.change" />
+                <action android:name="com.hiveview.cloudtv.settings.hdmi.auto.poweroff" />
+            </intent-filter>
+        </receiver>
+            
+        <activity
+            android:name=".ProfilesSettingsActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LocationSettingsActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".TimezoneActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".download.DownloadService" />
+
+        <activity
+            android:name=".BluetoothPairActivity"
+            android:label="@string/title_activity_bluetooth_pair"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".bluetooth.BluetoothPairingRequest" >
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST" />
+                <action android:name="android.bluetooth.device.action.PAIRING_CANCEL" />
+                <action android:name="android.bluetooth.device.action.BOND_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.TurningOffReceiver" >
+            <intent-filter>
+                <action android:name="com.hiveview.cloudtv.yiqibang.turningoff" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.AutoPowerTimeout" >
+            <intent-filter>
+                <action android:name="com.hiveview.cloudtv.action.UserKeyDown" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:name=".ImageActivity"
+            android:label="@string/title_activity_image" >
+        </activity>
+        <activity
+            android:name=".TurningOffActivity"
+            android:label="@string/title_activity_turning_off"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.hiveview.cloudtv.turningoff" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ControlActivity"
+            android:label="@string/title_activity_control"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        
+        <activity android:name=".videoimage.PositionSetting"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+ 
+                 <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>
+         </activity>
+           
+          <activity android:name="com.hiveview.cloudtv.display.DisplaySettingsActivity" />
+ 	  <activity android:name="com.hiveview.cloudtv.display.OutputSetConfirm" />
+      
+        
+         <activity android:name=".videoimage.AdjustActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+     
+        <activity
+            android:name=".WheatCoinLockCodeInput"
+            android:label="@string/title_wheat_code_input" 
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>   
+
+        <activity android:name="LanguageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>    
+
+        <activity android:name="GuideLanguage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+
+            <activity
+            android:name=".VideoImageActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ 		 
+    </application>
+
+</manifest>

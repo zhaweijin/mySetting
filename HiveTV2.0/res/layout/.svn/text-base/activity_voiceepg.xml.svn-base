@@ -1,0 +1,145 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_onlive_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+    
+    <include layout="@layout/background_layout" />
+
+  <!--   <RelativeLayout
+        android:id="@+id/rl_menu_tips"
+        android:layout_width="match_parent"
+        android:layout_height="400dip"
+        android:layout_gravity="bottom"
+        android:background="#99000000"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/ll_menu_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/fl_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_container" >
+
+                <TextView
+                    android:id="@+id/tv_recommend"
+                    android:layout_width="200dip"
+                    android:layout_height="40dip"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="4dip"
+                    android:text="@string/wonderful_recommend"
+                    android:textColor="@drawable/menu_text_bg"
+                    android:textSize="21sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_select_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_container" >
+
+                <TextView
+                    android:id="@+id/tv_select"
+                    android:layout_width="200dip"
+                    android:layout_height="40dip"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="4dip"
+                    android:text="@string/select_tv"
+                    android:textColor="@drawable/menu_text_bg"
+                    android:textSize="21sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_cctv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_container" >
+
+                <TextView
+                    android:id="@+id/tv_epg"
+                    android:layout_width="200dip"
+                    android:layout_height="40dip"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="4dip"
+                    android:text="@string/epg_list"
+                    android:textColor="@drawable/menu_text_bg"
+                    android:textSize="21sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <com.hiveview.tv.view.onlive.OnliveEpg
+            android:id="@+id/view_onlive_epg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_menu_container"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dip"
+                android:src="@drawable/epg_center_line" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_epg_select"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dip" />
+        </com.hiveview.tv.view.onlive.OnliveEpg>
+
+        <com.hiveview.tv.view.onlive.OnliveSelect
+            android:id="@+id/view_onlive_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_menu_container"
+            android:visibility="gone" >
+
+            <include
+                android:id="@+id/rl_tv_menu"
+                layout="@layout/view_fast_select_tv_menu"
+                android:visibility="gone" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_select_television"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_tv_menu" />
+
+            <com.hiveview.tv.view.ProgressDialog
+                android:id="@+id/iv_hiveview_loading"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </com.hiveview.tv.view.onlive.OnliveSelect>
+
+        <com.hiveview.tv.view.onlive.OnliveRecommend
+            android:id="@+id/view_onlive_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_menu_container"
+            android:visibility="gone" >
+        </com.hiveview.tv.view.onlive.OnliveRecommend>
+    </RelativeLayout> -->
+
+    <com.hiveview.tv.view.TipView
+        android:id="@+id/tipView"
+        android:layout_width="617dp"
+        android:layout_height="272dp"
+        android:layout_centerInParent="true"
+        android:background="#DD000000"
+        android:focusable="false"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="202dip"
+    android:layout_height="222dip"
+    android:background="@drawable/select_tv_item_bg" >
+
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="80dip"
+        android:layout_height="120dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:src="@drawable/default_teleplay_live_poster" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_thumb"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingTop="20dip" >
+
+        <ImageView
+            android:id="@+id/iv_television_logo"
+            android:layout_width="80dip"
+            android:layout_height="43dip"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_television_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="15dip"
+            android:text="湖南卫视"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/iv_thumb"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@+id/sb_television_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="4dip"
+            android:focusable="false"
+            android:max="24"
+            android:maxHeight="1.5dip"
+            android:minHeight="0.1dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:progressDrawable="@drawable/player_seekbar_style"
+            android:thumb="@drawable/seekbar_television_thumb"
+            android:thumbOffset="1.0dip" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dip"
+                android:text="23:10" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:text="23:10" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_progress"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="最美时光 （23）"
+        android:textSize="20sp"
+        android:color="@color/white" />
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_program_thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_program"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="请稍后......"
+        android:textSize="18sp"
+        android:color="@color/white" />
+
+</RelativeLayout>

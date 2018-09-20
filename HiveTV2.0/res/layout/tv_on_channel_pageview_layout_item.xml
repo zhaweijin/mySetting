@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.hiveview.tv.view.TvClassifyViewItemView
+            android:id="@+id/channel_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15dip"
+            android:background="@drawable/select_focus_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+        </com.hiveview.tv.view.TvClassifyViewItemView>
+
+        <com.hiveview.tv.view.TvClassifyViewItemView
+            android:id="@+id/channel_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-40dip"
+            android:layout_marginTop="-15dip"
+            android:background="@drawable/select_focus_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+        </com.hiveview.tv.view.TvClassifyViewItemView>
+
+        <com.hiveview.tv.view.TvClassifyViewItemView
+            android:id="@+id/channel_item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-40dip"
+            android:layout_marginTop="-15dip"
+            android:background="@drawable/select_focus_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+        </com.hiveview.tv.view.TvClassifyViewItemView>
+
+        <com.hiveview.tv.view.TvClassifyViewItemView
+            android:id="@+id/channel_item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-40dip"
+            android:layout_marginTop="-15dip"
+            android:background="@drawable/select_focus_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+        </com.hiveview.tv.view.TvClassifyViewItemView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="horizontal" >
+
+        <com.hiveview.tv.view.TvClassifyViewItemView
+            android:id="@+id/channel_item6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dip"
+            android:background="@drawable/select_focus_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+        </com.hiveview.tv.view.TvClassifyViewItemView>
+
+        <com.hiveview.tv.view.TvClassifyViewItemView
+            android:id="@+id/channel_item7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-40dip"
+            android:layout_marginTop="-20dip"
+            android:background="@drawable/select_focus_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+        </com.hiveview.tv.view.TvClassifyViewItemView>
+
+        <com.hiveview.tv.view.TvClassifyViewItemView
+            android:id="@+id/channel_item8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-40dip"
+            android:layout_marginTop="-20dip"
+            android:background="@drawable/select_focus_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+        </com.hiveview.tv.view.TvClassifyViewItemView>
+
+        <com.hiveview.tv.view.TvClassifyViewItemView
+            android:id="@+id/channel_item9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-40dip"
+            android:layout_marginTop="-20dip"
+            android:background="@drawable/select_focus_bg"
+            android:focusable="true"
+            android:visibility="invisible" >
+        </com.hiveview.tv.view.TvClassifyViewItemView>
+    </LinearLayout>
+
+</RelativeLayout>

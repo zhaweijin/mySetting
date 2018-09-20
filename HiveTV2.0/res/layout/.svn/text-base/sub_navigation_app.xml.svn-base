@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/sub_navigation_app_external_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="42dp"
+        android:background="@drawable/sub_navigation_tab_focus"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusRight="@id/sub_navigation_app_external_text_layout" >
+
+        <TextView
+            android:id="@+id/sub_navigation_app_external_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_navigation_app_external_text"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sub_navigation_app_user_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sub_navigation_tab_focus"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusRight="@id/sub_navigation_app_user_text_layout" >
+
+        <TextView
+            android:id="@+id/sub_navigation_app_user_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_navigation_app_user_text"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sub_navigation_app_setting_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:background="@drawable/sub_navigation_tab_focus"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusLeft="@id/sub_navigation_app_setting_text_layout" >
+
+        <TextView
+            android:id="@+id/sub_navigation_app_setting_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_navigation_app_setting_text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/sub_navigation_app_upate_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="2dip"
+            android:layout_toRightOf="@id/sub_navigation_app_setting_text_view"
+            android:background="@drawable/app_update_count_bg"
+            android:gravity="top|center_horizontal"
+            android:paddingTop="3dip"
+            android:text="0"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

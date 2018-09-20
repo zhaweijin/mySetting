@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="273dip"
+        android:layout_height="190dip"
+        android:background="@drawable/select_tv_item_bg" >
+
+        <!-- 电台节目图片 -->
+
+        <ImageView
+            android:id="@+id/iv_television_img"
+            android:layout_width="132dip"
+            android:layout_height="174dip"
+            android:layout_marginLeft="14dip"
+            android:layout_marginTop="8dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/live_channel_logo_default" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@+id/iv_television_img"
+            android:orientation="vertical" >
+
+            <!-- 台标 -->
+
+            <ImageView
+                android:id="@+id/iv_television_logo"
+                android:layout_width="95dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/live_channel_logo_default" />
+            <!-- 台名称 -->
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:id="@+id/tv_television_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dip"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+            <!-- 电台的进度条 -->
+
+            <SeekBar
+                android:id="@+id/sb_television_lives_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="4dip"
+                android:focusable="false"
+                android:max="24"
+                android:maxHeight="1.5dip"
+                android:minHeight="0.1dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:progressDrawable="@drawable/player_seekbar_style"
+                android:thumb="@drawable/tranlate"
+                android:thumbOffset="1.0dip" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <!-- 进度开始时间 -->
+
+                <TextView
+                    android:id="@+id/tv_program_start_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="5dip"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+                <!-- 进度结束时间 -->
+
+                <TextView
+                    android:id="@+id/tv_program_end_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dip"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            <!-- 电视的名称 -->
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:id="@+id/tv_program_lives_names"
+                android:layout_width="95dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="27dp"
+                android:layout_marginBottom="5dip"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/iv_program_number"
+            android:layout_width="25dip"
+            android:layout_height="32dip"
+            android:layout_alignLeft="@+id/iv_television_img"
+            android:layout_alignTop="@+id/iv_television_img"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:textColor="#8c8a92"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</FrameLayout>

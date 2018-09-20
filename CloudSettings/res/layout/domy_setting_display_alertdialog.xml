@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/domy_display_setting_dialog_width"
+    android:layout_height="@dimen/domy_display_setting_dialog_height"
+    android:orientation="vertical" 
+    android:background="@drawable/domy_dialog_bg">
+    
+    <TextView 
+        style="@style/domy_setting_scop_text" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/domy_setting_title_osd_message1"/>   
+        
+    <TextView 
+        style="@style/domy_setting_scop_text" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/domy_setting_title_osd_message2"/>
+
+</LinearLayout>

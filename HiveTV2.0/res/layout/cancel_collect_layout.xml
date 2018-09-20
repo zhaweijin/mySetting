@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="610.5dip"
+    android:layout_height="269.28dip"
+    android:background="@drawable/toast_bg"
+    android:alpha="0.9"
+    android:layout_gravity="center">
+
+    <TextView
+        style="@style/list_item_uninstall_value"
+        android:layout_width="wrap_content"
+        android:id="@+id/app_store_popop_message_text"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81.18dip"
+        android:text="@string/list_poput_tips" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33.86dip"
+        android:orientation="horizontal"
+        android:alpha="1.0"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/app_store_popop_ok_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/app_store_popup_focus_bg"
+            android:focusable="true" >
+
+            <TextView
+                android:id="@+id/app_store_popup_ok"
+                style="@style/list_item_uninstall_button_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_store_popup_button_bg"
+                android:gravity="center"
+                android:text="@string/list_popup_ok" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app_store_popop_cancel_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dip"
+            android:gravity="center"
+            android:background="@drawable/app_store_popup_focus_bg"
+            android:focusable="true" >
+
+            <TextView
+                android:id="@+id/app_store_popup_cancel"
+                style="@style/list_item_uninstall_button_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_store_popup_button_bg"
+                android:gravity="center"
+                android:text="@string/list_popup_cel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black" >
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/box_legal_check_title"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_gravity="center_horizontal"
+            android:lineSpacingMultiplier="1.5"
+            android:text="@string/AutoPowerDialog_Text4"
+            android:textColor="@color/white"
+            android:textSize="100sp" />
+    </LinearLayout>
+
+</RelativeLayout>

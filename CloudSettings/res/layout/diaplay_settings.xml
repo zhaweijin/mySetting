@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/display_settings_main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/domy_setting_position_bg"><!--
+
+    <include layout="@layout/setting_title_bar" />
+
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/domy_diaplay_set_title_margin_top"
+        android:layout_marginLeft="@dimen/domy_diaplay_set_title_margin_left"
+        android:text="@string/domy_diaplay_set_title"
+        style="@style/domy_diaplay_set_title_text"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/domy_setting_content_margin_bottom"
+        android:layout_marginLeft="@dimen/domy_setting_content_margin_left"
+        android:layout_marginRight="@dimen/domy_setting_content_margin_right"
+        android:layout_marginTop="@dimen/domy_setting_content_margin_top"
+        android:background="@drawable/domy_setting_content_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/domy_display_outputmode_content_width"
+            android:layout_height="@dimen/domy_display_outputmode_content_height"
+            android:paddingTop="@dimen/domy_display_outputmode_content_padding_top"
+            android:paddingBottom="@dimen/domy_display_outputmode_content_padding_bottom"
+            android:paddingRight="@dimen/domy_display_outputmode_content_padding_right"
+            android:paddingLeft="@dimen/domy_display_outputmode_content_padding_left"
+            android:orientation="vertical">
+ 
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/domy_display_outputmode_content"
+                style="@style/domy_display_outputmode_text"/>
+            
+            <TextView
+                android:id="@+id/output_mode_title"
+                style="@style/domy_display_outputmode_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/domy_display_outputmode_content_internal_marging"
+                android:text="@string/tv_output_mode_title" />
+
+            <com.mipt.qiyi.settings.CustomList
+                android:id="@+id/output_mode_lstv"
+                android:layout_width="@dimen/domy_setting_display_list_width"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:layout_marginTop="@dimen/d_10"
+                android:layout_gravity="center_horizontal"/>
+  
+        </LinearLayout>
+
+        <ImageView 
+            android:src="@drawable/domy_setting_display_line"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+        
+        <RelativeLayout
+            android:layout_width="@dimen/domy_display_scope_content_width"
+            android:layout_height="@dimen/domy_display_scope_content_height"
+            android:paddingLeft="@dimen/domy_display_scope_content_padding_left"
+            android:paddingTop="@dimen/domy_display_scope_content_padding_top"
+            android:paddingRight="@dimen/domy_display_scope_content_padding_right"
+            android:paddingBottom="@dimen/domy_display_scope_content_padding_bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/domy_display_scope_content"
+                style="@style/domy_display_outputmode_text"/>
+
+            <Button
+                android:id="@+id/position_setting_btn"
+                style="@style/domy_display_scop_button_text"
+                android:layout_width="@dimen/domy_display_scope_button_width"
+                android:layout_height="@dimen/domy_display_scope_button_height"
+                android:layout_marginTop="@dimen/domy_display_scope_button_margin_top"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/domy_setting_button_selector"
+                android:nextFocusLeft="@id/output_mode_lstv"
+                android:text="@string/title_scope_0" 
+                android:gravity="center"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

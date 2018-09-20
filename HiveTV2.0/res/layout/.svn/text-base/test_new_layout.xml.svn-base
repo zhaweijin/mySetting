@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.hiveview.tv.view.ProgressDialog
+        android:id="@+id/pd_list_loading"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <include layout="@layout/background_layout" />
+    
+    <TextView
+        android:id="@+id/tv_collect_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dip"
+        android:layout_marginTop="32dip"
+        android:text="影片收藏"
+        android:textColor="@color/white"
+        android:textSize="46sp" />
+
+    <TextView
+        android:id="@+id/tv_collect_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_collect_lbl"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/tv_collect_lbl"
+        android:text="(0部)"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <!-- 上一页，下一页以及数目 -->
+
+    <RelativeLayout
+        android:id="@+id/list_top_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="70dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="52dip"
+        android:layout_marginTop="22dip"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/list_page_down_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="-10dip"
+            android:layout_marginRight="47dip"
+            android:background="@drawable/select_list_focus_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/list_page_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/page_down" />
+        </LinearLayout>
+
+        <!-- 分页文字 "1页" -->
+
+        <TextView
+            android:id="@+id/list_page_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/list_page_down_ll"
+            android:text="@string/list_top_page_count"
+            android:textColor="#FD8D00"
+            android:textSize="28sp" />
+        <!-- 分页分隔符 "/" -->
+
+        <TextView
+            android:id="@+id/list_division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/list_page_count"
+            android:text="@string/list_top_page_division"
+            android:textColor="#FD8D00"
+            android:textSize="28sp" />
+        <!-- 分页当前页 -->
+
+        <TextView
+            android:id="@+id/list_page_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/list_division"
+            android:text="@string/list_top_page_current"
+            android:textColor="#FD8D00"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:id="@+id/list_page_up_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@id/list_page_current"
+            android:background="@drawable/select_list_focus_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/list_page_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/page_up" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="357dp"
+            android:onClick="buttonclick"
+            android:layout_toLeftOf="@+id/list_page_up_ll"
+            android:text="Button" />
+
+    </RelativeLayout>
+    <!-- 今天 昨天 更早 的提示 小标签 -->
+
+    <RelativeLayout
+        android:id="@+id/usertag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/list_top_layout"
+        android:layout_marginTop="5dip"
+        android:background="#00ff0000"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/usertag_l_b"
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shijianzhoubeijing"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usertag_l"
+            android:layout_width="100dip"
+            android:layout_height="5dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shijianzhoubeijing"
+            android:visibility="invisible" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usertag_l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/usertag_l"
+            android:background="@drawable/shijianzhou"
+            android:gravity="center_vertical|right" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:text="今天"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usertag_l3"
+            android:layout_width="200dip"
+            android:layout_height="5dip"
+            android:layout_toRightOf="@id/usertag_l2"
+            android:background="@drawable/shijianzhoubeijing1"
+            android:gravity="center_vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usertag_l4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/usertag_l3"
+            android:background="@drawable/shijianzhou"
+            android:gravity="center_vertical|right" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:text="昨天"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usertag_l5"
+            android:layout_width="200dip"
+            android:layout_height="5dip"
+            android:layout_toRightOf="@id/usertag_l4"
+            android:background="@drawable/shijianzhoubeijing2"
+            android:gravity="center_vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usertag_l6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/usertag_l5"
+            android:background="@drawable/shijianzhou"
+            android:gravity="center_vertical|right" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:text="更早"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usertag_l7"
+            android:layout_width="200dip"
+            android:layout_height="5dip"
+            android:layout_toRightOf="@id/usertag_l6"
+            android:background="@drawable/shijianzhoubeijing3"
+            android:gravity="center_vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/usertag"
+        android:layout_marginTop="5dip" >
+
+        <ImageView
+            android:id="@+id/list_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/iv_page_left" />
+
+        <ImageView
+            android:id="@+id/list_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/iv_page_right" />
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/list_right"
+            android:layout_toRightOf="@id/list_left" />
+
+        <TextView
+            android:id="@+id/collect_layout_collecthint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/list_right"
+            android:layout_centerHorizontal="true"
+            android:text="暂没有收藏记录"
+            android:textSize="46sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/user_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/vp_list"
+            android:visibility="invisible"
+            android:text="按菜单键清除观看记录"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

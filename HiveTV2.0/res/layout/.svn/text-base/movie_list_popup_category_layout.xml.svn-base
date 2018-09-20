@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <com.hiveview.tv.view.TextViewGallery 
+        android:id="@+id/ll_category_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="43dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+    </com.hiveview.tv.view.TextViewGallery>
+    
+    <ImageView
+        android:id="@+id/tv_enter_text_search"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_category_container"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="55dp"
+        android:src="@drawable/movie_list_select_search_bg"
+        android:background="@drawable/select_list_focus_bg"
+        />
+    <ImageView
+        android:id="@+id/tv_search"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_category_container"
+        android:background="@drawable/select_list_focus_bg"
+        android:src="@drawable/movie_list_select_sure_bg"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/tv_reset"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_category_container"
+        android:layout_toRightOf="@id/tv_search"
+        android:layout_marginLeft="24dp"
+       	android:src="@drawable/movie_list_select_reset_bg"
+        android:background="@drawable/select_list_focus_bg"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

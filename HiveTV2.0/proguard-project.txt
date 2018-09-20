@@ -1,0 +1,192 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class com.android.vending.licensing.ILicensingService
+
+# 过滤NelTerminal.jar、weather.jar
+-libraryjars /libs/NelTerminal.jar
+-libraryjars /libs/weather.jar
+-libraryjars /libs/android-support-v4.jar
+-libraryjars /libs/XiriScene.jar
+-libraryjars /libs/XiriFeedback.jar
+-libraryjars /libs/STV.jar
+-libraryjars /libs/skyworth_util.jar
+-libraryjars /libs/nineoldandroids-2.4.0.jar
+-libraryjars /libs/hive-box-v2-03.jar
+-libraryjars /libs/gson-2.2.4.jar
+-libraryjars /libs/data.sdk-0.0.1-SNAPSHOT.jar
+-libraryjars /libs/AppService.jar
+-libraryjars /libs/HiveviewSafeFilter.jar
+-libraryjars /libs/RtkHdmiRx.jar
+-libraryjars /libs/JsonScene.jar
+-libraryjars /libs/ITVSInterface.jar
+-libraryjars /libs/hiveviewreporter1.0.4_20150629.jar
+-libraryjars /libs/deviceinfo_2.02.12.jar
+-libraryjars /libs/hiveviewcore.jar
+-libraryjars /libs/fastjson-1.1.40.jar
+
+
+# 过滤weather、NelTerminal
+-dontwarn com.neldtv.mstar.platform.** 
+-dontwarn com.hiveview.weather.** 
+-dontwarn com.iflytek.** 
+-dontwarn android.support.v4.** 
+-dontwarn com.iflytek.xiri.** 
+-dontwarn com.iflytek.xiri.scene.** 
+-dontwarn com.hiveview.box.framework.** 
+-dontwarn com.iflytek.xiri.app.** 
+-dontwarn com.google.gson.** 
+-dontwarn com.mipt.qiyi.settings.util.** 
+-dontwarn com.hiveview.weather.** 
+-dontwarn com.nineoldandroids.** 
+-dontwarn com.hiveview.data.** 
+-dontwarn com.realtek.** 
+-dontwarn com.hiveview.display.** 
+-dontwarn com.paster.util.** 
+-dontwarn com.iflytek.** 
+-dontwarn com.hiveview.manager.** 
+-dontwarn com.hiveview.reporter.**
+-dontwarn com.hiveview.devicesinfo.**
+-dontwarn com.alibaba.fastjson.**
+
+
+
+#过滤RTK Hdmin jar
+-dontwarn com.hiveview.display.** 
+-keep class com.hiveview.display.** { *; } 
+-keep public class * extends com.hiveview.display.**
+-dontwarn com.realtek.** 
+-keep class com.realtek.** { *; } 
+-keep public class * extends com.realtek.**
+
+ # 过滤deviceinfo包下的类
+-dontwarn com.hiveview.tv.common.deviceinfo.** 
+-keep class com.hiveview.tv.common.deviceinfo.** { *; } 
+-keep public class * extends com.hiveview.tv.common.deviceinfo.** 
+
+ # 过滤JsonScene.jar包下的类
+-dontwarn com.paster.util.** 
+-keep class com.paster.util.** { *; } 
+-keep public class * extends com.paster.util.** 
+
+ # 过滤android.app包下的类
+-dontwarn android.app.** 
+-keep class android.app.** { *; } 
+-keep public class * extends android.app.**
+
+ # 过滤android包下的类
+-dontwarn android.** 
+-keep class android.** { *; } 
+-keep public class * extends android.**
+
+#过滤单片无详情控件
+-dontwarn com.hiveview.tv.grideview.library.** 
+-keep class com.hiveview.tv.grideview.library.** { *; } 
+-keep public class * extends com.hiveview.tv.grideview.library.**  
+
+#过滤统计
+-dontwarn com.hiveview.tv.common.statistics.** 
+-keep class com.hiveview.tv.common.statistics.** { *; } 
+-keep public class * extends com.hiveview.tv.common.statistics.**  
+
+ # 过滤reporter包下的类
+-dontwarn com.hiveview.reporter.**
+-keep class com.hiveview.reporter.** { *; } 
+-keep public class * extends com.hiveview.reporter.**
+
+
+-keep public class com.hiveview.tv.utils.FocuseWrapper{
+public protected private <fields>;
+public <methods>;
+}
+
+#过滤javabean
+-keep class com.hiveview.tv.service.entity.** {*;}
+
+-keepattributes Signature  
+
+
+-keepclasseswithmembers class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+#-keepnames class * implements java.io.Serializable
+-keep public class * implements java.io.Serializable {
+        public *;
+}
+ 
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+ # 过滤com.hiveview.manager包下的类
+-dontwarn com.hiveview.manager.** 
+-keep class com.hiveview.manager.** { *; } 
+-keep public class * extends com.hiveview.manager.**
+
+ # 过滤devicesinfo包下的类
+-dontwarn com.hiveview.devicesinfo.**
+-keep class com.hiveview.devicesinfo.** { *; } 
+-keep public class * extends com.hiveview.devicesinfo.**
+
+-dontwarn com.hiveview.reporter.handler.CrashHandler
+#-keep class com.hiveview.reporter.handler.CrashHandler { *; } 
+
+ # 过滤devicesinfo包下的类
+-dontwarn com.alibaba.fastjson.**
+-keep class com.alibaba.fastjson.** { *; } 
+-keep public class * extends com.alibaba.fastjson.**

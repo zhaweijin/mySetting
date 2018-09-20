@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/film_item_rl_1"
+        style="@style/film_relative_item_layout" >
+
+        <LinearLayout style="@style/film_relative_image_layout" 
+            android:id="@+id/ll">
+
+            <com.hiveview.tv.common.myimage.ImageLoadView
+                android:id="@+id/iv_poster"
+                android:src="@drawable/epg_image_default"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_name"
+            style="@style/film_relative_item_tv" />
+    </LinearLayout>
+</LinearLayout>

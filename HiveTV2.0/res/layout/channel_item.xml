@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false" >
+    
+        
+    <RelativeLayout 
+        android:id="@+id/channel_item_image_load_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_focus_bg"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:layout_marginBottom="156.51dp"
+        
+        >
+        
+        <com.hiveview.tv.common.myimage.ImageLoadView
+            android:id="@+id/channel_item_image_load_view"
+            android:layout_width="209.79dp"
+            android:layout_height="280.386dp"
+            android:focusable="false"
+        />
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/channel_item_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/channel_item_image_load_layout"
+        android:ems="1"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        
+        />
+	    
+
+</RelativeLayout>

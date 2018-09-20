@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="device_memory_usage_button_width">16dip</dimen>
+    <dimen name="device_memory_usage_button_height">32dip</dimen>
+    <dimen name="app_icon_size">56dip</dimen>
+    <dimen name="screen_margin_sides">64dip</dimen>
+    <dimen name="screen_margin_top">72dip</dimen>
+    <dimen name="screen_margin_bottom">48dip</dimen>
+    <dimen name="title_height">48dip</dimen>
+    <dimen name="content_margin_left">16dip</dimen>
+    <dimen name="description_margin_top">26dip</dimen>
+    <dimen name="description_margin_sides">40dip</dimen>
+    <dimen name="data_usage_chart_height">252dip</dimen>
+    <dimen name="data_usage_chart_optimalWidth">440dip</dimen>
+    <dimen name="volume_seekbar_side_margin">8dip</dimen>
+    <dimen name="crypt_clock_size">100sp</dimen>
+    <dimen name="text_size_xsmall">12sp</dimen>
+    <dimen name="text_size_small">18sp</dimen>
+    <dimen name="text_size_xmedium">20sp</dimen>
+    <dimen name="text_size_medium">24sp</dimen>
+    <dimen name="text_size_large">27sp</dimen>
+    <dimen name="text_size_xlarge">40sp</dimen>
+    <dimen name="setting_content_margin_left">50dip</dimen>
+    <dimen name="setting_content_margin_rigth">50dip</dimen>
+    <dimen name="setting_content_margin_top">20dip</dimen>
+    <dimen name="setting_content_margin_bottom">60dip</dimen>
+    <dimen name="domy_setting_content_margin_top">133dip</dimen>
+    <dimen name="domy_setting_content_margin_bottom">108dip</dimen>
+    <dimen name="domy_setting_content_margin_left">121dip</dimen>
+    <dimen name="domy_setting_content_margin_right">121dip</dimen>
+
+    <!-- setting title -->
+    <dimen name="setting_logo_width">50dip</dimen>
+    <dimen name="setting_logo_height">50dip</dimen>
+    <dimen name="setting_logo_margin_left">50dip</dimen>
+    <dimen name="setting_logo_margin_top">45dip</dimen>
+    <dimen name="setting_title_margin_left">8dip</dimen>
+    <dimen name="setting_name_margin_left">32dip</dimen>
+
+    <!-- network settings -->
+    <dimen name="network_content_margin_left">75dip</dimen>
+    <dimen name="network_content_margin_right">75dip</dimen>
+    <dimen name="network_content_margin_top">10dip</dimen>
+    <dimen name="network_state_margin_left">25dip</dimen>
+    <dimen name="network_item_title_width">160dip</dimen>
+    <dimen name="network_item_value_margin_left">154dip</dimen>
+    <dimen name="network_item_invalid_margin_right">25dip</dimen>
+    <dimen name="network_item_margin_top">29dip</dimen>
+    <dimen name="network_submit_button_width">285dip</dimen>
+    <dimen name="network_submit_button_height">66dip</dimen>
+    <dimen name="network_ignore_button_margin_left">101dip</dimen>
+    <dimen name="network_edit_margin_top">53dip</dimen>
+    <dimen name="network_edit_title_margin_left">42dip</dimen>
+    <dimen name="network_edit_value_margin_right">141dip</dimen>
+    <!-- settings main -->
+    <dimen name="settings_main_left_layout_width">220dip</dimen>
+    <dimen name="settings_main_checkbox_margin_left">22dip</dimen>
+    <dimen name="settings_main_checkbox_margin_top1">8dip</dimen>
+    <dimen name="settings_main_checkbox_margin_top2">12dip</dimen>
+    <dimen name="settings_main_left_layout_height">132dip</dimen>
+    <dimen name="settings_main_left_layout_checkbox_width">320dip</dimen>
+    <dimen name="settings_main_left_layout_checkbox_height">80dip</dimen>
+    <dimen name="settings_main_left_layout_margin_top">2dip</dimen>
+    <dimen name="settings_main_imageview_width">50dip</dimen>
+    <dimen name="settings_main_imageview_height">50dip</dimen>
+    <dimen name="settings_main_list_height">535dip</dimen>
+    <dimen name="settings_main_checkbox_margin_top2_b">28dip</dimen>
+    <dimen name="settings_main_left_layout_margin_top_b">8dip</dimen>
+    <dimen name="settings_main_left_layout_height_b">170dip</dimen>
+    
+    <dimen name="wifi_list_item_state_margin_left">84dip</dimen>
+    <dimen name="wifi_list_item_more_margin_right">105dip</dimen>
+    <dimen name="wifi_list_item_level_margin_right">40dip</dimen>
+    <dimen name="wifi_list_item_lock_margin_right">30dip</dimen>
+    <dimen name="wifi_list_dividerHeight">10dip</dimen>
+    <dimen name="wifi_list_margin_top">40dip</dimen>
+    <dimen name="wifi_list_margin_bottom">30dip</dimen>
+    <dimen name="wifi_list_width">850dip</dimen>
+    <dimen name="wifi_list_height">488dip</dimen>
+    <dimen name="wifi_list_info_height">410dip</dimen>
+    <dimen name="wifi_list_item_height">55dip</dimen>
+    <dimen name="wifi_list_content_margin_left">58dip</dimen>
+    <dimen name="wifi_list_ssid_margin_left">88dip</dimen>
+    <dimen name="wifi_add_margin_top">11dip</dimen>
+    <!-- wifi info -->
+    <dimen name="wifi_info_margin_left">63dip</dimen>
+    <dimen name="wifi_info_margin_top">0dip</dimen>
+    <dimen name="ignore_btn_margin_top">15dip</dimen>
+    <dimen name="switch_width">304dip</dimen>
+    <dimen name="switch_item_width">180dip</dimen>
+    <dimen name="switch_height">66dip</dimen>
+    <dimen name="switch_margin_top">29dip</dimen>
+    <dimen name="network_line_margin_top">9dip</dimen>
+    <dimen name="network_item_width">624dip</dimen>
+    <dimen name="network_item_height">42dip</dimen>
+    <dimen name="wifi_info_switch_button_height">50dip</dimen>
+    <dimen name="wifi_info_img_height">33dip</dimen>
+    <dimen name="wifi_info_img_margin_right">26dip</dimen>
+    <dimen name="wifi_info_submit_layout_margin_top">0dip</dimen>
+    <!-- wifi add -->
+    <dimen name="wifi_add_network_padding_left">20dip</dimen>
+    <dimen name="wifi_add_network_security_margin_top">20dip</dimen>
+    <dimen name="wifi_add_network_security_content_width">250dip</dimen>
+
+    <!-- wifi password dialog -->
+    <dimen name="dialog_title_margin_top">49dip</dimen>
+    <dimen name="dialog_content_margin_top">12dip</dimen>
+    <dimen name="dialog_content_margin_left">57dip</dimen>
+    <dimen name="dialog_content_margin_right">57dip</dimen>
+    <dimen name="dialog_password_margin_top">24dip</dimen>
+    <dimen name="dialog_showpassword_margin_top">20dip</dimen>
+    <dimen name="dialog_button_interval">25dip</dimen>
+    <dimen name="dialog_button_margin_left">57dip</dimen>
+    <dimen name="dialog_button_margin_right">57dip</dimen>
+    <dimen name="dialog_button_margin_top">39dip</dimen>
+    <dimen name="dialog_button_margin_bottom">40dip</dimen>
+    <dimen name="dialog_edit_margin_left">10dip</dimen>
+    <dimen name="dialog_edit_width">305dip</dimen>
+    <dimen name="dialog_width">497dip</dimen>
+    <dimen name="wifi_dialog_password_margin">30dip</dimen>
+    <dimen name="wifi_dialog_edittext_padding">16dip</dimen>
+    <dimen name="dialog_button_width">200dip</dimen>
+    
+    <!--wifi list item  -->
+    <dimen name="wifi_list_item_textview_width">512dip</dimen>
+    <dimen name="wifi_list_item_img_width">30dip</dimen>
+    <dimen name="wifi_setup_viewstub_margin_top">110dip</dimen>
+
+    <!-- bluetooth list item -->
+    <dimen name="bluetooth_list_info_height">490dip</dimen>
+    <dimen name="bluetooth_list_info_width">850dip</dimen>
+    <dimen name="bluetooth_list_margin_top">0dip</dimen>
+    <dimen name="bluetooth_list_margin_bottom">130dip</dimen>
+    <dimen name="bluetooth_list_item_height">70dip</dimen>
+    <dimen name="bluetooth_dialog_match_width">617dip</dimen>
+    <dimen name="bluetooth_dialog_match_height">273dip</dimen>
+    <dimen name="bluetooth_dialog_match_title_margin_top">74dip</dimen>
+    <dimen name="bluetooth_dialog_match_option_margin_top">64dip</dimen>
+    <dimen name="bluetooth_list_height">580dip</dimen>
+    <!-- ota dialog -->
+    <dimen name="ota_dialog_width">697dip</dimen>
+    <dimen name="ota_dialog_height">430dip</dimen>
+    <dimen name="ota_title_margint_top">49dip</dimen>
+    <dimen name="ota_title_margint_bottom">12dip</dimen>
+    <dimen name="ota_content_height">170dip</dimen>
+    <dimen name="ota_content_width">554dip</dimen>
+    <dimen name="ota_margin_left">79dip</dimen>
+    <dimen name="ota_content_margin_left">10dip</dimen>
+    <dimen name="ota_content_margin_right">10dip</dimen>
+    <dimen name="ota_content_margin_top">12dip</dimen>
+    <dimen name="ota_arrow_margin_left">43dip</dimen>
+    <dimen name="ota_content_padding">14dip</dimen>
+    <dimen name="ota_margin_top">49dip</dimen>
+    <dimen name="ota_width">697dip</dimen>
+    <dimen name="ota_height">414dip</dimen>
+    <dimen name="ota_button_margin_top">36dip</dimen>
+    <dimen name="ota_button_margin_button">40dip</dimen>
+    <dimen name="ota_button_margin_left">145dip</dimen>
+    <dimen name="ota_button_margin_bottom">20dip</dimen>
+    <dimen name="ota_button_width">179dip</dimen>
+    <dimen name="ota_button_height">60dip</dimen>
+    <dimen name="ota_button_space">24dip</dimen>
+    <dimen name="ota_text_large">24sp</dimen>
+    <dimen name="ota_text_medium">18sp</dimen>
+
+    <!-- progress dialog -->
+    <dimen name="progress_dialog_padding">70dip</dimen>
+    <dimen name="progress_dialog_text_marginLeft">15dip</dimen>
+
+    <!-- display setting -->
+    <dimen name="display_outputmode_content_margin_left">123dip</dimen>
+    <dimen name="display_outputmode_content_margin_top">63dip</dimen>
+    <dimen name="display_outputmode_grid_margin_top">11dip</dimen>
+    <dimen name="display_outputmode_grid_item_width">396dip</dimen>
+    <dimen name="display_outputmode_grid_item_height">52dip</dimen>
+    <dimen name="display_outputmode_gird_vert_spacing">20dip</dimen>
+    <dimen name="display_outputmode_grid_item_state_marginLeft">80dip</dimen>
+    <dimen name="display_outputmode_imageview_right">16dip</dimen>
+    <dimen name="display_scope_content_margin_top">64dip</dimen>
+    <dimen name="display_imageview_margin_right">113dip</dimen>
+    <dimen name="display_scope_content_margin_left">109dip</dimen>
+    <dimen name="display_scope_button_width">300dip</dimen>
+    <dimen name="display_scope_button_height">60dip</dimen>
+    <dimen name="display_scope_button_margin_bottom">107dip</dimen>
+    <dimen name="display_scope_button_margin_right">178dip</dimen>
+    <dimen name="display_scope_button_margin_top">34dip</dimen>
+    <dimen name="display_scope_button_margin_left">78dip</dimen>
+    <dimen name="domy_display_outputmode_content_width">518dip</dimen>
+    <dimen name="domy_display_outputmode_content_height">480dip</dimen>
+    <dimen name="domy_display_outputmode_content_padding_top">78dip</dimen>
+    <dimen name="domy_display_outputmode_content_padding_bottom">62dip</dimen>
+    <dimen name="domy_display_outputmode_content_padding_left">39dip</dimen>
+    <dimen name="domy_display_outputmode_content_padding_right">39dip</dimen>
+    <dimen name="domy_display_outputmode_content_internal_marging">45dip</dimen>
+    <dimen name="domy_display_scope_content_width">518dip</dimen>
+    <dimen name="domy_display_scope_content_height">480dip</dimen>
+    <dimen name="domy_display_scope_content_padding_top">78dip</dimen>
+    <dimen name="domy_display_scope_content_padding_bottom">118dip</dimen>
+    <dimen name="domy_display_scope_content_padding_left">38dip</dimen>
+    <dimen name="domy_display_scope_content_padding_right">38dip</dimen>
+    <dimen name="domy_display_scope_button_width">285dip</dimen>
+    <dimen name="domy_display_scope_button_height">75dip</dimen>
+    <dimen name="domy_display_scope_button_margin_top">216dip</dimen>
+    <dimen name="domy_diaplay_set_title_margin_left">60dip</dimen>
+    <dimen name="domy_diaplay_set_title_margin_top">30dip</dimen>
+    <dimen name="domy_setting_display_list_width">300dip</dimen>
+    <dimen name="domy_display_outputmode_imageview_left">15dip</dimen>
+    <dimen name="domy_display_outputmode_imageview_right">20dip</dimen>
+    <dimen name="domy_display_outputmode_grid_item_height">75dip</dimen>
+    <dimen name="domy_display_setting_dialog_width">617dip</dimen>
+    <dimen name="domy_display_setting_dialog_height">273dip</dimen>
+    <!-- about -->
+    <dimen name="about_device_name_margin_left">326dip</dimen>
+    <dimen name="about_device_name_padding_left">74dip</dimen>
+    <dimen name="about_content_margin_top">62dip</dimen>
+    <dimen name="about_content_margin_left">400dip</dimen>
+    <dimen name="about_button_margin_bottom">23dip</dimen>
+    <dimen name="about_button_margin_left">435dip</dimen>
+    <dimen name="about_button_margin_top">146dip</dimen>
+    <dimen name="about_button_width">300dip</dimen>
+    <dimen name="about_button_height">60dip</dimen>
+    <dimen name="about_content_line_spacing">10dip</dimen>
+    <dimen name="about_device_content">470dip</dimen>
+    <dimen name="about_device_content_margin_top">56dip</dimen>
+    <dimen name="about_device_content_margin_left">37dip</dimen>
+    <dimen name="about_item_marging_parent_left">60dip</dimen>
+    <dimen name="about_item_marging_item_left">20dip</dimen>
+
+    <!-- test speed -->
+    <dimen name="test_speed_margin_top">55dip</dimen>
+    <dimen name="test_speed_connecthint_marginTop">5dip</dimen>
+    <dimen name="test_speed_progressbar_marginTop">6dip</dimen>
+    <dimen name="test_speed_progressbar_width">726dip</dimen>
+    <dimen name="test_speed_iplayout_marginTop">390dip</dimen>
+    <dimen name="test_speed_button_marginTop">22dip</dimen>
+    <dimen name="test_speed_button_width">285dip</dimen>
+    <dimen name="test_speed_button_height">66dip</dimen>
+    <dimen name="test_speed_result_ip_marginTop">47dip</dimen>
+    <dimen name="test_speed_result_complete_marginTop">160dip</dimen>
+    <dimen name="test_speed_result_speed_marginTop">45dip</dimen>
+    <dimen name="test_speed_result_hint_marginTop">54dip</dimen>
+
+    <!-- wallpaper -->
+    <dimen name="wallpaper_grid_margin_top">30dip</dimen>
+    <dimen name="wallpaper_grid_margin_left">49dip</dimen>
+    <dimen name="wallpaper_grid_hori_spacing">38dip</dimen>
+    <dimen name="wallpaper_grid_vert_spacing">21dip</dimen>
+    <dimen name="wallpaper_grid_item_width">240dip</dimen>
+    <dimen name="wallpaper_grid_item_height">136dip</dimen>
+
+    <!-- power -->
+    <dimen name="power_item_width">618dip</dimen>
+    <dimen name="power_item_height">52dip</dimen>
+    <dimen name="power_content_margin_left">276dip</dimen>
+    <dimen name="power_content_margin_top">165dip</dimen>
+    <dimen name="power_item_title_marginLeft">58dip</dimen>
+    <dimen name="power_item_leftDcr_marginLeft">150dip</dimen>
+    <dimen name="power_item_vert_spacing">74dip</dimen>
+
+    <!-- position setting -->
+    <dimen name="scope_key_margin_top">186dip</dimen>
+    <dimen name="scope_help_layout_margin_bottom">90dip</dimen>
+
+    <!-- upgrade setting -->
+    <dimen name="newversion_margin_top">18dip</dimen>
+    <dimen name="upgrade_content_margin_top">201dip</dimen>
+    <dimen name="upgrade_dialog_hint_margin_top">25dip</dimen>
+    <dimen name="upgrade_copy_progress_margin_top">16dip</dimen>
+    <dimen name="upgrade_toast_padding_left">30dip</dimen>
+    <dimen name="upgrade_toast_margin_top">60dip</dimen>
+    <dimen name="upgrade_toast_margin_right">30dip</dimen>
+
+    <!-- sound setting -->
+    <dimen name="sound_title_margin_left">37dip</dimen>
+    <dimen name="sound_title_margin_top">27dip</dimen>
+    <dimen name="sound_pcm_margin_top">20dip</dimen>
+    <dimen name="sound_item_width">610dip</dimen>
+    <dimen name="sound_item_height">56dip</dimen>
+    <dimen name="sound_selectimg_margin_left">195dip</dimen>
+    <dimen name="sound_item_title_margin_left">254dip</dimen>
+    <dimen name="sound_drc_title1_margin_top">21dip</dimen>
+    <dimen name="sound_drc_title2_margin_top">9dip</dimen>
+    <dimen name="sound_drc_open_margin_top">26dip</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <item name="setup_title_height" type="dimen">15%</item>
+    <item name="setup_border_width" type="dimen">5%</item>
+
+    <dimen name="setup_margin_bottom">0dip</dimen>
+    <dimen name="setup_title_size">25sp</dimen>
+    <dimen name="setup_button_size">32dip</dimen>
+    <dimen name="setup_item_margin">16dip</dimen>
+    <dimen name="action_bar_switch_padding">16dip</dimen>
+    <dimen name="s_20">20sp</dimen>
+    <dimen name="s_22">22sp</dimen>
+    <dimen name="s_24">24sp</dimen>
+    <dimen name="s_26">26sp</dimen>
+    <dimen name="s_27">27sp</dimen>
+    <dimen name="s_28">28sp</dimen>
+    <dimen name="s_29">29sp</dimen>
+    <dimen name="s_30">30sp</dimen>
+    <dimen name="s_32">32sp</dimen>
+    <dimen name="s_36">36sp</dimen>
+    <dimen name="s_40">40sp</dimen>
+    <dimen name="s_55">55sp</dimen>
+    <dimen name="d_5">0dp</dimen>
+    <dimen name="d_10">10dp</dimen>
+    <dimen name="d_13">13dp</dimen>
+    <dimen name="d_15">15dp</dimen>
+    <dimen name="d_19">19dp</dimen>
+    <dimen name="d_20">20dp</dimen>
+    <dimen name="d_21">21dp</dimen>
+    <dimen name="d_22">22dp</dimen>
+    <dimen name="d_30">30dp</dimen>
+    <dimen name="d_36">36dp</dimen>
+    <dimen name="d_38">38dp</dimen>
+    <dimen name="d_39">39dp</dimen>
+    <dimen name="d_40">40dp</dimen>
+    <dimen name="d_45">45dp</dimen>
+    <dimen name="d_46">46dp</dimen>
+    <dimen name="d_48">48dp</dimen>
+    <dimen name="d_50">50dp</dimen>
+    <dimen name="d_55">55dp</dimen>
+    <dimen name="d_56">56dp</dimen>
+    <dimen name="d_58">58dp</dimen>
+    <dimen name="d_60">60dp</dimen>
+    <dimen name="d_64">64dp</dimen>
+    <dimen name="d_65">65dp</dimen>
+    <dimen name="d_67">67dp</dimen>
+    <dimen name="d_70">70dp</dimen>
+    <dimen name="d_75">75dp</dimen>
+    <dimen name="d_80">80dp</dimen>
+    <dimen name="d_84">84dp</dimen>
+    <dimen name="d_86">86dp</dimen>
+    <dimen name="d_90">90dp</dimen>
+    <dimen name="d_100">100dp</dimen>
+    <dimen name="d_104">104dp</dimen>    
+    <dimen name="d_106">106dp</dimen>
+    <dimen name="d_112">112dp</dimen>
+    <dimen name="d_114">114dp</dimen>
+    <dimen name="d_120">120dp</dimen>
+    <dimen name="d_130">130dp</dimen>
+    <dimen name="d_135">135dp</dimen>
+    <dimen name="d_145">145dp</dimen>
+    <dimen name="d_150">150dp</dimen>
+    <dimen name="d_156">156dp</dimen>
+    <dimen name="d_175">175dp</dimen>
+    <dimen name="d_180">180dp</dimen>
+    <dimen name="d_200">200dp</dimen>
+    <dimen name="d_245">245dp</dimen>
+    <dimen name="d_248">248dp</dimen>
+    <dimen name="d_250">250dp</dimen>
+    <dimen name="d_280">280dp</dimen>
+    <dimen name="d_285">285dp</dimen>
+    <dimen name="d_288">288dp</dimen>
+    <dimen name="d_297">297dp</dimen>
+    <dimen name="d_300">300dp</dimen>
+    <dimen name="d_305">305dp</dimen>
+    <dimen name="d_310">310dp</dimen>
+    <dimen name="d_325">399dp</dimen>
+    <dimen name="d_345">345dp</dimen>
+    <dimen name="d_355">355dp</dimen>
+    <dimen name="d_421">421dp</dimen>
+    <dimen name="d_550">550dp</dimen>
+    <dimen name="d_565">565dp</dimen>
+    <dimen name="d_600">600dp</dimen>
+
+    <integer name="about_restore_factory_set_dialog_wight">680</integer>
+    <!-- softap settings -->
+    <dimen name="softap_item_layout_width">670dip</dimen>
+    <dimen name="softap_layout_margin_top">18dip</dimen>
+    <dimen name="softap_state_margin_top">18dip</dimen>
+    <dimen name="softap_state_margin_left">14dip</dimen>
+    <dimen name="softap_state_height">63dip</dimen>
+    <dimen name="softap_tips_margin_left">150dip</dimen>
+    <dimen name="softap_switch_layout_margin_left">85dip</dimen>
+    <dimen name="softap_switch_off_btn_height">50dip</dimen>
+    <dimen name="softap_settings_margin_top">30dip</dimen>
+    <dimen name="softap_settings_item_margin_top">14dip</dimen>
+    <dimen name="softap_settings_margin_left">147dip</dimen>
+    <dimen name="softap_security_layout_margin_left">20dip</dimen>
+    <dimen name="softap_security_layout_width">550dip</dimen>
+    <dimen name="softap_security_text_layout_width">450dip</dimen>
+    <dimen name="softap_submit_layout_margin_top">50dip</dimen>
+    <dimen name="softap_items_width">151dip</dimen>
+    <dimen name="softap_items_margin_top">5dip</dimen>
+	<dimen name="softap_items_margin_left">24dip</dimen>
+	<dimen name="softap_network_submit_button_height">66dip</dimen>
+	   <dimen name="activity_title">39dip</dimen>
+	   <!-- 国内版检测网络相关页面 -->
+	    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="wifi_move_to_top_x">125dp</dimen>
+    <dimen name="wifi_move_to_top_y">272dp</dimen>
+    <dimen name="wifi_move_to_top_width">1030dp</dimen>
+    <dimen name="wifi_move_to_top_height">107dp</dimen>
+
+    <!-- focus view -->
+    <dimen name="focus_view_woffset">40dp</dimen>
+    <dimen name="focus_view_hoffset">35dp</dimen>
+    <dimen name="focus_view_xyoffset">25dp</dimen>
+    <dimen name="focus_view_yoffset">-8dp</dimen>
+    <dimen name="focus_view_xoffset">0dp</dimen>
+</resources>

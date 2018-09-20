@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 显示背景图的ImageView -->
+    <include layout="@layout/background_layout" />
+
+    <!-- 灰度蒙版 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:visibility="gone" />
+
+    <com.hiveview.tv.view.ProgressDialog
+        android:id="@+id/iv_bulelight_loading"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <!-- 电影标题 -->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="55dip"
+            android:layout_marginTop="22dip"
+            android:text="@string/tv_subject"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+        <!-- 共 0 部 -->
+
+        <TextView
+            android:id="@+id/tv_record_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_title"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/tv_title"
+            android:text="@string/tv_filmlist_record_count"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <!-- ViewPager影片列表 -->
+
+        <com.hiveview.tv.view.SubjectLoadingViewPager
+            android:id="@+id/vp_subjectlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:focusable="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_record_count"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/subject_btn_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/select_list_focus_bg"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/variety_list_page_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/page_up" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_page_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FD8D00"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:id="@+id/subject_btn_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/select_list_focus_bg"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/variety_list_page_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/page_down" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

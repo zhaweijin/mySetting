@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg" >
+
+    <TextView
+        style="@style/ActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screen_adjust" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="130dip"
+        android:background="@drawable/board"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="37dip"
+            android:layout_marginRight="37dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/text_tip1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dip"
+                android:singleLine="true"
+                android:text="@string/screen_adjust_tip_1_1"
+                android:textColor="@color/grey1_color"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/text_tip2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tip1"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:text="@string/screen_adjust_tip_1_2"
+                android:textColor="@color/grey1_color"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/text_tip3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tip2"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:text="@string/screen_adjust_tip_1_3"
+                android:textColor="@color/grey1_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_tip1"
+                android:layout_below="@+id/text_tip3"
+                android:layout_marginTop="26dip"
+                android:text="@string/display_select"
+                android:textColor="@color/grey1_color"
+                android:textSize="21sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="35dip" >
+
+                <LinearLayout
+                    android:id="@+id/layout_selected"
+                    android:layout_width="252dip"
+                    android:layout_height="64dip"
+                    android:layout_centerInParent="true"
+  						android:orientation="vertical"
+                    />
+
+                <LinearLayout
+                    android:layout_width="230dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/displayPicker"
+                    android:layout_alignTop="@+id/displayPicker"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_selected_1"
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_marginLeft="20dip"
+                            android:src="@drawable/current_white"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_selected_2"
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_marginLeft="20dip"
+                            android:src="@drawable/current_white"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_selected_3"
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_marginLeft="20dip"
+                            android:src="@drawable/current_white"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.hiveview.settings.view.numberpicker.NumberPicker
+                    android:id="@+id/displayPicker"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_centerInParent="true" 
+                    android:background="@drawable/screen_select_bg"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="60dip"
+            android:layout_marginTop="60dip"
+            android:background="@drawable/line_0" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="37dip"
+            android:layout_marginRight="37dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/text_tip2_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dip"
+                android:singleLine="true"
+                android:text="@string/screen_adjust_tip_2_1"
+                android:textColor="@color/grey1_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/text_tip2_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tip2_1"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:text="@string/screen_adjust_tip_2_2"
+                android:textColor="@color/grey1_color"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/text_tip2_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tip2_2"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:text="@string/screen_adjust_tip_2_3"
+                android:textColor="@color/grey1_color"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/text_adjust"
+                android:layout_width="220dip"
+                android:layout_height="65dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="95dip"
+                android:background="@drawable/btn_style1"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/adjust"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

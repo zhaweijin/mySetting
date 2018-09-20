@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/sub_navigation_tv_direction_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/sub_navigation_tab_focus"
+        android:focusable="true"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/sub_navigation_tv_direction_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_navigation_tv_direction_text"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sub_navigation_tv_category_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="83dp"
+        android:layout_toLeftOf="@id/sub_navigation_tv_direction_text_layout"
+        android:background="@drawable/sub_navigation_tab_focus"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusLeft="@id/sub_navigation_tv_category_text_layout" >
+
+        <TextView
+            android:id="@+id/sub_navigation_tv_category_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_navigation_tv_category_text"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sub_navigation_tv_notification_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="83dp"
+        android:layout_toRightOf="@id/sub_navigation_tv_direction_text_layout"
+        android:background="@drawable/sub_navigation_tab_focus"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusRight="@id/sub_navigation_tv_notification_text_layout" >
+
+        <TextView
+            android:id="@+id/sub_navigation_tv_notification_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_navigation_tv_notification_text"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

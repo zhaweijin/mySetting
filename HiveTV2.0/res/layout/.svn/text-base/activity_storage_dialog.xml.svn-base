@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_storage_pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="100" >
+
+    <RelativeLayout
+        android:id="@+id/ll_storage_show"
+        android:layout_width="fill_parent"
+        android:layout_height="480dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/storage_show_background"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/matrix_tv_focus_layout"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/storage_focus"
+            android:focusable="false" > 
+            
+            
+            </RelativeLayout>
+        
+
+<!--         <LinearLayout
+            android:id="@+id/ll_storage_name_show"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginTop="45dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_storage_names"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:textSize="32sp"
+                android:text="外接存储" />
+
+        </LinearLayout> -->
+
+        <LinearLayout
+            android:id="@+id/ll_storage_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="159dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusRight="@+id/ll_storage_music"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_storage_picture_icon"
+                android:layout_width="215dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/storage_icon_background"
+                android:focusable="false"
+                android:focusableInTouchMode="false" >
+
+                <ImageView
+                    android:id="@+id/iv_storage_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/focuse_storage_picture" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_storage_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="图片"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_storage_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ll_storage_picture"
+            android:layout_marginLeft="66dp"
+            android:layout_toRightOf="@+id/ll_storage_picture"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@+id/ll_storage_picture"
+            android:nextFocusRight="@+id/ll_storage_video"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_storage_music_icon"
+                android:layout_width="215dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/storage_icon_background"
+                android:focusable="false"
+                android:focusableInTouchMode="false" >
+
+                <ImageView
+                    android:id="@+id/iv_storage_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/focuse_storage_music" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_storage_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="音乐"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_storage_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ll_storage_music"
+            android:layout_marginLeft="66dp"
+            android:layout_toRightOf="@+id/ll_storage_music"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@+id/ll_storage_music"
+            android:nextFocusRight="@+id/ll_storage_all"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_storage_video_icon"
+                android:layout_width="215dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/storage_icon_background"
+                android:focusable="false"
+                android:focusableInTouchMode="false" >
+
+                <ImageView
+                    android:id="@+id/iv_storage_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/focuse_storage_video" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_storage_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="视频"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_storage_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ll_storage_picture"
+            android:layout_marginLeft="66dp"
+            android:layout_toRightOf="@+id/ll_storage_video"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@+id/ll_storage_video"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_storage_all_icon"
+                android:layout_width="215dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/storage_icon_background"
+                android:focusable="false"
+                android:focusableInTouchMode="false" >
+
+                <ImageView
+                    android:id="@+id/iv_storage_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/focuse_storage_all" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_storage_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="文件夹"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

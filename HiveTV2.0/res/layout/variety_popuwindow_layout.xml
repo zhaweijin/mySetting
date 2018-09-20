@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="211dip"
+        android:layout_height="120dip"
+        android:src="@drawable/variety_default_img" />
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_var_name"
+        android:layout_width="211dip"
+        android:layout_height="37dip"
+        android:layout_alignBottom="@+id/iv_thumb"
+        android:gravity="bottom"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:background="@drawable/variety_img_alpha"
+        android:text="最美时光 （23）"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:color="@color/white" />
+
+</RelativeLayout>

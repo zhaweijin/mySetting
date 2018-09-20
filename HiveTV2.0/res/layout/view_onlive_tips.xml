@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/onlive_tips_bg" >
+
+    <ImageView
+        android:id="@+id/iv_television_logo"
+        android:layout_width="86dip"
+        android:layout_height="46dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dip" />
+
+    <TextView
+        android:id="@+id/tv_television_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/linearLayout1"
+        android:layout_toRightOf="@+id/iv_television_logo"
+        android:textColor="#9a9a9a"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/fl_goto_onlive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="43dip"
+            android:background="@drawable/select_tv_menu_item"
+            android:focusable="true" >
+
+            <Button
+                android:id="@+id/btn_goto_onlive"
+                android:layout_width="130dip"
+                android:layout_height="46dip"
+                android:background="@drawable/fast_selection_tab"
+                android:text="@string/goto_onlive"
+                android:textColor="#9a9a9a"
+                android:textSize="24sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_no_tip_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dip"
+            android:background="@drawable/select_tv_menu_item"
+            android:focusable="true" >
+
+            <Button
+                android:id="@+id/btn_no_tips_again"
+                android:layout_width="130dip"
+                android:layout_height="46dip"
+                android:background="@drawable/fast_selection_tab"
+                android:text="@string/no_tip_again"
+                android:textColor="#9a9a9a"
+                android:textSize="24sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

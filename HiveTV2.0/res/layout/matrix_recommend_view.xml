@@ -1,0 +1,295 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/matrix_recommend_layout_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_recommend_flipper_0"
+            android:layout_width="680dp"
+            android:layout_height="384dp"
+            android:background="@drawable/matrix_recommend_flipper_0_bg" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/matrix_recommend_flipper_0_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@id/matrix_recommend_flipper_0"
+            android:layout_alignLeft="@id/matrix_recommend_flipper_0"
+            android:layout_alignRight="@id/matrix_recommend_flipper_0"
+            android:background="#99000000"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_recommend_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/matrix_recommend_layout_2"
+        android:layout_alignRight="@+id/matrix_recommend_layout_3"
+        android:layout_below="@+id/matrix_recommend_layout_4"
+        android:layout_marginTop="-42dp"
+        android:layout_toRightOf="@id/matrix_recommend_layout_0"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_recommend_flipper_1"
+            android:layout_width="392dp"
+            android:layout_height="116dp"
+            android:background="@drawable/matrix_recommend_flipper_3_bg" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/matrix_recommend_flipper_1_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/matrix_recommend_flipper_1"
+            android:layout_alignLeft="@id/matrix_recommend_flipper_1"
+            android:layout_alignRight="@id/matrix_recommend_flipper_1"
+            android:background="#99000000"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_recommend_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/matrix_recommend_layout_0"
+        android:layout_marginLeft="-35dp"
+        android:layout_toRightOf="@id/matrix_recommend_layout_0"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/matrix_recommend_image_2"
+            android:layout_width="189dp"
+            android:layout_height="187dp"
+            android:background="@drawable/matrix_recommend_record" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_recommend_layout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/matrix_recommend_layout_2"
+        android:layout_alignTop="@id/matrix_recommend_layout_2"
+        android:layout_marginLeft="-41dp"
+        android:layout_toRightOf="@id/matrix_recommend_layout_2"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/recommend_usercenter_search"
+            android:layout_width="189dip"
+            android:layout_height="187dip"
+            android:background="@drawable/recommend_usercenter"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_recommend_layout_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/matrix_recommend_layout_2"
+        android:layout_alignRight="@id/matrix_recommend_layout_3"
+        android:layout_below="@+id/matrix_recommend_layout_2"
+        android:layout_marginTop="-42dp"
+        android:layout_toRightOf="@id/matrix_recommend_layout_0"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/matrix_recommend_image_4"
+            android:layout_width="392dp"
+            android:layout_height="146dp"
+            android:background="@drawable/matrix_recommend_app" />
+
+        <TextView
+            android:id="@+id/matrix_recommend_install_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dip"
+            android:layout_marginTop="35dip"
+            android:text="@string/install_app_count"
+            android:textSize="24dip" />
+
+        <ProgressBar
+            android:id="@+id/matrix_recommend_memory_used_progress"
+            style="@style/as_progress_style"
+            android:layout_alignLeft="@id/matrix_recommend_install_count"
+            android:layout_below="@id/matrix_recommend_install_count"
+            android:layout_marginLeft="-5dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip" />
+
+        <TextView
+            android:id="@+id/matrix_recommend_memory_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/matrix_recommend_memory_used_progress"
+            android:layout_below="@id/matrix_recommend_memory_used_progress"
+            android:layout_marginTop="2dip"
+            android:text="500M/4G" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/thumb_layout_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/matrix_recommend_layout_1"
+        android:layout_alignLeft="@id/matrix_recommend_layout_0"
+        android:layout_below="@id/matrix_recommend_layout_0"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/thumb_load_view_0"
+            android:layout_width="129dp"
+            android:layout_height="80dp"
+            android:background="@drawable/matrix_recommend_flipper_thumb_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <View
+            android:id="@+id/thumb_load_view_0_fade"
+            android:layout_width="129dp"
+            android:layout_height="80dp"
+            android:background="#99000000"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/thumb_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/thumb_layout_0"
+        android:layout_alignTop="@id/thumb_layout_0"
+        android:layout_marginLeft="-46dp"
+        android:layout_toRightOf="@id/thumb_layout_0"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/thumb_load_view_1"
+            android:layout_width="129dp"
+            android:layout_height="80dp"
+            android:background="@drawable/matrix_recommend_flipper_thumb_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <View
+            android:id="@+id/thumb_load_view_1_fade"
+            android:layout_width="129dp"
+            android:layout_height="80dp"
+            android:background="#99000000"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/thumb_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/thumb_layout_0"
+        android:layout_alignTop="@id/thumb_layout_0"
+        android:layout_marginLeft="-46dp"
+        android:layout_toRightOf="@id/thumb_layout_1"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/thumb_load_view_2"
+            android:layout_width="129dp"
+            android:layout_height="80dp"
+            android:background="@drawable/matrix_recommend_flipper_thumb_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <View
+            android:id="@+id/thumb_load_view_2_fade"
+            android:layout_width="129dp"
+            android:layout_height="80dp"
+            android:background="#99000000"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/thumb_layout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/thumb_layout_0"
+        android:layout_alignTop="@id/thumb_layout_0"
+        android:layout_marginLeft="-46dp"
+        android:layout_toRightOf="@id/thumb_layout_2"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/thumb_load_view_3"
+            android:layout_width="129dp"
+            android:layout_height="80dp"
+            android:background="@drawable/matrix_recommend_flipper_thumb_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <View
+            android:id="@+id/thumb_load_view_3_fade"
+            android:layout_width="129dp"
+            android:layout_height="80dp"
+            android:background="#99000000"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/thumb_layout_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/thumb_layout_0"
+        android:layout_alignRight="@id/matrix_recommend_layout_0"
+        android:layout_alignTop="@id/thumb_layout_0"
+        android:layout_marginLeft="-46dp"
+        android:layout_toRightOf="@id/thumb_layout_3"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/thumb_load_view_4"
+            android:layout_width="129dp"
+            android:layout_height="80dp"
+            android:background="@drawable/matrix_recommend_flipper_thumb_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <View
+            android:id="@+id/thumb_load_view_4_fade"
+            android:layout_width="129dp"
+            android:layout_height="80dp"
+            android:background="#99000000"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

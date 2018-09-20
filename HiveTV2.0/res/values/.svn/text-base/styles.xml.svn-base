@@ -1,0 +1,655 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 点播频道字体样式 -->
+    <style name="channel_name_text_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- 首页推荐位title样式 -->
+    <style name="recm_title_text_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 游戏主页1,2推荐位大小 -->
+    <style name="game_rcm_1_2">
+        <item name="android:layout_width">318dip</item>
+        <item name="android:layout_height">309dip</item>
+    </style>
+
+    <!-- 游戏主页3,4推荐位大小 -->
+    <style name="game_rcm_3_4">
+        <item name="android:layout_width">236dip</item>
+        <item name="android:layout_height">229dip</item>
+    </style>
+
+    <!-- 游戏主页购买和中心推荐位大小 -->
+    <style name="game_center">
+        <item name="android:layout_width">318dip</item>
+        <item name="android:layout_height">147dip</item>
+    </style>
+
+    <!-- 游戏主页搜索推荐位大小 -->
+    <style name="game_rank">
+        <item name="android:layout_width">167dip</item>
+        <item name="android:layout_height">227dip</item>
+    </style>
+
+    <!-- 应用主页2,3推荐位大小 -->
+    <style name="app_rcm_2_3">
+        <item name="android:layout_width">318dip</item>
+        <item name="android:layout_height">150dip</item>
+    </style>
+
+    <!-- 影院主页推荐位1 -->
+    <style name="movie_rcm_1">
+        <item name="android:layout_width">266dip</item>
+        <item name="android:layout_height">507dip</item>
+    </style>
+
+    <!-- 影院主页推荐位2 -->
+    <style name="movie_rcm_2">
+        <item name="android:layout_width">467dip</item>
+        <item name="android:layout_height">227dip</item>
+    </style>
+
+    <!-- 影院主页推荐位3 -->
+    <style name="movie_rcm_3">
+        <item name="android:layout_width">275dip</item>
+        <item name="android:layout_height">266dip</item>
+    </style>
+
+    <!-- 影院主页推荐位4 -->
+    <style name="movie_rcm_4">
+        <item name="android:layout_width">229dip</item>
+        <item name="android:layout_height">229dip</item>
+    </style>
+
+    <!-- 影院主页推荐位6 -->
+    <style name="movie_rcm_6">
+        <item name="android:layout_width">275dip</item>
+        <item name="android:layout_height">229dip</item>
+    </style>
+
+    <!-- 电影详情页面，主内容页面距左右的的距离 -->
+    <style name="film_margin_lr_value">
+        <item name="android:layout_marginLeft">50dip</item>
+        <item name="android:layout_marginRight">50dip</item>
+    </style>
+
+    <!-- 电影详情页面，相关推荐每项Layout属性 -->
+    <style name="film_relative_item_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 电影详情页面,图片外部的有焦点的Layout -->
+    <style name="film_relative_image_layout">
+        <item name="android:background">@drawable/select_focus_bg</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 电影详情页面，相关推荐每项的图片属性 -->
+    <style name="film_relative_item_image">
+        <item name="android:layout_width">135dip</item>
+        <item name="android:layout_height">187dip</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/epg_image_default</item>
+    </style>
+
+    <!-- 专题详情页面，横屏图显示的列表最外层的layout -->
+    <style name="subject_detail_item_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 专题详情页面,图片外部的有焦点的Layout -->
+    <style name="subject_detail_image_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/select_focus_bg</item>
+    </style>
+
+    <!-- 专题详情页面，相关推荐每项的图片属性 -->
+    <style name="subject_detail_item_image">
+        <item name="android:layout_width">248dip</item>
+        <item name="android:layout_height">140dip</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/default_subject_landspaec</item>
+    </style>
+
+    <!-- 专题详情页面，相关推荐每项的TextView属性 -->
+    <style name="subject_detail_text_tv">
+        <item name="android:layout_width">248dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:textColor">#B0B0B0</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- 专题详情页面，看点TextView属性 -->
+    <style name="subject_detail_focus_text_tv">
+        <item name="android:layout_width">248dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#B0B0B0</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- 电影详情页面，相关推荐每项的TextView属性 -->
+    <style name="film_relative_item_tv">
+        <item name="android:layout_width">135dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">-20dip</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#B0B0B0</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- 电视剧详情页面，直播电视台logo -->
+    <style name="teleplay_tv_item_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">75dp</item>
+    </style>
+
+    <!-- 电视剧详情页面，直播电视台Layout<item name="android:layout_width">76dip</item>   <item name="android:layout_height">54dip</item>  <item name="android:background">@drawable/select_focus_bg</item> -->
+    <style name="teleplay_tv_item_layout">
+        <item name="android:layout_width">82dip</item>
+        <item name="android:layout_height">75dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:background">@drawable/teleplay_live_select_focus_bg</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 电视剧详情页面，剧集按钮样式 -->
+    <style name="teleplay_video_item_btn">
+        <item name="android:layout_width">97dip</item>
+        <item name="android:layout_height">50dip</item>
+    </style>
+
+    <!-- 电视剧详情页面，电视剧分组按钮样式 -->
+    <style name="teleplay_tv_group_btn">
+        <item name="android:layout_width">225dip</item>
+        <item name="android:layout_height">66dip</item>
+        <item name="android:background">@drawable/teleplay_btn_style</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 电视剧详情页面，电视剧剧集按钮样式 -->
+    <style name="teleplay_tv_video_btn">
+        <item name="android:layout_width">115dip</item>
+        <item name="android:layout_height">67dip</item>
+        <item name="android:background">@drawable/teleplay_btn_style</item>
+        <item name="android:textColor">@drawable/teleplay_text_color</item>
+        <item name="android:focusable">true</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- 专题列表页面每项中的ImgageView样式 -->
+    <style name="subject_item_image_style">
+        <item name="android:layout_width">333dip</item>
+        <item name="android:layout_height">216dip</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/default_subject_detail</item>
+    </style>
+
+    <!-- 专题列表页面每项中的文字样式 -->
+    <style name="subject_item_text_style">
+        <item name="android:layout_width">180dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#9a9a9a</item>
+        <item name="android:textSize">@dimen/common_item_text_size</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- 焦点放光叠加区域宽度   左边叠加 -->
+    <style name="overlay_negative_left_value">
+        <item name="android:layout_marginLeft">-45dip</item>
+    </style>
+    <!-- 焦点放光叠加区域宽度   右边叠加 -->
+    <style name="overlay_negative_right_value">
+        <item name="android:layout_marginRight">-45dip</item>
+    </style>
+    <!-- 焦点放光叠加区域宽度   上边叠加 -->
+    <style name="overlay_negative_top_value">
+        <item name="android:layout_marginTop">-45dip</item>
+    </style>
+    <!-- 焦点放光叠加区域宽度   左上边叠加 -->
+    <style name="overlay_negative_top_left_value" parent="overlay_negative_left_value">
+        <item name="android:layout_marginTop">-45dip</item>
+    </style>
+    <!-- 焦点放光叠加区域宽度   下边边叠加 -->
+    <style name="overlay_negative_bottom_value">
+        <item name="android:layout_marginBottom">-45dip</item>
+    </style>
+
+    <!-- 电影列表页  电影名字字体大小及颜色 -->
+    <style name="list_item_text_name_value">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">#9a9a9a</item>
+    </style>
+
+    <!-- 搜索列表页  电影名字字体大小及颜色 -->
+    <style name="search_list_item_text_name_value">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">#9a9a9a</item>
+    </style>
+
+    <!-- 搜索视频，联想词TextView样式 -->
+    <style name="search_think_words_style">
+        <item name="android:layout_width">238dip</item>
+        <item name="android:layout_height">62dip</item>
+        <item name="android:padding">15dip</item>
+        <item name="android:background">@drawable/search_think_words_focus</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@drawable/search_text_focus_color</item>
+        <item name="android:text">葫芦娃大战变形金刚</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="list_top_category">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="PopupVideoAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_video_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_video_exit</item>
+    </style>
+
+    <style name="PopupVideoAnimation2" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_video_enter2</item>
+        <item name="android:windowExitAnimation">@anim/popup_video_exit</item>
+    </style>
+
+    <style name="variety_list_item_text_name_value">
+        <item name="android:textSize">23.76sp</item>
+        <item name="android:textColor">#9a9a9a</item>
+    </style>
+
+    <style name="variety_list_item_text_feature_value">
+        <item name="android:textSize">21.12sp</item>
+        <item name="android:textColor">#9a9a9a</item>
+    </style>
+
+    <style name="variety_list_item_text_time_value">
+        <item name="android:textSize">18.48sp</item>
+        <item name="android:textColor">#9a9a9a</item>
+    </style>
+
+    <style name="variety_list_item_text_time_frame_value">
+        <item name="android:alpha">0.8</item>
+    </style>
+
+    <!-- 键盘的字符、数字按钮公用样式，键盘第一行 -->
+    <style name="keyboard_btn_char_num_common_style">
+        <item name="android:layout_width">116dip</item>
+        <item name="android:layout_height">85dip</item>
+        <item name="android:textColor">@color/keyboard_text_color</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_marginLeft">-24dip</item>
+    </style>
+
+    <!-- 键盘的字符，键盘第二行 -->
+    <style name="keyboard_btn_char_common_line2_style" parent="keyboard_btn_char_style">
+        <item name="android:layout_marginTop">-22dip</item>
+    </style>
+
+    <!-- 键盘的数字，键盘第二行 -->
+    <style name="keyboard_btn_number_common_line2_style" parent="keyboard_btn_number_style">
+        <item name="android:layout_marginTop">-22dip</item>
+    </style>
+
+    <!-- 键盘的字符按钮样式 -->
+    <style name="keyboard_btn_char_style" parent="keyboard_btn_char_num_common_style">
+        <item name="android:background">@drawable/keyboard_char_focus</item>
+    </style>
+    <!-- 键盘的数字按钮样式 -->
+    <style name="keyboard_btn_number_style" parent="keyboard_btn_char_num_common_style">
+        <item name="android:background">@drawable/keyboard_number_focus</item>
+    </style>
+
+    <!-- 键盘底部的按片名搜索，按人物搜索，回删按钮样式 -->
+    <style name="keyboard_bottom_btn_style">
+        <item name="android:layout_width">395dip</item>
+        <item name="android:layout_height">85dip</item>
+        <item name="android:textColor">@color/keyboard_text_color</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/keyboard_bottom_focus</item>
+        <item name="android:layout_marginTop">-22dip</item>
+        <item name="android:layout_marginLeft">-24dip</item>
+    </style>
+    <!-- 搜索按钮的样式 -->
+    <style name="keyboard_bottom_btn_style1">
+        <item name="android:layout_width">803dip</item>
+        <item name="android:layout_height">85dip</item>
+        <item name="android:textColor">@color/keyboard_text_color</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/keyboard_bottom_focus1</item>
+        <item name="android:layout_marginTop">-22dip</item>
+        <item name="android:layout_marginLeft">-24dip</item>
+    </style>
+
+    <!-- 点播频道每个频道Item 第一行 -->
+    <style name="channel_item_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/select_focus_bg</item>
+        <item name="android:layout_marginLeft">-30dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- 点播频道每个频道Item 第n行(n>1) -->
+    <style name="channel_item_n_style" parent="channel_item_style">
+        <item name="android:layout_marginTop">-32dip</item>
+    </style>
+
+    <!-- 点播频道每个频道的图片样式 -->
+    <style name="channel_item_imageview_style">
+        <item name="android:layout_width">165dip</item>
+        <item name="android:layout_height">172dip</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/video_channels_default</item>
+    </style>
+
+    <style name="AlphaTextDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <style name="app_as_progress_style" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">201dip</item>
+        <item name="android:layout_height">18dip</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/as_progressbar_bg</item>
+        <item name="android:padding">3dip</item>
+        <item name="android:progressDrawable">@drawable/down_progress_style</item>
+    </style>
+    
+        <style name="as_progress_style_app" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">201dip</item>
+        <item name="android:layout_height">18dip</item>
+        <item name="android:progressDrawable">@drawable/down_progress_style</item>
+    </style>
+
+    <!-- ProgressBar 下载进度的样式 -->
+    <style name="as_progress_style" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">201dip</item>
+        <item name="android:layout_height">18dip</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/as_progressbar_bg</item>
+        <item name="android:padding">3dip</item>
+        <item name="android:progressDrawable">@drawable/progress_style</item>
+    </style>
+
+    <style name="transparent" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/version_update_dialog_bg_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 视频列表中  ItemView 海报图Layout的style -->
+    <style name="video_item_poster_layout_style">
+        <item name="android:background">@drawable/select_list_focus_bg</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- 视频列表中  ItemView 海报图style -->
+    <style name="video_item_poster_iv_style">
+        <item name="android:layout_width">171dip</item>
+        <item name="android:layout_height">230dip</item>
+        <item name="android:background">@drawable/epg_image_default</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- 视频列表中  ItemView 视频名称TextView style -->
+    <style name="video_item_video_name_tv_style" parent="list_item_text_name_value">
+        <item name="android:layout_width">180dip</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+
+
+    <!-- 视频列表中  ItemView 视频名称TextView style -->
+    <style name="video_item_video_updtae_tv_style" parent="list_item_text_name_value">
+        <item name="android:layout_width">172dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">-34dip</item>
+        <item name="android:textColor">#9a9a9a</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 视频搜索列表中  ItemView 海报图style -->
+    <style name="search_item_poster_iv_style">
+        <item name="android:layout_width">171.6dip</item>
+        <item name="android:layout_height">230.34dip</item>
+        <item name="android:gravity">top</item>
+        <item name="android:background">@drawable/epg_image_default</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- 播放记录列表中  ItemView 海报图style -->
+
+    <style name="playerrecord_item_poster_iv_style">
+        <item name="android:layout_width">180dip</item>
+        <item name="android:layout_height">230dip</item>
+        <item name="android:background">@drawable/select_list_focus_bg</item>
+        <item name="android:alpha">1.0</item>
+        <item name="android:focusable">true</item>
+        <item name="android:src">@drawable/variety_default_img</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- 播放记录列表中  ItemView 海报图Layout的style -->
+    <style name="playerrecord_item_poster_layout_style">
+        <item name="android:layout_width">197dip</item>
+        <item name="android:layout_height">257dip</item>
+        <item name="android:background">@drawable/select_list_focus_bg</item>
+        <item name="android:focusable">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+    <!-- app应用商店  卸载弹出窗口的样式 -->
+    <style name="list_item_uninstall_value">
+        <item name="android:textSize">39.6sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- app应用商店  卸载弹出窗口按键的样式 -->
+    <style name="list_item_uninstall_button_value">
+        <item name="android:textSize">23.76sp</item>
+        <item name="android:textColor">@color/app_store_grey_color</item>
+    </style>
+
+    <!-- 专题列表中  ItemView 图Layout的style -->
+    <style name="topic_item_poster_layout_style">
+        <item name="android:background">@drawable/select_bg</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <!-- ItemView 选台style -->
+    <style name="select_item_poster_style">
+        <item name="android:layout_width">200dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:background">@drawable/select_tv_menu_item</item>
+    </style>
+
+    <!-- 分类选台界面单 item style -->
+    <style name="tv_choose_show_item_style">
+        <item name="android:layout_width">105dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">一行最多六个字</item>
+        <item name="android:lines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">#acacac</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- 快速选台界面单 item style -->
+    <style name="tv_choose_show_item_style_epg">
+        <item name="android:layout_width">90dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">一行最多六个字</item>
+        <item name="android:lines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">#acacac</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- 分类筛选中文字的样式 -->
+    <style name="search_condition_tv">
+        <item name="android:textColor">@drawable/menu_text_bg</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <!-- 分类筛选包裹文字的线性布局的style -->
+    <style name="search_condition_l">
+        <item name="android:background">@drawable/select_list_focus_bg</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">125.3dip</item>
+        <item name="android:layout_height">52dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- search by tag -->
+    <style name="sratch_tag">
+        <item name="android:layout_width">130dip</item>
+        <item name="android:layout_height">60dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    <!-- 应用默认的主题样式 -->
+
+    <style name="Theme" parent="android:Theme"></style>
+
+    <!--
+         <style name="Theme.Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        
+             Note that we use the base animation style here (that is no
+             animations) because we really have no idea how this kind of
+             activity will be used.
+       
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    -->
+
+    <style name="Theme.Transparent">
+
+        <!--
+        设置允许窗口半透明
+
+        <item name="android:windowIsTranslucent">true</item>
+
+        引用Android系统的动画半透明样式
+
+
+        <item  name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+
+
+        设定窗口背景颜色
+
+
+        <item  name="android:windowBackground">@drawable/transparent_background</item>
+
+
+        隐藏窗口标题栏
+
+        <item name="android:windowNoTitle">true</item>
+
+        设定文字前景色
+
+
+        <item  name="android:colorForeground">#fff</item>
+        -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+             Note that we use the base animation style here (that is no
+             animations) because we really have no idea how this kind of
+             activity will be used.                                                <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:colorForeground">#fff</item>
+    </style>
+    <!-- 锁网页面背景 -->
+    <style name="lock_net_transparent" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/transparent_white</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AnimationFade">
+
+        <!-- PopupWindow左右弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/popwindow_in_lefttoright</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_out_righttoleft</item>
+    </style>
+
+
+    
+</resources>

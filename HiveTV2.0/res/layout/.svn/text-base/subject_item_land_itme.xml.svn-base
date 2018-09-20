@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/film_item_rl_1"
+        style="@style/subject_detail_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="0dip" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            style="@style/subject_detail_image_layout" >
+
+            <com.hiveview.tv.common.myimage.ImageLoadView
+                android:id="@+id/iv_poster"
+                style="@style/subject_detail_item_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:id="@+id/tv_name"
+                android:singleLine="true"
+                style="@style/subject_detail_text_tv" />
+
+            <com.hiveview.tv.view.television.MarqueeText
+                android:id="@+id/tv_focus"
+                android:singleLine="true"
+                style="@style/subject_detail_focus_text_tv" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

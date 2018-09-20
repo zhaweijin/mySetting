@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_onlive_netstream"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#0f0f0f"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:layout_gravity="center" >
+
+    <com.hiveview.tv.onlive.player.HiveviewVideoView 
+            android:id="@+id/surface_view"
+            android:layout_gravity="center"
+             android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    <LinearLayout
+        android:id="@+id/loading_progress_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="#121212"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/iv_loading_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dip"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/iv_progress"
+                android:background="@drawable/hiveview_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/loading_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dip"
+                android:singleLine="true"
+                android:paddingTop="5dip"
+                android:textColor="#ffffffff"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+</FrameLayout>

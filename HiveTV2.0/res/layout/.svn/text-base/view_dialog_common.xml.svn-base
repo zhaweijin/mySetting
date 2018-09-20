@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="615dip"
+    android:layout_height="310dip"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_container_network_border" >
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_marginTop="66dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp">
+
+        <com.hiveview.tv.onlive.view.CornerButton 
+            android:id="@+id/btn_ensure"
+            android:layout_width="175dip"
+            android:layout_height="55dip"
+            android:text="@string/comfirm"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="gone"
+            android:layout_marginRight="13dip"/>
+
+        <com.hiveview.tv.onlive.view.CornerButton 
+            android:id="@+id/btn_cancel"
+            android:layout_width="175dip"
+            android:layout_height="55dip"
+            android:text="@string/cancel"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="gone"
+            android:layout_marginLeft="13dip"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

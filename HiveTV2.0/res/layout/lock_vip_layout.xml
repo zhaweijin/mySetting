@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_lockvip_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" >
+
+        <RelativeLayout
+            android:layout_width="1140dip"
+            android:layout_height="450dip"
+            android:layout_centerInParent="true"
+           >
+
+            <ImageView
+                android:id="@+id/rl_lock_vip_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/lock_vip_bg1" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="145dp"
+                android:layout_marginLeft="46dp"
+                android:layout_toRightOf="@+id/imageView1"
+                      android:text="@string/lock_vip_toast_line1"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                  android:layout_alignTop="@+id/textView1"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="50dp"
+                android:text="@string/lock_vip_toast_line2"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignTop="@+id/textView2"
+                 android:text="@string/lock_vip_toast_line3"
+                 android:textColor="@color/white"
+                 android:layout_marginTop="60dp"
+                 android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rl_lock_vip_bg"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="77dp"
+                android:src="@drawable/lock_vip_icon" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

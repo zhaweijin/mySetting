@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/devicedetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <com.hiveview.cloudtv.common.FileTitleTextView
+        android:id="@+id/item_name"
+        android:layout_width="550dp"
+        android:layout_height="@dimen/list_item1_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/grey5_color"
+        android:textSize="@dimen/text_size_38"
+         android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/page_left"
+        android:layout_width="@dimen/ethernet_item_arrow_width"
+        android:layout_height="@dimen/ethernet_item_arrow_height"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/item_setting"
+        android:visibility="gone" />
+
+    <com.hiveview.cloudtv.common.FileTitleTextView
+        android:id="@+id/item_setting"
+        android:layout_width="220dp"
+        android:layout_height="72dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/page_right"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/grey5_color"
+        android:textSize="@dimen/text_size_38"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/page_right"
+        android:layout_width="@dimen/ethernet_item_arrow_width"
+        android:layout_height="@dimen/ethernet_item_arrow_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="60dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

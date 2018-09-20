@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">蜂巢电视</string>
+    <string name="no_network_connection_toast">没有发现网络</string>
+
+    <!-- 电视页面 -->
+    <string name="last_one">上个节目</string>
+    <string name="next_one">下个节目</string>
+    <string name="tv_to_matrix">点击直播小窗口可进入全屏观看</string>
+    <string name="tv_current_matrix_time">%1$s &#160; &#160; %2$s</string>
+
+    <!-- 分类选台 -->
+    <string name="select_category">分类选台</string>
+    <string name="fast_select_category">快速选台</string>
+    <string name="television_count">(%s个电视台)</string>
+    <string name="tv_count">电视剧</string>
+    <string name="film_count">电影</string>
+    <string name="sports_count">体育</string>
+    <string name="children_count">少儿</string>
+    <string name="variety_count">综艺</string>
+    <string name="technology_count">科技</string>
+    <string name="economics_count">财经</string>
+    <string name="comprehensive_count">综合</string>
+    <string name="select_category_menu_tips">相应电视台按菜单键查看节目单</string>
+
+    <!-- 直播提醒 -->
+    <string name="onlive_tips">直播提醒</string>
+    <string name="onlive_tips_count">(%s个)</string>
+    <string name="onlive_tips_pager_count">%s页</string>
+    <string name="onlive_tips_pager_division">/</string>
+    <string name="onlive_tips_pager_current">%s</string>
+    <string name="cancel_onlive_tips">是否取消对该节目的提醒？</string>
+    <string name="goto_onlive">现在去看</string>
+    <string name="timeout_onlive">重新选择</string>
+    <string name="no_tip_again">不去看</string>
+    <string name="wonderful_recommend">精彩推荐</string>
+    <string name="select_tv">快速选台</string>
+    <string name="epg_list">节目单</string>
+
+    <!-- epg -->
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+    <string name="cctv_count">央视(%s)</string>
+    <string name="satellite_tv_count">卫视(%s)</string>
+    <string name="local_count">本地(%s)</string>
+    <string name="local_tv_count">地方卫视(%s)</string>
+    <string name="hd_channel_count">高清频道(%s)</string>
+    <string name="hk_ma_tw_count">港澳台频道(%s)</string>
+    <string name="subscription_channel_count">收费频道(%s)</string>
+    <string name="overseas_channel_count">海外频道(%s)</string>
+    <string name="navigation_tab_game_text">游戏</string>
+    <string name="navigation_tab_education_text">教育</string>
+    <string name="navigation_tab_tv_text">电视</string>
+	 <string name="navigation_tab_source_text">信源</string>
+    <string name="navigation_tab_recommend_text">首页</string>
+    <string name="navigation_tab_movie_text">影院</string>
+    <string name="navigation_tab_app_text">应用</string>
+    <string name="navigation_tab_bluelight_text">极清</string>
+    <string name="sub_navigation_recommend_shop_text">套餐商城</string>
+    <string name="sub_navigation_recommend_record_text">观看记录</string>
+    <string name="sub_navigation_recommend_user_text">用户中心</string>
+    <string name="sub_navigation_recommend_setting_text">系统设置</string>
+    <string name="sub_navigation_game_user_text">用户中心</string>
+    <string name="sub_navigation_game_setting_text">更新管理</string>
+    <string name="sub_navigation_tv_notification_text">直播提醒</string>
+    <string name="sub_navigation_tv_direction_text">快速选台</string>
+    <string name="sub_navigation_tv_category_text">分类选台</string>
+    <string name="sub_navigation_movie_search_text">影片搜索</string>
+    <string name="sub_navigation_movie_channel_text">影片分类</string>
+    <string name="sub_navigation_movie_favourite_text">影片收藏</string>
+    <string name="sub_navigation_app_setting_text">更新管理</string>
+    <string name="sub_navigation_app_user_text">用户中心</string>
+    <string name="sub_navigation_app_external_text">外接存储</string>
+    <string name="sub_navigation_tv_setting_text">电视机顶盒设置</string>
+    <string name="sub_navigation_tv_warn1">点击直播小窗口</string>
+    <string name="sub_navigation_tv_warn2">可进入全屏观看</string>
+
+    <!-- 电影详情 -->
+    <string name="text_time_long">时长：</string>
+    <string name="text_minute">分钟</string>
+    <string name="text_year">年</string>
+    <string name="text_film_detail_separater">&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;</string>
+    <string name="text_category">分类：</string>
+    <string name="text_director">导演：</string>
+    <string name="text_actor">主演：</string>
+    <string name="text_host_actor">主持人：</string>
+    <string name="text_issue_time">上映时间：</string>
+    <string name="tv_recommend">相关推荐</string>
+    <string name="no_data">暂无相关数据</string>
+    <string name="select_you_like_film">您可以试试更换筛选条件、简化筛选维度或者直接搜索片名。</string>
+    <string name="film_no_data">暂没有符合您筛选条件的电影</string>
+    <string name="film_no_data_topic">暂没有专题</string>
+    <string name="film_no_data_varite">暂没有剧集</string>
+    <string name="data_no_data">暂没有相关数据</string>
+    <string name="loading_download_data">正在下载相关数据</string>
+
+    <!-- 电影列表页 -->
+    <string name="list_top_category">全部</string>
+    <string name="list_top_category_left">全部</string>
+    <string name="list_top_category_total">(%s部)</string>
+    <string name="list_top_page_count">%s页</string>
+    <string name="list_top_page_division">/</string>
+    <string name="list_top_page_current">%s</string>
+    <string name="list_top_now_watch">现在去看</string>
+    <string name="list_top_not_alert">不在提醒</string>
+    <string name="list_botton_menu">按菜单键分类查找影片</string>
+    <string name="variety_list_item_total_set">%s全集</string>
+    <string name="variety_list_item_update_set">更新至%s集</string>
+    <string name="variety_total_text">全部 (%s部)</string>
+    <string name="variety_total_text1">(%s部)</string>
+
+    <!-- 分类筛选 -->
+    <string name="tv_enter_text_search">输入片名进行搜索</string>
+    <string name="tv_search">确认筛选</string>
+    <string name="tv_reset">复位重选</string>
+    <string name="tv_subject">专题</string>
+    <string name="tv_filmlist_record_count">（共%s部）</string>
+    <string name="tv_division">/</string>
+    <string name="tv_page">%s页</string>
+    <string name="variety_enter_text_search">输入进行搜索</string>
+    <string name="dialog_yes">是</string>
+    <string name="dialog_no">否</string>
+    <string name="srearch_failed_hint">暂时没有符合您筛选条件的电影\n您可以试试更换筛选条件、简化筛选维度或者直接输入进行搜索。</string>
+    <string name="search_failed_hint2">暂没有符合您筛选条件的影片</string>
+    <string name="search_failed_hint2_1">您可以</string>
+    <string name="search_failed_hint2_2">1、按菜单键重新筛选</string>
+    <string name="search_failed_hint2_3">2、按返回键回到列表页面</string>
+    <string name="search_failed_hint2_4">3、</string>
+    <string name="search_failed_hint2_5">打开搜索视频按钮</string>
+    <string name="dialog_error_close">关  闭</string>
+    <string name="dialog_error_call_phone_text">若还有疑问，请拨打说明书中客服电话联系我们</string>
+    <string name="dialog_error_code_text">软件错误代码: %s</string>
+    <string name="dialog_mac_text">MAC: %s</string>
+    <string name="dialog_sn_text">SN: %s</string>
+
+    <!-- 搜索视频 -->
+    <string name="search_top_category">搜索视频</string>
+    <string name="search_line1_text">例如《笑傲江湖》,可直接输入“XAJH”</string>
+
+    <!-- <string name="search_line2_text">想看“李连杰“  的相关视频,可直接输入“LLJ”</string> -->
+    <string name="search_line2_text"></string>
+    <string name="search_no_data">没有相关搜索结果</string>
+    <string name="search_erro">暂时数据记录异常</string>
+    <string name="search_landscape_time_update">更新至%s集</string>
+    <string name="search_landscape_time_total">%s集全</string>
+    <string name="search_list_top_category_left">(%s </string>
+    <string name="search_list_top_category_total"> %s部)</string>
+    <string name="search_warring">"“%s” 中没有您要搜寻的结果。"</string>
+    <string name="search_warring1">您可以</string>
+    <string name="search_warring2">1.按菜单键重新分类查找结果;</string>
+    <string name="search_warring3">2.按返回键回到搜索结果页面。</string>
+    
+    <string name="search_total_text">(%s部)</string>
+    <!-- toast提示 -->
+    <string name="alert_server_error">服务器忙，请稍后再试！！</string>
+    <string name="alert_data_error">数据错误,请稍后！！！</string>
+
+    <!-- 应用与游戏提示 -->
+    <string name="install_game_count">已安装%s个游戏</string>
+    <string name="install_app_count">已装%s个应用游戏</string>
+    <string name="install_app_count_zero">已装0个应用游戏</string>
+    <string name="list_poput_tips">是否取消对该影片的收藏？</string>
+    <string name="collect_success_text">收藏成功</string>
+    <string name="collect_cancel_text">取消收藏成功</string>
+    <string name="list_popup_ok">是</string>
+    <string name="list_popup_cel">否</string>
+    <string name="collect_total_text">(%s部)</string>
+    <string name="variety_detail_no">没有剧集</string>
+
+    <!-- 播放器语音控制 -->
+    <string name="voice_increase">音量增加</string>
+    <string name="voice_decrease">音量减小</string>
+    <string name="voice_close">静音</string>
+    <string name="voice_open">取消静音</string>
+    <string name="player_play">播放</string>
+    <string name="player_pause">暂停</string>
+    <string name="player_restart">重新播放</string>
+    <string name="player_exit">退出</string>
+    <string name="player_seekto">跳到</string>
+    <string name="second">秒</string>
+    <string name="player_fastforward">快进</string>
+    <string name="player_fastbackward">快退</string>
+    <string name="speak_command_1">我是鹏博士近百名工程师死磕半年的呕心沥血之作——大麦盒子2.0。</string>
+    <string name="speak_command_2">就屌丝最爱的高达打奥特曼的小怪兽之“环太平洋”吧</string>
+    <string name="speak_command_3">百兆宽带，比快更快。精耕细作十四年，只为给你极速体验。我是大麦盒子2.0，表忘了我啊！</string>
+    <string name="comfirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="program_error">播放视频出错！</string>
+    <string name="episode_previous">上一集</string>
+    <string name="episode_next">下一集</string>
+
+    <!-- 可见按钮语音控制 -->
+    <string name="play_records">打开观看记录</string>
+    <string name="movie_search">打开影片搜索</string>
+    <string name="installed_apps_games">打开已安装的应用游戏</string>
+    <string name="movie_favorites">打开影片收藏</string>
+    <string name="external_storage">打开外接存储</string>
+    <string name="app_store">打开应用商店</string>
+    <string name="application_leaderboard">打开应用排行榜</string>
+    <string name="search_applications">打开搜索应用</string>
+    <string name="game_center">打开游戏中心</string>
+    <string name="edu_center">打开教育中心</string>
+    <string name="game_list">打开游戏排行榜</string>
+    <string name="search_games">打开搜索游戏</string>
+    <string name="blue_light_cinema">打开极清影院</string>
+    <string name="speaker_none">暂不支持此功能</string>
+    <string name="live_fast_select_tv_channel">打开快速选台</string>
+    <string name="live_select_television">打开分类选台</string>
+    <string name="onlives_tips">打开直播提醒</string>
+    <string name="open_setting">打开系统设置</string>
+
+    <!-- 语音模拟遥控器 -->
+    <string name="drop_up">向上</string>
+    <string name="drop_down">向下</string>
+    <string name="drop_left">向左</string>
+    <string name="drop_right">向右</string>
+    <string name="drop_center">确定</string>
+    <string name="drop_home">首页</string>
+    <string name="drop_reboot">重启</string>
+
+    <!-- 可见按钮语音控制 -->
+    <string name="weather_manage">打开天气设置</string>
+    <string name="net_manage">打开网络设置</string>
+    <string name="clean_memory">打开清理缓存</string>
+    <string name="check_version">打开版本检测</string>
+    <string name="play_manager">打开播放设置</string>
+    <string name="audio_decode">打开音频解码</string>
+    <string name="screen_save">打开屏幕保护</string>
+    <string name="display">打开显示设置</string>
+    <string name="tv_set">打开机顶盒设置</string>
+    <string name="about">打开关于</string>
+    <string name="noinstall">未安装此应用</string>
+    <string name="upgrade">立即升级</string>
+    <string name="later_upgrade">稍后升级</string>
+    <!-- 9月24升级新UI string定义 -->
+    <string name="sub_navigation_common_shop_text">套餐商城</string>
+    <string name="sub_navigation_common_record_text">观看记录</string>
+    <string name="sub_navigation_common_user_text">用户中心</string>
+    <string name="sub_navigation_common_setting_text">系统设置</string>
+    <string name="sub_navigation_common_game_user_text">用户中心</string>
+    <string name="sub_navigation_common_game_setting_text">更新管理</string>
+    <string name="sub_navigation_common_tv_notification_text">直播提醒</string>
+    <string name="sub_navigation_common_tv_direction_text">快速选台</string>
+    <string name="sub_navigation_common_tv_category_text">分类选台</string>
+    <string name="sub_navigation_common_search_text">影片搜索</string>
+    <string name="sub_navigation_common_channel_text">影片分类</string>
+    <string name="sub_navigation_common_favourite_text">影片收藏</string>
+    <string name="sub_navigation_common_external_text">外接存储</string>
+    <string name="sub_navigation_common_tv_setting_text">电视机顶盒设置</string>
+    <string name="sub_navigation_common_tv_warn1">点击直播小窗口</string>
+    <string name="sub_navigation_common_tv_warn2">可进入全屏观看</string>
+    <string name="sub_navigation_common_installed_text">已装应用游戏</string>
+    <string name="lock_net_work_line1_text">亲爱的用户:</string>
+    <string name="lock_net_work_line2_text">对不起!</string>
+    <string name="lock_net_work_line3_text">        大麦盒子是鹏博士集团对旗下系列宽带用户的优惠回馈 ，只有鹏博士旗\n下宽带用户可享用此服务。系统检测到您此时可能未连接我们的宽带，故无\n法为您提供服务，请谅解。</string>
+    <string name="lock_net_work_line4_text">如有疑问，请拨打盒说明书里的客服电话联系当地运营商。</string>
+    <string name="lock_net_work_line5_text">设备信息:</string>
+    <string name="lock_net_work_mac_text">MAC: %s</string>
+    <string name="lock_net_work_sn_text">SN: %s</string>
+    <!-- launcher 首页按下菜单键提示语句 -->
+    <string name="launcher_menu_prompt">按菜单键选择更多功能</string>
+
+    <!-- 错误码 -->
+    <string name="Errorcode_E0000000 ">您的盒子可能已停用，请尝试重启盒子恢复</string>
+    <string name="Errorcode_E0000404">您所要观看的内容已不存在,去看看其他精彩内容吧</string>
+    <string name="Errorcode_E0000598">您所访问的内容出错,请尝试退出后重新进入此页面</string>
+    <string name="Errorcode_E0000601_E0000603">您所访问的内容出错,程序猿正在努力补救，先去看看其他内容吧</string>
+    <string name="Errorcode_E0000602">您所要观看的视频已下线,去看看其他精彩内容吧</string>
+    <string name="Errorcode_E0000599">网络暂时不可用，请检查网络</string>
+    <string name="Errorcode_tele">若还有疑问，联系我们，请拨打客服电话:1-888-681-4588</string>
+    <string name="Errorcode_E0000604">天气信息下载失败，请稍后再试</string>
+	<string name="Errorcode_E0000607">数据格式错误</string>
+	<string name="Errorcode_E0000608">网络繁忙请稍后再试</string>
+	<string name="Errorcode_E0000609">服务器响应出错</string>
+    <!-- toast提示 -->
+    <string name="alert_no_delete">不能删除</string>
+    <string name="alert_join_liveremind">加入直播提醒</string>
+    <string name="alert_cancle_liveremind">取消直播提醒</string>
+    <string name="alert_no_space">应用升级空间不足!</string>
+    <string name="alert_no_backsee">暂无本节目回看片源</string>
+    <string name="alert_place_top">置顶成功</string>
+
+    <!-- 海外版翻译 页面用户可见部分 -->
+    <string name="search_tv_search">搜索视频</string>
+    <string name="search_et_input_words">支持片名进行搜索</string>
+    <string name="search_btn_search_by_name">搜索</string>
+    <string name="search_btn_back_delete">回删</string>
+    <string name="search_btn_today">今天</string>
+    <string name="search_btn_tomo">昨天</string>
+    <string name="search_btn_earlier">更早</string>
+    <string name="search_collect_layout_collecthint">暂没有收藏记录</string>
+    <string name="search_user_hint">按菜单键分类查找影片</string>
+    <string name="no_playerrecord">暂时没有观看记录</string>
+    <string name="isdelete_playerrecord">是否清除观看记录？</string>
+    <string name="playerrecord_user_hint">按菜单键清除观看记录</string>
+    <string name="playrecord_remaining">剩余 %s</string>
+    <string name="playrecord_over">已看完</string>
+    <string name="playrecord_selection">第%s集</string>
+    <string name="collect_user_hint">按菜单键清除影片收藏</string>
+    <string name="left_home_app_text">已装应用</string>
+	<string name="search_app_search">搜索应用</string>
+	<string name="search_app_store">应用商店</string>
+	<string name="search_app_rank">排行榜</string>
+	<string name="detail_tv_recommend">剧集列表</string>
+	<string name="search_movie_error_textview">暂时没有搜索数据</string>
+	<string name="language">zh</string>
+	<string name="yet_open">暂未开放，敬请期待！</string>
+	<string name="net_exception_message">亲，您的网络连接异常.</string>
+	<string name="net_exception_setting">设置网络</string>
+	<string name="net_exception_cancel">取消</string>
+	<string name="varietypager_mCollectHine">暂时数据记录异常</string>
+	<string name="lock_vip_toast_line1">本机需激活后使用, </string>
+	<string name="lock_vip_toast_line2">请电洽擎天大麦客服  </string>
+	<string name="lock_vip_toast_line3">TEL: 1-888-681-4588 </string>
+</resources>

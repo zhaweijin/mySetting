@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<!--  回退旧的ui尺寸-->
+    <RelativeLayout
+        android:id="@+id/matrix_bluelight_layout_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/matrix_bluelight_layout_2"
+        android:nextFocusRight="@+id/matrix_bluelight_layout_1"
+        android:nextFocusUp="@+id/R.id.navigation_tab_bluelight_text" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_bluelight_flipper_0"
+            android:layout_width="257.3dp"
+            android:layout_height="231.3dp"
+            android:background="@drawable/matrix_bluelight_flipper_1_bg" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/matrix_bluelight_flipper_0_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/matrix_bluelight_flipper_0"
+            android:layout_alignLeft="@id/matrix_bluelight_flipper_0"
+            android:layout_alignRight="@id/matrix_bluelight_flipper_0"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_bluelight_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-42dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/matrix_bluelight_layout_0"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/matrix_bluelight_layout_3"
+        android:nextFocusLeft="@+id/matrix_bluelight_layout_0"
+        android:nextFocusRight="@+id/matrix_bluelight_layout_5"
+        android:nextFocusUp="@+id/R.id.navigation_tab_bluelight_text" >
+
+        <View
+            android:layout_width="528.7dp"
+            android:layout_height="231.3dp"
+            android:background="@drawable/matrix_bluelight_flipper_2_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_bluelight_flipper_1_out_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-42.5dp"
+	    android:layout_marginTop="-18.7dp"
+        android:layout_toRightOf="@id/matrix_bluelight_layout_0"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/matrix_bluelight_layout_3"
+        android:nextFocusLeft="@+id/matrix_bluelight_layout_0"
+        android:nextFocusRight="@+id/matrix_bluelight_layout_5"
+        android:nextFocusUp="@+id/R.id.navigation_tab_bluelight_text" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_bluelight_flipper_1"
+            android:layout_width="528.7dp"
+            android:layout_height="271.3dp"
+            />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/matrix_bluelight_flipper_1_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignBottom="@id/matrix_bluelight_flipper_1"
+            android:layout_alignLeft="@id/matrix_bluelight_flipper_1"
+            android:layout_alignRight="@id/matrix_bluelight_flipper_1"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:ellipsize="marquee"
+            android:textSize="24sp" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_bluelight_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/matrix_bluelight_layout_0"
+        android:layout_below="@id/matrix_bluelight_layout_0"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusRight="@+id/matrix_bluelight_layout_3"
+        android:nextFocusUp="@+id/matrix_bluelight_layout_0" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_bluelight_flipper_2"
+            android:layout_width="257.3dp"
+            android:layout_height="231.3dp"
+            android:background="@drawable/matrix_bluelight_flipper_1_bg" >
+        </ViewFlipper>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/matrix_bluelight_flipper_2_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/matrix_bluelight_flipper_2"
+            android:layout_alignLeft="@id/matrix_bluelight_flipper_2"
+            android:layout_alignRight="@id/matrix_bluelight_flipper_2"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_bluelight_layout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/matrix_bluelight_layout_1"
+        android:layout_alignTop="@id/matrix_bluelight_layout_2"
+        android:layout_below="@id/matrix_bluelight_layout_1"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/matrix_bluelight_layout_2"
+        android:nextFocusRight="@+id/matrix_bluelight_layout_4"
+        android:nextFocusUp="@+id/matrix_bluelight_layout_1" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_bluelight_flipper_3"
+            android:layout_width="257.3dp"
+            android:layout_height="231.3dp"
+            android:background="@drawable/matrix_bluelight_flipper_1_bg" >
+        </ViewFlipper>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/matrix_bluelight_flipper_3_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/matrix_bluelight_flipper_3"
+            android:layout_alignLeft="@id/matrix_bluelight_flipper_3"
+            android:layout_alignRight="@id/matrix_bluelight_flipper_3"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_bluelight_layout_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/matrix_bluelight_layout_1"
+        android:layout_alignTop="@id/matrix_bluelight_layout_2"
+        android:layout_below="@id/matrix_bluelight_layout_1"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/matrix_bluelight_layout_3"
+        android:nextFocusRight="@+id/matrix_bluelight_layout_5"
+        android:nextFocusUp="@+id/matrix_bluelight_layout_1" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_bluelight_flipper_4"
+            android:layout_width="257.3dp"
+            android:layout_height="231.3dp"
+            android:background="@drawable/matrix_bluelight_flipper_1_bg" >
+        </ViewFlipper>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/matrix_bluelight_flipper_4_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/matrix_bluelight_flipper_4"
+            android:layout_alignLeft="@id/matrix_bluelight_flipper_4"
+            android:layout_alignRight="@id/matrix_bluelight_flipper_4"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_bluelight_layout_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-42dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/matrix_bluelight_layout_1"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/matrix_bluelight_layout_1"
+        android:nextFocusUp="@+id/R.id.navigation_tab_bluelight_text" >
+
+        <View
+            android:layout_width="257.3dp"
+            android:layout_height="478.7dp"
+            android:background="@drawable/matrix_bluelight_flipper_3_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_bluelight_flipper_5_out_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20.7dp"
+        android:layout_marginLeft="-42.5dp"
+        android:layout_toRightOf="@id/matrix_bluelight_layout_1"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/matrix_bluelight_layout_1"
+        android:nextFocusUp="@+id/R.id.navigation_tab_bluelight_text" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_bluelight_flipper_5"
+            android:layout_width="257.3dp"
+            android:layout_height="521.7dp"
+            android:focusable="false" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/matrix_bluelight_flipper_5_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignBottom="@id/matrix_bluelight_flipper_5"
+            android:layout_alignLeft="@id/matrix_bluelight_flipper_5"
+            android:layout_alignRight="@id/matrix_bluelight_flipper_5"
+            android:background="#99000000"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="24sp" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

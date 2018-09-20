@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">DomySetting</string>
+    <string name="manual_add_wifi">Add WiFi manually</string>
+    <string name="wifi_share">WiFi share</string>
+    <string name="pppoe_connect">Broadband connection</string>
+    <string name="eth_title">Wired network</string>
+    <string name="eth_dis_title">Wired Network not connected</string>
+    <string name="btn_wifi">Wireless network</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- manual add wifi -->
+    <string name="manual_wifi_name">Network</string>
+    <string name="manual_wifi_safe">S.Type</string>
+    <string name="manual_wifi_password">Password</string>
+    <string name="manual_wifi_commit">Commit</string>
+    <!-- Used in Wi-Fi settings dialogs when Wi-Fi does not have any security. -->
+    <string name="wifi_security_none">No open password</string>
+    <!-- Do not translate.  Terminology for wifi with WEP security -->
+    <string name="wifi_security_wep">WEP</string>
+    <!-- Do not translate.  Terminology for wifi with WPA security -->
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <!-- Do not translate.  Terminology for wifi with WPA2 security -->
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with both WPA/WPA2 security, or unknown -->
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_eap">802.1x EAP</string>
+    <!-- Do not translate.  Concise terminology for wifi with WEP security -->
+    <string name="wifi_security_short_wep">WEP</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA security -->
+    <string name="wifi_security_short_wpa">WPA</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA2 security -->
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with both WPA/WPA2 security -->
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_short_eap">802.1x</string>
+    <string name="wifi_disabled_password_failure">"Authentication error"</string>
+    <string name="wifi_connected_failed">cannot connect, please try again</string>
+    <string name="wifi_fail_to_scan" msgid="1265540342578081461">Failed to scan network</string>
+    <string name="wifi_failed_save_message">Failed to save network</string>
+    <string name="wifi_failed_forget_message">Failed to forget network</string>
+    <string name="wifi_sucess_forget_message">Network forgotten</string>
+    <string name="wifi_not_in_range">This network is out of range!</string>
+    <string name="wifi_connected_success">\u0020(connected)</string>
+    <string name="wifi_password_length_limit">Password requires at least 8 charactersd</string>
+    <string name="wifi_password_error1">Password length should be > 0 or ≤ 63 characters</string>
+    <string name="wifi_password_error2">Password length should be ≥  8 or ≤ 63 characters</string>
+    <string name="wifi_ssid_error">SSID length should be > 0 or ≤ 20 characters</string>
+    <string name="wifi_scaning">Scanning&#8230;</string>
+    <string name="wifi_password_null">Password can\'t be null！</string>
+
+    <!-- pppoe connect -->
+    <string name="pppoe_connect_commit">Connect</string>
+    <string name="pppoe_username">User name</string>
+    <string name="pppoe_password">Password</string>
+    <string name="pppoe_connect_failed">Broadband dial-up failed</string>
+    <string name="pppoe_connect_success">Broadband dial-up successful</string>
+    <string name="pppoe_disconnect_failed">Broadband dial-up disconnection failed</string>
+    <string name="pppoe_disconnect_ok">Broadband dial-up disconnection successful</string>
+    <string name="pppoe_hangup_waiting_msg">Please wait a moment</string>
+    <string name="pppoe_connect_timeout">Connect time out</string>
+    <string name="pppoe_connect_failed_auth">Invalid username or password</string>
+    <string name="pppoe_connect_failed_server_no_response">No response from the server</string>
+    <string name="pppoe_disconnect_waiting_msg">Disconnecting, please wait</string>
+    <string name="pppoe_connect_waiting_msg">Connecting, please wait</string>
+    <string name="pppoe_connecting">Broadband dial-up is in progress </string>
+    <string name="pppoe_name_or_psw_is_null">username and password cannot be null</string>
+    <string name="pppoe_auto_connect">auto-connect at startup</string>
+    <string name="pppoe_state_disconnected">Broadband dial-up is already disconnected. No need to retry. !</string>
+
+    <!-- wifi share -->
+    <string name="wifi_share_on">On</string>
+    <string name="wifi_share_off">Off</string>
+    <string name="wifi_share_security_open">On</string>
+    <string name="wifi_share_security_wpa2_psk">WPA2 PSK</string>
+    <string name="wifi_share_security_wpa_psk">WPA PSK</string>
+    <string name="wifi_share_error_2">network name can not be null！</string>
+    <string name="wifi_share_error_1">hotspot failed at start up！</string>
+    <string name="wifi_share_start_soft">Submitting data, please wait.</string>
+    <string name="wifi_share_open_softap">Turning on. Please wait. </string>
+    <string name="wifi_share_close_softap">Turning off. Please wait. </string>
+    <string name="wifi_share_open_success">Hotspot on</string>
+    <string name="wifi_share_opened">Opened</string>
+    <string name="wifi_share_name_too_long">Share name is too long, Please shorten  to less than 20 characters </string>
+    <!-- ethernet -->
+    <string name="ethernet_name">cable network</string>
+    <string name="ethernet_notice">cable network setting</string>
+    <string name="ethernet_item_test_speed">Internet speed testing</string>
+    <string name="ethernet_item_wifi_share">WiFi share</string>
+    <string name="ethernet_item_manual_adjust">Manual adjust</string>
+    <string name="ethernet_item_ip_address">IP address</string>
+    <string name="ethernet_item_net_mask">Subnet mask</string>
+    <string name="ethernet_item_gateway">Gateway</string>
+    <string name="ethernet_item_dns">DNS</string>
+    <string name="ethernet_item_ipv6">Ipv6</string>
+    <string name="ethernet_item_ipv4">Ipv4</string>
+    <string name="ethernet_item_disable_net">Forget this network</string>
+    <string name="on">Open</string>
+    <string name="off">Close</string>
+    <string name="ethernet_dis_use_wifi">Turn on WiFi</string>
+    <string name="ethernet_dis_use_pppoe">Broadband dial-up network is on</string>
+    <string name="ethernet_dis_modify_net">Modify network info</string>
+    <string name="ethernet_dis_reconnect">Reconnect</string>
+    <string name="ethernet_dis_check_net">Check network</string>
+    <string name="ethernet_dis_notice">Network connection failed</string>
+    <string name="str_ip_input_type">1234567890.</string>
+    <string name="str_ip_no_gateway">IP and gateway are not on the same segment</string>
+    <string name="str_ip_address_invalid">Input format error</string>
+    <string name="str_ip_max_value">The maximum value should be less than 255</string>
+    <string name="str_ip_full_characters">Input characters exceeded limits</string>
+    <string name="str_ip_equal_gateway">IP and gateway are equal</string>
+    <string name="network_error">Connection to server timed out！</string>
+    <string name="please_set_network">Please set up network！</string>
+
+    <!-- wifi -->
+    <string name="wifi_name">WiFi</string>
+    <string name="wifi_notice">WiFi settings</string>
+    <string name="wifi_manual_add">Add WiFi manually</string>
+    <string name="wifi_password_error">Password error</string>
+
+    <!-- test speed -->
+    <string name="test_speed_title">Internet Speed Test</string>
+    <string name="test_speed_notice">Device Internet speed test</string>
+    <string name="test_speed_unit_converter">1MB/S=8Mb/S</string>
+    <string name="test_speed_real_speed">Peak speed:&#160;</string>
+    <string name="test_speed_average_speed">Avg. speed:&#160;</string>
+    <string name="test_speed_broadband_speed">Estimation:&#160;</string>
+    <string name="test_speed_broadband_title_1">Your speed exceeds the other users</string>
+    <string name="test_speed_broadband_title_2">Users</string>
+    <string name="test_speed_broadband_title_3">Your current network is suitable for</string>
+    <string name="test_speed_broadband_level_1">Your current network is not fast enough for…</string>
+    <string name="test_speed_broadband_level_1_1">--</string>
+    <string name="test_speed_begin_test">Test</string>
+    <string name="test_speed_repeat_test">Test</string>
+    <string name="test_speed_net_stars">Rating:&#160;</string>
+    <string name="test_speed_tv_level">Suitable for:&#160;</string>
+    <string name="test_speed_0">0</string>
+    <string name="test_speed_00">.00</string>
+    <string name="test_speed_bigm_unit">MB/S</string>
+    <string name="test_speed_littlem_unit">Mb/S</string>
+    <string name="test_speed_per_30">30%</string>
+    <string name="test_speed_per_50">50%</string>
+    <string name="test_speed_per_70">70%</string>
+    <string name="test_speed_per_90">90%</string>
+    <string name="test_speed_movie_360p">－－</string>
+    <string name="test_speed_movie_720p">720P</string>
+    <string name="test_speed_movie_1080p">1080P</string>
+    <string name="test_speed_movie_4k">4K</string>
+    <string name="test_speed_testing_count">Calculating</string>
+    <!-- check network -->
+    <string name="check_network_title">Check network</string>
+    <string name="check_network_title_notice">Checking network connection</string>
+    <string name="check_network_connect_success">Network connection successful</string>
+    <string name="check_network_connect_failed">Network connection failed</string>
+
+    <!-- BY YQB -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cloud_user">Cloud user</string>
+    <string name="wendu">35</string>
+    <string name="scene">Picture</string>
+    <string name="network_setting">Network</string>
+    <string name="other_setting">Others</string>
+    <string name="about_gen_setting">System</string>
+    <string name="about_domy">About</string>
+    <string name="about_domy_detail">Damai details</string>
+    <string name="title_activity_deviceinfo">DeviceinfoActivity</string>
+    <string name="model">Model</string>
+    <string name="boxname">Box name</string>
+    <string name="firmware">Software version</string>
+    <string name="hard_version">Hardware version</string>
+    <string name="android_version">Android version</string>
+    <string name="rom_version">ROM version</string>
+    <string name="ip">IP</string>
+    <string name="mac">MAC</string>
+    <string name="sn">SN</string>
+    <string name="yunsn">Tv SN</string>
+    <string name="time">Time</string>
+    <string name="space">Storage space</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_add_wifi">AddWifiActivity</string>
+    <string name="title_activity_common">CommonActivity</string>
+    <string name="auto_power_time">Auto Power off</string>
+    <string name="protect_monitor_time">Screensaver time</string>
+    <string name="time_type">Time display</string>
+    <string name="yaokong_setting">Remote control settings</string>
+    <string name="blueteeth">Bluetooth settings</string>
+    <string name="bluetooth_detail">Bluetooth related settings</string>
+    <string name="keda_setting">Live streaming settings</string>
+    <string name="version_check">Check version</string>
+    <string name="open">On</string>
+    <string name="close">Off</string>
+    <string name="auto_power_time_close">Never</string>
+    <string name="time1">5mins</string>
+    <string name="time2">10mins</string>
+    <string name="time3">15mins</string>
+    <string name="time9">20mins</string>
+    <string name="time_ex">Close</string>
+    <string name="time4">30mins</string>
+    <string name="time5">60mins</string>
+    <string name="time6">120mins</string>
+    <string name="time7">12-hour</string>
+    <string name="time8">24-hour</string>
+    <string name="time_4h">4 hours</string>
+    <string name="time_6h">6 hours</string>
+    <string name="time_12h">12 hours</string>
+    <string name="time_24h">24 hours</string>
+    <string name="title_activity_three_dimen">ThreeDimenActivity</string>
+    <string name="auto_power_timeout">Auto power timeout</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="top">Up</string>
+    <string name="bottom">Down</string>
+    <string name="title_activity_devloper_model">DevloperModelActivity</string>
+    <string name="adb_test">Adb debug</string>
+    <string name="allow_app">Allow installation of unknown sources apps</string>
+    <string name="title_activity_version_check">VersionCheckActivity</string>
+    <string name="title_activity_update">UpdateActivity</string>
+    <string name="see_or_ort">Visible to other devices</string>
+    <string name="blue_teeth_switch">Bluetooth switch</string>
+    <string name="title_activity_blue_tooth">BlueToothActivity</string>
+    <string name="can_see">Yes</string>
+    <string name="can_not_see">No</string>
+    <string name="yes">Yes</string>
+    <string name="no">Cancle</string>
+    <string name="tv_name">Device name</string>
+    <string name="information">Information</string>
+    <string name="devloper_model">Developer mode</string>
+    <string name="location_detail">Location detail</string>
+    <string name="reset">Reset</string>
+    <string name="sendlog">Send log</string>
+    <string name="cloud_box">DAMAI</string>
+    <string name="livingroom_box">Livingroom</string>
+    <string name="bedroom_box">Bedroom</string>
+    <string name="enger_setting">Engineer setting</string>
+    <string name="bluetooth_connected">Connected</string>
+    <string name="bluetooth_connecting">Connecting</string>
+    <string name="bluetooth_disconnected">Disconnected</string>
+    <string name="bluetooth_disconnecting">Disconnecting</string>
+    <string name="bluetooth_error_title">Connect error</string>
+    <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">Use for phone audio</string>
+    <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">Use for file transfer</string>
+    <string name="bluetooth_hid_profile_summary_use_for" msgid="232727040453645139">Use for input</string>
+    <string name="bluetooth_pan_profile_summary_use_for" msgid="5664884523822068653">Use for Internet access</string>
+    <string name="bluetooth_map_profile_summary_use_for" msgid="5154200119919927434">Use for map</string>
+    <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">Use for media audio</string>
+    <string name="bluetooth_a2dp_profile_summary_connected" msgid="963376081347721598">Connected to media audio</string>
+    <string name="bluetooth_headset_profile_summary_connected" msgid="7661070206715520671">Connected to phone audio</string>
+    <string name="bluetooth_opp_profile_summary_connected" msgid="2611913495968309066">Connected to file transfer server</string>
+    <string name="bluetooth_map_profile_summary_connected" msgid="8191407438851351713">Connected to map</string>
+    <string name="bluetooth_opp_profile_summary_not_connected" msgid="1267091356089086285">Not connected to file transfer server</string>
+    <string name="bluetooth_hid_profile_summary_connected" msgid="3381760054215168689">Connected to input device</string>
+    <string name="bluetooth_pan_user_profile_summary_connected" msgid="4602294638909590612">Connected to device for Internet access</string>
+    <string name="bluetooth_pan_nap_profile_summary_connected" msgid="1561383706411975199">Sharing local Internet connection with device</string>
+    <string name="bluetooth_profile_a2dp" msgid="2031475486179830674">Media audio</string>
+    <string name="bluetooth_profile_headset" msgid="8658779596261212609">Phone audio</string>
+    <string name="bluetooth_profile_opp" msgid="9168139293654233697">File transfer</string>
+    <string name="bluetooth_profile_hid" msgid="3680729023366986480">Input device</string>
+    <string name="bluetooth_profile_pan" msgid="3391606497945147673">Internet access</string>
+    <string name="bluetooth_profile_pan_nap" msgid="8429049285027482959">Internet connection sharing</string>
+    <string name="bluetooth_profile_map" msgid="5465271250454324383">Message Access</string>
+    <string name="bluetooth_notif_title" msgid="2485175521845371514">Pairing request</string>
+    <string name="bluetooth_notif_message" msgid="5300852675110479862">Touch to pair with</string>
+    <string name="bluetooth_pairing_error_message" msgid="3748157733635947087">Couldn\'t pair with <xliff:g id="DEVICE_NAME">%1$s</xliff:g>.</string>
+    <string name="bluetooth_pairing_pin_error_message" msgid="8337234855188925274">Couldn\'t pair with <xliff:g id="DEVICE_NAME">%1$s</xliff:g> because of an incorrect PIN or passkey.</string>
+    <string name="bluetooth_pairing_device_down_error_message" msgid="7870998403045801381">Can\'t communicate with <xliff:g id="DEVICE_NAME">%1$s</xliff:g>.</string>
+    <string name="bluetooth_pairing_rejected_error_message" msgid="1648157108520832454">Pairing rejected by <xliff:g id="DEVICE_NAME">%1$s</xliff:g>.</string>
+    <string name="bluetooth_connecting_error_message" msgid="229861986106185022">Couldn\'t connect to <xliff:g id="DEVICE_NAME">%1$s</xliff:g>.</string>
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">To pair with:&lt;font color=&quot;#0594D5&quot;&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/font&gt;Type the device\'s required passkey:</string>
+    <string name="bluttooth_enter_the_same">Please enter same KEY on device</string>
+    <string name="bluetooth_need_topair">To pair with:<xliff:g id="DEVICE_NAME">%1$s</xliff:g></string>
+    <string name="bluetooth_display_passkey_pin_msg" msgid="2796550001376088433">To pair with:<xliff:g id="BOLD1_0"></xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD1"></xliff:g> Type on it:<xliff:g id="BOLD2_1"></xliff:g>&lt;font color=&quot;#00FFD6&quot;&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/font&gt;<xliff:g id="END_BOLD2"></xliff:g>, then press Enter.</string>
+    <string name="bluetooth_makesure_the_key">Please make sure the key is:&lt;font color=&quot;#00FFD6&quot;&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/font&gt;"</string>
+    <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">To pair with:<xliff:g id="DEVICE_NAME">%1$s</xliff:g>,the key is:&lt;font color=&quot;#00FFD6&quot;&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/font&gt;</string>
+    <string name="bluetooth_incoming_pairing_msg" msgid="1615930853859551491">From:&lt;font color=&quot;#0594D5&quot;&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/font&gt;,pair with this ?</string>
+    <string name="bluetooth_pair_error">Pair error</string>
+    <string name="bluetooth_bonded">Paired</string>
+    <string name="bluetooth_pairing">Pairing</string>
+    <string name="bluetooth_connected_no_a2dp">A2dp not connected</string>
+    <string name="bluetooth_connected_no_headset_no_a2dp">No headset no a2dp</string>
+    <string name="bluetooth_connected_no_headset">No headset</string>
+    <string name="bluetooth_requir_pair">Bluetooth pairing request</string>
+    <string name="bluetooth_unpair">Unpair</string>
+    <string name="bluetooth_connect">Connect</string>
+    <string name="bluetooth_connect_message">Next step?</string>
+    <string name="enter">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="clean_all_confirm">Reset may cause data error to occur. Please be cautious on your selection.</string>
+    <string name="wait_for_delete">Contents to be deleted: \n1. Local system settings data. \n2. Viewing history and My favorites. \n3. Installed apps and games. \nContents to be saved:\n1.Current system software. \n2. Pre-installed apps and games. \n3. System files. Confirm to reset.</string>
+    <string name="bluetooth_notif_ticker" msgid="4726721390078512173">Bluetooth pairing request</string>
+    <string name="reset_warning">Warning</string>
+    <string name="availablesize">Available:&#160;</string>
+    <string name="totalsize">&#160;Total:&#160;</string>
+    <string name="modify_success">Profile successfully modified</string>
+    <string name="modify_not">Profile has not been modified</string>
+    <string name="bluetooth_discovery_device">Searching device</string>
+    <string name="bluetooth_discovering_device">Searching...</string>
+    <!-- BY HUXING -->
+    <string name="listview_profiles_mode_title_1">General mode</string>
+    <string name="textview_profiles_title">device image and audio profile settings</string>
+    <string name="textview_profiles_title_discription">Box image and audio profile setting</string>
+    <string name="listview_profiles_mode_discription_1">All common scene modes</string>
+    <string name="listview_profiles_mode_title_2">Theater mode</string>
+    <string name="listview_profiles_mode_discription_2">Cinematic experience</string>
+    <string name="listview_profiles_mode_title_3">Music mode</string>
+    <string name="listview_profiles_mode_discription_3">Feel the beat</string>
+    <string name="listview_profiles_mode_title_4">Game mode</string>
+    <string name="listview_profiles_mode_discription_4">Enhanced gaming experience</string>
+    <string name="listview_profiles_mode_title_5">Dynamic mode</string>
+    <string name="listview_profiles_mode_discription_5">High contrast, dynamic image</string>
+    <string name="textview_location_title">Location detail</string>
+    <string name="textview_prompt_1">Press\u0020</string>
+    <string name="textview_prompt_2">Press button to select modes</string>
+    <string name="textview_prompt_3">Exit</string>
+    <string name="title_activity_bluetooth_pair">BluetoothPairActivity</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_turning_off">TurningOffActivity</string>
+    <string name="title_activity_control">ControlActivity</string>
+    <string name="yaokongshezhi">Remote control settings</string>
+    <string name="yaokongqsheding">Bluetooth remote control settings</string>
+    <string name="bluetooth_error">Bluetooth connection failed</string>
+    <string name="find_yaokongqi">Find the remote control</string>
+    <string name="bluetooth_pair_success">Bluetooth pairing successful</string>
+    <string name="bluetooth_connect_success">Bluetooth connected</string>
+    <string name="yaokongqi_connect">Remote control connected. No need to reconnect.</string>
+    <string name="bluetooth_timeout">Bluetooth connection timeout. Please exit and reconnect.</string>
+    <string name="bluetooth_warningand">and </string>
+    <string name="bluetooth_warning1">Get the remote control close to the TV，Please press</string>
+    <string name="bluetooth_warning2">at the same time to connect bluetooth.</string>
+    <string name="turning_off">Turning off&#8230;</string>
+    <string name="you1"></string>
+    <string name="you2">"Scanning"</string>
+    <string name="you3">"Connecting"</string>
+    <string name="you4">"Verifying ID…"</string>
+    <string name="you5">"Obtaining IP address…"</string>
+    <string name="you6">"Connected"</string>
+    <string name="you7">"Paused"</string>
+    <string name="you8">"Disconnecting "</string>
+    <string name="you9">"Disconnected"</string>
+    <string name="you10">"Failed"</string>
+    <string name="you11">"Stopped"</string>
+    <string name="you12">"Shut down the bad connection temporarily"</string>
+
+    <!-- add by wqh -->
+    <string name="video_image">Picture &#38; Audio</string>
+    <string name="box_setting">System related settings</string>
+    <string name="playsetting">Player settings</string>
+    <string name="audioDecoding">Audio Mode</string>
+    <string name="displayAdjust">Display settings</string>
+    <string name="decodingOutput">Decoding</string>
+    <string name="sourceOutput">Source</string>
+    <string name="spdifOutput">SPDIF Source</string>
+
+    <!-- playsetting -->
+    <string name="skip">Skip intros and ending credits</string>
+    <string name="resolution">Default resolution settings</string>
+    <string name="live_screen">Full screen image scale selection</string>
+    <string name="quality">Ensure image quality</string>
+    <string name="smooth">Ensure smooth playback</string>
+    <string name="proportion">16:9</string>
+    <string name="adaptive">Adaptive</string>
+
+    <!-- adjustsetting -->
+    <string name="display_adjust">Adjust Display</string>
+    <string name="display_set">Resolution settings (press confirm button to select)</string>
+    <string name="display_set_byself">Adjust display manually</string>
+    <string name="display_set_auto">Automatic adjustment</string>
+    <string name="display_set_1080p_60">1080P_60Hz</string>
+    <string name="display_set_1080p_50">1080P_50Hz</string>
+    <string name="display_set_1080i_60">1080I_60Hz</string>
+    <string name="display_set_1080i_50">1080I_50Hz</string>
+    <string name="display_set_720p_60">720P_60Hz</string>
+    <string name="display_set_720p_50">720P_50Hz</string>
+
+    <!-- display setting -->
+    <string name="title_scope_2">Set the best display via arrow keys of your remote control</string>
+    <string name="title_scope_3">Set now? </string>
+    <string name="title_scope_4">Yes, set now.</string>
+    <string name="title_scope_11">No, skip.</string>
+    <string name="title_scope_5">Adjust top</string>
+    <string name="title_scope_6">Adjust bottom</string>
+    <string name="title_scope_7">Adjust left </string>
+    <string name="title_scope_8">Adjust right</string>
+    <string name="title_scope_10">Full screen display can be achieved by adjusting these 4 buttons</string>
+    <string name="btn_next">Next</string>
+    <string name="title_scope_text1">Press</string>
+    <string name="title_scope_exit">Exit</string>
+    <string name="title_scope_text2">Adjust the next display area,</string>
+    <string name="title_scope_12">Press the up or down direction button, and move the bottom green arrow to the edge of the screen.</string>
+    <string name="title_scope_13">Press the left or right direction button, and move the right green arrow to the edge of the screen.</string>
+    <string name="title_scope_14">Press the left or right direction button, and move the left green arrow to the edge of the screen.</string>
+    <string name="title_scope_15">Press the up or down direction button, and move the top green arrow to the edge of the screen.</string>
+    <string name="display_toast">Switching the resolution may cause black screen and it will switch back soon.</string>
+    <string name="display_confirm_msg1">屏幕分辨率已经改变，\n是否保存设置？</string>
+    <string name="display_change_confirm">确认是否切换到该制式？选择确定后，\n如果电视无输出，15s后自动切回原制式</string>
+    <string name="comfirm">确认</string>
+ 
+
+    <!-- unuse -->
+    <string name="textview_location_title_discription">Choose your location</string>
+    <string name="textview_location_text">Beijing</string>
+    <string name="textview_location_province_title">Province</string>
+    <string name="textview_location_city_title">City</string>
+    <string name="textview_location_area_title">Area</string>
+    <string name="image_profile">"Image profile"</string>
+    <string name="image_profile_detail">Customize image display adjustment</string>
+    <string name="sewen">Color temperature</string>
+    <string name="liangdu">Brightness</string>
+    <string name="duibidu">Contrast</string>
+    <string name="baohedu">Saturation</string>
+    <string name="sedu">Chromaticity</string>
+    <string name="ruilidu">Sharpness</string>
+    <string name="beiguang">Backlight</string>
+    <string name="wait_for_more">Not available yet. Stay tuned…！</string>
+    <string name="view_setting">Image</string>
+    <string name="audio_setting">Audio</string>
+    <string name="parameters_setting">General parameter settings</string>
+    <string name="black">Black</string>
+    <string name="white">White</string>
+    <string name="set_it_yourself">Customize</string>
+    <string name="three_dimens_setting">3D setting</string>
+    <string name="sleep_time">Hibernate time</string>
+    <string name="theme_color">Theme color</string>
+    <string name="mystery">Mystery functions</string>
+    <string name="game_strong">Game enhanced</string>
+    <string name="dimens_seeting">3D setting</string>
+    <string name="vod_setting">VOD settings</string>
+    <string name="lunbo_setting">Rotation play settings</string>
+    <string name="problem_submit">Report problems</string>
+    <string name="other_thing">Other settings</string>
+    <string name="problem_feedback">Problem feedback</string>
+    <string name="problem_feedback_detal">Problem detail feedback</string>
+    <string name="feedback_problem">Detail feedback</string>
+    <string name="feedback_message">Accepted detail feedback</string>
+    <string name="new_message">(new message)</string>
+    <string name="title_activity_feedback_problem">FeedbackProblemActivity</string>
+    <string name="title_activity_other_setting">OtherSettingActivity</string>
+    <string name="u_test">USB drive test</string>
+    <string name="allow">Allow</string>
+    <string name="not_allow">Not allowed</string>
+    <string name="version_now">Current version</string>
+    <string name="check_version">Version checking</string>
+    <string name="version_now_message">Current version info</string>
+    <string name="check_software_version">Check software version</string>
+    <string name="need_to_update">Update to new version</string>
+    <string name="update">Update</string>
+    <string name="version_update">Version update</string>
+    <string name="textview_prompt_for_image_1">键\u0020进行参数调节\u0020\u0020\u0020|\u0020\u0020\u0020按\u0020</string>
+    <string name="textview_prompt_for_image_2">键\u0020切换调节项目</string>
+    <string name="three_dimen_type">3D模式</string>
+    <string name="left_right_mode">左右模式</string>
+    <string name="top_bottom_mode">上下模式</string>
+    <string name="threed_to_twod">3D转2D</string>
+    <string name="auto_three_dimen">自动</string>
+    <string name="polarize_type">偏光设定</string>
+    <string name="left_right_change">左右切换</string>
+    <string name="top_bottom_change">上下切换</string>
+    <string name="security_type">Security type</string>
+    <string name="gen_setting">General</string>
+    <string name="textview_prompt_location">键\u0020确认\u0020\u0020\u0020|\u0020\u0020\u0020按\u0020</string>
+    <string name="SoundSetting">Audio settings</string>
+    <string name="PCM">PCM</string>
+    <string name="HDMIpassthrough">HDMI</string>
+    <string name="SPDIFpassthrough">SPDIF</string>
+    <string name="tv_output_mode_title">Display resolution selection</string>
+    <string name="title_scope_0">Adjustment</string>
+    <string name="net_speed_tips">"Your current network is not provided by Greatwall Broadband. Video streaming speed will be affected. "</string>
+    <string name="domy_diaplay_set_title">Display setting</string>
+    <string name="domy_display_outputmode_content">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;To ensure the best display quality, please select the correct display resolution for your device. Otherwise, image may not display correctly.</string>
+    <string name="domy_display_scope_content">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The differences between TV and STB may lead to overflow indication after scanning on the screen.</string>
+    <string name="domy_setting_title_scope_message1">Make the four arrows align to the screen edges </string>
+    <string name="domy_setting_title_scope_message2">Press "back" button to quit making changes</string>
+    <string name="domy_setting_title_osd_message1">Press "confirm" to apply the changes</string>
+    <string name="domy_setting_title_osd_message2">Press "back" button to quit</string>
+    <string name="domy_setting_position_center_button_text">Confirm changes</string>
+    <string name="domy_setting_position_set_button_text1">Outwards</string>
+    <string name="domy_setting_position_set_button_text2">Inwards</string>
+    <string name="domy_setting_position_set_l">Outwards</string>
+    <string name="domy_setting_position_set_r">Inwards</string>
+    <string name="domy_setting_position_set_up">Outwards</string>
+    <string name="domy_setting_position_set_down">Inwards</string>
+    <string name="screen_adjust">Display setting</string>
+    <string name="screen_adjust_tip_1_1">\u0020\u0020\u0020\u0020\u0020\u0020\u0020In order to ensure normal display </string>
+    
+    <string name="screen_adjust_tip_1_2">screen, please select the display resolution to match your </string>
+    <string name="screen_adjust_tip_1_3">TV, otherwise it may result in display error.</string>
+    <string name="screen_adjust_tip_2_1">\u0020\u0020\u0020\u0020\u0020\u0020\u0020Due to hardware differences between </string>
+    <string name="screen_adjust_tip_2_2">devices, scanning may result in display overflow,</string>
+    <string name="screen_adjust_tip_2_3">you may adjust to ensure full display.</string>
+    <string name="adjust">Adjust</string>
+    <string name="screen_adjust_tip_3">Press confirm button to apply the setting exit to quit</string>
+    <string name="screen_adjust_tip_4">Make the four arrows align the screen \nedges then press confirm. Exit display \nsettings.</string>
+    <string name="adjust_in_1">Inward</string>
+    <string name="adjust_out_1">Outward</string>
+    <string name="adjust_in_2">Inward</string>
+    <string name="adjust_out_2">Outward</string>
+    <string name="sure_adjust">Comfirm</string>
+    <string name="tv_output_mode_dialog_title">"Notice"</string>
+    <string name="tv_output_mode_set_confirm_dialog">"Display mode setup completed. Press confirm to save; if not, it will return to original in 30 seconds."</string>
+    <string name="display_position_dialog_no">&quot;no&quot;</string>
+    <string name="display_select">Display resolution selection</string>
+    <string name="display_auto">Check automatically</string>
+    <string name="network_setting_title">Device related network settings</string>
+    <string name="pppoe_name">Broadband dial-up</string>
+    <string name="tips_pull_out_ethernet">WiFi is not available when network cable is plugged in.</string>
+    <string name="tips_pull_in_ethernet">Please plug in the network cable to proceed with setup.</string>
+    <string name="modify">Modify</string>
+    <string name="wifi_connecting">Connecting WiFi…</string>
+    <string name="used_pppoeing">Dial-Up Networking connected</string>
+    <string name="text_contain_isillegal_alpha">Contains illegal characters. Please re-enter.</string>
+    <string name="confirm_your_timezone">Please confirm your timezone：</string>
+    <string name="timezone_detail">Timezone Settings</string>
+    <string name="select_time_zone">Select timezone</string>
+    <string name="very_clear">Ultra HD</string>
+    <string name="AutoPowerDialog_Text1">Detected more than</string>
+    <string name="AutoPowerDialog_Text2">No operation</string>
+    <string name="AutoPowerDialog_Text3">Ready to shut down automatically</string>
+    <string name="AutoPowerDialog_Text4">Press any button to exit</string>
+    <string name="AutoPowerDialog_Text5">You may modify the auto shut down time in system settings.</string>
+    <string name="Minute">Minute</string>
+    <string name="Hour">Hour</string>
+    <string name="setting_init_title">The settings will be reset. Please \nconfirm.</string>
+    <string name="surenum">Please enter the confirmation code：</string>
+    <string name="setting_init">Initialization settings</string>
+    <string name="wheat_codeinput_toast">Enter 4-digit numerical password</string>
+    <string name="set_failed">Setting failed</string>
+    <string name="screen_edge">Adjust the screen edges</string>
+    <!-- BY HUANGKE -->
+    <string name="wheat_coin_lock">D coin lock</string>
+    <string name="title_wheat_code_input">WheatCoinLockCodeInput</string>
+    <string name="wheat_code">D coin lock password</string>
+    <string name="confirm">Confirm</string>
+    <string name="delete">Delete</string>
+    <string name="num">123</string>
+    <string name="wheat_code_title">If you start the D coin lock, you need to enter 4-digit numerical password when paying by D coin.</string>
+    <string name="resolution_code_error">Confirmation code error. Setup failed.</string>
+    <string name="maibiLock">D coin lock</string>
+    <string name="display_screen">Cast screen</string>
+    <string name="arr_str_auto_chack">Check automatically</string>
+
+    <string name="english">English (US)</string>
+    <string name="chinese">简体中文</string>
+    <string name="spanish">Español(US)</string>
+    <string name="language_choose">Language Selection</string>
+    <string name="language_settings">Language settings</string>
+    <string name="language_choose_menu">Language selection</string>
+    <string name="devloper_model_menu">Developer mode</string>
+    <string name="timezone_detail_menu">Timezone settings</string>
+    <string name="ethernet_name_menu">Wired network</string>
+    <string name="test_speed_title_menu">Internet speed test</string>
+    <string name="menu">Menu</string>
+    <string name="language_dialog_tips">Are you sure you choose the language</string>
+    <string name="language_dialog_tips_en">Please confirm your chosen language</string>
+    <string name="language_dialog_tips_zh">是否确定您选择的语言</string>
+    <string name="language_dialog_tips_es">¿Confirma la lengua elegida?</string>
+    <string name="language_ok_en">OK</string>
+    <string name="language_cancel_en">Cancel</string>
+    <string name="language_ok_zh">是</string>
+    <string name="language_cancel_zh">否</string>
+    <string name="language_ok_es">Sí</string>
+    <string name="language_cancel_es">No</string>
+    
+    
+    <string name="video_volume">Boot video volume</string>
+    <string name="volume1">0/100</string>
+    <string name="volume2">5/100</string>
+    <string name="volume3">10/100</string>
+    <string name="volume4">15/100</string>
+    <string name="volume5">20/100</string>
+    <string name="volume6">25/100</string>
+    <string name="volume7">30/100</string>
+    <string name="volume8">35/100</string>
+    <string name="volume9">40/100</string>
+    <string name="volume10">45/100</string>
+    <string name="volume11">50/100</string>
+    <string name="volume12">55/100</string>
+    <string name="volume13">60/100</string>
+    <string name="volume14">65/100</string>
+    <string name="volume15">70/100</string>
+    <string name="volume16">75/100</string>
+    <string name="volume17">80/100</string>
+    <string name="volume18">85/100</string>
+    <string name="volume19">90/100</string>
+    <string name="volume20">95/100</string>
+    <string name="volume21">100/100</string>
+    
+    <string name="ethernet_dhcp_timeout">Router assigned IP timeout, please check router configuration</string>
+    <string name="ip_null">IP为空，设置无效</string>
+    <string name="mask_null">子网掩码为空，设置无效</string>
+    <string name="gateway_null">网关为空，设置无效</string>
+    <string name="dns_null">DNS为空，设置无效</string>
+    
+    <string name="box_legal_check_title">非法盒子,请联系卖家！准备自动关机</string>
+        <string name="damai_remote">DAIMAI REMOTE</string>
+         <string name="not_bond">not pair</string>
+         
+         
+         <!-- 网络监测 -->
+    <string name="net_check">Network diagnostics</string>
+    <string name="interface_check">Check interface</string>
+    <string name="domynetwork">Damai Network Diagnostics Tool</string>
+    <string name="netnormaltip">Network connection normal. Please proceed.</string>
+    <string name="repair">Repair</string>
+    <string name="unrepair">Failed: Network cable driver abnormal, please reboot the box again.</string>
+     <string name="repairfailure">Failed: Hosts file been tampered, please reset system or contact manufacturer repair system </string>
+      <string name="repairfailure2">Failed: IP configuration abnormal, please check your router configuration.</string>
+     <!--  测验页面用到的，无需翻译 -->
+    <string name="informationtip">消息提示</string>
+    <string name="messagetip">提示消息</string>
+    <string name="yestip">Yes</string>
+    <string name="testcontent">Detection details</string>
+    <string name="totaltest">Run Test</string>
+    <string name="untest">Not detected</string>
+    <string name="untested">Not diagnosed</string>
+    <string name="details">Details</string>
+     <string name="starttest">Start</string>
+    <string name="domyprotip">We invite you to run a full system test. </string>
+   <string name="domyprotip2">Livestream performance test checks access rate and stability.</string>
+   <string name="domyprotip3">Launcher performance test troubleshoots image loading and related interface stability.</string>
+   <string name="domyprotip4">VOD performance test checks access rate and stability. </string>
+   <string name="domyprotip5">Ad performance test checks stability.</string>
+   <string name="domyprotip6">Comprehensive e-commerce performance evaluation detects backend interface stability.</string>
+   <string name="domyprotip7">Damai system upgrade evaluation evaluates the stability of slient and OTA upgrades.</string>
+   <string name="nethardware">Hardware</string>
+   <string name="netconnect">Connect</string>
+    <string name="listcontroltip">Check if network cable connecting and work properply.</string>
+    <string name="networktip">A full test is recommending if you have internet conneting problem.</string>
+    <string name="networktip2">Check if the network card/IP configuration is correct.</string>
+    <string name="networktip3">DHCP</string>
+    <string name="networktip4">Check if DHCP service is working properly. </string>
+    <string name="dnstip">DNS service</string>
+    <string name="networktip5">If you can see live channel, but poster not showing, check the DNS server</string>
+    <string name="networktip6">If newtwork connecting ok, but some data is not loading, check the HOSTS sever</string>
+    <string name="host">HOSTS</string>
+    <string name="netexception1">Network issue:</string>
+    <string name="netexception2">error(s) found. Click repair to try fixing the problems.</string>
+    <string name="normal">Normal</string>
+     <string name="testing">Diagnosing</string>
+     <string name="exception">errors</string>
+     <string name="warning">Warning: Please check your Wi-Fi or netowrk connection. </string>
+     
+    
+</resources>

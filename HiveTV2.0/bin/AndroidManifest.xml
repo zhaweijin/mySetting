@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hiveview.tv"
+    android:versionCode="193"
+    android:versionName="2.02.161" >
+
+
+    <!-- android:sharedUserId="android.uid.hiveview" -->
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.hiveview.tv" />
+  
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 获取设备信息 -->
+    <application
+        android:name="com.hiveview.tv.common.HiveviewApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <uses-library
+            android:name="android.test.runner"
+            android:required="true" />
+
+        <provider
+            android:name=".service.dao.HiveViewProvider"
+              android:exported="true"
+            android:multiprocess="true"
+            android:authorities="HiveTVAuthorities" />
+
+        <activity
+            android:name="com.hiveview.tv.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.HomeActivity"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:configChanges="navigation|keyboard|keyboardHidden"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+      			 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.TestDevActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        
+                <activity
+            android:name="com.hiveview.tv.activity.NetExceptionActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+              android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"  >
+        </activity>
+        
+          <activity
+            android:name="com.hiveview.tv.activity.HomeWebViewActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.hiveview.tv.home.webview" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.hiveview.tv.activity.CollectActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.hiveview.tv.MOVIE_FAVORITES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.NewChannelActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.PlayerRecordActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.hiveview.tv.PLAY_RECORDS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.TeleplayDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="CONTENT_ACTION_TELEPLAYDETAIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.FilmDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="CONTENT_ACTION_FILMDETAIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.VarietyDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="CONTENT_ACTION_VARIETYDETAIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.SubjectDetailLandspaceActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.SubjectJudgeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.hiveview.subject.detail" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.SubjectDetailPortraitActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.SearchHomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.hiveview.tv.MOVIE_SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.LiveFastSelectTvChannelActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.hiveview.tv.LIVE_FAST_SELECT_TV_CHANNEL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.LiveSelectTelevisionActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.hiveview.tv.LIVE_SELECT_TELEVISION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.OnlivesTipsActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.hiveview.tv.ONLIVE_TIPS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.OnlivePlayerActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.LiveEpgInfoActivity"
+            android:label="@string/app_name"
+            android:theme="@style/transparent" >
+        </activity>
+        
+        <activity
+            android:name="com.hiveview.tv.activity.VarietyPagerActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.hiveview.video.list.HORIZONTAL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.MovieDemandListActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.hiveview.video.list.VERTICAL" />
+            </intent-filter>
+        </activity>
+                <activity
+            android:name="com.hiveview.tv.activity.VoiceOnliveEPGActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.hiveview.tv.voiceEpgInfo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.SearchPageActivtiy"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <service android:name="com.hiveview.tv.service.VoiceControlService" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.iflytek.xiri2.app.NOTIFY" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.hiveview.tv.activity.SubjectTopicListActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.hiveview.video.SUBJECTLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.ComplexVoiceSearchListActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <service android:name="com.hiveview.tv.service.LoadService" />
+        <service android:name="com.hiveview.tv.service.VideoService" >
+                <intent-filter>
+                <action android:name="CONTENT_ACTION_NODETAIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>    
+         </service>   
+        <service android:name="com.hiveview.tv.service.OnliveTipService" >
+        </service>
+        <service android:name="com.hiveview.tv.service.LockNetService" >
+        </service>
+	 <service android:name="com.hiveview.tv.service.LockVipService" ></service>
+        <receiver android:name="com.hiveview.tv.view.television.voicecontrol.PreLoadDataReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hiveview.tv.service.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.hiveview.tv.statistics" />
+                <action android:name="com.hiveview.tv.time" />
+                <action android:name="com.hiveview.tv.activeStatistics"/>
+                <action android:name="com.hiveview.tv.timeStart" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hiveview.tv.view.television.voicecontrol.ChannelChangedReceiver" >
+            <intent-filter>
+                <action android:name="com.iflyek.TVDCS.STBSTATUS" />
+            </intent-filter>
+        </receiver>
+<!--         <receiver android:name="com.hiveview.tv.view.television.voicecontrol.SignalChangedReceiver" >
+            <intent-filter>
+                <action android:name="com.iflytek.tvdcs.change_input_source" />
+            </intent-filter>
+        </receiver> -->
+        <receiver android:name="com.hiveview.tv.service.LockNetReceiver" >
+            <intent-filter>
+                <action android:name="com.hiveview.tv.locknet.test"/>
+                <action android:name="com.hiveview.pingswanserver.notifiy" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+           <receiver android:name="com.hiveview.tv.service.RemotecontrolReceiver" >
+        </receiver>
+
+        <activity
+            android:name="com.hiveview.tv.activity.SearchConditionsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/transparent" >
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.StorageDialogActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/transparent" >
+        </activity>
+        <activity
+            android:name="com.hiveview.tv.activity.XunfeiComplexVoiceSearchListActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/transparent" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="com.hiveview.appstore.provider" />
+
+</manifest>

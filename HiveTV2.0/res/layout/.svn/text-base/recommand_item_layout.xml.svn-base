@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.hiveview.tv.common.image.RecyclingImageView
+        android:id="@+id/iv_recm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/recm_title_text_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#AA000000"
+        android:gravity="center"
+        android:text="疯狂石头" />
+
+</RelativeLayout>

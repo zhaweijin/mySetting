@@ -1,0 +1,576 @@
+<com.hiveview.tv.view.CustomDrawingOrderLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/ll_first_01"
+    	android:layout_marginTop="-25dip"
+    	android:layout_marginLeft="60dip"
+    	android:orientation="horizontal">
+    	
+        <FrameLayout android:background="@drawable/select_focus_bg"
+		    android:focusable="true"
+		    android:id="@+id/fl_first_line_01"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+		    
+		    <RelativeLayout
+			    android:layout_width="202dip"
+			    android:layout_height="222dip"
+			    android:background="@drawable/select_tv_item_bg" >
+			    
+			    <com.hiveview.tv.common.myimage.ImageLoadView android:layout_width="80dip"
+			    	android:layout_height="120dip"
+			    	android:id="@+id/iv_thumb"
+			    	android:paddingLeft="5dip"
+			    	android:paddingTop="5dip"
+			    	android:src="@drawable/iv_focus_default" />
+			    
+			    <LinearLayout android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:paddingTop="20dip"
+			    	android:paddingLeft="10dip"
+			    	android:layout_toRightOf="@+id/iv_thumb"
+			    	android:orientation="vertical">
+			        
+				    <com.hiveview.tv.common.myimage.ImageLoadView android:layout_width="80dip"
+				    	android:layout_height="43dip"
+				    	android:layout_gravity="center"
+				    	android:id="@+id/iv_television_logo"
+				    	 />
+				    
+				    <TextView android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:paddingTop="15dip"
+				    	android:text="湖南卫视"
+				    	android:layout_gravity="center"
+				    	android:id="@+id/tv_television_name"
+				    	android:textSize="17sp"
+				    	android:textColor="#ffffff"/>
+				    
+			    </LinearLayout>
+			    
+			    <LinearLayout android:layout_width="match_parent"
+			    	android:layout_height="40dip"
+			    	android:id="@+id/ll_progress"
+			    	android:layout_below="@+id/iv_thumb"
+			    	android:orientation="vertical">
+				    
+	         		<SeekBar android:id="@+id/sb_television_item" 
+				        android:layout_marginLeft="5dip" 
+						android:layout_marginRight="5dip"
+				        android:paddingLeft="5dip" 
+				        android:paddingRight="5dip"
+				        android:layout_width="fill_parent" 
+				        android:layout_height="wrap_content"
+				        android:focusable="false"
+				        android:max="24"
+				        android:thumb="@drawable/seekbar_television_thumb"
+				        android:maxHeight="3.0dip"
+				        android:thumbOffset="2.0dip"
+				        android:progressDrawable="@drawable/player_seekbar_style" />
+	         		
+	         		<RelativeLayout android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content">
+	         		    
+	         		    <TextView android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:layout_marginLeft="5dip"
+				    		android:layout_alignParentLeft="true"
+				    		android:id="@+id/tv_start_time"
+				    		android:text="23:10" />
+	         		    
+	         		    <TextView android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:layout_marginRight="5dip"
+				    		android:layout_alignParentRight="true"
+				    		android:id="@+id/tv_end_time"
+				    		android:text="23:10" />
+	         		    
+	         		</RelativeLayout>
+				    
+			    </LinearLayout>
+			    
+				<com.hiveview.tv.view.television.MarqueeText
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="marquee"
+		            android:singleLine="true"
+					android:layout_marginLeft="5dip"
+					android:id="@+id/tv_program"
+					android:layout_below="@+id/ll_progress"
+			    	android:layout_marginTop="5dip"
+					android:text="最美时光 （23）"
+					android:textSize="20sp"
+					android:color="@color/white"/>
+					
+				<com.hiveview.tv.view.television.MarqueeText android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="marquee"
+		            android:singleLine="true"
+					android:layout_marginLeft="5dip"
+					android:id="@+id/tv_program_thumb"
+					android:layout_below="@+id/tv_program"
+			    	android:layout_marginTop="5dip"
+					android:text="23：34    最美时光 （23）"
+					android:textSize="18sp"
+					android:color="@color/white"/>
+			    
+			</RelativeLayout>
+		    
+		</FrameLayout>
+    	
+        <FrameLayout android:background="@drawable/select_focus_bg"
+		    android:focusable="true"
+		    android:id="@+id/fl_first_line_02"
+		    android:layout_marginLeft="-40dip"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+		    
+		    <RelativeLayout
+			    android:layout_width="202dip"
+			    android:layout_height="222dip"
+			    android:background="@drawable/select_tv_item_bg" >
+			    
+			    <com.hiveview.tv.common.myimage.ImageLoadView android:layout_width="80dip"
+			    	android:layout_height="120dip"
+			    	android:id="@+id/iv_thumb"
+			    	android:paddingLeft="5dip"
+			    	android:paddingTop="5dip"
+			    	android:src="@drawable/iv_focus_default" />
+			    
+			    <LinearLayout android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:paddingTop="20dip"
+			    	android:paddingLeft="10dip"
+			    	android:layout_toRightOf="@+id/iv_thumb"
+			    	android:orientation="vertical">
+			        
+				    <com.hiveview.tv.common.myimage.ImageLoadView android:layout_width="80dip"
+				    	android:layout_height="43dip"
+				    	android:layout_gravity="center"
+				    	android:id="@+id/iv_television_logo"
+				    	 />
+				    
+				    <TextView android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:paddingTop="15dip"
+				    	android:text="湖南卫视"
+				    	android:layout_gravity="center"
+				    	android:id="@+id/tv_television_name"
+				    	android:textSize="17sp"
+				    	android:textColor="#ffffff"/>
+				    
+			    </LinearLayout>
+			    
+			    <LinearLayout android:layout_width="match_parent"
+			    	android:layout_height="40dip"
+			    	android:id="@+id/ll_progress"
+			    	android:layout_below="@+id/iv_thumb"
+			    	android:orientation="vertical">
+				    
+	         		<SeekBar android:id="@+id/sb_television_item" 
+				        android:layout_marginLeft="5dip" 
+						android:layout_marginRight="5dip"
+				        android:paddingLeft="5dip" 
+				        android:paddingRight="5dip"
+				        android:focusable="false"
+				        android:layout_width="fill_parent" 
+				        android:layout_height="wrap_content"
+				        android:max="24"
+				        android:thumb="@drawable/seekbar_television_thumb"
+				        android:maxHeight="3.0dip"
+				        android:thumbOffset="2.0dip"
+				        android:progressDrawable="@drawable/player_seekbar_style" />
+	         		
+	         		<RelativeLayout android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content">
+	         		    
+	         		    <TextView android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:layout_marginLeft="5dip"
+				    		android:layout_alignParentLeft="true"
+				    		android:id="@+id/tv_start_time"
+				    		android:text="23:10" />
+	         		    
+	         		    <TextView android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:layout_marginRight="5dip"
+				    		android:layout_alignParentRight="true"
+				    		android:id="@+id/tv_end_time"
+				    		android:text="23:10" />
+	         		    
+	         		</RelativeLayout>
+				    
+			    </LinearLayout>
+			    
+				<com.hiveview.tv.view.television.MarqueeText android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 android:ellipsize="marquee"
+		            android:singleLine="true"
+					android:layout_marginLeft="5dip"
+					android:id="@+id/tv_program"
+					android:layout_below="@+id/ll_progress"
+			    	android:layout_marginTop="5dip"
+					android:text="最美时光 （23）"
+					android:textSize="20sp"
+					android:color="@color/white"/>
+					
+				<com.hiveview.tv.view.television.MarqueeText android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 android:ellipsize="marquee"
+		            android:singleLine="true"
+					android:layout_marginLeft="5dip"
+					android:id="@+id/tv_program_thumb"
+					android:layout_below="@+id/tv_program"
+			    	android:layout_marginTop="5dip"
+					android:text="23：34    最美时光 （23）"
+					android:textSize="18sp"
+					android:color="@color/white"/>
+			    
+			</RelativeLayout>
+		    
+		</FrameLayout>
+    	
+        <FrameLayout android:background="@drawable/select_focus_bg"
+		    android:focusable="true"
+		    android:id="@+id/fl_first_line_03"
+		    android:layout_marginLeft="-40dip"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+		    
+			<RelativeLayout
+			    android:layout_width="202dip"
+			    android:layout_height="222dip"
+			    android:background="@drawable/select_tv_item_bg" >
+			    
+			    <com.hiveview.tv.common.myimage.ImageLoadView android:layout_width="80dip"
+			    	android:layout_height="120dip"
+			    	android:id="@+id/iv_thumb"
+			    	android:paddingLeft="5dip"
+			    	android:paddingTop="5dip"
+			    	android:src="@drawable/iv_focus_default" />
+			    
+			    <LinearLayout android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:paddingTop="20dip"
+			    	android:paddingLeft="10dip"
+			    	android:layout_toRightOf="@+id/iv_thumb"
+			    	android:orientation="vertical">
+			        
+				    <com.hiveview.tv.common.myimage.ImageLoadView android:layout_width="80dip"
+				    	android:layout_height="43dip"
+				    	android:layout_gravity="center"
+				    	android:id="@+id/iv_television_logo"
+				    	 />
+				    
+				    <TextView android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:paddingTop="15dip"
+				    	android:text="湖南卫视"
+				    	android:layout_gravity="center"
+				    	android:id="@+id/tv_television_name"
+				    	android:textSize="17sp"
+				    	android:textColor="#ffffff"/>
+				    
+			    </LinearLayout>
+			    
+			    <LinearLayout android:layout_width="match_parent"
+			    	android:layout_height="40dip"
+			    	android:id="@+id/ll_progress"
+			    	android:layout_below="@+id/iv_thumb"
+			    	android:orientation="vertical">
+				    
+	         		<SeekBar android:id="@+id/sb_television_item" 
+				        android:layout_marginLeft="5dip" 
+						android:layout_marginRight="5dip"
+				        android:paddingLeft="5dip" 
+				        android:paddingRight="5dip"
+				        android:focusable="false"
+				        android:layout_width="fill_parent" 
+				        android:layout_height="wrap_content"
+				        android:max="24"
+				        android:thumb="@drawable/seekbar_television_thumb"
+				        android:maxHeight="3.0dip"
+				        android:thumbOffset="2.0dip"
+				        android:progressDrawable="@drawable/player_seekbar_style" />
+	         		
+	         		<RelativeLayout android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content">
+	         		    
+	         		    <TextView android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:layout_marginLeft="5dip"
+				    		android:layout_alignParentLeft="true"
+				    		android:id="@+id/tv_start_time"
+				    		android:text="23:10" />
+	         		    
+	         		    <TextView android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:layout_marginRight="5dip"
+				    		android:layout_alignParentRight="true"
+				    		android:id="@+id/tv_end_time"
+				    		android:text="23:10" />
+	         		    
+	         		</RelativeLayout>
+				    
+			    </LinearLayout>
+			    
+				<com.hiveview.tv.view.television.MarqueeText android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="marquee"
+		            android:singleLine="true"
+					android:layout_marginLeft="5dip"
+					android:id="@+id/tv_program"
+					android:layout_below="@+id/ll_progress"
+			    	android:layout_marginTop="5dip"
+					android:text="最美时光 （23）"
+					android:textSize="20sp"
+					android:color="@color/white"/>
+					
+				<com.hiveview.tv.view.television.MarqueeText android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="marquee"
+		            android:singleLine="true"
+					android:layout_marginLeft="5dip"
+					android:id="@+id/tv_program_thumb"
+					android:layout_below="@+id/tv_program"
+			    	android:layout_marginTop="5dip"
+					android:text="23：34    最美时光 （23）"
+					android:textSize="18sp"
+					android:color="@color/white"/>
+			    
+			</RelativeLayout>
+		    
+		</FrameLayout>
+    	
+        <FrameLayout android:background="@drawable/select_focus_bg"
+		    android:focusable="true"
+		    android:id="@+id/fl_first_line_04"
+		    android:layout_marginLeft="-40dip"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+		    
+		    <RelativeLayout
+			    android:layout_width="202dip"
+			    android:layout_height="222dip"
+			    android:background="@drawable/select_tv_item_bg" >		
+			    	    
+			    <com.hiveview.tv.common.myimage.ImageLoadView android:layout_width="80dip"
+			    	android:layout_height="120dip"
+			    	android:id="@+id/iv_thumb"
+			    	android:paddingLeft="5dip"
+			    	android:paddingTop="5dip"
+			    	android:src="@drawable/iv_focus_default" />
+			    
+			    <LinearLayout android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:paddingTop="20dip"
+			    	android:paddingLeft="10dip"
+			    	android:layout_toRightOf="@+id/iv_thumb"
+			    	android:orientation="vertical">
+			        
+				    <com.hiveview.tv.common.myimage.ImageLoadView android:layout_width="80dip"
+				    	android:layout_height="43dip"
+				    	android:layout_gravity="center"
+				    	android:id="@+id/iv_television_logo"
+				    	 />
+				    
+				    <TextView android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:paddingTop="15dip"
+				    	android:text="湖南卫视"
+				    	android:layout_gravity="center"
+				    	android:id="@+id/tv_television_name"
+				    	android:textSize="17sp"
+				    	android:textColor="#ffffff"/>
+				    
+			    </LinearLayout>
+			    
+			    <LinearLayout android:layout_width="match_parent"
+			    	android:layout_height="40dip"
+			    	android:id="@+id/ll_progress"
+			    	android:layout_below="@+id/iv_thumb"
+			    	android:orientation="vertical">
+				    
+	         		<SeekBar android:id="@+id/sb_television_item" 
+				        android:layout_marginLeft="5dip" 
+						android:layout_marginRight="5dip"
+				        android:paddingLeft="5dip" 
+				        android:paddingRight="5dip"
+				        android:focusable="false"
+				        android:layout_width="fill_parent" 
+				        android:layout_height="wrap_content"
+				        android:max="24"
+				        android:thumb="@drawable/seekbar_television_thumb"
+				        android:maxHeight="3.0dip"
+				        android:thumbOffset="2.0dip"
+				        android:progressDrawable="@drawable/player_seekbar_style" />
+	         		
+	         		<RelativeLayout android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content">
+	         		    
+	         		    <TextView android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:layout_marginLeft="5dip"
+				    		android:layout_alignParentLeft="true"
+				    		android:id="@+id/tv_start_time"
+				    		android:text="23:10" />
+	         		    
+	         		    <TextView android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:layout_marginRight="5dip"
+				    		android:layout_alignParentRight="true"
+				    		android:id="@+id/tv_end_time"
+				    		android:text="23:10" />
+	         		    
+	         		</RelativeLayout>
+				    
+			    </LinearLayout>
+			    
+				<com.hiveview.tv.view.television.MarqueeText android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="marquee"
+		            android:singleLine="true"
+					android:layout_marginLeft="5dip"
+					android:id="@+id/tv_program"
+					android:layout_below="@+id/ll_progress"
+			    	android:layout_marginTop="5dip"
+					android:text="最美时光 （23）"
+					android:textSize="20sp"
+					android:color="@color/white"/>
+					
+				<com.hiveview.tv.view.television.MarqueeText android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="marquee"
+		            android:singleLine="true"
+					android:layout_marginLeft="5dip"
+					android:id="@+id/tv_program_thumb"
+					android:layout_below="@+id/tv_program"
+			    	android:layout_marginTop="5dip"
+					android:text="23：34    最美时光 （23）"
+					android:textSize="18sp"
+					android:color="@color/white"/>
+			    
+			</RelativeLayout>
+		    
+		</FrameLayout>
+    	
+        <FrameLayout android:background="@drawable/select_focus_bg"
+		    android:focusable="true"
+		    android:id="@+id/fl_first_line_05"
+		    android:layout_marginLeft="-40dip"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+		    
+		    <RelativeLayout
+			    android:layout_width="202dip"
+			    android:layout_height="222dip"
+			    android:background="@drawable/select_tv_item_bg" >
+			    
+			    <com.hiveview.tv.common.myimage.ImageLoadView android:layout_width="80dip"
+			    	android:layout_height="120dip"
+			    	android:id="@+id/iv_thumb"
+			    	android:paddingLeft="5dip"
+			    	android:paddingTop="5dip"
+			    	android:src="@drawable/iv_focus_default" />
+			    
+			    
+			    <LinearLayout android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:paddingTop="20dip"
+			    	android:paddingLeft="10dip"
+			    	android:layout_toRightOf="@+id/iv_thumb"
+			    	android:orientation="vertical">
+			        
+				    <com.hiveview.tv.common.myimage.ImageLoadView android:layout_width="80dip"
+				    	android:layout_height="43dip"
+				    	android:layout_gravity="center"
+				    	android:id="@+id/iv_television_logo"
+				    	 />
+				    
+				    <TextView android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:paddingTop="15dip"
+				    	android:text="湖南卫视"
+				    	android:layout_gravity="center"
+				    	android:id="@+id/tv_television_name"
+				    	android:textSize="17sp"
+				    	android:textColor="#ffffff"/>
+				    
+			    </LinearLayout>
+			    
+			    <LinearLayout android:layout_width="match_parent"
+			    	android:layout_height="40dip"
+			    	android:id="@+id/ll_progress"
+			    	android:layout_below="@+id/iv_thumb"
+			    	android:orientation="vertical">
+				    
+	         		<SeekBar android:id="@+id/sb_television_item" 
+				        android:layout_marginLeft="5dip" 
+						android:layout_marginRight="5dip"
+				        android:paddingLeft="5dip" 
+				        android:paddingRight="5dip"
+				        android:focusable="false"
+				        android:layout_width="fill_parent" 
+				        android:layout_height="wrap_content"
+				        android:max="24"
+				        android:thumb="@drawable/seekbar_television_thumb"
+				        android:maxHeight="3.0dip"
+				        android:thumbOffset="2.0dip"
+				        android:progressDrawable="@drawable/player_seekbar_style" />
+	         		
+	         		<RelativeLayout android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content">
+	         		    
+	         		    <TextView android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:layout_marginLeft="5dip"
+				    		android:layout_alignParentLeft="true"
+				    		android:id="@+id/tv_start_time"
+				    		android:text="23:10" />
+	         		    
+	         		    <TextView android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:layout_marginRight="5dip"
+				    		android:layout_alignParentRight="true"
+				    		android:id="@+id/tv_end_time"
+				    		android:text="23:10" />
+	         		    
+	         		</RelativeLayout>
+				    
+			    </LinearLayout>
+			    
+				<com.hiveview.tv.view.television.MarqueeText android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="marquee"
+		            android:singleLine="true"
+					android:layout_marginLeft="5dip"
+					android:id="@+id/tv_program"
+					android:layout_below="@+id/ll_progress"
+			    	android:layout_marginTop="5dip"
+					android:text="最美时光 （23）"
+					android:textSize="20sp"
+					android:color="@color/white"/>
+					
+				<com.hiveview.tv.view.television.MarqueeText android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="marquee"
+		            android:singleLine="true"
+					android:layout_marginLeft="5dip"
+					android:id="@+id/tv_program_thumb"
+					android:layout_below="@+id/tv_program"
+			    	android:layout_marginTop="5dip"
+					android:text="23：34    最美时光 （23）"
+					android:textSize="18sp"
+					android:color="@color/white"/>
+			    
+			</RelativeLayout>
+		    
+		</FrameLayout>
+		
+    </LinearLayout>
+    
+</com.hiveview.tv.view.CustomDrawingOrderLayout>

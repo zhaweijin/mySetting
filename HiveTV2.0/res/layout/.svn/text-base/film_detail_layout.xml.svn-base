@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 显示背景图的ImageView -->
+
+    <include layout="@layout/background_layout" />
+
+    <!-- 电影封面 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_image_layout"
+        android:layout_width="234dip"
+        android:layout_height="315dip"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="57dp" >
+
+        <ImageView
+            android:id="@+id/iv_film_detail_cover"
+            android:layout_width="234dip"
+            android:layout_height="315dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_film_detail_big" />
+
+        <TextView
+            android:id="@+id/tv_film_socre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_film_detail_cover"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="-30dip"
+            android:textColor="#FF8902"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- 电影标题 -->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="57dp"
+        android:layout_toRightOf="@id/rl_image_layout"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#DCDCDC"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+    <!-- 电影标题下简介第一行 -->
+
+    <TextView
+        android:id="@+id/tv_des_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dip"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/rl_image_layout"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#FF8902"
+        android:textSize="18sp" />
+    <!-- 电影标题下简介第二行 -->
+
+    <TextView
+        android:id="@+id/tv_des_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_des_line1"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dip"
+        android:layout_toRightOf="@id/rl_image_layout"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#FF8902"
+        android:textSize="18sp" />
+
+    <!-- 电影详细信息 -->
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_film_detail_play"
+        android:layout_below="@id/tv_des_line2"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dip"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/rl_image_layout"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:textColor="#B0B0B0"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rl_image_layout"
+        android:layout_below="@+id/rl_image_layout"
+        android:layout_marginTop="23dp"
+        android:text="@string/tv_recommend"
+        android:textColor="#EEEDED"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_pager_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_recommend"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/iv_page_left"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_pager_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_recommend"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/iv_page_right"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_recommend"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/iv_pager_right"
+        android:layout_toRightOf="@+id/iv_pager_left" >
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_data"
+            android:textSize="40sp"
+            android:visibility="gone" />
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/film_pagaer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <com.hiveview.tv.view.ProgressDialog
+            android:id="@+id/iv_films_loading"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/film_relative_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_data"
+            android:textSize="25sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <!-- start 修改布局image_focus修改为image_focus_1,padding=3dip修改为13dip author:huzuwei-->
+    <ImageView
+        android:id="@+id/iv_film_detail_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_recommend"
+        android:layout_alignLeft="@+id/tv_content"
+        android:layout_marginLeft="-10dip"
+        android:background="@drawable/image_focus_1"
+        android:focusable="true"
+        android:padding="13dip"
+        android:src="@drawable/film_detail_play" />
+
+    <ImageView
+        android:id="@+id/iv_film_detail_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_recommend"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/iv_film_detail_play"
+        android:background="@drawable/image_focus_1"
+        android:focusable="true"
+        android:padding="13dip"
+        android:src="@drawable/film_detail_fav" />
+    <!-- end -->
+
+
+
+</RelativeLayout>

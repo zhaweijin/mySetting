@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/film_item_rl_1"
+        style="@style/film_relative_item_layout"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/film_l_1"
+            style="@style/film_relative_image_layout" >
+
+            <ImageView
+                android:id="@+id/iv_poster1"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_name1"
+            style="@style/film_relative_item_tv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/film_item_rl_2"
+        style="@style/film_relative_item_layout"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/film_l_2"
+            style="@style/film_relative_image_layout" >
+
+            <ImageView
+                android:id="@+id/iv_poster2"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_name2"
+            style="@style/film_relative_item_tv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/film_item_rl_3"
+        style="@style/film_relative_item_layout"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/film_l_3"
+            style="@style/film_relative_image_layout" >
+
+            <ImageView
+                android:id="@+id/iv_poster3"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_name3"
+            style="@style/film_relative_item_tv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/film_item_rl_4"
+        style="@style/film_relative_item_layout"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/film_l_4"
+            style="@style/film_relative_image_layout" >
+
+            <ImageView
+                android:id="@+id/iv_poster4"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_name4"
+            style="@style/film_relative_item_tv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/film_item_rl_5"
+        style="@style/film_relative_item_layout"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/film_l_5"
+            style="@style/film_relative_image_layout" >
+
+            <ImageView
+                android:id="@+id/iv_poster5"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_name5"
+            style="@style/film_relative_item_tv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/film_item_rl_6"
+        style="@style/film_relative_item_layout"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/film_l_6"
+            style="@style/film_relative_image_layout" >
+
+            <ImageView
+                android:id="@+id/iv_poster6"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_name6"
+            style="@style/film_relative_item_tv" />
+    </LinearLayout>
+
+</LinearLayout>

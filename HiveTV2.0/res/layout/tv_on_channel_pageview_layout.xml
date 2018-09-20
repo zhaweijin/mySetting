@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <com.hiveview.tv.view.TvChannelPageViewItemView
+        android:id="@+id/channel_select_item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:layout_marginTop="-15dip"
+        android:visibility="invisible" >
+    </com.hiveview.tv.view.TvChannelPageViewItemView>
+
+    <com.hiveview.tv.view.TvChannelPageViewItemView
+        android:id="@+id/channel_select_item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-40dip"
+        android:layout_toRightOf="@id/channel_select_item1"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:layout_marginTop="-15dip"
+        android:visibility="invisible" >
+    </com.hiveview.tv.view.TvChannelPageViewItemView>
+
+    <com.hiveview.tv.view.TvChannelPageViewItemView
+        android:id="@+id/channel_select_item3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-40dip"
+        android:layout_marginTop="-15dip"
+        android:layout_toRightOf="@id/channel_select_item2"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:visibility="invisible" >
+    </com.hiveview.tv.view.TvChannelPageViewItemView>
+
+    <com.hiveview.tv.view.TvChannelPageViewItemView
+        android:id="@+id/channel_select_item4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-40dip"
+        android:layout_marginTop="-15dip"
+        android:layout_toRightOf="@id/channel_select_item3"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:visibility="invisible" >
+    </com.hiveview.tv.view.TvChannelPageViewItemView>
+
+<!--     <com.hiveview.tv.view.TvChannelPageViewItemView
+        android:id="@+id/channel_item5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-40dip"
+        android:layout_marginTop="-15dip"
+        android:layout_toRightOf="@id/channel_item4"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:visibility="invisible" >
+    </com.hiveview.tv.view.TvChannelPageViewItemView> -->
+
+</RelativeLayout>

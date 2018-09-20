@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guide_language_bg" >
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_marginTop="196dp"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/layout_en"
+            android:layout_width="273dp"
+            android:layout_height="303dp"
+            android:focusable="true"
+            android:background="@drawable/square_bg" >
+
+            <ImageView
+                android:id="@+id/en_icon"
+                android:layout_width="95dp"
+                android:layout_height="93dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="63dp"
+                android:src="@drawable/en" />
+
+            <TextView
+                android:id="@+id/en_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="60dp"
+                android:text="@string/chinese"
+                android:textColor="@android:color/white"
+                android:textSize="28dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_us"
+            android:layout_width="273dp"
+            android:layout_height="303dp"
+            android:layout_marginLeft="92dip"
+            android:focusable="true"
+            android:background="@drawable/square_bg" >
+
+            <ImageView
+                android:id="@+id/us_icon"
+                android:layout_width="95dp"
+                android:layout_height="93dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="63dp"
+                android:src="@drawable/us" />
+
+            <TextView
+                android:id="@+id/us_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:layout_alignParentBottom="true"
+                android:text="@string/english"
+                android:textColor="@android:color/white"
+                android:textSize="28dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

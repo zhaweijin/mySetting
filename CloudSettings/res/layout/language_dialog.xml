@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="631dp"
+    android:layout_height="203dp"
+    android:background="@drawable/language_dialog_bg" >
+
+    <TextView
+        android:id="@+id/message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="33dp"
+        android:lineSpacingMultiplier="1.5"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_36" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="184dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="140dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="145dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/button_selector"
+            android:paddingBottom="6dp"
+            android:text="@string/yes"
+            android:textColor="@color/settings_ffffff"
+            android:textSize="@dimen/text_size_36"
+            android:visibility="visible" >
+        </Button>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="145dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_selector"
+            android:paddingBottom="6dp"
+            android:text="@string/no"
+            android:textColor="@color/settings_ffffff"
+            android:textSize="@dimen/text_size_36"
+            android:visibility="visible" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

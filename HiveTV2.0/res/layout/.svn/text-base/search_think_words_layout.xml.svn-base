@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_words_1"
+        style="@style/search_think_words_style" />
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_words_2"
+        style="@style/search_think_words_style"
+        android:layout_toRightOf="@id/tv_words_1" />
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_words_3"
+        style="@style/search_think_words_style"
+        
+        android:layout_toRightOf="@id/tv_words_2" />
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_words_4"
+        style="@style/search_think_words_style"
+        
+        android:layout_toRightOf="@id/tv_words_3" />
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_words_5"
+        style="@style/search_think_words_style"
+        
+        android:layout_toRightOf="@id/tv_words_4" />
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_words_6"
+        style="@style/search_think_words_style"
+        android:layout_below="@id/tv_words_1"
+        android:layout_marginTop="77dip" />
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_words_7"
+        style="@style/search_think_words_style"
+        android:layout_below="@id/tv_words_1"
+        
+        android:layout_marginTop="77dip"
+        android:layout_toRightOf="@id/tv_words_6" />
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_words_8"
+        style="@style/search_think_words_style"
+        android:layout_below="@id/tv_words_1"
+        
+        android:layout_marginTop="77dip"
+        android:layout_toRightOf="@id/tv_words_7" />
+    
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_words_9"
+        style="@style/search_think_words_style"
+        android:layout_below="@id/tv_words_1"
+        
+        android:layout_marginTop="77dip"
+        android:layout_toRightOf="@id/tv_words_8" />
+    
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/tv_words_10"
+        style="@style/search_think_words_style"
+        android:layout_below="@id/tv_words_1"
+        
+        android:layout_marginTop="77dip"
+        android:layout_toRightOf="@id/tv_words_9" />
+
+</RelativeLayout>

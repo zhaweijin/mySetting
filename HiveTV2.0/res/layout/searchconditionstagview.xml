@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/sratch_tag"
+    android:layout_gravity="center"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:gravity="center" >
+<!-- 加个标签 -->
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/search_condition_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:text="恐怖" />
+
+</RelativeLayout>

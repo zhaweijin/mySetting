@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:layout_width="1166dip"
+    android:layout_height="106dip" >
+
+    <Button
+        android:id="@+id/btnG1"
+        style="@style/teleplay_tv_group_btn"
+        android:textColor="@color/yellow"
+        android:text="1-20" />
+
+    <Button
+        android:id="@+id/btnG2"
+        style="@style/teleplay_tv_group_btn"
+        android:text="1-20"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnG3"
+        style="@style/teleplay_tv_group_btn"
+        android:text="1-20"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnG4"
+        style="@style/teleplay_tv_group_btn"
+        android:text="1-20"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnG5"
+        style="@style/teleplay_tv_group_btn"
+        android:text="1-20"
+        android:visibility="invisible" />
+
+</LinearLayout>

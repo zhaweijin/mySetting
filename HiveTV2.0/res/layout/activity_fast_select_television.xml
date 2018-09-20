@@ -1,0 +1,239 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 显示背景图的ImageView -->
+
+    <include layout="@layout/background_layout" />
+    <!-- 等待条 -->
+
+    <com.hiveview.tv.view.ProgressDialog
+        android:id="@+id/iv_hiveview_loading"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 快速选台  标题 -->
+
+        <TextView
+            android:id="@+id/tv_select_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dip"
+            android:layout_marginTop="53dip"
+            android:text="@string/fast_select_category"
+            android:textColor="#ffffff"
+            android:textSize="40sp" />
+
+        <RelativeLayout
+            android:id="@+id/fl_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_select_category"
+            android:layout_marginLeft="75dip"
+            android:layout_marginRight="55dip"
+            android:layout_marginTop="20dip" >
+
+            <LinearLayout
+                android:id="@+id/ll_tab_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- 央视(%s) -->
+
+                <FrameLayout
+                    android:id="@+id/fl_cctv"
+                    android:layout_width="212dip"
+                    android:layout_height="55.3dip"
+                    android:background="@drawable/select_list_focus_bg_channek"
+                    android:focusable="true" >
+
+                    <TextView
+                        android:id="@+id/tv_cctv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/cctv_count"
+                        android:textColor="#a8a8a8"
+                        android:textSize="26.6sp" />
+                </FrameLayout>
+
+                <!-- 卫视(%s) -->
+
+                <FrameLayout
+                    android:id="@+id/fl_satellite"
+                    android:layout_width="212dip"
+                    android:layout_height="55.3dip"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/select_list_focus_bg_channek"
+                    android:focusable="true" >
+
+                    <TextView
+                        android:id="@+id/tv_satellite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/satellite_tv_count"
+                        android:textColor="#a8a8a8"
+                        android:textSize="26.6sp" />
+                </FrameLayout>
+
+                <!-- 本地(%s) -->
+
+                <FrameLayout
+                    android:id="@+id/fl_local"
+                    android:layout_width="212dip"
+                    android:layout_height="55.3dip"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/select_list_focus_bg_channek"
+                    android:focusable="true" >
+
+                    <TextView
+                        android:id="@+id/tv_local"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/local_count"
+                        android:textColor="#a8a8a8"
+                        android:textSize="26.6sp" />
+                </FrameLayout>
+
+                <!-- 高清频道(%s) -->
+
+                <FrameLayout
+                    android:id="@+id/fl_hd_channel"
+                    android:layout_width="212dip"
+                    android:layout_height="55.3dip"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/select_list_focus_bg_channek"
+                    android:focusable="true" >
+
+                    <TextView
+                        android:id="@+id/tv_hd_channel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/hd_channel_count"
+                        android:textColor="#a8a8a8"
+                        android:textSize="26.6sp" />
+                </FrameLayout>
+
+                <!-- 收费频道(%s) -->
+
+                <FrameLayout
+                    android:id="@+id/fl_subscription_channel"
+                    android:layout_width="212dip"
+                    android:layout_height="55.3dip"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/select_list_focus_bg_channek"
+                    android:focusable="true" >
+
+                    <TextView
+                        android:id="@+id/tv_subscription_channel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/subscription_channel_count"
+                        android:textColor="#a8a8a8"
+                        android:textSize="26.6sp" />
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 央视ViewPager -->
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_cctv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_below="@+id/fl_category" />
+        <!-- 卫视ViewPager -->
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_below="@+id/fl_category" />
+        <!-- 本地ViewPager -->
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_local"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_below="@+id/fl_category" />
+        <!-- 高清频道ViewPager -->
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_pay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_below="@+id/fl_category" />
+
+        <!-- 收费频道ViewPager -->
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_hd"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/fl_category" />
+
+        <!-- 右翻页图片 -->
+
+        <ImageView
+            android:id="@+id/iv_pager_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/vp_hd"
+            android:layout_alignTop="@+id/vp_cctv"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="235dp"
+            android:src="@drawable/iv_page_right"
+            android:visibility="visible" />
+        <!-- 左翻页图片 -->
+
+        <ImageView
+            android:id="@+id/iv_pager_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/iv_pager_right"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/iv_page_left"
+            android:visibility="visible" />
+        <!-- 相应电视台按菜单键查看节目单 -->
+
+        <TextView
+            android:id="@+id/tv_select_category_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/iv_pager_right"
+            android:layout_marginBottom="55dp"
+            android:text="@string/select_category_menu_tips"
+            android:textColor="#9a9a9a"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+    <com.hiveview.tv.view.TipView
+        android:id="@+id/tipView"
+        android:layout_width="617dp"
+        android:layout_height="272dp"
+        android:layout_centerInParent="true"
+        android:background="#DD000000"
+        android:focusable="false"
+        android:visibility="gone" />
+
+</RelativeLayout>

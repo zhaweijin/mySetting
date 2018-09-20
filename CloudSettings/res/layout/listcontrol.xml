@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                android:background="@drawable/bg">
+    
+<ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/testnet_left_right2"
+        android:layout_marginTop="@dimen/testnet_height7"
+        android:src="@drawable/ic_launcher" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="@dimen/testnet_width9"
+        android:layout_height="@dimen/testnet_left_right2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/testnet_width9"
+        android:layout_marginTop="@dimen/testnet_height7"
+        android:text="@string/nethardware"
+        android:textSize="@dimen/testnet_textsize_25" />
+    
+     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/testnet_left_right2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/testnet_height3"
+        android:layout_marginTop="@dimen/testnet_height8"
+        android:text="@string/listcontroltip"
+        android:textSize="@dimen/testnet_textsize_25" 
+        android:textColor="#FFA7A7A7"/>
+     
+     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/testnet_left_right2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/testnet_right2"
+        android:layout_marginTop="@dimen/testnet_height7"
+        android:text="@string/untested"
+        android:textSize="@dimen/testnet_textsize_25" />
+</RelativeLayout>

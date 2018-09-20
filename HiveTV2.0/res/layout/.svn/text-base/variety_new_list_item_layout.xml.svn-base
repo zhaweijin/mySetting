@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/rl_variety_list_first_line_1"
+        android:layout_width="299dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/select_list_focus_bg"
+        android:focusable="true"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/rl_variety_list_first_line_1_item_image"
+            android:layout_width="273.24dip"
+            android:layout_height="153.78dip"
+            android:layout_marginLeft="1dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/variety_default_img" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_first_line_1_item_time"
+            style="@style/variety_list_item_text_time_value"
+            android:layout_width="273.24dip"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/rl_variety_list_first_line_1_item_image"
+            android:layout_alignRight="@id/rl_variety_list_first_line_1_item_image"
+            android:layout_gravity="bottom"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="bottom|right"
+            android:paddingRight="10dip"
+            android:singleLine="true" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_first_line_1_item_name"
+            style="@style/variety_list_item_text_name_value"
+            android:layout_width="273.24dip"
+            android:layout_height="61dip"
+            android:layout_below="@id/rl_variety_list_first_line_1_item_image"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:maxLines="2"
+            android:singleLine="false" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_first_line_1_item_feature"
+            style="@style/variety_list_item_text_feature_value"
+            android:layout_width="273.24dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_variety_list_first_line_1_item_name"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_variety_list_first_line_2"
+        android:layout_width="299dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/rl_variety_list_first_line_1"
+        android:background="@drawable/select_list_focus_bg"
+        android:focusable="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/rl_variety_list_first_line_2_item_image"
+            android:layout_width="273.24dip"
+            android:layout_height="153.78dip"
+            android:layout_marginLeft="1dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/variety_default_img" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_first_line_2_item_time"
+            style="@style/variety_list_item_text_time_value"
+            android:layout_width="273.24dip"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/rl_variety_list_first_line_2_item_image"
+            android:layout_alignRight="@id/rl_variety_list_first_line_2_item_image"
+            android:layout_gravity="bottom"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="bottom|right"
+            android:paddingRight="10dip"
+            android:singleLine="true" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_first_line_2_item_name"
+            style="@style/variety_list_item_text_name_value"
+            android:layout_width="273.24dip"
+            android:layout_height="61dip"
+            android:layout_below="@id/rl_variety_list_first_line_2_item_image"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:maxLines="2"
+            android:singleLine="false" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_first_line_2_item_feature"
+            style="@style/variety_list_item_text_feature_value"
+            android:layout_width="273.24dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_variety_list_first_line_2_item_name"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_variety_list_first_line_3"
+        android:layout_width="299dip"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/rl_variety_list_first_line_2"
+        android:background="@drawable/select_list_focus_bg"
+        android:focusable="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/rl_variety_list_first_line_3_item_image"
+            android:layout_width="273.24dip"
+            android:layout_height="153.78dip"
+            android:layout_marginLeft="1dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/variety_default_img" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_first_line_3_item_time"
+            style="@style/variety_list_item_text_time_value"
+            android:layout_width="273.24dip"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/rl_variety_list_first_line_3_item_image"
+            android:layout_alignRight="@id/rl_variety_list_first_line_3_item_image"
+            android:layout_gravity="bottom"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="bottom|right"
+            android:paddingRight="10dip"
+            android:singleLine="true" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_first_line_3_item_name"
+            style="@style/variety_list_item_text_name_value"
+            android:layout_width="273.24dip"
+            android:layout_height="61dip"
+            android:layout_below="@id/rl_variety_list_first_line_3_item_image"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:maxLines="2"
+            android:singleLine="false" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_first_line_3_item_feature"
+            style="@style/variety_list_item_text_feature_value"
+            android:layout_width="273.24dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_variety_list_first_line_3_item_name"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_variety_list_first_line_4"
+        android:layout_width="299dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/rl_variety_list_first_line_3"
+        android:background="@drawable/select_list_focus_bg"
+        android:focusable="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/rl_variety_list_first_line_4_item_image"
+            android:layout_width="273.24dip"
+            android:layout_height="153.78dip"
+            android:layout_marginLeft="1dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/variety_default_img" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_first_line_4_item_time"
+            style="@style/variety_list_item_text_time_value"
+            android:layout_width="273.24dip"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/rl_variety_list_first_line_4_item_image"
+            android:layout_alignRight="@id/rl_variety_list_first_line_4_item_image"
+            android:layout_gravity="bottom"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="bottom|right"
+            android:paddingRight="10dip"
+            android:singleLine="true" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_first_line_4_item_name"
+            style="@style/variety_list_item_text_name_value"
+            android:layout_width="273.24dip"
+            android:layout_height="61dip"
+            android:layout_below="@id/rl_variety_list_first_line_4_item_image"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:maxLines="2"
+            android:singleLine="false" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_first_line_4_item_feature"
+            style="@style/variety_list_item_text_feature_value"
+            android:layout_width="273.24dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_variety_list_first_line_4_item_name"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_variety_list_second_line_1"
+        android:layout_width="299dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_variety_list_first_line_1"
+        android:background="@drawable/select_list_focus_bg"
+        android:layout_marginLeft="40dp"
+        android:focusable="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/rl_variety_list_second_line_1_item_image"
+            android:layout_width="273.24dip"
+            android:layout_height="153.78dip"
+            android:layout_marginLeft="1dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/variety_default_img" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_second_line_1_item_time"
+            style="@style/variety_list_item_text_time_value"
+            android:layout_width="273.24dip"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/rl_variety_list_second_line_1_item_image"
+            android:layout_alignRight="@id/rl_variety_list_second_line_1_item_image"
+            android:layout_gravity="bottom"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="bottom|right"
+            android:paddingRight="10dip"
+            android:singleLine="true" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_second_line_1_item_name"
+            style="@style/variety_list_item_text_name_value"
+            android:layout_width="273.24dip"
+            android:layout_height="61dip"
+            android:layout_below="@id/rl_variety_list_second_line_1_item_image"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:maxLines="2"
+            android:singleLine="false" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_second_line_1_item_feature"
+            style="@style/variety_list_item_text_feature_value"
+            android:layout_width="273.24dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_variety_list_second_line_1_item_name"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_variety_list_second_line_2"
+        android:layout_width="299dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_variety_list_first_line_2"
+        android:layout_toRightOf="@id/rl_variety_list_second_line_1"
+        android:background="@drawable/select_list_focus_bg"
+        android:focusable="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/rl_variety_list_second_line_2_item_image"
+            android:layout_width="273.24dip"
+            android:layout_height="153.78dip"
+            android:layout_marginLeft="1dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/variety_default_img" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_second_line_2_item_time"
+            style="@style/variety_list_item_text_time_value"
+            android:layout_width="273.24dip"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/rl_variety_list_second_line_2_item_image"
+            android:layout_alignRight="@id/rl_variety_list_second_line_2_item_image"
+            android:layout_gravity="bottom"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="bottom|right"
+            android:paddingRight="10dip"
+            android:singleLine="true" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_second_line_2_item_name"
+            style="@style/variety_list_item_text_name_value"
+            android:layout_width="273.24dip"
+            android:layout_height="61dip"
+            android:layout_below="@id/rl_variety_list_second_line_2_item_image"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:maxLines="2"
+            android:singleLine="false" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_second_line_2_item_feature"
+            style="@style/variety_list_item_text_feature_value"
+            android:layout_width="273.24dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_variety_list_second_line_2_item_name"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_variety_list_second_line_3"
+        android:layout_width="299dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_variety_list_first_line_3"
+        android:layout_toRightOf="@id/rl_variety_list_second_line_2"
+        android:background="@drawable/select_list_focus_bg"
+        android:focusable="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/rl_variety_list_second_line_3_item_image"
+            android:layout_width="273.24dip"
+            android:layout_height="153.78dip"
+            android:layout_marginLeft="1dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/variety_default_img" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_second_line_3_item_time"
+            style="@style/variety_list_item_text_time_value"
+            android:layout_width="273.24dip"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/rl_variety_list_second_line_3_item_image"
+            android:layout_alignRight="@id/rl_variety_list_second_line_3_item_image"
+            android:layout_gravity="bottom"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="bottom|right"
+            android:paddingRight="10dip"
+            android:singleLine="true" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_second_line_3_item_name"
+            style="@style/variety_list_item_text_name_value"
+            android:layout_width="273.24dip"
+            android:layout_height="61dip"
+            android:layout_below="@id/rl_variety_list_second_line_3_item_image"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:maxLines="2"
+            android:singleLine="false" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_second_line_3_item_feature"
+            style="@style/variety_list_item_text_feature_value"
+            android:layout_width="273.24dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_variety_list_second_line_3_item_name"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_variety_list_second_line_4"
+        android:layout_width="299dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_variety_list_first_line_4"
+        android:layout_toRightOf="@id/rl_variety_list_second_line_3"
+        android:background="@drawable/select_list_focus_bg"
+        android:focusable="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/rl_variety_list_second_line_4_item_image"
+            android:layout_width="273.24dip"
+            android:layout_height="153.78dip"
+            android:layout_marginLeft="1dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/variety_default_img" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_second_line_4_item_time"
+            style="@style/variety_list_item_text_time_value"
+            android:layout_width="273.24dip"
+            android:layout_height="37dip"
+            android:layout_alignBottom="@id/rl_variety_list_second_line_4_item_image"
+            android:layout_alignRight="@id/rl_variety_list_second_line_4_item_image"
+            android:layout_gravity="bottom"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="bottom|right"
+            android:paddingRight="10dip"
+            android:singleLine="true" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_second_line_4_item_name"
+            style="@style/variety_list_item_text_name_value"
+            android:layout_width="273.24dip"
+            android:layout_height="61dip"
+            android:layout_below="@id/rl_variety_list_second_line_4_item_image"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:maxLines="2"
+            android:singleLine="false" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/rl_variety_list_second_line_4_item_feature"
+            style="@style/variety_list_item_text_feature_value"
+            android:layout_width="273.24dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_variety_list_second_line_4_item_name"
+            android:layout_marginTop="14.52dip"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

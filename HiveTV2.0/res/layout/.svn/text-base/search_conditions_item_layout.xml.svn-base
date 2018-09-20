@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="125.3dip"
+    android:layout_height="52dip"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/search_condition_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恐怖" />
+
+</LinearLayout>

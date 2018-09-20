@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">DomySetting</string>
+    <string name="manual_add_wifi">configurar WiFi manualmente</string>
+    <string name="wifi_share">Compartir</string>
+    <string name="pppoe_connect">conexión de banda ancha</string>
+    <string name="eth_title">Red cableada</string>
+    <string name="eth_dis_title">Red cableada no conectada</string>
+    <string name="btn_wifi">red inalámbrica</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- manual add wifi -->
+    <string name="manual_wifi_name">Nombre de red</string>
+    <string name="manual_wifi_safe">Tipo de seguridad</string>
+    <string name="manual_wifi_password">Contraseña</string>
+    <string name="manual_wifi_commit">Enviar</string>
+    <!-- Used in Wi-Fi settings dialogs when Wi-Fi does not have any security. -->
+    <string name="wifi_security_none">La contraseña no está abierta.</string>
+    <!-- Do not translate.  Terminology for wifi with WEP security -->
+    <string name="wifi_security_wep">WEP</string>
+    <!-- Do not translate.  Terminology for wifi with WPA security -->
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <!-- Do not translate.  Terminology for wifi with WPA2 security -->
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with both WPA/WPA2 security, or unknown -->
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_eap">802.1x EAP</string>
+    <!-- Do not translate.  Concise terminology for wifi with WEP security -->
+    <string name="wifi_security_short_wep">WEP</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA security -->
+    <string name="wifi_security_short_wpa">WPA</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA2 security -->
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with both WPA/WPA2 security -->
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_short_eap">802.1x</string>
+    <string name="wifi_disabled_password_failure">"error de autenticación"</string>
+    <string name="wifi_connected_failed">No se pudo conectar, intente nuevamente</string>
+    <string name="wifi_fail_to_scan" msgid="1265540342578081461">"error al escanear la red"</string>
+    <string name="wifi_failed_save_message">"error al salvar la red"</string>
+    <string name="wifi_failed_forget_message">"error al olvidar la red"</string>
+    <string name="wifi_sucess_forget_message">"Red olvidada"</string>
+    <string name="wifi_not_in_range">"Red fuera de alcance"</string>
+    <string name="wifi_connected_success">\u0020(conectado)</string>
+    <string name="wifi_password_length_limit">La contraseña requiere al menos 8 caracteres.</string>
+    <string name="wifi_password_error1">La contraseña debe ser > 0 o ≤ 63 caracteres.</string>
+    <string name="wifi_password_error2">La contraseña debe ser ≥ 8 o ≤ 63 caracteres.</string>
+    <string name="wifi_ssid_error">SSID debe ser > 0 o ≤ 20 caracteres</string>
+    <string name="wifi_scaning">escaneando&#8230;</string>
+    <string name="wifi_password_null">La contraseña no puede ser nula！</string>
+
+    <!-- pppoe connect -->
+    <string name="pppoe_connect_commit">conectar</string>
+    <string name="pppoe_username">Nombre de usuario</string>
+    <string name="pppoe_password">Contraseña</string>
+    <string name="pppoe_connect_failed">La conexión telefónica de banda ancha ha fallado.</string>
+    <string name="pppoe_connect_success">Conexión telefónica de banda ancha exitosa</string>
+    <string name="pppoe_disconnect_failed">La conexión telefónica de banda ancha no se ha podido desconectar</string>
+    <string name="pppoe_disconnect_ok">Conexión telefónica de banda ancha concluida</string>
+    <string name="pppoe_hangup_waiting_msg">Por favor, espere un momento</string>
+    <string name="pppoe_connect_timeout">conexión expirada</string>
+    <string name="pppoe_connect_failed_auth">Usuario o contraseña invalido</string>
+    <string name="pppoe_connect_failed_server_no_response">Sin respuesta del servidor</string>
+    <string name="pppoe_disconnect_waiting_msg">Desconectando, por favor espere</string>
+    <string name="pppoe_connect_waiting_msg">Conectando, por favor espere</string>
+    <string name="pppoe_connecting">Conexión de banda ancha en progreso </string>
+    <string name="pppoe_name_or_psw_is_null">El nombre de usuario y la contraseña no pueden ser nulos</string>
+    <string name="pppoe_auto_connect">conectar automáticamente al iniciar</string>
+    <string name="pppoe_state_disconnected">La conexión de banda ancha ya fue concluida. No es necesario volver a intentarlo!</string>
+
+    <!-- wifi share -->
+    <string name="wifi_share_on">encendido</string>
+    <string name="wifi_share_off">apagado</string>
+    <string name="wifi_share_security_open">encendido</string>
+    <string name="wifi_share_security_wpa2_psk">WPA2 PSK</string>
+    <string name="wifi_share_security_wpa_psk">WPA PSK</string>
+    <string name="wifi_share_error_2">El nombre de la red no puede ser nulo！</string>
+    <string name="wifi_share_error_1">El punto de acceso falló al iniciar！</string>
+    <string name="wifi_share_start_soft">Enviando datos, por favor espere..</string>
+    <string name="wifi_share_open_softap">Encendiendo. Por favor, espere.. </string>
+    <string name="wifi_share_close_softap">Apagando. Por favor, espere.. </string>
+    <string name="wifi_share_open_success">punto de acceso en operación</string>
+    <string name="wifi_share_opened">abierto</string>
+    <string name="wifi_share_name_too_long">Nombre compartido demasiado largo. Por favor, reducir a menos de 20 caracteres.</string>
+    <!-- ethernet -->
+    <string name="ethernet_name">Red de cable</string>
+    <string name="ethernet_notice">Configuración de la red de cable</string>
+    <string name="ethernet_item_test_speed">Análisis de velocidad de internet</string>
+    <string name="ethernet_item_wifi_share">Compartir WiFi</string>
+    <string name="ethernet_item_manual_adjust">Ajuste manual</string>
+    <string name="ethernet_item_ip_address">Dirección de IP</string>
+    <string name="ethernet_item_net_mask">Máscara de subred</string>
+    <string name="ethernet_item_gateway">Puerta de enlace</string>
+    <string name="ethernet_item_dns">DNS</string>
+    <string name="ethernet_item_ipv6">Ipv6</string>
+    <string name="ethernet_item_ipv4">Ipv4</string>
+    <string name="ethernet_item_disable_net">Olvidarse de esta red</string>
+    <string name="on">encendido</string>
+    <string name="off">apagado</string>
+    <string name="ethernet_dis_use_wifi">encender WiFi</string>
+    <string name="ethernet_dis_use_pppoe">red de acceso telefónico de banda ancha activada</string>
+    <string name="ethernet_dis_modify_net">modificar la información de red</string>
+    <string name="ethernet_dis_reconnect">Reconectando</string>
+    <string name="ethernet_dis_check_net">Chequeando red</string>
+    <string name="ethernet_dis_notice">La conexión de red falló</string>
+    <string name="str_ip_input_type">1234567890.</string>
+    <string name="str_ip_no_gateway">El IP y la puerta de enlace no están en el mismo segmento</string>
+    <string name="str_ip_address_invalid">Error de formato de entrada</string>
+    <string name="str_ip_max_value">El valor máximo debe ser inferior a 255</string>
+    <string name="str_ip_full_characters">Los caracteres de entrada excedieron los límites</string>
+    <string name="str_ip_equal_gateway">El IP y la puerta de enlace son iguales</string>
+    <string name="network_error">Conexión con el servidor expirada</string>
+
+    <!-- wifi -->
+    <string name="wifi_name">WiFi</string>
+    <string name="wifi_notice">Configuración de WiFi</string>
+    <string name="wifi_manual_add">Agregar WiFi manualmente</string>
+    <string name="wifi_password_error">Contraseña equivocada</string>
+
+    <!-- test speed -->
+    <string name="test_speed_title">Análisis de velocidad de Internet</string>
+    <string name="test_speed_notice">análisis de velocidad de Internet del dispositivo</string>
+    <string name="test_speed_unit_converter">1MB/S=8Mb/S</string>
+    <string name="test_speed_real_speed">Velocidad pico:&#160;</string>
+    <string name="test_speed_average_speed">Veloc. promedio:&#160;</string>
+    <string name="test_speed_broadband_speed">Estimación:&#160;</string>
+    <string name="test_speed_broadband_title_1">Su velocidad supera a los demás usuarios</string>
+    <string name="test_speed_broadband_title_2">usuarios</string>
+    <string name="test_speed_broadband_title_3">Su red actual es adecuada para ...</string>
+    <string name="test_speed_broadband_level_1">Su red actual no es lo suficientemente rápida para...</string>
+    <string name="test_speed_broadband_level_1_1">--</string>
+    <string name="test_speed_begin_test">velocidad</string>
+    <string name="test_speed_repeat_test">velocidad</string>
+    <string name="test_speed_net_stars">Calificación:&#160;</string>
+    <string name="test_speed_tv_level">Apto para ver:&#160;</string>
+    <string name="test_speed_0">0</string>
+    <string name="test_speed_00">.00</string>
+    <string name="test_speed_bigm_unit">MB/S</string>
+    <string name="test_speed_littlem_unit">Mb/S</string>
+    <string name="test_speed_per_30">30%</string>
+    <string name="test_speed_per_50">50%</string>
+    <string name="test_speed_per_70">70%</string>
+    <string name="test_speed_per_90">90%</string>
+    <string name="test_speed_movie_360p">－－</string>
+    <string name="test_speed_movie_720p">720P</string>
+    <string name="test_speed_movie_1080p">1080P</string>
+    <string name="test_speed_movie_4k">4K</string>
+    <string name="test_speed_testing_count">calculando</string>
+    <!-- check network -->
+    <string name="check_network_title">verificando red</string>
+    <string name="check_network_title_notice">Verificando conexión de red</string>
+    <string name="check_network_connect_success">Conexión de red exitosa</string>
+    <string name="check_network_connect_failed">La conexión de red fracasó</string>
+
+    <!-- BY YQB -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cloud_user">Cloud user</string>
+    <string name="wendu">35</string>
+    <string name="scene">Imagen</string>
+    <string name="network_setting">La red</string>
+    <string name="other_setting">Otras</string>
+    <string name="gen_setting">General</string>
+    <string name="about_gen_setting">Sistema</string>
+    <string name="about_domy">Acerca</string>
+    <string name="about_domy_detail">Detalles sobre Damai</string>
+    <string name="title_activity_deviceinfo">DeviceinfoActivity</string>
+    <string name="model">Modelo</string>
+    <string name="boxname">Box name</string>
+    <string name="firmware">Versión del software</string>
+    <string name="tv_version">Versión del firmware del dispositivo</string>
+    <string name="hard_version">Versión del hardware</string>
+    <string name="android_version">Versión del Android</string>
+    <string name="ip">IP</string>
+    <string name="mac">MAC</string>
+    <string name="sn">SN</string>
+    <string name="yunsn">Tv SN</string>
+    <string name="time">Tiempo</string>
+    <string name="space">Espacio de almacenamiento</string>
+    <string name="setting_init">Configuración de inicialización</string>
+    <string name="security_type">tipo_de_seguridad</string>
+    <string name="password">Contraseña</string>
+    <string name="submit">Enviar</string>
+    <string name="title_activity_add_wifi">AddWifiActivity</string>
+    <string name="title_activity_common">CommonActivity</string>
+    <string name="mystery">funciones misteriosas</string>
+    <string name="game_strong">juego mejorado</string>
+    <string name="auto_power_time">Apagar Automáticamente</string>
+    <string name="protect_monitor_time">Tiempo del protector de pantalla</string>
+    <string name="sleep_time">Tiempo de hibernación</string>
+    <string name="theme_color">paleta de colores</string>
+    <string name="time_type">Visualización de la hora</string>
+    <string name="dimens_seeting">Configuración de 3D</string>
+    <string name="yaokong_setting">configuración del control remoto</string>
+    <string name="blueteeth">Configuración del Bluetooth</string>
+    <string name="bluetooth_detail">Ajustes relacionados al Bluetooth</string>
+    <string name="keda_setting">Configuración de transmisión en vivo</string>
+    <string name="vod_setting">Configuración de VOD</string>
+    <string name="lunbo_setting">Ajustes de reproducción de rotación</string>
+    <string name="version_check">Chequeando la versión</string>
+    <string name="problem_submit">reportar problemas</string>
+    <string name="other_thing">Otras configuraciones</string>
+    <string name="open">encendido</string>
+    <string name="close">apagado</string>
+    <string name="auto_power_time_close">Nunca</string>
+    <string name="time1">5 minutos</string>
+    <string name="time2">10 minutos</string>
+    <string name="time3">15 minutos</string>
+    <string name="time_ex">salir</string>
+    <string name="time9">20 minutos</string>
+    <string name="time4">30 minutos</string>
+    <string name="time5">60 minutos</string>
+    <string name="time6">120 minutos</string>
+    <string name="time7">12 horas</string>
+    <string name="time8">24 horas</string>
+    <string name="time_4h">4 horas</string>
+    <string name="time_6h">6 horas</string>
+    <string name="time_12h">12 horas</string>
+    <string name="time_24h">24 horas</string>
+    <string name="title_activity_three_dimen">ThreeDimenActivity</string>
+    <string name="left">izquierda</string>
+    <string name="right">derecha</string>
+    <string name="top">arriba</string>
+    <string name="bottom">abajo</string>
+    <string name="title_activity_devloper_model">DevloperModelActivity</string>
+    <string name="adb_test">prueba de adb</string>
+    <string name="u_test">prueba de la unidad USB</string>
+    <string name="allow_app">Permitir instalar aplicacs. desconocidas</string>
+    <string name="allow">permitir</string>
+    <string name="not_allow">No está permitido.</string>
+    <string name="title_activity_version_check">VersionCheckActivity</string>
+    <string name="version_now">versión actual</string>
+    <string name="check_version">Chequeando la versión</string>
+    <string name="version_now_message">Información de la versión actual</string>
+    <string name="check_software_version">chequear la versión del software</string>
+    <string name="need_to_update">actualizar a la nueva versión</string>
+    <string name="update">actualizar</string>
+    <string name="version_update">actualización de la versión</string>
+    <string name="title_activity_update">UpdateActivity</string>
+    <string name="see_or_ort">Visible para otros dispositivos</string>
+    <string name="blue_teeth_switch">Cambiar bluetooth</string>
+    <string name="title_activity_blue_tooth">BlueToothActivity</string>
+    <string name="can_see">visible</string>
+    <string name="can_not_see">invisible</string>
+    <string name="problem_feedback">respuesta del problema</string>
+    <string name="problem_feedback_detal">detalles de la respuesta del problema</string>
+    <string name="feedback_problem">Información detallada</string>
+    <string name="feedback_message">comentario de detalle aceptado</string>
+    <string name="new_message">(nuevo mensaje)</string>
+    <string name="title_activity_feedback_problem">FeedbackProblemActivity</string>
+    <string name="title_activity_other_setting">OtherSettingActivity</string>
+    <string name="tv_name">Nombre del dispositivo</string>
+   <string name="input_name">Input method</string>
+   <string name="sendlog">Envía de depuración</string>
+    <string name="view_setting">Imagen</string>
+    <string name="audio_setting">sonido</string>
+    <string name="devloper_model">Modo de programador</string>
+    <string name="location_detail">información sobre la ubicación</string>
+    <string name="timezone_detail">Zona horaria</string>
+    <string name="select_time_zone">Seleccionar zona horaria</string>
+    <string name="reset">Restaurar</string>
+    <string name="cloud_box">caja DAMAI</string>
+    <string name="livingroom_box">caja de la sala</string>
+    <string name="bedroom_box">caja del cuarto</string>
+    <string name="set_it_yourself">Personalizar</string>
+    <string name="three_dimens_setting">Configuración de 3D</string>
+    <string name="enger_setting">Configuración de ingeniero</string>
+    <string name="parameters_setting">Configuración general de parámetros</string>
+    <string name="black">negro</string>
+    <string name="white">blanco</string>
+    <string name="bluetooth_connected">conectado</string>
+    <string name="bluetooth_connecting">conectando</string>
+    <string name="bluetooth_disconnected">desconectado</string>
+    <string name="bluetooth_disconnecting">desconectando</string>
+    <string name="bluetooth_error_title">Error de conexión</string>
+    <string name="bluetooth_pair_error">error de sincronización</string>
+    <string name="bluetooth_bonded">sincronizado</string>
+    <string name="bluetooth_pairing">sincronizando</string>
+    <string name="bluetooth_connected_no_a2dp">a2dp no está conectado</string>
+    <string name="bluetooth_connected_no_headset_no_a2dp">No headset no a2dp</string>
+    <string name="bluetooth_connected_no_headset">No headset</string>
+    <string name="bluetooth_requir_pair">Pedido de sincronización al Bluetooth</string>
+    <string name="bluetooth_unpair">desincronizar</string>
+    <string name="bluetooth_connect">conectar</string>
+    <string name="bluetooth_connect_message">¿próximo paso?</string>
+    <string name="enter">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="clean_all_confirm">Restaurar puede causar error de datos. Tenga cuidado con su selección.</string>
+    <string name="wait_for_delete">Contenido a eliminar: \n1. Datos de configuración del sistema local. \n2. Historial de reproducciones y mis favoritos \n3. Aplicaciones y juegos instalados. \nContenidos a guardar: \n1. Software del sistema actual. \n2. Aplicaciones y juegos preinstalados. \n3. Archivos del sistema. Confirme para restaurar.</string>
+    <string name="reset_warning">advertencia</string>
+    <string name="availablesize">Disponible:&#160;</string>
+    <string name="totalsize">&#160;Total:&#160;</string>
+    <string name="image_profile">imagen del perfil</string>
+    <string name="image_profile_detail">Personalizar y ajustar la visualización</string>
+    <string name="sewen">Temperatura del color</string>
+    <string name="liangdu">brillo</string>
+    <string name="duibidu">contraste</string>
+    <string name="baohedu">Saturación</string>
+    <string name="sedu">Cromaticidad</string>
+    <string name="ruilidu">Nitidez</string>
+    <string name="beiguang">luz de fondo</string>
+    <string name="wait_for_more">Aun no está disponible. Manténgase informado…！</string>
+    <string name="modify_success">Perfil modificado con éxito</string>
+    <string name="modify_not">El perfil no ha sido modificado</string>
+    <string name="bluetooth_discovery_device">buscando dispositivo</string>
+    <string name="bluetooth_discovering_device">buscando...</string>
+
+    <!-- by wqh -->
+    <string name="video_image">Imagen de video</string>
+    <string name="box_setting">Sistema</string>
+    <string name="playsetting">Configuración del reproductor</string>
+    <string name="audioDecoding">Modo de audio</string>
+    <string name="displayAdjust">Configuratión de pantalla</string>
+    <string name="decodingOutput">Salida de decodificación</string>
+    <string name="sourceOutput">Salida del código fuente</string>
+
+    <!-- playsetting -->
+    <string name="skip">Saltar introducciones y créditos finales</string>
+    <string name="resolution">Configuración de resolución predeterminada</string>
+    <string name="live_screen">Selección de escala de imagen de pantalla completa</string>
+    <string name="quality">Garantizar la calidad de la imagen</string>
+    <string name="smooth">Garantizar una reproducción tranquila</string>
+    <string name="proportion">16:9</string>
+    <string name="adaptive">adaptable</string>
+
+    <!-- adjustsetting -->
+    <string name="display_adjust">Ajustar pantalla</string>
+    <string name="display_set">Ajustes de resolución (Presione el botón de confirmación para seleccionar.)</string>
+    <string name="display_set_byself">Ajustar pantalla manualmente</string>
+    <string name="display_set_auto">Automatic adjustment</string>
+    <string name="display_set_1080p_60">1080P_60Hz</string>
+    <string name="display_set_1080p_50">1080P_50Hz</string>
+    <string name="display_set_1080i_60">1080I_60Hz</string>
+    <string name="display_set_1080i_50">1080I_50Hz</string>
+    <string name="display_set_720p_60">720P_60Hz</string>
+    <string name="display_set_720p_50">720P_50Hz</string>
+    <string name="display_set_2160p_24">2160P_24Hz</string>
+    <string name="display_set_2160p_25">2160P_25Hz</string>
+    <string name="display_set_2160p_30">2160P_30Hz</string>
+    <string name="display_set_4096_2160p_24">4096_2160P_24Hz</string>
+    <string name="yes">sí</string>
+    <string name="no">no</string>
+
+    <!-- display setting -->
+    <string name="tv_output_mode_title">Selección de resolución de pantalla</string>
+    <string name="title_scope_0">Adjustment</string>
+    <string name="title_scope_2">Ajuste el área de visualización perfecta con los botones de flecha del control remoto.</string>
+    <string name="title_scope_3">¿Configura ahora?</string>
+    <string name="title_scope_4">Sí</string>
+    <string name="title_scope_11">No, saltar.</string>
+    <string name="title_scope_5">Ajustar margen superior</string>
+    <string name="title_scope_6">Ajustar margen inferior</string>
+    <string name="title_scope_7">Ajustar margen izquierda</string>
+    <string name="title_scope_8">Ajustar margen derecha</string>
+    <string name="title_scope_10">Todos los ajustes de la pantalla se pueden lograr utilizando estos 4 botones</string>
+    <string name="btn_next">próximo paso</string>
+    <string name="title_scope_text1">presionar</string>
+    <string name="title_scope_exit">salir</string>
+    <string name="title_scope_text2">ajuste la proxima área de visualización</string>
+    <string name="title_scope_12">Oprima el botón direccional hacia arriba o hacia abajo y mueva la flecha verde inferior hacia el borde de la pantalla.</string>
+    <string name="title_scope_13">Oprima el botón direccional a la izquierda o a la derecha y mueva la flecha verde de la derecha hasta el borde de la pantalla.</string>
+    <string name="title_scope_14">Oprima el botón direccional a la izquierda oa la derecha y mueva la flecha verde de la izquierda al borde de la pantalla.</string>
+    <string name="title_scope_15">Oprima el botón direccional hacia arriba o hacia abajo y mueva la flecha verde superior al borde de la pantalla.</string>
+    <string name="domy_diaplay_set_title">Configuratión pantalla</string>
+    <string name="domy_display_outputmode_content">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Para garantizar la mejor calidad de visualización, por favor seleccione la resolución de pantalla correcta para su dispositivo. De lo contrario, es posible que la imagen no se visualice correctamente.</string>
+    <string name="domy_display_scope_content">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;由于电视机和盒子硬件差异，可能会出现由于过扫描而带来的显示溢出情况，通过调整来保证您的的画面能够完全显示。</string>
+    <string name="domy_setting_title_scope_message1">Haga que las cuatro flechas se alineen con los bordes de la pantalla. Presione confirmar en el botón redondo para salir del modo de configuración de pantalla.</string>
+    <string name="domy_setting_title_scope_message2">Presione el botón "atrás" para dejar de hacer cambios</string>
+    <string name="domy_setting_title_osd_message1">Presione "confirmar" para aplicar los cambios</string>
+    <string name="domy_setting_title_osd_message2">Presione el botón "atrás" para salir</string>
+    <string name="domy_setting_position_center_button_text">Confirmar cambios</string>
+    <string name="domy_setting_position_set_button_text1">Afuera</string>
+    <string name="domy_setting_position_set_button_text2">Adentro</string>
+    <string name="domy_setting_position_set_l">Afuera</string>
+    <string name="domy_setting_position_set_r">Adentro</string>
+    <string name="domy_setting_position_set_up">Afuera</string>
+    <string name="domy_setting_position_set_down">Adentro</string>
+    <string name="display_toast">Cambios de resolución pueden causar que la pantalla quede negra, pero volverá a cambiar pronto.</string>
+    <string name="display_sure">Confirm to save the switched format. If</string>
+    <string name="arr_str_auto_chack">Chequear automáticamente</string>
+    <string name="setting_init_title">Confirme la inicialización. Los ajustes se restablecerán a la configuración inicial.</string>
+    <string name="surenum">Ingrese código de confirmación.</string>
+    <string name="confirm_your_timezone">Confirme la opción de la zona horaria.</string>
+
+    <!-- BY HUXING -->
+    <string name="listview_profiles_mode_title_1">Modo general</string>
+    <string name="textview_profiles_title">Configuración de perfil de video y audio del dispositivo</string>
+    <string name="textview_profiles_title_discription">Configuración de perfil de video y audio de la caja</string>
+    <string name="listview_profiles_mode_discription_1">Modo común para toda escena</string>
+    <string name="listview_profiles_mode_title_2">Modo cinema</string>
+    <string name="listview_profiles_mode_discription_2">Experiencia cinematográfica</string>
+    <string name="listview_profiles_mode_title_3">Modo de música</string>
+    <string name="listview_profiles_mode_discription_3">Sentir el ritmo</string>
+    <string name="listview_profiles_mode_title_4">modo de juego</string>
+    <string name="listview_profiles_mode_discription_4">Experiencia de juego mejorada</string>
+    <string name="listview_profiles_mode_title_5">Modo dinámico</string>
+    <string name="listview_profiles_mode_discription_5">Alto contraste, imagen dinámica</string>
+    <string name="textview_location_title">información sobre la ubicación</string>
+    <string name="textview_location_title_discription">Elija su ubicación</string>
+    <string name="textview_location_text">Beijing</string>
+    <string name="textview_location_province_title">provincia</string>
+    <string name="textview_location_city_title">ciudad</string>
+    <string name="textview_location_area_title">zona</string>
+    <string name="textview_prompt_1">presionar\u0020</string>
+    <string name="textview_prompt_2">Presione el botón para seleccionar el modo</string>
+    <string name="textview_prompt_3">salir</string>
+    <string name="textview_prompt_location">Presione el botón para confirmar</string>
+    <string name="textview_prompt_for_image_1">Presione el botón para ajustar los parámetros</string>
+    <string name="textview_prompt_for_image_2">presione el botón para ajustar los elementos</string>
+    <string name="title_activity_bluetooth_pair">BluetoothPairActivity</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_turning_off">Apagando</string>
+    <string name="title_activity_control">ControlActivity</string>
+    <string name="yaokongshezhi">configuración del control remoto</string>
+    <string name="yaokongqsheding">Configuración del control remoto del Bluetooth</string>
+    <string name="bluetooth_error">La conexión al Bluetooth falló</string>
+    <string name="find_yaokongqi">encontrar el control remoto</string>
+    <string name="bluetooth_pair_success">sincronización del bluetooth exitosa</string>
+    <string name="bluetooth_connect_success">Bluetooth conectado</string>
+    <string name="yaokongqi_connect">Control remoto conectado. No hay necesidad de volver a conectar.</string>
+    <string name="bluetooth_timeout">El tiempo de conexión con el Bluetooth se agotó. Por favor, salga y vuelva a conectarse.</string>
+    <string name="bluetooth_warning">\u0020\u0020\u0020\u0020\u0020Para configurar el bluetooth, por favor coloque el control cerca del dispositivo y oprima V y el botón de volumen al mismo tiempo.</string>
+    <string name="turning_off">Apagando&#8230;</string>
+
+    <!-- From arrays -->
+    <string name="you1"></string>
+    <string name="you2">"escaneado"</string>
+    <string name="you3">"Conectando"</string>
+    <string name="you4">"Verificando ID ..."</string>
+    <string name="you5">"Obteniendo dirección de IP…"</string>
+    <string name="you6">"conectado"</string>
+    <string name="you7">"pausado"</string>
+    <string name="you8">"Desconectando "</string>
+    <string name="you9">"desconectado"</string>
+    <string name="you10">"fracasado"</string>
+    <string name="you11">"Impedido"</string>
+    <string name="you12">"Concluir temporalmente con la conexión mediocre "</string>
+    <string name="PCM">PCM</string>
+    <string name="HDMIpassthrough">HDMI</string>
+    <string name="SPDIFpassthrough">SPDIF</string>
+    <string name="net_speed_tips">"Su red actual no es proporcionada por Greatwall Broadband. La velocidad de transmisión de vídeo se verá afectada."</string>
+    <string name="SoundSetting">Configuración de sonido</string>
+    <string name="please_set_network">Por favor, configurar la red.</string>
+    <string name="network_setting_title">Configuración de red del dispositivo</string>
+    <string name="pppoe_name">Conexión de banda ancha</string>
+    <string name="tips_pull_out_ethernet">El Wi-Fi no está disponible cuando el cable de red está conectado.</string>
+    <string name="tips_pull_in_ethernet">Por favor, conecte el cable de red para continuar con la configuración.</string>
+    <string name="wifi_connecting">Conectando al WiFi ...</string>
+    <string name="used_pppoeing"> Red de acceso telefónico conectada</string>
+    <string name="very_clear">Ultra HD</string>
+    <string name="modify">Modificar</string>
+    <string name="screen_adjust">Configuratión pantalla</string>
+    <string name="AutoPowerDialog_Text1">Se detectó más de lo requerido\u0020</string>
+    <string name="AutoPowerDialog_Text2">\u0020Sin operación</string>
+    <string name="AutoPowerDialog_Text3">Listo para apagarse automáticamente</string>
+    <string name="AutoPowerDialog_Text4">Presione cualquier botón para salir.</string>
+    <string name="AutoPowerDialog_Text5">Usted puede modificar la duración de apagado automático en la configuración del sistema.</string>
+    <string name="Minute">\u0020minutos</string>
+    <string name="Hour">\u0020horas</string>
+    <string name="screen_adjust_tip_1_1">\u0020\u0020\u0020\u0020\u0020\u0020\u0020Para asegurar que la pantalla se vea adecuadamente</string>
+    <string name="screen_adjust_tip_1_2">por favor seleccione la resolución de pantalla apropriada para su televisor, </string>
+    <string name="screen_adjust_tip_1_3"> de lo contrario podría producirse un error de visualización.</string>
+    <string name="screen_adjust_tip_2_1">\u0020\u0020\u0020\u0020\u0020\u0020\u0020Debido a las diferencias de hardware entre los dispositivos, </string>
+    <string name="screen_adjust_tip_2_2">el proceso de escaneo puede resultar en el desbordamiento de la pantalla. </string>
+    <string name="screen_adjust_tip_2_3">Usted puede ajustarlo para asegurar una visualización completa.</string>
+    <string name="adjust">ajustar</string>
+    <string name="screen_adjust_tip_3">Presione el botón de confirmación para aplicar la configuración salida para salir</string>
+    <string name="screen_adjust_tip_4">Haga que las cuatro flechas se alineen con los bordes de la pantalla. Presione confirmar en el botón redondo para salir del modo de configuración de pantalla.</string>
+    <string name="adjust_in_1">Adentro</string>
+    <string name="adjust_out_1">Afuera</string>
+    <string name="adjust_in_2">Adentro</string>
+    <string name="adjust_out_2">Afuera</string>
+    <string name="sure_adjust">Confirmar\ncambios</string>
+    <string name="tv_output_mode_dialog_title">"aviso"</string>
+    <string name="tv_output_mode_set_confirm_dialog">"Por favor confirme si la pantalla es normal o no. Si no se selecciona, el sistema volverá a la última configuración en 30 segundos."</string>
+    <string name="display_position_dialog_no">&quot;no&quot;</string>
+    <string name="display_select">Selección de resolución de pantalla</string>
+    <string name="display_auto">Chequear automáticamente</string>
+    <string name="screen_edge">Ajustar el borde de la pantalla</string>
+    <string name="touping">Enviar pantalla</string>
+    <string name="maibiLock">Candado monedero D</string>
+    <!-- BY HUANGKE -->
+    <string name="wheat_coin_lock">Candado monedero D</string>
+    <string name="title_wheat_code_input">WheatCoinLockCodeInput</string>
+    <string name="wheat_code">contraseña del candado monedero D</string>
+    <string name="confirm">Confirmar</string>
+    <string name="delete">borrar</string>
+    <string name="num">123</string>
+    <string name="wheat_code_title">Si usted usa el candado monedero D, debe introducir una contraseña numérica de 4 dígitos al pagar con una moneda D.</string>
+    <string name="wheat_codeinput_toast">Introduzca una contraseña numérica de 4 dígitos</string>
+    <string name="resolution_code_error">Error al confirmar el código. La configuración ha fallado.</string>
+ 
+ 
+    <string name="volume1">0/100</string>
+    <string name="volume2">5/100</string>
+    <string name="volume3">10/100</string>
+    <string name="volume4">15/100</string>
+    <string name="volume5">20/100</string>
+    <string name="volume6">25/100</string>
+    <string name="volume7">30/100</string>
+    <string name="volume8">35/100</string>
+    <string name="volume9">40/100</string>
+    <string name="volume10">45/100</string>
+    <string name="volume11">50/100</string>
+    <string name="volume12">55/100</string>
+    <string name="volume13">60/100</string>
+    <string name="volume14">65/100</string>
+    <string name="volume15">70/100</string>
+    <string name="volume16">75/100</string>
+    <string name="volume17">80/100</string>
+    <string name="volume18">85/100</string>
+    <string name="volume19">90/100</string>
+    <string name="volume20">95/100</string>
+    <string name="volume21">100/100</string>
+    <string name="str_ip_mask_not_segment">Verifique el IP y la máscara de subred</string>
+    <string name="str_ip_dns_illegal">DNS ilegal</string>
+    <string name="text_contain_isillegal_alpha">Debido a signos ilegales, vuelva a ingresar.</string>
+    
+    
+    <string name="english">English (US)</string>
+    <string name="chinese">简体中文</string>
+    <string name="spanish">Español(US)</string>
+    <string name="language_choose">Selección de idioma</string>
+    <string name="language_settings">Configuración de lenguas</string>
+    <string name="language_choose_menu">Selección de idioma</string>
+    <string name="devloper_model_menu">Modo de programador</string>
+    <string name="timezone_detail_menu">Zona horarias</string>
+    <string name="ethernet_name_menu">Red cableada</string>
+    <string name="test_speed_title_menu">Análisis de velocidad de internet</string>
+    <string name="menu">Menu</string>
+    
+    <!-- 向导语言 -->
+    <string name="language_dialog_tips">Are you sure you choose the language</string>
+    <string name="language_dialog_tips_en">Please confirm your chosen language</string>
+    <string name="language_dialog_tips_zh">是否确定您选择的语言</string>
+    <string name="language_dialog_tips_es">¿Confirma la lengua elegida?</string>
+    <string name="language_ok_en">OK</string>
+    <string name="language_cancel_en">Cancel</string>
+    <string name="language_ok_zh">是</string>
+    <string name="language_cancel_zh">否</string>
+    <string name="language_ok_es">Sí</string>
+    <string name="language_cancel_es">No</string>
+    
+    
+    <string name="ethernet_dhcp_timeout">Tiempo agotado en la designación del router, chequear la configuración</string>
+    <string name="ethernet_set_ip_conflict">Por choque del IP configurado cámbielo por favor.</string>
+    
+    <string name="ip_null">falta de IP, nula la configguración</string>
+    <string name="mask_null">falta de máscara de subred, nula la configguración</string>
+    <string name="gateway_null">falta de puerta de enlace , nula la configguración</string>
+    <string name="dns_null">falta de DNS, nula la configguración</string>
+    
+    
+     <string name="comfirm">确认</string>
+      <string name="three_dimen_type">3D模式</string>
+    <string name="left_right_mode">左右模式</string>
+    <string name="top_bottom_mode">上下模式</string>
+    <string name="threed_to_twod">3D转2D</string>
+    <string name="auto_three_dimen">自动</string>
+    <string name="polarize_type">偏光设定</string>
+    <string name="left_right_change">左右切换</string>
+    <string name="top_bottom_change">上下切换</string>
+    <string name="display_mod_set">设置模式</string>
+    <string name="display_mod_set_pal">PAL</string>
+    <string name="display_mod_set_ntsc">NTSC</string>
+     <string name="display_confirm_msg">在<xliff:g id="TIME_COUNT">%1$d</xliff:g>秒内恢复</string>
+    <string name="display_confirm_msg1">屏幕分辨率已经改变，\n是否保存设置？</string>
+    <string name="display_change_confirm">确认是否切换到该制式？选择确定后，\n如果电视无输出，15s后自动切回原制式</string>
+     <string name="wifi_connect_failed">Wifi连接失败!</string>
+      <string name="back_cancel">确认码错误,设置失败</string>
+      <string name="display_set_576p">576P_50Hz</string>
+    <string name="display_set_480p">480P_60Hz</string>
+     
+    
+    
+    
+    <string name="information">Información</string>
+ <string name="rom_version">Versión de ROM</string>
+<string name="display_screen">Invertir en pantalla</string>
+  <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">Uso para audio de celular</string>
+    <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">Uso para transmitir documentos</string>
+    <string name="bluetooth_hid_profile_summary_use_for" msgid="232727040453645139">Uso para introducir</string>
+    <string name="bluetooth_pan_profile_summary_use_for" msgid="5664884523822068653">Uso para acceso al Internet</string>
+    <string name="bluetooth_map_profile_summary_use_for" msgid="5154200119919927434">Uso para mapa</string>
+    <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">Uso para audio de medios</string>
+    <string name="bluetooth_a2dp_profile_summary_connected" msgid="963376081347721598">Conectado con audio de medios</string>
+    <string name="bluetooth_headset_profile_summary_connected" msgid="7661070206715520671">Conectado con audio de celular</string>
+    <string name="bluetooth_opp_profile_summary_connected" msgid="2611913495968309066">Conectado para transmitir documentos</string>
+    <string name="bluetooth_map_profile_summary_connected" msgid="8191407438851351713">Conectado con mapa</string>
+    <string name="bluetooth_opp_profile_summary_not_connected" msgid="1267091356089086285">No conectado para transmitir documentos</string>
+    <string name="bluetooth_hid_profile_summary_connected" msgid="3381760054215168689">Conectado con dispositivo de introducción</string>
+    <string name="bluetooth_pan_user_profile_summary_connected" msgid="4602294638909590612">Conectado con dispositivo de acceso al Internet</string>
+    <string name="bluetooth_pan_nap_profile_summary_connected" msgid="1561383706411975199">Compartir con dispositivo la conexión con Internet local</string>
+    <string name="bluetooth_profile_a2dp" msgid="2031475486179830674">Audio de medios</string>
+    <string name="bluetooth_profile_headset" msgid="8658779596261212609">Audio de celular</string>
+    <string name="bluetooth_profile_opp" msgid="9168139293654233697">Transmitir documentos</string>
+    <string name="bluetooth_profile_hid" msgid="3680729023366986480">Dispositivo de introducción</string>
+    <string name="bluetooth_profile_pan" msgid="3391606497945147673">Acceder al Internet</string>
+    <string name="bluetooth_profile_pan_nap" msgid="8429049285027482959">Compartir conexión con Internet</string>
+    <string name="bluetooth_profile_map" msgid="5465271250454324383">Acceso a mensajes</string>
+    <string name="bluetooth_pairing_error_message" msgid="3748157733635947087">No se empareja con <xliff:g id="DEVICE_NAME">%1$s</xliff:g>.</string>
+    <string name="bluetooth_pairing_pin_error_message" msgid="8337234855188925274">No se empareja con <xliff:g id="DEVICE_NAME">%1$s</xliff:g>por PIN o código incorrecto .</string>
+    <string name="bluetooth_pairing_device_down_error_message" msgid="7870998403045801381">No se comunica con<xliff:g id="DEVICE_NAME">%1$s</xliff:g>.</string>
+    <string name="bluetooth_pairing_rejected_error_message" msgid="1648157108520832454">Emparejamiento rechazado por  <xliff:g id="DEVICE_NAME">%1$s</xliff:g>.</string>
+    <string name="bluetooth_connecting_error_message" msgid="229861986106185022">No se conecta con <xliff:g id="DEVICE_NAME">%1$s</xliff:g>.</string>
+
+ <string name="bluetooth_notif_ticker" msgid="4726721390078512173">Pedir emparejamiento de Bluetooth</string>
+    <string name="bluetooth_notif_title" msgid="2485175521845371514">Pedir emparejamiento</string>
+    <string name="bluetooth_notif_message" msgid="5300852675110479862">Tacto a emparejar con</string>
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">Introducir PIN para emparejar con&lt;font color=&quot;#0594D5&quot;&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/font&gt;</string>
+    <string name="bluttooth_enter_the_same">Introducir el mismo PIN en Bluetooth</string>
+    <string name="bluetooth_need_topair">A emparejar con:<xliff:g id="DEVICE_NAME">%1$s</xliff:g></string>
+    <string name="bluetooth_display_passkey_pin_msg" msgid="2796550001376088433">Para emparejar con<xliff:g id="BOLD1_0"></xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD1"></xliff:g> , introducir <xliff:g id="BOLD2_1"></xliff:g>&lt;font color=&quot;#00FFD6&quot;&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/font&gt;<xliff:g id="END_BOLD2"></xliff:g> en el dispositivo y presionar Enter.</string>
+    <string name="bluetooth_makesure_the_key">Asegurar que el código es :&lt;font color=&quot;#00FFD6&quot;&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/font&gt;</string>
+    <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Para emparejar con<xliff:g id="DEVICE_NAME">%1$s</xliff:g>, el código es &lt;font color=&quot;#00FFD6&quot;&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/font&gt;</string>
+    <string name="bluetooth_incoming_pairing_msg" msgid="1615930853859551491">Desde:&lt;font color=&quot;#0594D5&quot;&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/font&gt;, ¿emparejar con este dispositivo?</string>
+    <string name="spdifOutput">Salida de fuente SPDIF</string>
+    <string name="video_volume">Volumen de vídeo al encender</string>
+    <string name="set_failed">Falla de configuración</string>
+    <string name="bluetooth_warningand">y </string>
+    <string name="bluetooth_warning1">Acercar el control remoto al televisor presionando</string>
+    <string name="bluetooth_warning2">retorno y menu para conectar con Bluetooth</string>
+     <string name="not_bond">No par</string>
+   
+    
+</resources>

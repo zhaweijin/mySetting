@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/lr_tv_4"
+        style="@style/teleplay_tv_item_layout" >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            style="@style/teleplay_tv_item_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lr_tv_5"
+        style="@style/teleplay_tv_item_layout" >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            style="@style/teleplay_tv_item_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lr_tv_6"
+        style="@style/teleplay_tv_item_layout" >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            style="@style/teleplay_tv_item_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lr_tv_7"
+        style="@style/teleplay_tv_item_layout" >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            style="@style/teleplay_tv_item_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lr_tv_8"
+        style="@style/teleplay_tv_item_layout" >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            style="@style/teleplay_tv_item_image" />
+    </LinearLayout>
+
+</LinearLayout>

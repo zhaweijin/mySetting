@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/search_fail_hint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="307dp"
+        android:gravity="center_horizontal"
+        android:text="@string/srearch_failed_hint"
+        android:textColor="@color/whitetext"
+        android:textSize="32sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/search_fail_hint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="186dp"
+        android:text="@string/search_failed_hint2"
+        android:textColor="@color/whitetext"
+        android:textSize="32sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/search_fail_hint2_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_fail_hint2"
+        android:layout_below="@+id/search_fail_hint2"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/search_failed_hint2_1"
+        android:textColor="@color/whitetext"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/search_fail_hint2_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_fail_hint2_1"
+        android:layout_below="@+id/search_fail_hint2_1"
+        android:layout_marginTop="33dp"
+        android:text="@string/search_failed_hint2_2"
+        android:textColor="@color/whitetext"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/search_fail_hint2_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_fail_hint2_2"
+        android:layout_below="@+id/search_fail_hint2_2"
+        android:layout_marginTop="33dp"
+        android:text="@string/search_failed_hint2_3"
+        android:textColor="@color/whitetext"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/search_fail_hint2_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_fail_hint2_3"
+        android:layout_below="@+id/search_fail_hint2_3"
+        android:layout_marginTop="33dp"
+        android:text="@string/search_failed_hint2_4"
+        android:textColor="@color/whitetext"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/search_fail_hint2_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/search_fail_hint2_4"
+        android:layout_marginTop="-12dip"
+        android:layout_toRightOf="@+id/search_fail_hint2_1"
+        android:contentDescription="@string/search_failed_hint2_5"
+        android:src="@drawable/movie_list_select_search_bg"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 显示背景图的ImageView -->    <include layout="@layout/background_layout" />
+
+    <EditText
+        android:id="@+id/et_input_words"
+        android:layout_width="482dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="87dip"
+        android:hint="@string/search_et_input_words"
+        android:background="@drawable/search_et_bg"
+        android:focusable="false"
+        android:textColor="@color/gray"
+        android:textSize="24sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dip"
+        android:layout_marginTop="42dip"
+        android:text="@string/search_tv_search"
+        android:textColor="@color/white"
+        android:textSize="46sp" />
+
+    <FrameLayout
+        android:layout_width="1167dip"
+        android:layout_height="234dip"
+        android:layout_below="@+id/tv_search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dip" >
+
+        <RelativeLayout
+            android:id="@+id/rl_search_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dip" >
+
+            <ImageView
+                android:id="@+id/iv_search_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_search_logo"
+                android:layout_marginBottom="30dip"
+                android:layout_marginLeft="46dip"
+                android:layout_toRightOf="@id/iv_search_logo"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dip"
+                    android:text="@string/search_line1_text"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/tv_line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_line2_text"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.hiveview.tv.view.ThinkWordsView
+            android:id="@+id/tv_think_view"
+            android:layout_width="1167dip"
+            android:layout_height="204dip"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/search_no_data"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <com.hiveview.tv.view.InputKeyboardView
+        android:id="@+id/search_input_keyboard_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/testnet_width"
+                android:layout_height="@dimen/testnet_height4"
+                android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/testnet_height5"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/testnet_right"
+            android:gravity="center"
+            android:text="@string/informationtip"
+            android:textColor="#38ADFF"
+            android:textSize="@dimen/testnet_textsize_24" />
+        <TextView
+            android:id="@+id/notext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/testnet_height8"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/testnet_height6"
+            android:layout_marginLeft="@dimen/testnet_left_right2"
+            android:layout_marginRight="@dimen/testnet_left_right2"
+            android:text="@string/messagetip"
+            android:textSize="@dimen/testnet_textsize_20"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/testnet_height7"
+            android:layout_marginTop="@dimen/testnet_right"
+            android:background="#E4E4E4" />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/yestip"
+            android:textColor="#38ADFF"
+            android:textSize="@dimen/testnet_textsize_20" />
+
+    </LinearLayout>
+</RelativeLayout>

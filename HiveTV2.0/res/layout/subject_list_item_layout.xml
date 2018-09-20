@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:paddingLeft="70.0dip" >
+
+    <com.hiveview.tv.view.CustomDrawingOrderLayout
+        android:id="@+id/tab_recommend_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_first_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_item_first_line_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_common_first_line_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_list_focus_bg"
+                    android:orientation="vertical" >
+
+                    <com.hiveview.tv.common.myimage.ImageLoadView
+                        android:id="@+id/iv_common_first_line_01"
+                        style="@style/subject_item_image_style" />
+                </LinearLayout>
+
+                <com.hiveview.tv.view.television.MarqueeText
+                    android:id="@+id/tv_common_first_line_01"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dip"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/common_item_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_first_line_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-15dip"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_common_first_line_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_list_focus_bg"
+                    android:orientation="vertical" >
+
+                    <com.hiveview.tv.common.myimage.ImageLoadView
+                        android:id="@+id/iv_common_first_line_02"
+                      style="@style/subject_item_image_style" />
+                </LinearLayout>
+
+                <com.hiveview.tv.view.television.MarqueeText
+                    android:id="@+id/tv_common_first_line_02"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dip"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/common_item_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_first_line_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-15dip"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_common_first_line_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_list_focus_bg"
+                    android:orientation="vertical" >
+
+                    <com.hiveview.tv.common.myimage.ImageLoadView
+                        android:id="@+id/iv_common_first_line_03"
+                       style="@style/subject_item_image_style" />
+                </LinearLayout>
+
+                <com.hiveview.tv.view.television.MarqueeText
+                    android:id="@+id/tv_common_first_line_03"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dip"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/common_item_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_second_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_first_line"
+            android:layout_marginTop="-5dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_item_second_line_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_common_second_line_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_list_focus_bg"
+                    android:orientation="vertical" >
+
+                    <com.hiveview.tv.common.myimage.ImageLoadView
+                        android:id="@+id/iv_common_second_line_01"
+                       style="@style/subject_item_image_style" />
+                </LinearLayout>
+
+                <com.hiveview.tv.view.television.MarqueeText
+                    android:id="@+id/tv_common_second_line_01"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dip"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/common_item_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_second_line_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-15dip"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_common_second_line_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_list_focus_bg"
+                    android:orientation="vertical" >
+
+                    <com.hiveview.tv.common.myimage.ImageLoadView
+                        android:id="@+id/iv_common_second_line_02"
+                        style="@style/subject_item_image_style" />
+                </LinearLayout>
+
+                <com.hiveview.tv.view.television.MarqueeText
+                    android:id="@+id/tv_common_second_line_02"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dip"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/common_item_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_second_line_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-15dip"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_common_second_line_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_list_focus_bg"
+                    android:orientation="vertical" >
+
+                    <com.hiveview.tv.common.myimage.ImageLoadView
+                        android:id="@+id/iv_common_second_line_03"
+                       style="@style/subject_item_image_style" />
+                </LinearLayout>
+
+                <com.hiveview.tv.view.television.MarqueeText
+                    android:id="@+id/tv_common_second_line_03"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dip"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/common_item_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.hiveview.tv.view.CustomDrawingOrderLayout>
+
+</LinearLayout>

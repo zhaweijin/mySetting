@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/matrix_tv_layout_3_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="98dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/home_tv_programs_select_focus_bg"
+        android:focusableInTouchMode="true"
+        android:focusable="true" >
+
+        <com.hiveview.tv.onlive.player.HiveviewVideoView
+            android:id="@+id/view_hdmi_small"
+            android:layout_width="828dip"
+            android:layout_height="466dip" />
+          <ImageView
+            android:id="@+id/view_hdmi_small_image"
+            android:layout_width="828dip"
+            android:layout_height="466dip"
+            android:background="@drawable/no_hdmiin_zh"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tv_date"
+        android:layout_width="232dip"
+        android:layout_height="228dip"
+        android:layout_alignTop="@id/matrix_tv_layout_3_f"
+        android:layout_marginRight="98dip"
+        android:layout_marginTop="25dip"
+        android:layout_toRightOf="@id/matrix_tv_layout_3_f"
+        android:background="@drawable/tab_tv_bg" >
+
+        <TextView
+            android:id="@+id/tv_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dip"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/tv_tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tv_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dip"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:text="17日"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="232dip"
+        android:layout_height="228dip"
+        android:layout_below="@id/rl_tv_date"
+        android:layout_marginRight="98dip"
+        android:layout_marginTop="15dip"
+        android:layout_toRightOf="@id/matrix_tv_layout_3_f"
+        android:background="@drawable/tab_tv_bg" >
+
+        <ImageView
+            android:id="@+id/iv_go_fullscreen"
+            android:layout_width="79dip"
+            android:layout_height="79dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dip"
+            android:src="@drawable/tab_tv_fullscreen_bg" />
+
+        <!-- 
+        <TextView
+            android:id="@+id/tv_go_fullscreen1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_go_fullscreen"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dip"
+            android:text="@string/sub_navigation_tv_warn1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+             -->
+        <ImageView 
+            android:id="@+id/click_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_go_fullscreen"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/click_small_window"
+            android:layout_marginTop="26dip" />
+
+        <!-- 
+        <TextView
+            android:id="@+id/tv_go_fullscreen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_go_fullscreen1"
+            android:text="@string/sub_navigation_tv_warn2"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+             -->
+    </RelativeLayout>
+
+</RelativeLayout>

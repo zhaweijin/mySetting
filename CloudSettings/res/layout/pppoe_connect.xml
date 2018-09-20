@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pppoe_connect_main_llyout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/inside_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/pppoe_connect_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/pppoe_connect_leftmargin"
+        android:layout_marginTop="@dimen/pppoe_connect_topmargin"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/pppoe_auto_connect_rlyout"
+            android:layout_width="@dimen/wifi_share_width"
+            android:layout_height="@dimen/wifi_share_item_height"
+            android:focusable="true" >
+ 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/wifi_share_member_leftmargin"
+                android:layout_marginTop="@dimen/wifi_share_member_topmagin"
+                android:orientation="horizontal" >
+
+               <com.hiveview.cloudtv.common.FileTitleTextViewNew 
+                    android:id="@+id/auto_connect_onoff_title"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+		            android:ellipsize="marquee"
+            	    android:marqueeRepeatLimit="marquee_forever"
+            	    android:singleLine="true"
+            	    android:scrollHorizontally="true"
+                    android:gravity="center_horizontal|center"
+                   android:text="@string/pppoe_auto_connect"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_38" />
+
+
+                <Button
+                    android:id="@+id/auto_connect_onoff_leftarrow"
+                    android:layout_width="@dimen/wifi_share_item_btn_width"
+                    android:layout_height="@dimen/wifi_share_item_btn_height"
+                    android:layout_marginLeft="63dip"
+                    android:background="@drawable/left_arrow_selector"
+                    android:enabled="false"
+                    android:focusable="false" />
+
+                <TextView
+                    android:id="@+id/auto_connect_onoff_text"
+                    android:layout_width="220dip"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:gravity="center_horizontal|center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_38" />
+
+                <Button
+                    android:id="@+id/auto_connect_onoff_rightarrow"
+                    android:layout_width="@dimen/wifi_share_item_btn_width"
+                    android:layout_height="@dimen/wifi_share_item_btn_height"
+                    android:background="@drawable/right_arrow_selector"
+                    android:layout_marginRight="20dip"
+                    android:enabled="false"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/wifi_share_underline_rightmargin"
+                android:src="@drawable/under_line_2" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/pppoe_connect_name_rlyout"
+            android:layout_width="@dimen/pppoe_connect_width"
+            android:layout_height="@dimen/pppoe_connect_item_height"
+            android:focusable="true" >
+
+            <!-- android:background="@drawable/list_item_selector" -->
+
+            <ImageView
+                android:id="@+id/pppoe_connect_user_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/pppoe_connect_item_member_lefmargin"
+                android:layout_marginTop="30dip"
+                android:focusable="false"
+                android:src="@drawable/pppoe_connect_user" />
+
+            <EditText
+                android:id="@+id/pppoe_connect_user_edit"
+                android:layout_width="@dimen/pppoe_connect_item_content_width"
+                android:layout_height="wrap_content"          
+                android:layout_marginLeft="@dimen/pppoe_connect_item_member_lefmargin"
+                android:layout_marginTop="@dimen/pppoe_connect_item_member_topmagin"
+                android:layout_toRightOf="@id/pppoe_connect_user_img"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:hint="@string/pppoe_username"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_38" />
+<!-- android:layout_alignTop="@id/pppoe_connect_user_img" -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/pppoe_connect_underline_rightmargin"
+                android:focusable="false"
+                android:src="@drawable/under_line_2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pppoe_connect_password_rlyout"
+            android:layout_width="@dimen/pppoe_connect_width"
+            android:layout_height="@dimen/pppoe_connect_item_height"
+            android:layout_marginTop="@dimen/pppoe_connect_item_topmargin"
+            android:focusable="true" >
+
+            <!-- android:background="@drawable/list_item_selector" -->
+
+            <ImageView
+                android:id="@+id/pppoe_connect_password_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/pppoe_connect_item_member_lefmargin"
+                android:layout_marginTop="30dip"
+                android:focusable="false"
+                android:src="@drawable/pppoe_connect_password" />
+
+            <EditText
+                android:id="@+id/pppoe_connect_password_edit"
+                android:layout_width="@dimen/pppoe_connect_item_content_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pppoe_connect_item_member_lefmargin"
+                android:layout_marginTop="@dimen/pppoe_connect_item_member_topmagin"
+                android:layout_toRightOf="@id/pppoe_connect_password_img"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:hint="@string/pppoe_password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_38" />
+<!-- android:layout_alignTop="@id/pppoe_connect_password_img" -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/pppoe_connect_underline_rightmargin"
+                android:focusable="false"
+                android:src="@drawable/under_line_2" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="200dip"
+            android:layout_height="80dip"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginTop="@dimen/wifi_share_btn_commit_topmargin" >
+
+            <Button
+                android:id="@+id/pppoe_connect_ok_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_selector"
+                android:text="@string/manual_wifi_commit"
+                android:textColor="@color/settings_ffffff"
+                android:textSize="@dimen/text_size_38" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.hiveview.cloudtv.settings.widget.LauncherFocusView
+        android:id="@+id/pppoe_connect_focus_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.hiveview.cloudtv.settings.widget.LauncherFocusView>
+
+</LinearLayout>

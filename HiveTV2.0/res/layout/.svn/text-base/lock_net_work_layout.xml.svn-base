@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_locknet_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" >
+
+        <RelativeLayout
+            android:layout_width="1140dip"
+            android:layout_height="450dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/lock_net_work_bg" >
+
+            <TextView
+                android:id="@+id/tv_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dip"
+                android:layout_marginTop="45dip"
+                android:text="@string/lock_net_work_line1_text"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_line1"
+                android:layout_marginLeft="130dip"
+                android:layout_marginTop="20dip"
+                android:visibility="gone"
+                android:text="@string/lock_net_work_line2_text"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_line2"
+                android:layout_marginLeft="70dip"
+                android:layout_marginRight="70dip"
+                android:text="@string/lock_net_work_line3_text"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_line4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_line3"
+                android:layout_marginLeft="130dip"
+                android:text="@string/lock_net_work_line4_text"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_line5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_line4"
+                android:layout_marginTop="20dip"
+                android:layout_marginLeft="70dip"
+                android:text="@string/lock_net_work_line5_text"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_line6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_line5"
+                android:layout_marginLeft="70dip"
+                android:text="@string/lock_net_work_mac_text"
+                android:textColor="@color/lock_net_work_color"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_line7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_line6"
+                android:layout_marginLeft="70dip"
+                android:text="@string/lock_net_work_sn_text"
+                android:textColor="@color/lock_net_work_color"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

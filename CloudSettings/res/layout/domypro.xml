@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+				android:background="@drawable/bg"
+    			xmlns:lee="http://schemas.android.com/apk/res-auto" >
+
+	<TextView
+        android:id="@+id/NetCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/testnet_left_right"
+        android:layout_marginRight="@dimen/testnet_left_right"
+        android:layout_marginTop="@dimen/testnet_top"
+        android:text="@string/interface_check"
+        android:textSize="@dimen/testnet_textsize_40"
+        android:textColor="#fefefe"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/all"
+		android:layout_below="@+id/NetCheck"
+		android:layout_alignParentLeft="true">
+
+    	<TextView
+    		android:id="@+id/texttitle"
+        	android:layout_width="wrap_content"
+        	android:layout_height="@dimen/testnet_height2"
+        	android:layout_alignParentLeft="true"
+        	android:layout_alignParentTop="true"
+			android:layout_marginLeft="@dimen/testnet_left_right"
+			android:layout_marginTop="@dimen/testnet_top2"
+            android:textColor="#a9a9a9"
+        	android:textSize="@dimen/testnet_textsize_20"
+        	android:text="@string/domyprotip" />
+    
+		<RelativeLayout
+			android:id="@+id/contains"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/texttitle"
+			android:layout_marginLeft="@dimen/testnet_left_right"
+			android:layout_marginRight="@dimen/testnet_left_right">
+	
+			<com.example.networkdetectool.view.DomyOptionView
+	    		android:id="@+id/optView_videolive"
+	    		android:layout_width="@dimen/testnet_width8"
+        		android:layout_height="@dimen/testnet_left_right2"
+        		android:layout_alignParentLeft="true"
+				android:layout_marginLeft="@dimen/testnet_height8"
+        		lee:content_text="@string/domyprotip2"
+        		lee:status_text="@string/untest"
+				lee:button_text="@string/details"
+        		lee:content_textcolor="#ffffff"
+        		lee:show_drawable="@drawable/ic_launcher"/>
+
+			<LinearLayout
+				android:id="@+id/line1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/testnet_top6"
+				android:layout_marginBottom="@dimen/testnet_top6"
+				android:layout_below="@+id/optView_videolive"
+				android:background="@drawable/line"
+				android:orientation="horizontal">
+			</LinearLayout>
+	
+			<com.example.networkdetectool.view.DomyOptionView
+	    		android:id="@+id/optView_launcher"
+	    		android:layout_width="@dimen/testnet_width8"
+        		android:layout_height="@dimen/testnet_left_right2"
+        		android:layout_alignParentLeft="true"
+				android:layout_marginLeft="@dimen/testnet_height8"
+				android:layout_below="@+id/line1"
+        		lee:content_text="@string/domyprotip3"
+        		lee:status_text="@string/untest"
+				lee:button_text="@string/details"
+        		lee:content_textcolor="#ffffff"
+        		lee:show_drawable="@drawable/ic_launcher"/>
+
+			<LinearLayout
+				android:id="@+id/line2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/testnet_top6"
+				android:layout_marginBottom="@dimen/testnet_top6"
+				android:layout_below="@+id/optView_launcher"
+				android:background="@drawable/line"
+				android:orientation="horizontal">
+			</LinearLayout>
+	
+			<com.example.networkdetectool.view.DomyOptionView
+	    		android:id="@+id/optView_live"
+	    		android:layout_width="@dimen/testnet_width8"
+        		android:layout_height="@dimen/testnet_left_right2"
+        		android:layout_alignParentLeft="true"
+				android:layout_marginLeft="@dimen/testnet_height8"
+				android:layout_below="@+id/line2"
+        		lee:content_text="@string/domyprotip4"
+        		lee:status_text="@string/untest"
+				lee:button_text="@string/details"
+        		lee:content_textcolor="#ffffff"
+        		lee:show_drawable="@drawable/ic_launcher" />
+
+			<LinearLayout
+				android:id="@+id/line3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/testnet_top6"
+				android:layout_marginBottom="@dimen/testnet_top6"
+				android:layout_below="@+id/optView_live"
+				android:background="@drawable/line"
+				android:orientation="horizontal">
+			</LinearLayout>
+
+			<com.example.networkdetectool.view.DomyOptionView
+				android:id="@+id/optView_advertisement"
+				android:layout_width="@dimen/testnet_width8"
+				android:layout_height="@dimen/testnet_left_right2"
+				android:layout_alignParentLeft="true"
+				android:layout_marginLeft="@dimen/testnet_height8"
+				android:layout_below="@+id/line3"
+				lee:content_text="@string/domyprotip5"
+				lee:status_text="@string/untest"
+				lee:button_text="@string/details"
+				lee:content_textcolor="#ffffff"
+				lee:show_drawable="@drawable/ic_launcher"/>
+
+			<LinearLayout
+				android:id="@+id/line4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/testnet_top6"
+				android:layout_marginBottom="@dimen/testnet_top6"
+				android:layout_below="@+id/optView_advertisement"
+				android:background="@drawable/line"
+				android:orientation="horizontal">
+			</LinearLayout>
+
+			<com.example.networkdetectool.view.DomyOptionView
+				android:id="@+id/optView_dianshang"
+				android:layout_width="@dimen/testnet_width8"
+				android:layout_height="@dimen/testnet_left_right2"
+				android:layout_alignParentLeft="true"
+				android:layout_marginLeft="@dimen/testnet_height8"
+				android:layout_below="@+id/line4"
+				lee:content_text="@string/domyprotip6"
+				lee:status_text="@string/untest"
+				lee:button_text="@string/details"
+				lee:content_textcolor="#ffffff"
+				lee:show_drawable="@drawable/ic_launcher"/>
+
+			<LinearLayout
+				android:id="@+id/line5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/testnet_top6"
+				android:layout_marginBottom="@dimen/testnet_top6"
+				android:layout_below="@+id/optView_dianshang"
+				android:background="@drawable/line"
+				android:orientation="horizontal">
+			</LinearLayout>
+
+			<com.example.networkdetectool.view.DomyOptionView
+				android:id="@+id/optView_upgrade"
+				android:layout_width="@dimen/testnet_width8"
+				android:layout_height="@dimen/testnet_left_right2"
+				android:layout_alignParentLeft="true"
+				android:layout_marginLeft="@dimen/testnet_height8"
+				android:layout_below="@+id/line5"
+				lee:content_text="@string/domyprotip7"
+				lee:status_text="@string/untest"
+				lee:button_text="@string/details"
+				lee:content_textcolor="#ffffff"
+				lee:show_drawable="@drawable/ic_launcher"/>
+			<LinearLayout
+				android:id="@+id/line6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/testnet_top6"
+				android:layout_marginBottom="@dimen/testnet_top6"
+				android:layout_below="@+id/optView_upgrade"
+				android:background="@drawable/line"
+				android:orientation="horizontal">
+			</LinearLayout>
+		</RelativeLayout>
+
+		<Button
+			android:id="@+id/buttonDo"
+			android:layout_width="@dimen/testnet_width6"
+			android:layout_height="@dimen/testnet_height2"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:layout_below="@+id/contains"
+			android:layout_marginTop="@dimen/testnet_height5"
+			android:background="@drawable/btn_unselect"
+			android:textSize="@dimen/testnet_textsize_25"
+			android:text="@string/starttest"
+            android:textColor="#FFFFFF"/>
+	</RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/ProgressBar01"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar"
+        android:layout_width="@dimen/testnet_width6"
+        android:layout_height="@dimen/testnet_height2"
+        android:layout_marginTop="@dimen/testnet_height5"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/all"
+        android:max="6"
+        android:visibility="gone"/>
+
+	<com.example.networkdetectool.view.LauncherFocusView
+		android:id="@+id/domypro_focus_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+</RelativeLayout>

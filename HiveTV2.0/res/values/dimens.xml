@@ -1,0 +1,17 @@
+<resources>
+
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <dimen name="image_detail_pager_margin">80dp</dimen>
+    
+      <dimen name="common_item_text_size">20sp</dimen>
+     
+     <dimen name="tab_margin_top">20dip</dimen>
+     
+     <dimen name="tab_margin_left">5dip</dimen>
+     
+     <dimen name="menu_width">156dp</dimen>
+     <dimen name="menu_class_width">222.66dp</dimen>
+     <dimen name="menu_height">32dp</dimen>
+
+</resources>

@@ -1,0 +1,268 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_onlive_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_menu_tips"
+        android:layout_width="match_parent"
+        android:layout_height="400dip"
+        android:layout_gravity="bottom"
+        android:background="#99000000" >
+
+        <LinearLayout
+            android:id="@+id/ll_menu_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="63dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- 精彩推荐 -->
+
+            <FrameLayout
+                android:id="@+id/fl_recommend"
+                android:layout_width="235dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_recommend"
+                    android:layout_width="220dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/white_container"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/wonderful_recommend"
+                    android:textColor="@drawable/menu_text_bg"
+                    android:textSize="21sp" />
+            </FrameLayout>
+            <!-- 快速选台 -->
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <FrameLayout
+                android:id="@+id/fl_select_tv"
+                android:layout_width="235dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_select"
+                    android:layout_width="220dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/white_container"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/select_tv"
+                    android:textColor="@drawable/menu_text_bg"
+                    android:textSize="21sp" />
+            </FrameLayout>
+            <!-- 节目单 -->
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <FrameLayout
+                android:id="@+id/fl_sub_tv"
+                android:layout_width="235dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_epg"
+                    android:layout_width="220dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/white_container"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:nextFocusRight="@id/tv_epg"
+                    android:text="@string/epg_list"
+                    android:textColor="@drawable/menu_text_bg"
+                    android:textSize="21sp" />
+            </FrameLayout>
+        </LinearLayout>
+        
+        <!-- 节目单 -->
+
+        <com.hiveview.tv.view.onlive.OnliveEpg
+            android:id="@+id/view_onlive_epg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_menu_container"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/epg_epghint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/data_no_data"
+                    android:textSize="46sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="82dip"
+                    android:src="@drawable/epg_center_line" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="65dip"
+                    android:background="@drawable/iv_page_left"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="65dip"
+                    android:background="@drawable/iv_page_right"
+                    android:visibility="invisible" />
+
+                <com.hiveview.box.framework.view.HivePreloadViewPager
+                    android:id="@+id/vp_epg_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dip"
+                    android:visibility="gone"
+                    android:focusable="false"
+                    android:layout_toLeftOf="@id/iv_arrow_right"
+                    android:layout_toRightOf="@id/iv_arrow_left" />
+            </RelativeLayout>
+        </com.hiveview.tv.view.onlive.OnliveEpg>
+        <!-- 快速选台 -->
+
+        <com.hiveview.tv.view.onlive.OnliveSelect
+            android:id="@+id/view_onlive_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_menu_container"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/list_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dip"
+                android:background="@drawable/iv_page_left" />
+
+            <ImageView
+                android:id="@+id/list_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dip"
+                android:background="@drawable/iv_page_right" />
+
+            <include
+                android:id="@+id/rl_tv_menu"
+                layout="@layout/view_fast_select_tv_menu"
+                android:visibility="gone" />
+
+            <!-- 央视ViewPager -->
+
+            <com.hiveview.box.framework.view.HivePreloadViewPager
+                android:id="@+id/vp_cctv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="85dip"
+                android:layout_toLeftOf="@id/fl_recommend" />
+            <!-- 卫视ViewPager -->
+
+            <com.hiveview.box.framework.view.HivePreloadViewPager
+                android:id="@+id/vp_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="85dip" />
+            <!-- 本地ViewPager -->
+
+            <com.hiveview.box.framework.view.HivePreloadViewPager
+                android:id="@+id/vp_local"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="85dip" />
+
+            <!-- 高清频道ViewPager -->
+
+            <com.hiveview.box.framework.view.HivePreloadViewPager
+                android:id="@+id/vp_hd"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="85dip" />
+
+            <!-- 收费频道ViewPager -->
+
+            <com.hiveview.box.framework.view.HivePreloadViewPager
+                android:id="@+id/vp_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="85dip" />
+
+            <com.hiveview.tv.view.ProgressDialog
+                android:id="@+id/iv_hiveview_loading"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </com.hiveview.tv.view.onlive.OnliveSelect>
+        <!-- 精彩推荐 -->
+
+
+        <!--
+             <com.hiveview.tv.view.onlive.OnliveRecommend
+            android:id="@+id/view_onlive_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_menu_container"
+            android:visibility="gone" >
+        </com.hiveview.tv.view.onlive.OnliveRecommend>
+        -->
+    </RelativeLayout>
+
+    <!--
+         <com.hiveview.tv.view.TipView
+        android:id="@+id/tipView"
+        android:layout_width="617dp"
+        android:layout_height="272dp"
+        android:layout_centerInParent="true"
+        android:background="#DD000000"
+        android:focusable="false"
+        android:visibility="gone" />
+    -->
+
+</FrameLayout>

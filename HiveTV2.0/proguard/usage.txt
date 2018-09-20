@@ -1,0 +1,2901 @@
+com.google.gson.DefaultDateTypeAdapter
+com.google.gson.FieldAttributes:
+    53:53:public java.lang.Class getDeclaringClass()
+    60:60:public java.lang.String getName()
+    80:80:public java.lang.reflect.Type getDeclaredType()
+    100:100:public java.lang.Class getDeclaredClass()
+    111:111:public java.lang.annotation.Annotation getAnnotation(java.lang.Class)
+    121:121:public java.util.Collection getAnnotations()
+    135:135:public boolean hasModifier(int)
+    146:146:java.lang.Object get(java.lang.Object)
+    155:155:boolean isSynthetic()
+com.google.gson.Gson:
+    static final boolean DEFAULT_JSON_NON_EXECUTABLE
+    private static final java.lang.String JSON_NON_EXECUTABLE_PREFIX
+    462:465:public com.google.gson.JsonElement toJsonTree(java.lang.Object)
+    485:487:public com.google.gson.JsonElement toJsonTree(java.lang.Object,java.lang.reflect.Type)
+    504:507:public java.lang.String toJson(java.lang.Object)
+    526:528:public java.lang.String toJson(java.lang.Object,java.lang.reflect.Type)
+    546:551:public void toJson(java.lang.Object,java.lang.Appendable)
+    571:576:public void toJson(java.lang.Object,java.lang.reflect.Type,java.lang.Appendable)
+    585:601:public void toJson(java.lang.Object,java.lang.reflect.Type,com.google.gson.stream.JsonWriter)
+    611:613:public java.lang.String toJson(com.google.gson.JsonElement)
+    626:631:public void toJson(com.google.gson.JsonElement,java.lang.Appendable)
+    638:646:private com.google.gson.stream.JsonWriter newJsonWriter(java.io.Writer)
+    654:669:public void toJson(com.google.gson.JsonElement,com.google.gson.stream.JsonWriter)
+    740:743:public java.lang.Object fromJson(java.io.Reader,java.lang.Class)
+    841:842:public java.lang.Object fromJson(com.google.gson.JsonElement,java.lang.Class)
+    865:868:public java.lang.Object fromJson(com.google.gson.JsonElement,java.lang.reflect.Type)
+com.google.gson.Gson$1:
+    126:126:public java.lang.Object deserialize(com.google.gson.JsonElement,java.lang.reflect.Type)
+com.google.gson.Gson$2:
+    132:132:public com.google.gson.JsonElement serialize(java.lang.Object)
+    135:135:public com.google.gson.JsonElement serialize(java.lang.Object,java.lang.reflect.Type)
+com.google.gson.GsonBuilder
+com.google.gson.JsonArray:
+    45:49:com.google.gson.JsonArray deepCopy()
+    70:71:public void addAll(com.google.gson.JsonArray)
+    79:79:public int size()
+    101:101:public com.google.gson.JsonElement get(int)
+    163:166:public java.math.BigDecimal getAsBigDecimal()
+    180:183:public java.math.BigInteger getAsBigInteger()
+    196:199:public float getAsFloat()
+    236:239:public byte getAsByte()
+    244:247:public char getAsCharacter()
+    260:263:public short getAsShort()
+    33:33:bridge synthetic com.google.gson.JsonElement deepCopy()
+com.google.gson.JsonDeserializationContext:
+    public abstract java.lang.Object deserialize(com.google.gson.JsonElement,java.lang.reflect.Type)
+com.google.gson.JsonDeserializer
+com.google.gson.JsonElement:
+    abstract com.google.gson.JsonElement deepCopy()
+    136:139:public com.google.gson.JsonNull getAsJsonNull()
+    217:217:public float getAsFloat()
+    257:257:public byte getAsByte()
+    271:271:public char getAsCharacter()
+    285:285:public java.math.BigDecimal getAsBigDecimal()
+    299:299:public java.math.BigInteger getAsBigInteger()
+    312:312:public short getAsShort()
+com.google.gson.JsonNull:
+    45:45:com.google.gson.JsonNull deepCopy()
+    26:26:bridge synthetic com.google.gson.JsonElement deepCopy()
+com.google.gson.JsonObject:
+    38:42:com.google.gson.JsonObject deepCopy()
+    68:68:public com.google.gson.JsonElement remove(java.lang.String)
+    79:80:public void addProperty(java.lang.String,java.lang.String)
+    90:91:public void addProperty(java.lang.String,java.lang.Number)
+    101:102:public void addProperty(java.lang.String,java.lang.Boolean)
+    112:113:public void addProperty(java.lang.String,java.lang.Character)
+    122:122:private com.google.gson.JsonElement createJsonElement(java.lang.Object)
+    142:142:public boolean has(java.lang.String)
+    152:152:public com.google.gson.JsonElement get(java.lang.String)
+    162:162:public com.google.gson.JsonPrimitive getAsJsonPrimitive(java.lang.String)
+    172:172:public com.google.gson.JsonArray getAsJsonArray(java.lang.String)
+    182:182:public com.google.gson.JsonObject getAsJsonObject(java.lang.String)
+    32:32:bridge synthetic com.google.gson.JsonElement deepCopy()
+com.google.gson.JsonParser
+com.google.gson.JsonPrimitive:
+    74:76:public JsonPrimitive(java.lang.Character)
+    84:86:JsonPrimitive(java.lang.Object)
+    90:90:com.google.gson.JsonPrimitive deepCopy()
+    204:204:public java.math.BigDecimal getAsBigDecimal()
+    215:215:public java.math.BigInteger getAsBigInteger()
+    227:227:public float getAsFloat()
+    249:249:public short getAsShort()
+    265:265:public byte getAsByte()
+    270:270:public char getAsCharacter()
+    33:33:bridge synthetic com.google.gson.JsonElement deepCopy()
+com.google.gson.JsonSerializationContext:
+    public abstract com.google.gson.JsonElement serialize(java.lang.Object)
+    public abstract com.google.gson.JsonElement serialize(java.lang.Object,java.lang.reflect.Type)
+com.google.gson.JsonSerializer
+com.google.gson.JsonStreamParser
+com.google.gson.TreeTypeAdapter
+com.google.gson.TreeTypeAdapter$1
+com.google.gson.TreeTypeAdapter$SingleTypeFactory
+com.google.gson.TypeAdapter:
+    141:143:public final void toJson(java.io.Writer,java.lang.Object)
+    186:186:public final com.google.gson.TypeAdapter nullSafe()
+    215:217:public final java.lang.String toJson(java.lang.Object)
+    255:256:public final java.lang.Object fromJson(java.io.Reader)
+    269:269:public final java.lang.Object fromJson(java.lang.String)
+    280:283:public final java.lang.Object fromJsonTree(com.google.gson.JsonElement)
+com.google.gson.TypeAdapter$1
+com.google.gson.internal.$Gson$Preconditions:
+    32:32:public $Gson$Preconditions()
+com.google.gson.internal.$Gson$Types:
+    45:45:private $Gson$Types()
+com.google.gson.internal.Excluder:
+    private static final double IGNORE_VERSIONS
+    70:72:public com.google.gson.internal.Excluder withVersion(double)
+    76:81:public varargs com.google.gson.internal.Excluder withModifiers(int[])
+    85:87:public com.google.gson.internal.Excluder disableInnerClassSerialization()
+    91:93:public com.google.gson.internal.Excluder excludeFieldsWithoutExposeAnnotation()
+    98:108:public com.google.gson.internal.Excluder withExclusionStrategy(com.google.gson.ExclusionStrategy,boolean,boolean)
+com.google.gson.internal.Primitives:
+    32:32:private Primitives()
+    80:80:public static boolean isWrapperType(java.lang.reflect.Type)
+    113:115:public static java.lang.Class unwrap(java.lang.Class)
+com.google.gson.internal.Streams:
+    35:79:public Streams()
+    40:60:public static com.google.gson.JsonElement parse(com.google.gson.stream.JsonReader)
+    72:72:public static java.io.Writer writerForAppendable(java.lang.Appendable)
+com.google.gson.internal.Streams$1
+com.google.gson.internal.Streams$AppendableWriter
+com.google.gson.internal.Streams$AppendableWriter$CurrentWrite
+com.google.gson.internal.bind.JsonTreeReader:
+    53:55:public JsonTreeReader(com.google.gson.JsonElement)
+com.google.gson.internal.bind.JsonTreeWriter:
+    163:167:public com.google.gson.stream.JsonWriter value(double)
+com.google.gson.internal.bind.TypeAdapters:
+    58:58:private TypeAdapters()
+    769:769:public static com.google.gson.TypeAdapterFactory newFactory(com.google.gson.reflect.TypeToken,com.google.gson.TypeAdapter)
+com.google.gson.internal.bind.TypeAdapters$23:
+    private static final java.lang.String YEAR
+    private static final java.lang.String MONTH
+    private static final java.lang.String DAY_OF_MONTH
+    private static final java.lang.String HOUR_OF_DAY
+    private static final java.lang.String MINUTE
+    private static final java.lang.String SECOND
+com.google.gson.internal.bind.TypeAdapters$27
+com.google.gson.reflect.TypeToken:
+    112:112:public boolean isAssignableFrom(java.lang.Class)
+    123:140:public boolean isAssignableFrom(java.lang.reflect.Type)
+    153:153:public boolean isAssignableFrom(com.google.gson.reflect.TypeToken)
+    161:178:private static boolean isAssignableFrom(java.lang.reflect.Type,java.lang.reflect.GenericArrayType)
+    188:231:private static boolean isAssignableFrom(java.lang.reflect.Type,java.lang.reflect.ParameterizedType,java.util.Map)
+    240:250:private static boolean typeEquals(java.lang.reflect.ParameterizedType,java.lang.reflect.ParameterizedType,java.util.Map)
+    257:265:private static varargs java.lang.AssertionError buildUnexpectedTypeError(java.lang.reflect.Type,java.lang.Class[])
+    273:273:private static boolean matches(java.lang.reflect.Type,java.lang.reflect.Type,java.util.Map)
+com.google.gson.stream.JsonReader:
+    private static final long MIN_INCOMPLETE_INTEGER
+    private static final int PEEKED_NONE
+    private static final int PEEKED_BEGIN_OBJECT
+    private static final int PEEKED_END_OBJECT
+    private static final int PEEKED_BEGIN_ARRAY
+    private static final int PEEKED_END_ARRAY
+    private static final int PEEKED_TRUE
+    private static final int PEEKED_FALSE
+    private static final int PEEKED_NULL
+    private static final int PEEKED_SINGLE_QUOTED
+    private static final int PEEKED_DOUBLE_QUOTED
+    private static final int PEEKED_UNQUOTED
+    private static final int PEEKED_BUFFERED
+    private static final int PEEKED_SINGLE_QUOTED_NAME
+    private static final int PEEKED_DOUBLE_QUOTED_NAME
+    private static final int PEEKED_UNQUOTED_NAME
+    private static final int PEEKED_LONG
+    private static final int PEEKED_NUMBER
+    private static final int PEEKED_EOF
+    private static final int NUMBER_CHAR_NONE
+    private static final int NUMBER_CHAR_SIGN
+    private static final int NUMBER_CHAR_DIGIT
+    private static final int NUMBER_CHAR_DECIMAL
+    private static final int NUMBER_CHAR_FRACTION_DIGIT
+    private static final int NUMBER_CHAR_EXP_E
+    private static final int NUMBER_CHAR_EXP_SIGN
+    private static final int NUMBER_CHAR_EXP_DIGIT
+com.google.gson.stream.JsonScope
+com.google.gson.stream.JsonWriter:
+    213:220:public final void setIndent(java.lang.String)
+    253:254:public final void setHtmlSafe(boolean)
+    261:261:public final boolean isHtmlSafe()
+    269:270:public final void setSerializeNulls(boolean)
+    462:468:public com.google.gson.stream.JsonWriter value(double)
+com.hiveview.EncryptionHiveviewInfo:
+    private static final java.lang.String TAG
+    16:38:public boolean getEncryptionData(byte[],byte[],int[],int[])
+com.hiveview.SafeFilterManager:
+    private int mNativeContext
+    private int mNativeMediaFilterInJavaObj
+com.hiveview.box.framework.MainActivity:
+    187:188:public void clear(android.view.View)
+    199:200:public void up(android.view.View)
+    211:212:public void down(android.view.View)
+com.hiveview.box.framework.MainActivity$DemoItemViewFocusChangeListener
+com.hiveview.box.framework.MainActivity$DemoItemViewKeyListener
+com.hiveview.box.framework.adapter.HivePagerAdapter:
+    285:285:public boolean isOutOfEngineUpperLimmit()
+    309:309:public int getDataCount()
+    333:335:public void removeEntity(int)
+    475:480:public android.view.View getItemView(int,int)
+com.hiveview.box.framework.adapter.PageViewEngine:
+    243:246:public boolean isOutOfRegisterUpperLimmit()
+    285:285:public int getPageViewPoolSize()
+com.hiveview.box.framework.image.BaseDiscCache:
+    private static final java.lang.String ERROR_ARG_NULL
+    37:38:public BaseDiscCache(java.io.File)
+    60:66:public void clear()
+com.hiveview.box.framework.image.BaseImageDecoder:
+    protected static final java.lang.String LOG_SABSAMPLE_IMAGE
+    protected static final java.lang.String LOG_SCALE_IMAGE
+    protected static final java.lang.String LOG_ROTATE_IMAGE
+    protected static final java.lang.String LOG_FLIP_IMAGE
+    protected static final java.lang.String ERROR_CANT_DECODE_IMAGE
+com.hiveview.box.framework.image.BaseImageDownloader:
+    public static final int DEFAULT_HTTP_CONNECT_TIMEOUT
+    public static final int DEFAULT_HTTP_READ_TIMEOUT
+    protected static final int BUFFER_SIZE
+    protected static final java.lang.String ALLOWED_URI_CHARS
+    protected static final int MAX_REDIRECT_COUNT
+    private static final java.lang.String ERROR_UNSUPPORTED_SCHEME
+    71:75:public BaseImageDownloader(android.content.Context,int,int)
+com.hiveview.box.framework.image.BaseMemoryCache
+com.hiveview.box.framework.image.BlockingDeque:
+    public abstract void addFirst(java.lang.Object)
+    public abstract void addLast(java.lang.Object)
+    public abstract boolean offerFirst(java.lang.Object)
+    public abstract boolean offerLast(java.lang.Object)
+    public abstract void putFirst(java.lang.Object)
+    public abstract void putLast(java.lang.Object)
+    public abstract boolean offerFirst(java.lang.Object,long,java.util.concurrent.TimeUnit)
+    public abstract boolean offerLast(java.lang.Object,long,java.util.concurrent.TimeUnit)
+    public abstract java.lang.Object takeFirst()
+    public abstract java.lang.Object takeLast()
+    public abstract java.lang.Object pollFirst(long,java.util.concurrent.TimeUnit)
+    public abstract java.lang.Object pollLast(long,java.util.concurrent.TimeUnit)
+    public abstract boolean removeFirstOccurrence(java.lang.Object)
+    public abstract boolean removeLastOccurrence(java.lang.Object)
+    public abstract boolean add(java.lang.Object)
+    public abstract boolean offer(java.lang.Object)
+    public abstract void put(java.lang.Object)
+    public abstract boolean offer(java.lang.Object,long,java.util.concurrent.TimeUnit)
+    public abstract java.lang.Object remove()
+    public abstract java.lang.Object poll()
+    public abstract java.lang.Object take()
+    public abstract java.lang.Object poll(long,java.util.concurrent.TimeUnit)
+    public abstract java.lang.Object element()
+    public abstract java.lang.Object peek()
+    public abstract boolean remove(java.lang.Object)
+    public abstract boolean contains(java.lang.Object)
+    public abstract int size()
+    public abstract java.util.Iterator iterator()
+    public abstract void push(java.lang.Object)
+com.hiveview.box.framework.image.Constants
+com.hiveview.box.framework.image.Constants$Config
+com.hiveview.box.framework.image.Constants$Extra
+com.hiveview.box.framework.image.DefaultConfigurationFactory:
+    36:36:public DefaultConfigurationFactory()
+com.hiveview.box.framework.image.Deque:
+    public abstract void addFirst(java.lang.Object)
+    public abstract void addLast(java.lang.Object)
+    public abstract boolean offerFirst(java.lang.Object)
+    public abstract boolean offerLast(java.lang.Object)
+    public abstract java.lang.Object removeFirst()
+    public abstract java.lang.Object removeLast()
+    public abstract java.lang.Object pollFirst()
+    public abstract java.lang.Object pollLast()
+    public abstract java.lang.Object getFirst()
+    public abstract java.lang.Object getLast()
+    public abstract java.lang.Object peekFirst()
+    public abstract java.lang.Object peekLast()
+    public abstract boolean removeFirstOccurrence(java.lang.Object)
+    public abstract boolean removeLastOccurrence(java.lang.Object)
+    public abstract boolean add(java.lang.Object)
+    public abstract boolean offer(java.lang.Object)
+    public abstract java.lang.Object remove()
+    public abstract java.lang.Object poll()
+    public abstract java.lang.Object element()
+    public abstract java.lang.Object peek()
+    public abstract void push(java.lang.Object)
+    public abstract java.lang.Object pop()
+    public abstract boolean remove(java.lang.Object)
+    public abstract boolean contains(java.lang.Object)
+    public abstract int size()
+    public abstract java.util.Iterator iterator()
+    public abstract java.util.Iterator descendingIterator()
+com.hiveview.box.framework.image.DiscCacheAware:
+    public abstract void clear()
+com.hiveview.box.framework.image.DiscCacheUtils
+com.hiveview.box.framework.image.DisplayBitmapTask:
+    private static final java.lang.String LOG_DISPLAY_IMAGE_IN_IMAGEAWARE
+    private static final java.lang.String LOG_TASK_CANCELLED_IMAGEAWARE_REUSED
+    private static final java.lang.String LOG_TASK_CANCELLED_IMAGEAWARE_COLLECTED
+com.hiveview.box.framework.image.DisplayImageOptions$Builder:
+    231:232:public com.hiveview.box.framework.image.DisplayImageOptions$Builder showStubImage(int)
+    242:243:public com.hiveview.box.framework.image.DisplayImageOptions$Builder showImageOnLoading(int)
+    252:253:public com.hiveview.box.framework.image.DisplayImageOptions$Builder showImageOnLoading(android.graphics.drawable.Drawable)
+    275:276:public com.hiveview.box.framework.image.DisplayImageOptions$Builder showImageForEmptyUri(android.graphics.drawable.Drawable)
+    298:299:public com.hiveview.box.framework.image.DisplayImageOptions$Builder showImageOnFail(android.graphics.drawable.Drawable)
+    309:310:public com.hiveview.box.framework.image.DisplayImageOptions$Builder resetViewBeforeLoading()
+    328:329:public com.hiveview.box.framework.image.DisplayImageOptions$Builder cacheInMemory()
+    344:345:public com.hiveview.box.framework.image.DisplayImageOptions$Builder cacheOnDisc()
+    379:381:public com.hiveview.box.framework.image.DisplayImageOptions$Builder decodingOptions(android.graphics.BitmapFactory$Options)
+    386:387:public com.hiveview.box.framework.image.DisplayImageOptions$Builder delayBeforeLoading(int)
+    392:393:public com.hiveview.box.framework.image.DisplayImageOptions$Builder extraForDownloader(java.lang.Object)
+    408:409:public com.hiveview.box.framework.image.DisplayImageOptions$Builder preProcessor(com.hiveview.box.framework.image.BitmapProcessor)
+    418:419:public com.hiveview.box.framework.image.DisplayImageOptions$Builder postProcessor(com.hiveview.box.framework.image.BitmapProcessor)
+    427:429:public com.hiveview.box.framework.image.DisplayImageOptions$Builder displayer(com.hiveview.box.framework.image.BitmapDisplayer)
+    442:443:public com.hiveview.box.framework.image.DisplayImageOptions$Builder handler(android.os.Handler)
+com.hiveview.box.framework.image.FIFOLimitedMemoryCache
+com.hiveview.box.framework.image.FadeInBitmapDisplayer
+com.hiveview.box.framework.image.FailReason:
+    37:37:public com.hiveview.box.framework.image.FailReason$FailType getType()
+    42:42:public java.lang.Throwable getCause()
+com.hiveview.box.framework.image.FileCountLimitedDiscCache:
+    36:37:public FileCountLimitedDiscCache(java.io.File,int)
+com.hiveview.box.framework.image.FuzzyKeyMemoryCache:
+    70:71:public void clear()
+com.hiveview.box.framework.image.HttpClientImageDownloader
+com.hiveview.box.framework.image.ImageLoader:
+    static final java.lang.String LOG_INIT_CONFIG
+    static final java.lang.String LOG_DESTROY
+    static final java.lang.String LOG_LOAD_IMAGE_FROM_MEMORY_CACHE
+    private static final java.lang.String WARNING_RE_INIT_CONFIG
+    private static final java.lang.String ERROR_WRONG_ARGUMENTS
+    private static final java.lang.String ERROR_NOT_INIT
+    private static final java.lang.String ERROR_INIT_CONFIG_WITH_NULL
+    93:93:public boolean isInited()
+    109:110:public void displayImage(java.lang.String,com.hiveview.box.framework.image.ImageAware)
+    127:128:public void displayImage(java.lang.String,com.hiveview.box.framework.image.ImageAware,com.hiveview.box.framework.image.ImageLoadingListener)
+    145:146:public void displayImage(java.lang.String,com.hiveview.box.framework.image.ImageAware,com.hiveview.box.framework.image.DisplayImageOptions)
+    166:167:public void displayImage(java.lang.String,com.hiveview.box.framework.image.ImageAware,com.hiveview.box.framework.image.DisplayImageOptions,com.hiveview.box.framework.image.ImageLoadingListener)
+    301:302:public void displayImage(java.lang.String,android.widget.ImageView,com.hiveview.box.framework.image.ImageLoadingListener)
+    358:359:public void loadImage(java.lang.String,com.hiveview.box.framework.image.ImageLoadingListener)
+    378:379:public void loadImage(java.lang.String,com.hiveview.box.framework.image.ImageSize,com.hiveview.box.framework.image.ImageLoadingListener)
+    397:398:public void loadImage(java.lang.String,com.hiveview.box.framework.image.DisplayImageOptions,com.hiveview.box.framework.image.ImageLoadingListener)
+    473:473:public android.graphics.Bitmap loadImageSync(java.lang.String)
+    507:507:public android.graphics.Bitmap loadImageSync(java.lang.String,com.hiveview.box.framework.image.ImageSize)
+    553:554:public com.hiveview.box.framework.image.MemoryCacheAware getMemoryCache()
+    563:565:public void clearMemoryCache()
+    573:574:public com.hiveview.box.framework.image.DiscCacheAware getDiscCache()
+    583:585:public void clearDiscCache()
+    592:592:public java.lang.String getLoadingUriForView(com.hiveview.box.framework.image.ImageAware)
+    600:600:public java.lang.String getLoadingUriForView(android.widget.ImageView)
+    611:612:public void cancelDisplayTask(com.hiveview.box.framework.image.ImageAware)
+    621:622:public void cancelDisplayTask(android.widget.ImageView)
+    635:636:public void denyNetworkDownloads(boolean)
+    646:647:public void handleSlowNetwork(boolean)
+    668:669:public void stop()
+    677:681:public void destroy()
+com.hiveview.box.framework.image.ImageLoaderConfiguration:
+    124:124:public static com.hiveview.box.framework.image.ImageLoaderConfiguration createDefault(android.content.Context)
+com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder:
+    private static final java.lang.String WARNING_OVERLAP_DISC_CACHE_PARAMS
+    private static final java.lang.String WARNING_OVERLAP_DISC_CACHE_NAME_GENERATOR
+    private static final java.lang.String WARNING_OVERLAP_MEMORY_CACHE
+    private static final java.lang.String WARNING_OVERLAP_EXECUTOR
+    public static final int DEFAULT_THREAD_POOL_SIZE
+    public static final int DEFAULT_THREAD_PRIORITY
+    207:209:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder memoryCacheExtraOptions(int,int)
+    227:232:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder discCacheExtraOptions(int,int,android.graphics.Bitmap$CompressFormat,int,com.hiveview.box.framework.image.BitmapProcessor)
+    249:254:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder taskExecutor(java.util.concurrent.Executor)
+    276:281:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder taskExecutorForCachedImages(java.util.concurrent.Executor)
+    289:294:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder threadPoolSize(int)
+    354:361:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder memoryCacheSize(int)
+    374:384:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder memoryCacheSizePercentage(int)
+    398:403:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder memoryCache(com.hiveview.box.framework.image.MemoryCacheAware)
+    415:422:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder discCacheSize(int)
+    434:442:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder discCacheFileCount(int)
+    467:468:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder imageDownloader(com.hiveview.box.framework.image.ImageDownloader)
+    478:479:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder imageDecoder(com.hiveview.box.framework.image.ImageDecoder)
+    497:505:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder discCache(com.hiveview.box.framework.image.DiscCacheAware)
+    515:516:public com.hiveview.box.framework.image.ImageLoaderConfiguration$Builder defaultDisplayImageOptions(com.hiveview.box.framework.image.DisplayImageOptions)
+com.hiveview.box.framework.image.ImageLoaderEngine:
+    135:136:void denyNetworkDownloads(boolean)
+    146:147:void handleSlowNetwork(boolean)
+    167:176:void stop()
+com.hiveview.box.framework.image.ImageNonViewAware:
+    39:40:public ImageNonViewAware(com.hiveview.box.framework.image.ImageSize,com.hiveview.box.framework.image.ViewScaleType)
+com.hiveview.box.framework.image.ImageSize:
+    private static final int TO_STRING_MAX_LENGHT
+    private static final java.lang.String SEPARATOR
+com.hiveview.box.framework.image.ImageSizeUtils:
+    private static final int DEFAULT_MAX_BITMAP_DIMENSION
+    42:43:private ImageSizeUtils()
+com.hiveview.box.framework.image.ImageViewAware:
+    public static final java.lang.String WARN_CANT_SET_DRAWABLE
+    public static final java.lang.String WARN_CANT_SET_BITMAP
+com.hiveview.box.framework.image.IoUtils:
+    public static final int DEFAULT_BUFFER_SIZE
+    public static final int CONTINUE_LOADING_PERCENTAGE
+    36:37:private IoUtils()
+com.hiveview.box.framework.image.L:
+    private static final java.lang.String LOG_FORMAT
+    31:32:private L()
+    36:37:public static void enableLogging()
+    41:42:public static void disableLogging()
+    65:66:public static varargs void e(java.lang.Throwable,java.lang.String,java.lang.Object[])
+com.hiveview.box.framework.image.LRULimitedMemoryCache
+com.hiveview.box.framework.image.LargestLimitedMemoryCache
+com.hiveview.box.framework.image.LimitedAgeDiscCache
+com.hiveview.box.framework.image.LimitedAgeMemoryCache
+com.hiveview.box.framework.image.LimitedDiscCache:
+    private static final int INVALID_SIZE
+    52:53:public LimitedDiscCache(java.io.File,int)
+    116:119:public void clear()
+com.hiveview.box.framework.image.LimitedMemoryCache
+com.hiveview.box.framework.image.LoadAndDisplayImageTask:
+    private static final java.lang.String LOG_WAITING_FOR_RESUME
+    private static final java.lang.String LOG_RESUME_AFTER_PAUSE
+    private static final java.lang.String LOG_DELAY_BEFORE_LOADING
+    private static final java.lang.String LOG_START_DISPLAY_IMAGE_TASK
+    private static final java.lang.String LOG_WAITING_FOR_IMAGE_LOADED
+    private static final java.lang.String LOG_GET_IMAGE_FROM_MEMORY_CACHE_AFTER_WAITING
+    private static final java.lang.String LOG_LOAD_IMAGE_FROM_NETWORK
+    private static final java.lang.String LOG_LOAD_IMAGE_FROM_DISC_CACHE
+    private static final java.lang.String LOG_RESIZE_CACHED_IMAGE_FILE
+    private static final java.lang.String LOG_PREPROCESS_IMAGE
+    private static final java.lang.String LOG_POSTPROCESS_IMAGE
+    private static final java.lang.String LOG_CACHE_IMAGE_IN_MEMORY
+    private static final java.lang.String LOG_CACHE_IMAGE_ON_DISC
+    private static final java.lang.String LOG_PROCESS_IMAGE_BEFORE_CACHE_ON_DISC
+    private static final java.lang.String LOG_TASK_CANCELLED_IMAGEAWARE_REUSED
+    private static final java.lang.String LOG_TASK_CANCELLED_IMAGEAWARE_COLLECTED
+    private static final java.lang.String LOG_TASK_INTERRUPTED
+    private static final java.lang.String ERROR_PRE_PROCESSOR_NULL
+    private static final java.lang.String ERROR_POST_PROCESSOR_NULL
+    private static final java.lang.String ERROR_PROCESSOR_FOR_DISC_CACHE_NULL
+    private static final int BUFFER_SIZE
+com.hiveview.box.framework.image.LruMemoryCache:
+    125:126:public void clear()
+com.hiveview.box.framework.image.Md5FileNameGenerator:
+    private static final java.lang.String HASH_ALGORITHM
+    private static final int RADIX
+com.hiveview.box.framework.image.MemoryCacheAware:
+    public abstract void clear()
+com.hiveview.box.framework.image.MemoryCacheUtils:
+    private static final java.lang.String URI_AND_SIZE_SEPARATOR
+    private static final java.lang.String WIDTH_AND_HEIGHT_SEPARATOR
+    35:36:private MemoryCacheUtils()
+    64:70:public static java.util.List findCachedBitmapsForImageUri(java.lang.String,com.hiveview.box.framework.image.MemoryCacheAware)
+    80:86:public static java.util.List findCacheKeysForImageUri(java.lang.String,com.hiveview.box.framework.image.MemoryCacheAware)
+    96:105:public static void removeFromCache(java.lang.String,com.hiveview.box.framework.image.MemoryCacheAware)
+com.hiveview.box.framework.image.PauseOnScrollListener:
+    49:50:public PauseOnScrollListener(com.hiveview.box.framework.image.ImageLoader,boolean,boolean)
+    61:67:public PauseOnScrollListener(com.hiveview.box.framework.image.ImageLoader,boolean,boolean,android.widget.AbsListView$OnScrollListener)
+com.hiveview.box.framework.image.ProcessAndDisplayImageTask:
+    private static final java.lang.String LOG_POSTPROCESS_IMAGE
+com.hiveview.box.framework.image.RoundedBitmapDisplayer:
+    51:52:public RoundedBitmapDisplayer(int)
+    54:57:public RoundedBitmapDisplayer(int,int)
+com.hiveview.box.framework.image.RoundedVignetteBitmapDisplayer:
+    44:45:public RoundedVignetteBitmapDisplayer(int,int)
+com.hiveview.box.framework.image.StorageUtils:
+    private static final java.lang.String EXTERNAL_STORAGE_PERMISSION
+    private static final java.lang.String INDIVIDUAL_DIR_NAME
+    38:39:private StorageUtils()
+    111:118:public static java.io.File getOwnCacheDirectory(android.content.Context,java.lang.String)
+com.hiveview.box.framework.image.TotalSizeLimitedDiscCache:
+    private static final int MIN_NORMAL_CACHE_SIZE_IN_MB
+    private static final int MIN_NORMAL_CACHE_SIZE
+com.hiveview.box.framework.image.UnlimitedDiscCache:
+    31:32:public UnlimitedDiscCache(java.io.File)
+com.hiveview.box.framework.image.UsingFreqLimitedMemoryCache
+com.hiveview.box.framework.image.WeakMemoryCache
+com.hiveview.box.framework.strategy.AbstractFocusStrategy:
+    21:22:public void setFocusPosition(int)
+    public abstract int getDefaultFocusPosition()
+com.hiveview.box.framework.strategy.NeighborOneLineStrategy:
+    31:31:public int getDefaultFocusPosition()
+com.hiveview.box.framework.utils.Lg:
+    private static final java.lang.String TAG
+    14:14:public Lg()
+com.hiveview.box.framework.view.DemoInnerItemView:
+    31:33:public DemoInnerItemView(android.content.Context)
+com.hiveview.box.framework.view.DemoItemView:
+    32:34:public DemoItemView(android.content.Context)
+    49:50:public void setTextColor(int)
+    57:57:public android.view.View getFocusView()
+com.hiveview.box.framework.view.DemoPageView:
+    40:43:public DemoPageView(android.content.Context,int,int)
+com.hiveview.box.framework.view.HiveBaseView:
+    386:387:public void setCallBackClickListener(com.hiveview.box.framework.view.HiveBaseView$CallBackItemViewClickListener)
+    394:394:public void onDestroyView()
+com.hiveview.box.framework.view.HivePreloadViewPager:
+    124:124:public int getEveryPageSize()
+    136:137:public void setEveryPageSize(int)
+    312:313:public void setPageChangeListener(com.hiveview.box.framework.view.HivePreloadViewPager$CallbackPageChangeListener)
+    428:429:public void setSelectedPageIndex(int)
+com.hiveview.box.framework.view.HivePreloadViewPager$FixedSpeedScroller:
+    354:356:public HivePreloadViewPager$FixedSpeedScroller(com.hiveview.box.framework.view.HivePreloadViewPager,android.content.Context)
+    373:374:public void setmDuration(int)
+    377:377:public int getmDuration()
+com.hiveview.box.framework.view.factory.DemoPageItemViewFactory
+com.hiveview.data.BuildConfig
+com.hiveview.data.DataMessageHandler:
+    19:19:public DataMessageHandler()
+com.hiveview.data.R
+com.hiveview.data.R$anim
+com.hiveview.data.R$attr
+com.hiveview.data.R$bool
+com.hiveview.data.R$color
+com.hiveview.data.R$dimen
+com.hiveview.data.R$drawable
+com.hiveview.data.R$id
+com.hiveview.data.R$integer
+com.hiveview.data.R$layout
+com.hiveview.data.R$menu
+com.hiveview.data.R$string
+com.hiveview.data.R$style
+com.hiveview.data.R$styleable
+com.hiveview.data.util.HttpUtil:
+    23:23:public HttpUtil()
+com.hiveview.tv.BuildConfig
+com.hiveview.tv.R
+com.hiveview.tv.R$anim
+com.hiveview.tv.R$attr
+com.hiveview.tv.R$color
+com.hiveview.tv.R$dimen
+com.hiveview.tv.R$drawable
+com.hiveview.tv.R$id
+com.hiveview.tv.R$layout
+com.hiveview.tv.R$string
+com.hiveview.tv.R$style
+com.hiveview.tv.activity.BaseActivity:
+    private static final java.lang.String TAG
+    private static java.util.ArrayList stbList
+    209:209:public com.hiveview.tv.common.AppScene getScene()
+    483:495:protected void showDialogAboutNetFault()
+    690:697:protected void showErrorTipView(java.lang.String)
+    700:702:protected void hideErrorTipView()
+    767:776:public static java.util.ArrayList getSTBSetting()
+com.hiveview.tv.activity.BaseActivity$4
+com.hiveview.tv.activity.BaseVoiceSearchListActivity:
+    private com.hiveview.tv.service.entity.FilmEntity filmEntity
+    protected static final int FILTER_BLUELIGHT
+    protected static final int FILTER_QIYI
+    protected static final int FILTER_TOTAL
+    270:271:protected void setList(java.util.ArrayList)
+    279:279:protected com.hiveview.tv.service.HiveTVService getService()
+    541:555:public void onClick(android.view.View)
+    560:567:public void onFocusChange(android.view.View,boolean)
+com.hiveview.tv.activity.BaseVoiceSearchNewListActivity:
+    private com.hiveview.tv.service.entity.FilmEntity filmEntity
+    protected static final int FILTER_BLUELIGHT
+    protected static final int FILTER_QIYI
+    protected static final int FILTER_TOTAL
+com.hiveview.tv.activity.CollectActivity:
+    public static final int LOAD_TVLIST_SUCCESS
+com.hiveview.tv.activity.ComplexVoiceSearchListActivity$EpisodeHolder
+com.hiveview.tv.activity.HomeActivity:
+    private static final java.lang.String TAG
+    public static final boolean isNeedChlitina
+    public static final boolean isBesTV
+    public static final int NavigationViewIndex
+    public static final int NavigationViewIndex_ISDOMESTIC
+    public static final int RECOMMEND_DATA_REFLESH_SUCCESS
+    private static final int REFLESH_NAVIGATIONTAB
+    protected static final int HAVE_BLUE_LIGHT
+    protected static final int UN_HAVE_BLUE_LIGHT
+    private static android.view.View imgApple2
+    private static final int DOMESTIC
+    private static final int CHLITINA
+    private android.widget.PopupWindow mPopupWindow
+    608:608:public int getVersionCode()
+    1238:1248:private void initPopuptWindow()
+com.hiveview.tv.activity.HomeActivity$7:
+    1038:1038:public void onScrollComplete(int)
+com.hiveview.tv.activity.LiveEpgInfoActivity:
+    protected static final int RQUEST_DATA_FAIL
+    protected static final int RQUEST_DATA_SUCCESS
+    protected static final int RQUEST_DATA_WEEK1_SUCCESS
+    protected static final int RQUEST_DATA_WEEK2_SUCCESS
+    protected static final int RQUEST_DATA_WEEK3_SUCCESS
+    protected static final int RQUEST_DATA_WEEK4_SUCCESS
+    protected static final int RQUEST_DATA_WEEK5_SUCCESS
+    protected static final int RQUEST_DATA_WEEK6_SUCCESS
+    protected static final int RQUEST_DATA_WEEK7_SUCCESS
+    protected static final java.lang.String TAG
+    private int locationId
+    private int isPlayLocations
+    android.support.v4.app.FragmentTransaction ft
+com.hiveview.tv.activity.LiveEpgInfoActivity$FixedSpeedScroller:
+    861:863:public LiveEpgInfoActivity$FixedSpeedScroller(com.hiveview.tv.activity.LiveEpgInfoActivity,android.content.Context)
+    880:881:public void setmDuration(int)
+    884:884:public int getmDuration()
+com.hiveview.tv.activity.LiveFastSelectTvChannelActivity:
+    private static final java.lang.String TAG
+    private static final int PAGE_SIZE
+    964:964:private int getLastPageViewCount(int)
+com.hiveview.tv.activity.LiveFastSelectTvChannelActivitys:
+    private static final java.lang.String TAG
+    private static final int PAGE_SIZE
+    903:903:private int getLastPageViewCount(int)
+com.hiveview.tv.activity.LiveSelectTelevisionActivity:
+    957:957:private int getLastPageViewCount(int)
+com.hiveview.tv.activity.MovieDemandListActivity:
+    private static final java.lang.String TAG
+    public static final int PAGE_DOWN
+    public static final int PAGE_UP
+    private android.widget.TextView hintText
+com.hiveview.tv.activity.MovieDemandListActivity$1:
+    private static final int CENTER_KEYCODE
+com.hiveview.tv.activity.MovieDemandListActivity$2:
+    private static final int CENTER_KEYCODE
+com.hiveview.tv.activity.MovieDemandListActivity$ViewItemFocusListener
+com.hiveview.tv.activity.NewChannelActivity$FixedSpeedScroller:
+    268:270:public NewChannelActivity$FixedSpeedScroller(com.hiveview.tv.activity.NewChannelActivity,android.content.Context)
+    287:288:public void setmDuration(int)
+    291:291:public int getmDuration()
+com.hiveview.tv.activity.OnlivePlayerActivity:
+    private static final java.lang.String TAG
+    protected static final int RQUEST_CHANNEL_FAIL
+    protected static final int RQUEST_CHANNEL_SUCCESS
+    private com.hiveview.box.framework.image.DisplayImageOptions optionsPoster
+com.hiveview.tv.activity.OnlivePlayerActivity$ItemViewFocusListener
+com.hiveview.tv.activity.OnlivesTipsActivity:
+    private static final int ON_LIVES_TIPS_SUCCESS
+    private static final int ON_LIVES_TIP_FAIL
+    private static final int ON_LIVES_TIP_DELETE
+com.hiveview.tv.activity.SearchConditionsActivity:
+    private static final int GET_SEARCH_DATE_SUCCESS
+    private static final int GET_SEARCH_DATE_SUCCESS2
+    private static final int GET_SEARCH_DATE_FAIL
+com.hiveview.tv.activity.SearchConditionsActivity$GrideAdapter
+com.hiveview.tv.activity.SearchConditionsActivity$NewGrideAdapter:
+    793:796:public void clearData()
+com.hiveview.tv.activity.SearchPageActivtiy:
+    private static final int SHOW_CATEGORY_POPUPWINDOW
+    private static final java.lang.String TAG
+com.hiveview.tv.activity.StorageDialogActivity:
+    private static final java.lang.String TAG
+    public static final java.lang.String KEY_STORAGTE_PATH
+    private android.widget.LinearLayout llStorageNameList
+    private static final int SIZE
+com.hiveview.tv.activity.StorageDialogActivity$onDemoLayoutFocusListener
+com.hiveview.tv.activity.SubjectDetailLandspaceActivity:
+    private static final java.lang.String TAG
+    private static final int PAGESIZE
+com.hiveview.tv.activity.SubjectDetailPortraitActivity:
+    private static final java.lang.String TAG
+    private static final int PAGESIZE
+com.hiveview.tv.activity.SubjectJudgeActivity:
+    private java.util.ArrayList subjectInfoList
+com.hiveview.tv.activity.SubjectTopicListActivity:
+    protected static final int LOAD_COLLECT_DATA_EMPTY
+com.hiveview.tv.activity.TeleplayDetailActivity:
+    private static final int PLAYER_DETAIL
+    private java.lang.String vrsAlbumId_
+    private boolean isInitPlayerRecordSuccess
+    private java.lang.String tvChannelLogoName
+    1365:1382:private void requestChannlList()
+    138:138:static synthetic com.hiveview.box.framework.view.HivePreloadViewPager access$8(com.hiveview.tv.activity.TeleplayDetailActivity)
+    122:122:static synthetic void access$56(com.hiveview.tv.activity.TeleplayDetailActivity,java.util.ArrayList)
+com.hiveview.tv.activity.TeleplayDetailActivity$16
+com.hiveview.tv.activity.TeleplayDetailActivity$5:
+    467:468:public void processFocus(int)
+com.hiveview.tv.activity.VarietyDetailActivity:
+    int viewPagerIndex
+    1192:1207:private void requestChannlList()
+    1514:1517:private void setGroupButtonTextColor(int)
+    1911:1917:public void goNextGroup(int,int,int)
+    272:272:static synthetic void access$5(com.hiveview.tv.activity.VarietyDetailActivity,int)
+    1513:1513:static synthetic void access$7(com.hiveview.tv.activity.VarietyDetailActivity,int)
+    129:129:static synthetic void access$46(com.hiveview.tv.activity.VarietyDetailActivity,java.util.ArrayList)
+com.hiveview.tv.activity.VarietyDetailActivity$11
+com.hiveview.tv.activity.VarietyDetailActivity$4:
+    424:431:public void processFocus(int)
+com.hiveview.tv.activity.VarietyPagerActivity:
+    public static final int PAGE_DOWN
+    public static final int PAGE_UP
+    private com.hiveview.tv.service.entity.FilmEntity FilmEntity
+com.hiveview.tv.activity.VarietyPagerActivity$1:
+    private static final int CENTER_KEYCODE
+com.hiveview.tv.activity.VarietyPagerActivity$2:
+    private static final int CENTER_KEYCODE
+com.hiveview.tv.activity.VoiceOnliveEPGActivity:
+    private static final java.lang.String TAG
+    protected static final int RQUEST_CHANNEL_FAIL
+    protected static final int RQUEST_CHANNEL_SUCCESS
+    private com.hiveview.box.framework.image.DisplayImageOptions optionsPoster
+    183:196:private void getChannelsByNames()
+    79:79:static synthetic java.lang.String access$0()
+    118:118:static synthetic void access$1(java.util.List)
+    118:118:static synthetic java.util.List access$2()
+com.hiveview.tv.activity.VoiceOnliveEPGActivity$1
+com.hiveview.tv.activity.WelcomeActivity:
+    private static final java.lang.String TAG
+com.hiveview.tv.activity.XunfeiComplexVoiceSearchListActivity:
+    protected static final java.lang.String TAG
+com.hiveview.tv.common.AppConstant:
+    public static final java.lang.String LIVE_ENTITY
+    public static final java.lang.String CHANNEL_CODE
+    public static final java.lang.String CHANNEL_LOGO
+    public static final java.lang.String CHANNEL_NAME
+    public static final java.lang.String PRE_LOAD_IMAGE
+    public static final java.lang.String PRE_LOAD_IMAGE_KEY
+    public static final int NO_0
+    public static final int NO_1
+    public static final int NO_2
+    public static final int NO_3
+    public static final int NO_4
+    public static final int NO_5
+    public static final int NO_6
+    public static final int NO_7
+    public static final int NO_8
+    public static final int NO_9
+    public static final int NO_50
+    public static final int NO_51
+    public static final int NO_52
+    public static final int NO_10
+    public static final int NO_40
+    public static final int NO_41
+    public static final int NO_42
+    public static final int NO_ERROR
+    public static final int NO_END
+    public static final int ERR_NetworkConnectException
+    public static final long SIZE_1M
+    public static final long SIZE_100M
+    public static final int BUFFER
+    public static final char CHARACTER_SLASH
+    public static final char CHARACTER_EQUAL
+    public static final char CHARACTER_AND
+    public static final char CHARACTER_QUESTION
+    public static final char CHARACTER_BARS
+    public static final int SECOND_HALF
+    public static final int SECOND_1
+    public static final java.lang.String SP_COOKIES
+    public static final java.lang.String DOMYBOXDIR
+    public static final java.lang.String SELECT_TYPE_FILE
+    public static final java.lang.String SELECT_TYPE_TV
+    public static final java.lang.String SELECT_TYPE_CARTOON
+    public static final java.lang.String SELECT_TYPE_MUSIC
+    public static final java.lang.String SELECT_TYPE_SPORTS
+    public static final java.lang.String SELECT_TYPE_CHILDREN
+    public static final java.lang.String SELECT_TYPE_TECHNOLOGY
+    public static final java.lang.String SELECT_TYPE_VARIETY
+    public static final java.lang.String SELECT_TYPE_ENTERTAINMENT
+    public static final java.lang.String SELECT_TYPE_ECONOMICS
+    public static final java.lang.String SELECT_TYPE_COMPREHENSIVE
+    public static final java.lang.String SELECT_TYPE_CLIPS
+    public static final java.lang.String SELECT_TYPE_EDUCATION
+    public static final java.lang.String SELECT_TYPE_FASHION
+    public static final java.lang.String SELECT_TYPE_AMUSE
+    public static final java.lang.String SELECT_TYPE_TRAVEL
+    public static final java.lang.String SELECT_TYPE_BLUE
+    public static final java.lang.String SELECT_TYPE_SPECIAL
+    public static final java.lang.String SELECT_TYPE_CCTV
+    public static final java.lang.String SELECT_TYPE_SATELLITE
+    public static final java.lang.String SELECT_TYPE_LOCAL
+    public static final java.lang.String SELECT_TYPE_HD
+    public static final java.lang.String SELECT_TYPE_SUB
+    public static final boolean ISDOMESTIC
+    public static final int VIDEO_TYPE_FILM
+    public static final int VIDEO_TYPE_TELEPLAY
+    public static final int VIDEO_TYPE_CARTOON
+    public static final int VIDEO_TYPE_MUSIC
+    public static final int VIDEO_TYPE_VARIETY
+    public static final int VIDEO_TYPE_ENTERTAINMENT
+    public static final int VIDEO_TYPE_CLIPS
+    public static final int VIDEO_TYPE_EDUCATION
+    public static final int VIDEO_TYPE_AMUSE
+    public static final int VIDEO_TYPE_FASHION
+    public static final int VIDEO_TYPE_SPORT
+    public static final int VIDEO_TYPE_VARIETY_1
+    public static final int VIDEO_TYPE_TRAVEL
+    public static final int VIDEO_TYPE_BLUE
+    public static final int VIDEO_TYPE_BLUE_SUBJECT_DETAIL
+    public static final int VIDEO_TYPE_SUBJECTLIST
+    public static final int VIDEO_BLUE_TELEPALY_SUBJECTLIST
+    public static final int APP_TYPE_ALBUM
+    public static final int VIDEO_TYPE_FLOWER
+    public static final int APP_TYPE_DETAIL
+    public static final int EDU_TYPE_ALBUM
+    public static final int EDU_TYPE_DETAIL
+    public static final int GAME_TYPE_ALBUM
+    public static final int GAME_TYPE_DETAIL
+    public static final int VIDEO_TYPE_BLUE_2_HALL
+    public static final int VIDEO_TYPE_BLUE_2_SUBJECT
+    public static final int VIDEO_TYPE_BLUE_2_ALBUM
+    public static final int VIDEO_TYPE_BLUE_2_FORSALES
+    public static final int VIDEO_TYPE_BLUE_2_PREMIERE
+    public static final int VIDEO_TYPE_ONLIVE
+    public static final int BACKGROUND_GAME_INDEX
+    public static final int BACKGROUND_TELEPLAY_INDEX
+    public static final int BACKGROUND_RECOMMAND_INDEX
+    public static final int BACKGROUND_MOVIE_INDEX
+    public static final int BACKGROUND_APP_INDEX
+    public static final int SEARCH_DATE_RESULT
+    public static final java.lang.String SWITCH_CHANNEL
+    public static final java.lang.String SWITCH_CHANNEL_XUNFEI
+    public static final java.lang.String SWITCH_CHANNEL_XUNFEI_NORMAL
+    public static final int IFly_Center_KeyCode
+    public static final java.lang.String LOCK_NET_PRIVATE_KEY
+    public static final java.lang.String SOURCE_FILTER
+    public static final java.lang.String SOURCE_SEARCH
+    public static final java.lang.String SOURCE_ROMMAND
+    public static final java.lang.String SOURCE_SUBJECT
+    public static final java.lang.String SOURCE_RELATED_RECOMMAND
+    public static final java.lang.String SOURCE_COLLECT
+    public static final java.lang.String SOURCE_LIST_PAGE
+    public static final java.lang.String SOURCE_PLAYER_RECODER
+com.hiveview.tv.common.AppScene:
+    private static final java.lang.String TAG
+    public static final java.lang.String EPGINFOACTIVITY_SCENE
+    public static final java.lang.String EPGINFO_SCENE
+    public static final java.lang.String GUIDE_SCENE
+    public static final java.lang.String TVVIEW_SCENE
+    public static final java.lang.String ONLIVEPLAY_SCENE
+    public static final java.lang.String WELCOME_SCENE
+    public static final java.lang.String HOME_SCENE
+    public static final java.lang.String NONE_SCENE
+    public static final java.lang.String BLUE_LIGHT
+    public static final java.lang.String BLUE_LIGHT_DETAIL_FILM
+    public static final java.lang.String BLUE_LIGHT_PLAYER
+    public static final java.lang.String QIYI_PLAYER
+    98:98:public varargs com.hiveview.tv.common.AppScene setCommandPhrase(java.lang.String,java.lang.String[])
+    108:108:public com.hiveview.tv.common.AppScene setPredefineSemantic(java.lang.String)
+    118:118:public varargs com.hiveview.tv.common.AppScene setFuzzySlot(java.lang.String,java.lang.String[])
+    128:128:public varargs com.hiveview.tv.common.AppScene setFuzzyWord(java.lang.String,java.lang.String[])
+    163:163:private java.lang.StringBuffer createPredefineSemanticJSON()
+    171:171:private java.lang.StringBuffer createFuzzySlotJSON()
+    179:179:private java.lang.StringBuffer createCommandPhraseJSON()
+    187:187:private java.lang.StringBuffer createFuzzyWordJSON()
+    196:196:private java.lang.StringBuffer createCommonJSON()
+com.hiveview.tv.common.AppScene$PlayerBroadCastContants
+com.hiveview.tv.common.AppScene$PredefineJSON
+com.hiveview.tv.common.AppScene$PredefineSemantic
+com.hiveview.tv.common.HiveviewAppLib:
+    9:9:public HiveviewAppLib()
+    41:42:public static void putSearchVideoType(int)
+com.hiveview.tv.common.HiveviewApplication:
+    protected static final java.lang.String TAG
+    private com.hiveview.box.framework.image.ImageLoaderConfiguration config
+    156:189:public static void preLoadHomeData(android.content.Context)
+    192:195:static com.hiveview.box.framework.image.ImageSize getMaxImageSize()
+    239:239:public static boolean isNetStatusAvailiable()
+com.hiveview.tv.common.HiveviewApplication$2
+com.hiveview.tv.common.adapter.FilmPagerAdapter:
+    20:20:public java.util.List getViewList()
+    79:79:public android.view.View getPrimaryItem()
+com.hiveview.tv.common.adapter.RequestChannelAdapter:
+    15:17:public RequestChannelAdapter(java.util.List)
+    75:75:public android.view.View getPrimaryItem()
+com.hiveview.tv.common.anim.MatrixRotateXAnimation:
+    18:22:public MatrixRotateXAnimation(float,float)
+com.hiveview.tv.common.anim.Rotate3dAnimation:
+    private static final java.lang.String TAG
+    38:46:public Rotate3dAnimation(float,float,float,float,float,boolean)
+    88:89:public void setViewChange(com.hiveview.tv.common.anim.Rotate3dAnimation$ViewChange)
+com.hiveview.tv.common.content.ChannelInvoker:
+    private static final java.lang.String VIEDEO_VERTICAL_LIST_ACTION
+    public static final java.lang.String VIEDEO_HORIZONTAL_LIST_ACTION
+    private static final java.lang.String VIEDEO_BLUELIGHT_LIST_ACTION
+    private static final java.lang.String VIEDEO_SUBJECT_LIST_ACTION
+com.hiveview.tv.common.content.ContentInvoker:
+    public static final java.lang.String CONTENT_ACTION_MOVIESUBJECT
+    public static final java.lang.String CONTENT_ACTION_MOVIEDETAIL
+    public static final java.lang.String CONTENT_ACTION_FILMDETAIL
+    public static final java.lang.String CONTENT_ACTION_TELEPLAYDETAIL
+    public static final java.lang.String CONTENT_ACTION_VARIETYDETAIL
+    public static final java.lang.String CONTENT_ACTION_BLUE
+    public static final java.lang.String CONTENT_ACTION_BLUE_SUBJECT_DETAIL
+    public static final java.lang.String CONTENT_ACTION_APP_ALBUM
+    public static final java.lang.String CONTENT_ACTION_APP_DETAIL
+    public static final java.lang.String CONTENT_ACTION_SUBJECTDETAIL
+    public static final java.lang.String CONTENT_ACTION_BLUE_PLAYER
+    public static final java.lang.String CONTENT_ACTION_BLUE_TELEPALY_DETAIL
+    public static final java.lang.String CONTENT_ACTION_BLUE__PREMIERE
+    public static final java.lang.String CONTENT_ACTION_ONLIVE
+    public static final java.lang.String CONTENT_ACTION_BLUE_2_HALL
+    public static final java.lang.String CONTENT_ACTION_BLUE_2_SUBJECT
+    public static final java.lang.String CONTENT_ACTION_BLUE_2_ALBUM
+    public static final java.lang.String CONTENT_ACTION_BLUE_2_FORSALES
+com.hiveview.tv.common.content.ContentShowType
+com.hiveview.tv.common.factory.OnLivesItemFactory
+com.hiveview.tv.common.factory.TvSelectTelevisionPageViewFactory
+com.hiveview.tv.common.silenceupgrade.FileLoadUtils:
+    14:14:public FileLoadUtils()
+    20:22:public static boolean isExternalStorageMountAvailable()
+    48:54:public static long getTotalExternalStorageSize()
+    79:82:public static void clearAll()
+    89:107:public static void deleteFile(java.io.File)
+    115:131:public long getDirSize(java.io.File)
+    138:142:public java.lang.String getNumberFormatDirSize(long)
+    162:165:public static void showToast(android.content.Context,int)
+    171:174:public static void showToast(android.content.Context,java.lang.String)
+com.hiveview.tv.common.silenceupgrade.FileLoader:
+    11:12:private FileLoader(java.lang.String,java.lang.String,com.hiveview.tv.common.silenceupgrade.Loader$LoaderListener)
+com.hiveview.tv.common.silenceupgrade.NewUpgradeUtils:
+    private static final java.lang.String TAG
+    17:17:public NewUpgradeUtils()
+    91:103:public static int deleteAppWithBundleID(android.content.Context,java.lang.String)
+    107:117:public static int push(java.io.File)
+    121:156:public static void install_back(java.io.File)
+    198:213:public static void reBoot()
+com.hiveview.tv.common.silenceupgrade.NewUpgradeUtils$1
+com.hiveview.tv.common.silenceupgrade.NewUpgrader:
+    private static final java.lang.String TAG
+    protected static final int MSG_VERSION_DIALOG
+com.hiveview.tv.common.silenceupgrade.PackageManagerUtils:
+    12:12:public PackageManagerUtils()
+com.hiveview.tv.common.silenceupgrade.UpgradeUtils
+com.hiveview.tv.common.silenceupgrade.UpgradeUtils$1
+com.hiveview.tv.common.silenceupgrade.UpgradeUtils$2
+com.hiveview.tv.common.silenceupgrade.Upgrader
+com.hiveview.tv.common.silenceupgrade.Upgrader$1
+com.hiveview.tv.common.silenceupgrade.Upgrader$1$1
+com.hiveview.tv.common.silenceupgrade.Upgrader$2
+com.hiveview.tv.common.silenceupgrade.Upgrader$UpgradeHandler
+com.hiveview.tv.common.voice.IVoiceController:
+    public static final java.lang.String COMMAND
+    public static final java.lang.String ACTION
+com.hiveview.tv.common.voice.OpenFuctionControllerSelector:
+    private static final java.lang.String TAG
+    public static final java.lang.String PLAY_RECORDS
+    public static final java.lang.String MOVIE_SEARCH
+    public static final java.lang.String INSTALLED_APPS_GAMES
+    public static final java.lang.String MOVIE_FAVORITES
+    public static final java.lang.String EXTERNAL_STORAGE
+    public static final java.lang.String APP_STORE
+    public static final java.lang.String APPLICATION_LEADERBOARD
+    public static final java.lang.String SEARCH_APPLICATIONS
+    public static final java.lang.String GAME_CENTER
+    public static final java.lang.String GAME_LIST
+    public static final java.lang.String SEARCH_GAMES
+    public static final java.lang.String BLUE_LIGHT_CINEMA
+    public static final java.lang.String LIVE_FAST_SELECT_TV_CHANNEL
+    public static final java.lang.String LIVE_SELECT_TELEVISION
+    public static final java.lang.String ONLIVE_TIPS
+    public static final java.lang.String WEATHER_MANAGE
+    public static final java.lang.String NET_MANAGE
+    public static final java.lang.String CLEAN_MEMORY
+    public static final java.lang.String CHECK_VERSION
+    public static final java.lang.String PLAY_MANAGER
+    public static final java.lang.String AUDIO_DECODE
+    public static final java.lang.String SCREEN_SAVE
+    public static final java.lang.String DISPLAY
+    public static final java.lang.String TV_SET
+    public static final java.lang.String ABOUT
+    public static final java.lang.String DROP_UP
+    public static final java.lang.String DROP_DOWN
+    public static final java.lang.String DROP_LEFT
+    public static final java.lang.String DROP_RIGHT
+    public static final java.lang.String DROP_HOME
+    public static final java.lang.String DROP_CENTER
+    public static final java.lang.String DROP_REBOOT
+    public static final java.lang.String EDU_CENTER
+    20:20:public OpenFuctionControllerSelector()
+com.hiveview.tv.common.voice.OtherApkSenceUtils:
+    private static final java.lang.String TAG
+    private com.hiveview.tv.activity.BaseActivity activity
+    private android.content.Context context
+    27:37:public OtherApkSenceUtils(android.content.Context,java.lang.String)
+    40:43:public void initScene()
+com.hiveview.tv.common.voice.VoiceControllerSelector:
+    private static final java.lang.String TAG
+    17:17:public VoiceControllerSelector()
+com.hiveview.tv.common.voice.impl.ChatVoiceController:
+    private static final java.lang.String COMMAND_1
+    private static final java.lang.String COMMAND_2
+    private static final java.lang.String COMMAND_3
+    private static final int MSG_CLOSE
+    private static final int MSG_CLOSE_OTHER_OPERA
+    private static final java.lang.String TAG
+com.hiveview.tv.common.voice.impl.FunctionVoiceController:
+    private static final int MSG_SETTING
+    private static final int MSG_EPGINFO
+    private static final java.lang.String TAG
+com.hiveview.tv.common.voice.impl.OpenFunctionVoiceController:
+    private static final java.lang.String TAG
+    private static final int PLAY_RECORDS_MESSAGE
+    private static final int MOVIE_SEARCH_MESSAGE
+    private static final int INSTALLED_APPS_GAMES_MESSAGE
+    private static final int MOVIE_FAVORITES_MESSAGE
+    private static final int EXTERNAL_STORAGE_MESSAGE
+    private static final int APP_STORE_MESSAGE
+    private static final int APPLICATION_LEADERBOARD_MESSAGE
+    private static final int SEARCH_APPLICATIONS_MESSAGE
+    private static final int GAME_CENTER_MESSAGE
+    private static final int GAME_LIST_MESSAGE
+    private static final int SEARCH_GAMES_MESSAGE
+    private static final int BLUE_LIGHT_CINEMA_MESSAGE
+    private static final int LIVE_FAST_SELECT_TV_CHANNEL_MESSAGE
+    private static final int LIVE_SELECT_TELEVISION_MESSAGE
+    private static final int ONLIVE_TIPS_MESSAGE
+    private static final int WEATHER_MANAGE_MESSAGE
+    private static final int NET_MANAGE_MESSAGE
+    private static final int CLEAN_MEMORY_MESSAGE
+    private static final int CHECK_VERSION_MESSAGE
+    private static final int PLAY_MANAGER_MESSAGE
+    private static final int AUDIO_DECODE_MESSAGE
+    private static final int SCREEN_SAVE_MESSAGE
+    private static final int DISPLAY_MESSAGE
+    private static final int TV_SET_MESSAGE
+    private static final int ABOUT_MESSAGE
+    private static final int UP_MESSAGE
+    private static final int DOWN_MESSAGE
+    private static final int LEFT_MESSAGE
+    private static final int RIGHT_MESSAGE
+    private static final int CENTER_MESSAGE
+    private static final int HOME_MESSAGE
+    private static final int REBOOT_MESSAGE
+    private static final int EDU_CENTER_MESSAGE
+    public static final java.lang.String BROADCAST_LAUNCHER_ACTION
+    public static final java.lang.String BROADCAST_LAUNCHER_VALUE
+    545:551:public static boolean isFaceToPlayer(android.content.Context)
+com.hiveview.tv.common.voice.impl.PlayerVoiceController:
+    private static final java.lang.String TAG
+com.hiveview.tv.common.voice.impl.QiYiPlayerVoiceController:
+    private static final java.lang.String TAG
+    182:194:public static boolean isPlayerControlCommand(android.content.Intent)
+com.hiveview.tv.common.voice.search.IVoiceSearch:
+    public static final java.lang.String PREVIOUS
+    public static final java.lang.String NEXT
+    public static final java.lang.String INDEX
+com.hiveview.tv.common.voice.search.impl.ComplexSearch
+com.hiveview.tv.common.voice.search.impl.ComplexSearch$1
+com.hiveview.tv.common.voice.search.impl.ComplexSearch$Holder
+com.hiveview.tv.common.voice.search.impl.XunfeiComplexSearch:
+    private static final java.lang.String DATA_URL
+com.hiveview.tv.digest.BinaryDecoder
+com.hiveview.tv.digest.BinaryEncoder
+com.hiveview.tv.digest.CharEncoding
+com.hiveview.tv.digest.Charsets:
+    59:59:public Charsets()
+    74:74:public static java.nio.charset.Charset toCharset(java.nio.charset.Charset)
+    87:87:public static java.nio.charset.Charset toCharset(java.lang.String)
+com.hiveview.tv.digest.Decoder
+com.hiveview.tv.digest.DigestUtils:
+    private static final int STREAM_BUFFER_LENGTH
+    35:35:public DigestUtils()
+    51:52:private static byte[] digest(java.security.MessageDigest,java.nio.ByteBuffer)
+    67:67:private static byte[] digest(java.security.MessageDigest,java.io.InputStream)
+    102:102:public static java.security.MessageDigest getMd2Digest()
+    115:115:public static java.security.MessageDigest getMd5Digest()
+    129:129:public static java.security.MessageDigest getSha1Digest()
+    145:145:public static java.security.MessageDigest getSha224Digest()
+    177:177:public static java.security.MessageDigest getSha384Digest()
+    193:193:public static java.security.MessageDigest getSha512Digest()
+    206:206:public static java.security.MessageDigest getShaDigest()
+    218:218:public static byte[] md2(byte[])
+    230:230:public static byte[] md2(java.nio.ByteBuffer)
+    244:244:public static byte[] md2(java.io.InputStream)
+    256:256:public static byte[] md2(java.lang.String)
+    268:268:public static java.lang.String md2Hex(byte[])
+    280:280:public static java.lang.String md2Hex(java.nio.ByteBuffer)
+    294:294:public static java.lang.String md2Hex(java.io.InputStream)
+    306:306:public static java.lang.String md2Hex(java.lang.String)
+    317:317:public static byte[] md5(byte[])
+    329:329:public static byte[] md5(java.nio.ByteBuffer)
+    343:343:public static byte[] md5(java.io.InputStream)
+    354:354:public static byte[] md5(java.lang.String)
+    365:365:public static java.lang.String md5Hex(byte[])
+    377:377:public static java.lang.String md5Hex(java.nio.ByteBuffer)
+    391:391:public static java.lang.String md5Hex(java.io.InputStream)
+    402:402:public static java.lang.String md5Hex(java.lang.String)
+    415:415:public static byte[] sha(byte[])
+    431:431:public static byte[] sha(java.io.InputStream)
+    444:444:public static byte[] sha(java.lang.String)
+    456:456:public static byte[] sha1(byte[])
+    468:468:public static byte[] sha1(java.nio.ByteBuffer)
+    482:482:public static byte[] sha1(java.io.InputStream)
+    493:493:public static byte[] sha1(java.lang.String)
+    505:505:public static java.lang.String sha1Hex(byte[])
+    517:517:public static java.lang.String sha1Hex(java.nio.ByteBuffer)
+    531:531:public static java.lang.String sha1Hex(java.io.InputStream)
+    543:543:public static java.lang.String sha1Hex(java.lang.String)
+    559:559:public static byte[] sha224(byte[])
+    572:572:public static byte[] sha224(java.nio.ByteBuffer)
+    590:590:public static byte[] sha224(java.io.InputStream)
+    606:606:public static byte[] sha224(java.lang.String)
+    622:622:public static java.lang.String sha224Hex(byte[])
+    638:638:public static java.lang.String sha224Hex(java.nio.ByteBuffer)
+    656:656:public static java.lang.String sha224Hex(java.io.InputStream)
+    672:672:public static java.lang.String sha224Hex(java.lang.String)
+    699:699:public static byte[] sha256(java.nio.ByteBuffer)
+    716:716:public static byte[] sha256(java.io.InputStream)
+    746:746:public static java.lang.String sha256Hex(byte[])
+    758:758:public static java.lang.String sha256Hex(java.nio.ByteBuffer)
+    775:775:public static java.lang.String sha256Hex(java.io.InputStream)
+    805:805:public static byte[] sha384(byte[])
+    817:817:public static byte[] sha384(java.nio.ByteBuffer)
+    834:834:public static byte[] sha384(java.io.InputStream)
+    849:849:public static byte[] sha384(java.lang.String)
+    864:864:public static java.lang.String sha384Hex(byte[])
+    876:876:public static java.lang.String sha384Hex(java.nio.ByteBuffer)
+    893:893:public static java.lang.String sha384Hex(java.io.InputStream)
+    908:908:public static java.lang.String sha384Hex(java.lang.String)
+    923:923:public static byte[] sha512(byte[])
+    935:935:public static byte[] sha512(java.nio.ByteBuffer)
+    952:952:public static byte[] sha512(java.io.InputStream)
+    967:967:public static byte[] sha512(java.lang.String)
+    982:982:public static java.lang.String sha512Hex(byte[])
+    994:994:public static java.lang.String sha512Hex(java.nio.ByteBuffer)
+    1011:1011:public static java.lang.String sha512Hex(java.io.InputStream)
+    1026:1026:public static java.lang.String sha512Hex(java.lang.String)
+    1039:1039:public static java.lang.String shaHex(byte[])
+    1055:1055:public static java.lang.String shaHex(java.io.InputStream)
+    1068:1068:public static java.lang.String shaHex(java.lang.String)
+    1082:1083:public static java.security.MessageDigest updateDigest(java.security.MessageDigest,byte[])
+    1097:1098:public static java.security.MessageDigest updateDigest(java.security.MessageDigest,java.nio.ByteBuffer)
+    1114:1122:public static java.security.MessageDigest updateDigest(java.security.MessageDigest,java.io.InputStream)
+    1137:1138:public static java.security.MessageDigest updateDigest(java.security.MessageDigest,java.lang.String)
+com.hiveview.tv.digest.Encoder
+com.hiveview.tv.digest.Hex:
+    public static final java.lang.String DEFAULT_CHARSET_NAME
+    74:74:public static byte[] decodeHex(java.lang.String)
+    90:107:public static byte[] decodeHex(char[])
+    134:134:public static char[] encodeHex(java.nio.ByteBuffer)
+    166:166:public static char[] encodeHex(java.nio.ByteBuffer,boolean)
+    205:205:protected static char[] encodeHex(java.nio.ByteBuffer,char[])
+    231:231:public static java.lang.String encodeHexString(java.nio.ByteBuffer)
+    246:250:protected static int toDigit(char,int)
+    258:261:public Hex()
+    270:272:public Hex(java.nio.charset.Charset)
+    285:286:public Hex(java.lang.String)
+    302:302:public byte[] decode(byte[])
+    319:319:public byte[] decode(java.nio.ByteBuffer)
+    337:347:public java.lang.Object decode(java.lang.Object)
+    369:369:public byte[] encode(byte[])
+    388:388:public byte[] encode(java.nio.ByteBuffer)
+    410:421:public java.lang.Object encode(java.lang.Object)
+    431:431:public java.nio.charset.Charset getCharset()
+    441:441:public java.lang.String getCharsetName()
+com.hiveview.tv.digest.MessageDigestAlgorithms
+com.hiveview.tv.fragment.LiveEpgInfoFragment:
+    private static final java.lang.String TAG
+    public static final int BUTTON_ID
+    private com.hiveview.tv.view.television.ViewPageAdapter mAdapter
+    109:109:public int getTage()
+    122:122:public java.lang.String getDateType()
+com.hiveview.tv.hdmiin.InvokeTVHandler:
+    private static final java.lang.String TAG
+    private static final int MODE_720_X
+    private static final int MODE_720_Y
+    private static final int MODE_720_WIDTH
+    private static final int MODE_720_HEIGHT
+    private static final int MODE_1080_X
+    private static final int MODE_1080_Y
+    private static final int MODE_1080_WIDTH
+    private static final int MODE_1080_HEIGHT
+com.hiveview.tv.hdmiin.NetStreamHandler:
+    private static final java.lang.String TAG
+    private static final java.lang.String STREAM_URL
+    private static final int MODE_720_X
+    private static final int MODE_720_Y
+    private static final int MODE_720_WIDTH
+    private static final int MODE_720_HEIGHT
+    private static final int MODE_1080_X
+    private static final int MODE_1080_Y
+    private static final int MODE_1080_WIDTH
+    private static final int MODE_1080_HEIGHT
+    91:103:public void netStreamInit()
+    105:110:public void netStreamDeinit()
+    138:138:public void OnErrDialogCancel()
+com.hiveview.tv.hdmiin.OverlayViewHandler:
+    private static final java.lang.String TAG
+    private static final java.lang.String OUTPUT_MODE_PATH
+    private static final java.lang.String FB0_PATH
+    private static final java.lang.String DISABLE_VIDEO_PATH
+    private static final int NATIVE_WIDTH
+    private static final int NATIVE_HEIGHT
+    private static final int MODE_720_X_formal
+    private static final int MODE_720_Y_formal
+    private static final int MODE_720_WIDTH_formal
+    private static final int MODE_720_HEIGHT_formal
+    private static final int MODE_1080_X_formal
+    private static final int MODE_1080_Y_formal
+    private static final int MODE_1080_WIDTH_formal
+    private static final int MODE_1080_HEIGHT_formal
+    private static final int MODE_720_X
+    private static final int MODE_720_Y
+    private static final int MODE_720_WIDTH
+    private static final int MODE_720_HEIGHT
+    private static final int MODE_1080_X
+    private static final int MODE_1080_Y
+    private static final int MODE_1080_WIDTH
+    private static final int MODE_1080_HEIGHT
+    private static final int HDMI_IN_SHOW
+    private static final int MSG_TYPE_INIT_OVERLAY
+    395:397:private void getUbootAxis(int[])
+    401:411:static int writeFile(java.lang.String,java.lang.String)
+com.hiveview.tv.hdmiin.SWHDMIInManagerViewHandler:
+    private static final int MSG_TYPE_INIT_OVERLAY
+    private static final java.lang.String TAG
+    private com.hiveview.tv.onlive.player.MoviePlayer mMoviePlayer
+    public static final java.lang.String SWHDMIIN
+com.hiveview.tv.onlive.player.ApiHelper:
+    public static final boolean HAS_EFFECTS_RECORDING
+    28:28:public ApiHelper()
+    176:179:public static int getIntFieldIfExists(java.lang.Class,java.lang.String,java.lang.Class,int)
+com.hiveview.tv.onlive.player.ApiHelper$VERSION_CODES
+com.hiveview.tv.onlive.player.BlobCache
+com.hiveview.tv.onlive.player.BlobCache$LookupRequest
+com.hiveview.tv.onlive.player.Bookmarker:
+    private static final java.lang.String TAG
+    private static final java.lang.String BOOKMARK_CACHE_FILE
+    private static final int BOOKMARK_CACHE_MAX_ENTRIES
+    private static final int BOOKMARK_CACHE_MAX_BYTES
+    private static final int BOOKMARK_CACHE_VERSION
+    private static final int HALF_MINUTE
+    private static final int TWO_MINUTES
+    563:563:public void setBookmark(android.net.Uri,int,int)
+    593:593:public java.lang.Integer getBookmark(android.net.Uri)
+com.hiveview.tv.onlive.player.CommonControllerOverlay:
+    private static final float ERROR_MESSAGE_RELATIVE_PADDING
+    141:145:private android.widget.TextView createOverlayTextView(android.content.Context)
+    365:369:public void onDialogCancel(android.app.AlertDialog)
+com.hiveview.tv.onlive.player.CommonControllerOverlay$ControllerCallback:
+    public abstract void OnErrDialogCancel()
+com.hiveview.tv.onlive.player.ControllerOverlay:
+    public abstract void setListener(com.hiveview.tv.onlive.player.ControllerOverlay$Listener)
+    public abstract void setCanReplay(boolean)
+    public abstract android.view.View getView()
+    public abstract void show()
+    public abstract void showPlaying()
+    public abstract void showPaused()
+    public abstract void showEnded()
+    public abstract void showLoading()
+    public abstract void showErrorMessage(java.lang.String)
+    public abstract void setTimes(int,int,int,int)
+com.hiveview.tv.onlive.player.ControllerOverlay$Listener:
+    public abstract void onShown()
+com.hiveview.tv.onlive.player.HiveviewVideoView:
+    private static final int STATE_ERROR
+    private static final int STATE_IDLE
+    private static final int STATE_PREPARING
+    private static final int STATE_PREPARED
+    private static final int STATE_PLAYING
+    private static final int STATE_PAUSED
+    private static final int STATE_PLAYBACK_COMPLETED
+    164:189:public int resolveAdjustedSize(int,int)
+    344:349:public void setMediaController(android.widget.MediaController)
+    498:499:public void setOnPreparedListener(android.media.MediaPlayer$OnPreparedListener)
+com.hiveview.tv.onlive.player.MovieActivity:
+    private static final java.lang.String TAG
+    public static final java.lang.String KEY_LOGO_BITMAP
+    public static final java.lang.String KEY_TREAT_UP_AS_BACK
+    private com.hiveview.tv.onlive.player.MoviePlayer mPlayer
+    private boolean mFinishOnCompletion
+    private android.net.Uri mUri
+    private boolean mTreatUpAsBack
+    66:71:private void setSystemUiVisibility(android.view.View)
+com.hiveview.tv.onlive.player.MovieControllerOverlay:
+    private android.os.Handler mRootViewHandler
+com.hiveview.tv.onlive.player.MoviePlayer:
+    private static final java.lang.String TAG
+    private static final java.lang.String KEY_VIDEO_POSITION
+    private static final java.lang.String KEY_RESUMEABLE_TIME
+    private static final int KEYCODE_MEDIA_PLAY
+    private static final int KEYCODE_MEDIA_PAUSE
+    private static final java.lang.String SERVICECMD
+    private static final java.lang.String CMDNAME
+    private static final java.lang.String CMDPAUSE
+    private static final int MSG_BUFFERING_TIMEOUT
+    private static final int BUFFERING_TIMEOUT
+    private static final long BLACK_TIMEOUT
+    private static final long RESUMEABLE_TIMEOUT
+    112:112:public static com.hiveview.tv.onlive.player.MoviePlayer getInstance()
+    249:251:public void onSaveInstanceState(android.os.Bundle)
+    254:282:private void showResumeDialog(android.content.Context,int)
+    285:291:public void onPause()
+    421:424:public void onShown()
+    441:470:public boolean onKeyDown(int,android.view.KeyEvent)
+    474:474:public boolean onKeyUp(int,android.view.KeyEvent)
+    478:478:private static boolean isMediaKey(int)
+    82:82:static synthetic android.content.Context access$7(com.hiveview.tv.onlive.player.MoviePlayer)
+    355:355:static synthetic void access$8(com.hiveview.tv.onlive.player.MoviePlayer)
+    328:328:static synthetic void access$12(com.hiveview.tv.onlive.player.MoviePlayer)
+com.hiveview.tv.onlive.player.MoviePlayer$7
+com.hiveview.tv.onlive.player.MoviePlayer$8
+com.hiveview.tv.onlive.player.MoviePlayer$9
+com.hiveview.tv.onlive.player.MoviePlayer$AudioBecomingNoisyReceiver
+com.hiveview.tv.onlive.player.TimeBar:
+    private static final int SCRUBBER_PADDING_IN_DP
+    private static final int V_PADDING_IN_DP
+    private static final int TEXT_SIZE_IN_DP
+com.hiveview.tv.service.BootReceiver:
+    private static final java.lang.String TAG
+com.hiveview.tv.service.HiveTVService:
+    177:180:public void checkNetwork(android.content.Context)
+    190:197:public java.util.ArrayList getHomeRecommands(android.content.Context)
+    208:214:public java.util.ArrayList getMovieRecommands(android.content.Context)
+    225:232:public java.util.ArrayList getBluelightRecommands(android.content.Context)
+    397:400:public java.util.ArrayList getFilmDetail(android.content.Context,java.lang.String)
+    430:440:public java.util.ArrayList getFilmRelated(int)
+    481:491:public java.util.ArrayList getCastDetail(int)
+    502:512:public java.util.ArrayList getCastRelated(int)
+    546:556:public java.util.ArrayList getCollectRecordList(int,int)
+    568:578:public boolean saveCollectRecord(int,int)
+    590:600:public boolean deleteCollectRecord(int)
+    609:612:public java.util.List getLiveCategoryTags()
+    621:624:public java.util.List getChannelCategory()
+    659:662:public java.util.ArrayList getRecommendMedias()
+    794:804:public java.util.ArrayList getVirtualFirstClassList(java.lang.String)
+    815:825:public java.util.ArrayList getFilmCategory(int)
+    901:904:public java.util.ArrayList getTvChannelByProgram(android.content.Context,java.lang.String,java.lang.String)
+    946:951:public java.util.ArrayList getChannelLiveRecommend(java.lang.String,java.lang.String,java.lang.String)
+    964:967:public java.util.ArrayList getPageSkins(android.content.Context)
+    992:995:public java.util.ArrayList getCastWithCountByHumanName(java.lang.String,int)
+    1022:1037:public com.hiveview.tv.service.entity.SYSUpDataEntity getLauncherVersionInfo(java.lang.String)
+    1048:1058:public java.util.ArrayList getSystemAppList(java.lang.String)
+    1160:1170:public java.util.ArrayList getTvList(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+com.hiveview.tv.service.LoadService:
+    public static final java.lang.String DATA_ACTION
+    402:529:private void loadTvList()
+    535:550:private void loadThemeData()
+com.hiveview.tv.service.LockNetReceiver:
+    public static final java.lang.String NET_WORK_STATUS_CHANGCE
+com.hiveview.tv.service.LockNetService:
+    protected static final int GET_NET_LOCK_SUCCESS
+    protected static final int GET_NET_LOCK_FAIL_STOP_SELF
+    protected static final int GET_NET_LOCK_FAIL_TIMEOUT
+    protected static final int GET_NET_LOCK_FAIL_RELOAD
+    protected static final int GET_NET_LOCK_FAIL_JSONERROR
+com.hiveview.tv.service.LockVipService:
+    protected static final int GET_NET_LOCK_SUCCESS
+    protected static final int GET_NET_LOCK_FAIL_STOP_SELF
+    protected static final int GET_NET_LOCK_FAIL_TIMEOUT
+    protected static final int GET_NET_LOCK_FAIL_RELOAD
+    protected static final int GET_NET_LOCK_FAIL_JSONERROR
+com.hiveview.tv.service.NewUpgraderHandler:
+    75:77:public void startNewUpgraderImmediately()
+com.hiveview.tv.service.OnliveTipService:
+    public static final int ONLIVE_TIPS_MESSAGE
+    private static final int INTERVAL
+    private static final int INTERVAL2
+    private static final int INTERVAL3
+    private static final java.lang.String YEAR_1970
+com.hiveview.tv.service.RefleshHandler:
+    94:95:public void stopReflesh()
+    98:103:public void startRefleshImmediately()
+com.hiveview.tv.service.RemotecontrolReceiver:
+    public static final java.lang.String BROADCAST_LAUNCHER_VALUE
+    public static final java.lang.String BROADCAST_SETTING_VALUE
+    public static final java.lang.String BROADCAST_LAUNCHER_ACTION
+    public static final java.lang.String BROADCAST_SETTING_ACTION
+    private static final java.lang.String TV_CLEARCACHE_SENCE
+    public static final java.lang.String BROADCAST_TV_ACTION
+    public static final int KEYCODE_TV_SOURCE
+    public static final int KEYCODE_TV_CLEARCACHE
+    public static final int KEYCODE_TV_MICROPHONE
+com.hiveview.tv.service.dao.AppFocusDAO:
+    public static final java.lang.String APP_ID
+    public static final java.lang.String FOCUS_TYPE
+    public static final java.lang.String CONTENT_ID
+    public static final java.lang.String FOCUS_LARGE_IMG
+    public static final java.lang.String FOCUS_THUMB_IMG
+    public static final java.lang.String CONTENT_NAME
+    public static final java.lang.String INTERVAL_TIME
+    public static final java.lang.String CONTENT_DESC
+    public static final java.lang.String POSITIONID
+    public static final java.lang.String IS_EFFECTIVE
+    public static final java.lang.String APK_PACKAGE
+    public static final java.lang.String IS_APK
+    public static final java.lang.String IS_INTRANET
+    public static final java.lang.String IMG_SIZE
+    83:87:public java.lang.String dropTable()
+    207:207:public void update(com.hiveview.box.framework.entity.HiveBaseEntity,java.lang.String,java.lang.String[])
+com.hiveview.tv.service.dao.BaseDAO:
+    public static final java.lang.String MATRIX_TYPE
+    public static final int MATRIX_GAME
+    public static final int MATRIX_TV
+    public static final int MATRIX_RECOMMEND
+    public static final int MATRIX_MOVIE
+    public static final int MATRIX_APP
+    public static final int MATRIX_BLUELIGHT
+    public static final int MATRIX_GAME_TOTAL
+    public static final int MATRIX_EDUCATION_TOTAL
+    protected static final char CHARACTER_SLASH
+    public static final java.lang.String AUTHORITIES
+    public static final java.lang.String TABLE_MESSAGE
+    public static final java.lang.String TABLE_TV_TIPS
+    public static final java.lang.String TABLE_SKIN
+    public static final java.lang.String TABLE_LIVE_CHANNEL_TOP
+    public static final java.lang.String TABLE_RECOMMEND
+    public static final java.lang.String TABLE_CHANNEL
+    public static final java.lang.String TABLE_CHANNEL_NAME_MAP_CODE
+    public static final java.lang.String TABLE_COLLECT_VIDEO
+    public static final java.lang.String TABLE_APP_FOCUS
+    public static final java.lang.String TABLE_GAME_FOCUS
+    public static final java.lang.String TABLE_EDUCATION_FOCUS
+    public abstract java.lang.String createTableString()
+    public abstract java.lang.String dropTable()
+    public abstract void insert(java.util.ArrayList)
+    public abstract void insert(com.hiveview.box.framework.entity.HiveBaseEntity)
+    public abstract void delete(java.lang.String,java.lang.String[])
+    public abstract java.util.ArrayList query(java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)
+    public abstract void update(com.hiveview.box.framework.entity.HiveBaseEntity,java.lang.String,java.lang.String[])
+com.hiveview.tv.service.dao.ChannelDAO:
+    public static final java.lang.String FIRSTCLASS_ID
+    public static final java.lang.String FIRSTCLASS_NAME
+    public static final java.lang.String PIC
+    public static final java.lang.String ICON
+    public static final java.lang.String SHOW_TYPE
+    70:74:public java.lang.String dropTable()
+    224:224:public void update(com.hiveview.box.framework.entity.HiveBaseEntity,java.lang.String,java.lang.String[])
+com.hiveview.tv.service.dao.ChannelNameMapCodeDAO:
+    public static final java.lang.String CHANNEL_NAME
+    public static final java.lang.String CHANNEL_CODE
+    public static final java.lang.String CHANNEL_LOGO
+    51:54:public java.lang.String dropTable()
+    60:68:public void insert(java.util.ArrayList)
+    72:80:public void insert(com.hiveview.box.framework.entity.HiveBaseEntity)
+    84:86:public void delete(java.lang.String,java.lang.String[])
+    90:121:public java.util.ArrayList query(java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)
+    127:127:public void update(com.hiveview.box.framework.entity.HiveBaseEntity,java.lang.String,java.lang.String[])
+com.hiveview.tv.service.dao.CollectVoideoDAO
+com.hiveview.tv.service.dao.CollectVoideoNewDAO:
+    private static final java.lang.String TAG
+    public static final java.lang.String CID
+    public static final java.lang.String CNAME
+    public static final java.lang.String CP
+    public static final java.lang.String CURRCOUNT
+    public static final java.lang.String FOCUSNAME
+    public static final java.lang.String EQLEN
+    public static final java.lang.String DESC
+    public static final java.lang.String DIRECTORS
+    public static final java.lang.String ID
+    public static final java.lang.String INITISSUETIME
+    public static final java.lang.String MAINACTORS
+    public static final java.lang.String NAME
+    public static final java.lang.String PLAYCOUNR
+    public static final java.lang.String POSTERURL
+    public static final java.lang.String SCORE
+    public static final java.lang.String SERIESTYPE
+    public static final java.lang.String STREAMS
+    public static final java.lang.String TAGNAMES
+    public static final java.lang.String TIME
+    public static final java.lang.String TOTAL
+    public static final java.lang.String TYPE3D
+    public static final java.lang.String UID
+    public static final java.lang.String ADD_TIME
+    99:103:public java.lang.String dropTable()
+    116:121:public void insert(java.util.ArrayList)
+    174:174:public void update(com.hiveview.box.framework.entity.HiveBaseEntity,java.lang.String,java.lang.String[])
+com.hiveview.tv.service.dao.CommonPreferenceDAO:
+    36:38:public void clearErrorCode()
+com.hiveview.tv.service.dao.EducationDAO:
+    public static final java.lang.String APP_ID
+    public static final java.lang.String FOCUS_TYPE
+    public static final java.lang.String CONTENT_ID
+    public static final java.lang.String FOCUS_LARGE_IMG
+    public static final java.lang.String FOCUS_THUMB_IMG
+    public static final java.lang.String CONTENT_NAME
+    public static final java.lang.String INTERVAL_TIME
+    public static final java.lang.String CONTENT_DESC
+    public static final java.lang.String POSITIONID
+    public static final java.lang.String IS_EFFECTIVE
+    public static final java.lang.String APK_PACKAGE
+    public static final java.lang.String IS_APK
+    public static final java.lang.String IMG_SIZE
+    public static final java.lang.String IS_INTRANET
+    84:88:public java.lang.String dropTable()
+    205:205:public void update(com.hiveview.box.framework.entity.HiveBaseEntity,java.lang.String,java.lang.String[])
+    208:211:public boolean isCache()
+com.hiveview.tv.service.dao.GameFocusDAO:
+    public static final java.lang.String APP_ID
+    public static final java.lang.String FOCUS_TYPE
+    public static final java.lang.String CONTENT_ID
+    public static final java.lang.String FOCUS_LARGE_IMG
+    public static final java.lang.String FOCUS_THUMB_IMG
+    public static final java.lang.String CONTENT_NAME
+    public static final java.lang.String INTERVAL_TIME
+    public static final java.lang.String CONTENT_DESC
+    public static final java.lang.String POSITIONID
+    public static final java.lang.String IS_EFFECTIVE
+    public static final java.lang.String APK_PACKAGE
+    public static final java.lang.String IS_APK
+    public static final java.lang.String IMG_SIZE
+    public static final java.lang.String IS_INTRANET
+    83:87:public java.lang.String dropTable()
+    204:204:public void update(com.hiveview.box.framework.entity.HiveBaseEntity,java.lang.String,java.lang.String[])
+com.hiveview.tv.service.dao.HiveViewProvider:
+    private static final java.lang.String ALERT_SQL_TABLE_CHANNEL
+com.hiveview.tv.service.dao.OnliveTipsDAO:
+    public static final java.lang.String NAME
+    public static final java.lang.String DATE
+    public static final java.lang.String START_TIME
+    public static final java.lang.String END_TIME
+    public static final java.lang.String WIKI_ID
+    public static final java.lang.String WIKI_COVER
+    public static final java.lang.String HASVIDEO
+    public static final java.lang.String SOURCE
+    public static final java.lang.String TIP_TIME
+    public static final java.lang.String TELEVISIONlOGOURL
+    public static final java.lang.String TELEVISIONlOGONAME
+    72:76:public java.lang.String dropTable()
+    89:89:public void insert(java.util.ArrayList)
+    178:197:public boolean isExists(java.lang.String[])
+    206:206:public void update(com.hiveview.box.framework.entity.HiveBaseEntity,java.lang.String,java.lang.String[])
+com.hiveview.tv.service.dao.PageSkinDAO:
+    public static final java.lang.String RECOM_TYPE
+    public static final java.lang.String IMG_URL_INSIDE
+    public static final java.lang.String IMG_URL_OUTSIDE
+    67:71:public java.lang.String dropTable()
+    77:79:public void delete(java.lang.String,java.lang.String[])
+    83:90:public void insert(java.util.ArrayList)
+    95:104:public void insert(com.hiveview.box.framework.entity.HiveBaseEntity)
+    108:108:public java.util.ArrayList query(java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)
+    149:149:public void update(com.hiveview.box.framework.entity.HiveBaseEntity,java.lang.String,java.lang.String[])
+com.hiveview.tv.service.dao.RecommendDAO:
+    public static final java.lang.String APP_ID
+    public static final java.lang.String CONTENT_ID
+    public static final java.lang.String FOCUS_TYPE
+    public static final java.lang.String INTERVAL_TIME
+    public static final java.lang.String POSITIONID
+    public static final java.lang.String CONTENT_DESC
+    public static final java.lang.String CONTENT_NAME
+    public static final java.lang.String FOCUS_LARGE_IMG
+    public static final java.lang.String FOCUS_THUMB_IMG
+    public static final java.lang.String APK_PACKAGE
+    public static final java.lang.String IS_APK
+    public static final java.lang.String IS_INTRANET
+    public static final java.lang.String IMG_SIZE
+    public static final java.lang.String SHOWTYPE
+    public static final java.lang.String VIDEOID
+    public static final java.lang.String SUBJECTBGIMG
+    public static final java.lang.String CPID
+    public static final java.lang.String POSITION
+    91:95:public java.lang.String dropTable()
+    110:115:public void insert(java.util.ArrayList)
+    120:141:public void insert(com.hiveview.box.framework.entity.HiveBaseEntity)
+    252:252:public void update(com.hiveview.box.framework.entity.HiveBaseEntity,java.lang.String,java.lang.String[])
+com.hiveview.tv.service.dao.TvSetTopDAO:
+    public static final java.lang.String CHANNEL_CODE
+    public static final java.lang.String CHANNEL_ID
+    40:44:public java.lang.String dropTable()
+    50:50:public void insert(java.util.ArrayList)
+    104:104:public void update(com.hiveview.box.framework.entity.HiveBaseEntity,java.lang.String,java.lang.String[])
+com.hiveview.tv.service.exception.ErrorCode
+com.hiveview.tv.service.exception.TipManager
+com.hiveview.tv.service.net.BaseHttpConnector:
+    public static final java.lang.String METHOD_GET
+    public static final java.lang.String METHOD_POST
+com.hiveview.tv.service.net.HttpTaskManager:
+    private static final int SIZE
+    32:34:public void submit(java.util.concurrent.Callable)
+    38:40:public void shutdown()
+    50:50:public boolean isTerminated()
+    56:56:public boolean awaitTermination(long,java.util.concurrent.TimeUnit)
+com.hiveview.tv.service.parser.AppMarketListParser
+com.hiveview.tv.service.parser.BaseParser:
+    protected java.lang.String date
+com.hiveview.tv.service.parser.CastInfoParser
+com.hiveview.tv.service.parser.CastParser
+com.hiveview.tv.service.parser.ChannelCategoryParser
+com.hiveview.tv.service.parser.ChannelsParser:
+    private static final java.lang.String TAG
+com.hiveview.tv.service.parser.CollectListParser
+com.hiveview.tv.service.parser.CommonParser:
+    40:40:public java.lang.String getDateString()
+com.hiveview.tv.service.parser.FilmCategoryParser
+com.hiveview.tv.service.parser.FilmDetailListParser
+com.hiveview.tv.service.parser.FilmRelatedParser
+com.hiveview.tv.service.parser.GetCastWithCountParser
+com.hiveview.tv.service.parser.GetChannelLiveRecommendParser
+com.hiveview.tv.service.parser.GetChannelsByNamesParser:
+    private static final java.lang.String TAG
+com.hiveview.tv.service.parser.GetDevicesCodeParser:
+    private static final java.lang.String TAG
+com.hiveview.tv.service.parser.LiveCategoryTagsParser
+com.hiveview.tv.service.parser.LiveMediaParser:
+    private static final java.lang.String TAG
+com.hiveview.tv.service.parser.LiveStreamListParser
+com.hiveview.tv.service.parser.ProgramByCodeParser:
+    private static final java.lang.String TAG
+com.hiveview.tv.service.parser.ProgramParser:
+    private static final java.lang.String TAG
+com.hiveview.tv.service.parser.QiyiFilmRecommandParser
+com.hiveview.tv.service.parser.RecommandMediaParser
+com.hiveview.tv.service.parser.RecommandParser
+com.hiveview.tv.service.parser.SearchPagerParser
+com.hiveview.tv.service.parser.SearchPagerParser$1
+com.hiveview.tv.service.parser.SkinParser
+com.hiveview.tv.service.parser.TVChannelByProgramParser
+com.hiveview.tv.service.parser.UpDataParser
+com.hiveview.tv.service.parser.VideoSetListParser
+com.hiveview.tv.service.request.ApiConstant:
+    6:6:public ApiConstant()
+com.hiveview.tv.service.request.BaseRequest:
+    protected java.lang.String key
+    protected java.lang.String device
+com.hiveview.tv.service.request.BluelightRecommandRequest
+com.hiveview.tv.service.request.DeleteCollectRequest
+com.hiveview.tv.service.request.DevCheckRequest:
+    private java.lang.String md5key
+com.hiveview.tv.service.request.GetCastInfoRequest
+com.hiveview.tv.service.request.GetCastRelatedRequest
+com.hiveview.tv.service.request.GetCastRequest
+com.hiveview.tv.service.request.GetCastWithCountRequest
+com.hiveview.tv.service.request.GetChannelCategoryRequest
+com.hiveview.tv.service.request.GetChannelLiveRecommendRequest
+com.hiveview.tv.service.request.GetChannelsByNamesRequest:
+    private static final java.lang.String TAG
+com.hiveview.tv.service.request.GetChannelsBySPRequest:
+    private static final java.lang.String TAG
+com.hiveview.tv.service.request.GetCollectRecordListRequest
+com.hiveview.tv.service.request.GetFilmCategoryRequest
+com.hiveview.tv.service.request.GetFilmDetailRealRequest
+com.hiveview.tv.service.request.GetFilmRelatedRequest
+com.hiveview.tv.service.request.GetLiveStreamListRequest
+com.hiveview.tv.service.request.GetMediaByTagRequest:
+    private static final java.lang.String TAG
+com.hiveview.tv.service.request.GetSkinsRequest
+com.hiveview.tv.service.request.GetVirtualFirstClassRequest
+com.hiveview.tv.service.request.HomeRecommandRequest
+com.hiveview.tv.service.request.LiveCategoryTagsRequest
+com.hiveview.tv.service.request.MovieRecommandRequest
+com.hiveview.tv.service.request.ProgramByCodeRequest:
+    private static final java.lang.String TAG
+com.hiveview.tv.service.request.ProgramRequest:
+    private static final java.lang.String TAG
+com.hiveview.tv.service.request.RecommendMediasRequest
+com.hiveview.tv.service.request.SaveCollectRecordRequest
+com.hiveview.tv.service.request.SearchPagerPostRequest
+com.hiveview.tv.service.request.SystemAppListRequest
+com.hiveview.tv.service.request.TvChannelByProgramRequest
+com.hiveview.tv.service.request.UpDataRequest
+com.hiveview.tv.service.request.VarietyPagerGetConnectorRequst
+com.hiveview.tv.utils.AlertDialogUtil:
+    60:61:public com.hiveview.tv.utils.AlertDialogUtil setViewRes(int)
+    104:105:public com.hiveview.tv.utils.AlertDialogUtil setInitView(com.hiveview.tv.utils.AlertDialogUtil$InitView)
+    171:172:public void dismiss()
+    178:181:public boolean isShowing()
+com.hiveview.tv.utils.AlertDialogUtil$Listener:
+    public abstract void onDialogCancel(android.app.AlertDialog)
+com.hiveview.tv.utils.AnimationUtil:
+    16:16:public AnimationUtil()
+    67:73:public static void get1_03BigAnimation(android.view.View)
+com.hiveview.tv.utils.AppUtil:
+    protected static final java.lang.String TAG
+    byte[] buffer_name
+    27:27:public AppUtil()
+    34:37:public static java.lang.String getVersionName(android.content.Context)
+    285:285:public static java.lang.String getDeviceModel()
+    296:309:public static java.lang.Boolean nowIsAferBoolean(java.lang.String)
+com.hiveview.tv.utils.BlueLightUtils:
+    private static final java.lang.String TAG
+    17:17:public BlueLightUtils()
+    120:128:public static boolean deleteHistory(android.content.Context,com.hiveview.tv.service.entity.FilmNewEntity)
+    154:160:public static boolean deleteAllCollect(android.content.Context)
+com.hiveview.tv.utils.BlueLightVipUtil:
+    public static final java.lang.String AUTHORITIES
+    protected static final char CHARACTER_SLASH
+    public static final java.lang.String TABLE_BLUELIGHT_MOVIE_PAY_PERMESSION
+    12:12:public BlueLightVipUtil()
+com.hiveview.tv.utils.CloseBlueLightUtil:
+    14:14:public CloseBlueLightUtil()
+com.hiveview.tv.utils.DateUtils:
+    private static final java.lang.String TAG
+    18:18:public DateUtils()
+    159:164:public static java.lang.String getAfterMinuteDate(long)
+    237:240:public static int getCurrentDateToMonth()
+    249:252:public static int getCurrentDateToDay()
+    288:296:public static java.lang.String getDateYyMmDd(int)
+    366:369:public static java.lang.String dateToStringYM(long)
+    380:382:public static java.lang.String dateToStringD()
+    412:420:public static boolean isSameDay(java.util.Date,java.util.Date)
+com.hiveview.tv.utils.DeviceBoxUtils:
+    private int versionCode
+    28:28:public DeviceBoxUtils()
+    161:161:public static java.lang.String getWifiMac()
+    165:165:public static java.lang.String getDeviceName()
+    194:194:public static boolean isDM1001Device()
+    198:198:public static boolean isDM1002Device()
+com.hiveview.tv.utils.DeviceSN:
+    private static final java.lang.String DM1001
+    private static final java.lang.String DM1002
+    private static final java.lang.String DM1001_SN_NODE
+    private static final java.lang.String DM1002_SN_NODE
+    84:88:private static java.lang.String getDM1001SN()
+    99:103:private static java.lang.String getDM1002SN()
+    113:147:private static java.lang.String getFlashValueByKeyname(java.lang.String)
+    158:184:private static java.lang.String getSerialid(java.lang.String)
+com.hiveview.tv.utils.DeviceVersion
+com.hiveview.tv.utils.DialogUtils:
+    12:12:public DialogUtils()
+    33:37:public static void showDialogAboutNetFault(android.content.Context,com.hiveview.tv.utils.OnDialogClickListener)
+    129:133:public static void closeDialogAboutNetFault()
+com.hiveview.tv.utils.FileUtils:
+    7:7:public FileUtils()
+com.hiveview.tv.utils.HiveViewErrorCode
+com.hiveview.tv.utils.HomeSwitchTabUtil:
+    private static final java.lang.String TAG
+    27:27:public HomeSwitchTabUtil()
+com.hiveview.tv.utils.InitAppCountUtils:
+    private static final java.lang.String TAG
+    public static final java.lang.String TV_ONLIVE
+com.hiveview.tv.utils.JsonUtils:
+    14:14:public JsonUtils()
+com.hiveview.tv.utils.KeyMappingHashMapUtil:
+    public static final int IRCODE_STB_KEY_VOLUME_INC
+    public static final int IRCODE_STB_KEY_VOLUME_DEC
+    public static final int IRCODE_STB_KEY_MUTE
+    public static final int IRCODE_STB_KEY_PROGRAM_INC
+    public static final int IRCODE_STB_KEY_PROGRAM_DEC
+    public static final int IRCODE_STB_KEY_UP
+    public static final int IRCODE_STB_KEY_DOWN
+    public static final int IRCODE_STB_KEY_LEFT
+    public static final int IRCODE_STB_KEY_RIGHT
+    public static final int IRCODE_STB_KEY_CONFIRM
+    public static final int IRCODE_STB_KEY_BACK
+    public static final int KEYCODE_PAGE_UP_BLUETOOTH
+    public static final int KEYCODE_PAGE_DOWN_BLUETOOTH
+    7:7:public KeyMappingHashMapUtil()
+com.hiveview.tv.utils.LogUtil:
+    private static final int DEVELOP
+    private static final int DEBUG
+    private static final int BATE
+    private static final int RELEASE
+com.hiveview.tv.utils.MD5Utils:
+    27:34:public static void main(java.lang.String[])
+    99:100:public static boolean checkPassword(java.lang.String,java.lang.String)
+com.hiveview.tv.utils.NetUitls
+com.hiveview.tv.utils.PayKeyUtil:
+    private static final java.lang.String TAG
+    36:72:public java.lang.String getPayKey(android.content.Context)
+com.hiveview.tv.utils.PlayerParamsUtils:
+    17:17:public PlayerParamsUtils()
+com.hiveview.tv.utils.QIYIRecordUtils:
+    private static final java.lang.String TAG
+    16:16:public QIYIRecordUtils()
+com.hiveview.tv.utils.QiYiPlayerUtil:
+    private static final java.lang.String TAG
+    public static java.lang.String vAlbumId
+    public static java.lang.String vtvId
+    17:17:public QiYiPlayerUtil()
+com.hiveview.tv.utils.RemotecontrolUtils
+com.hiveview.tv.utils.RomInfo
+com.hiveview.tv.utils.STBSettingInfoUtil:
+    private static final java.lang.String TAG
+    public static final java.lang.String HDMIIN_SCENE
+    private static java.util.ArrayList stbList
+    22:22:public STBSettingInfoUtil()
+    61:63:public static void UninitOperator()
+    69:71:public static java.util.ArrayList getSTBSetting()
+    79:82:public static void notifyTVKeyPress(int)
+com.hiveview.tv.utils.ScreenHostFastBlurUtil
+com.hiveview.tv.utils.SignUtils:
+    public static final java.lang.String shardedKey
+    11:11:public SignUtils()
+com.hiveview.tv.utils.SingleLineFocusStrategy
+com.hiveview.tv.utils.StorageUnameComparator
+com.hiveview.tv.utils.StringUtils:
+    static final int BUFFER_SIZE
+    public static final java.lang.String GB2312
+    public static final java.lang.String UTF_8
+    24:24:public StringUtils()
+    32:37:public static java.lang.String getVersion(android.content.Context)
+    102:123:public static java.lang.String timeString(int)
+    209:209:public static boolean isEmptyStr(java.lang.String)
+    213:213:public static boolean isEmptyArray(java.lang.Object[],int)
+    217:222:public static java.lang.String unitFormat(int)
+    226:232:public static java.lang.String replaceBlank(java.lang.String)
+    240:245:public static java.lang.String getDateTime(long)
+    250:252:public static java.lang.String TimeStamp2Date(java.lang.String)
+com.hiveview.tv.utils.SwitchChannelUtils:
+    private static final java.lang.String TAG
+    private static final java.lang.String PREFERENCE
+    private static final java.lang.String SWITCH_CHANNEL_ACTION
+    public static final java.lang.String KEY_CHANNEL_NAME
+    public static final java.lang.String KEY_VOICE_NAME
+    public static final java.lang.String KEY_VOICE_DATE
+    public static final java.lang.String KEY_CHANNEL_NUM
+    private static final java.lang.String DEFAULT_CHANNEL_NAME
+    10:10:public SwitchChannelUtils()
+    76:76:public static boolean getisFirst()
+    80:81:public static void setisFirst(boolean)
+    83:94:public static void initSTBChannel(android.content.Context)
+com.hiveview.tv.utils.ThreeLineFocusStrategy:
+    private static final java.lang.String TAG
+com.hiveview.tv.utils.ToastUtils:
+    15:15:public ToastUtils()
+    34:35:public void alertServerError(android.content.Context)
+com.hiveview.tv.utils.ToolsUtils:
+    8:8:public ToolsUtils()
+    37:37:public static java.lang.String getSize(double)
+    49:49:public static int getSize(long)
+com.hiveview.tv.utils.TvManUtil
+com.hiveview.tv.utils.TvManUtil$1
+com.hiveview.tv.utils.TvManUtil$2
+com.hiveview.tv.utils.TvManUtil$3
+com.hiveview.tv.utils.TvManUtil$4
+com.hiveview.tv.utils.TypefaceUtils:
+    private static android.graphics.Typeface ce35FontFace
+    23:26:public static android.graphics.Typeface getCE35FontFace()
+    30:33:public com.hiveview.tv.utils.TypefaceUtils getInstance()
+com.hiveview.tv.utils.VideoLiveVipUtils:
+    private static final java.lang.String TAG
+    private static final java.lang.String ID
+    private static final java.lang.String LIVEURL
+    private static final java.lang.String TV_ID
+    private static final java.lang.String TV_NAME
+    private static final java.lang.String TV_PYNAME
+    private static final java.lang.String TVLOGO
+    public static final java.lang.String TABLE_NAME
+    public static final java.lang.String CP
+    public static final java.lang.String IS_VIP
+    public static final java.lang.String CP_ID
+    public static final java.lang.String TIMESTAMP
+    13:13:public VideoLiveVipUtils()
+com.hiveview.tv.view.AuxiliaryNetworkView:
+    protected static final java.lang.String TAG
+    protected static final int MSG_REFRESH_WIFI_RSSI
+    protected static final int MSG_PING_WIFI
+    protected static final int MSG_PING_LOCATION
+    protected static final int MSG_NET_STATUS_CHANGED
+    protected static final int MSG_CHECK_NETWORK_STATUS
+    protected static final int MSG_CHECK_NETWORK_STATUS_FINISHED
+    public static final java.lang.String NET_STATUS_NOTIFY_ACTION
+    public static final java.lang.String CONNECTION_STATUS_ACTION
+    public static final java.lang.String CONNECTION_STATUS
+    public static final int CHECK_STATUS_DELAY_TIME
+    public static final int PPPOE_STATE_EABLED
+    public static final int PPPOE_STATE_DISABLED
+    public static final int WIFI_STATE_EABLED
+    public static final int WIFI_STATE_DISABLED
+    public static final int ETHERNET_STATE_EABLED
+    public static final int ETHERNET_STATE_DISABLED
+    public static final int DEFAULT_STATE
+    199:217:private boolean pppoeConnectStatus()
+com.hiveview.tv.view.AuxiliaryStorageView:
+    protected static final java.lang.String TAG
+    public static final java.lang.String ACTION_STORAGE_MOUNT_STATUS_CHANGED
+    public static final java.lang.String STORAGE_MOUNT_STATUS_KEY
+    public static final java.lang.String DM1001_DM1002_USB_PATH
+    public static final java.lang.String CVTE_USB_PATH
+com.hiveview.tv.view.AuxiliaryTimeView:
+    private static final java.lang.String TAG
+com.hiveview.tv.view.AuxiliaryWeatherView:
+    protected static final java.lang.String TAG
+    private static final int NETWORK_AVAILABLE_DELAY_MS
+    private static final int NETWORK_INAVAILABLE_DELAY_MS
+com.hiveview.tv.view.BaseFramelayout:
+    16:17:public BaseFramelayout(android.content.Context)
+    34:37:public final void submitRequest(java.lang.Runnable)
+com.hiveview.tv.view.BasePreloadingViewPager:
+    23:24:public void setPreLoadingListener(com.hiveview.tv.view.BasePreloadingViewPager$OnPreloadingListener)
+    34:38:public BasePreloadingViewPager(android.content.Context)
+    70:73:public void stopLoading()
+    76:76:public boolean isLoading()
+com.hiveview.tv.view.BasePreloadingViewPager$FixedSpeedScroller:
+    128:130:public BasePreloadingViewPager$FixedSpeedScroller(com.hiveview.tv.view.BasePreloadingViewPager,android.content.Context)
+    148:149:public void setmDuration(int)
+    152:152:public int getmDuration()
+com.hiveview.tv.view.BasePreloadingViewPager$OnPreloadingListener:
+    public abstract void loading()
+com.hiveview.tv.view.BaseView:
+    183:186:protected void initViewContainer(int,android.widget.FrameLayout$LayoutParams)
+    211:213:protected void initViewContainer(android.view.View,android.widget.FrameLayout$LayoutParams)
+    236:237:protected android.view.View findItemView(int)
+    291:291:public int getH()
+    422:423:public void setAnimatorContinueTime(int)
+    474:477:public void setItemViewTag(com.hiveview.box.framework.entity.HiveBaseEntity,int,android.view.View)
+    553:553:public android.view.View getViewList()
+    612:613:public void setCallBackClickListener(com.hiveview.tv.view.BaseView$CallBackItemViewClickListener)
+com.hiveview.tv.view.CancelCollectDialog:
+    29:31:public CancelCollectDialog(android.content.Context,boolean,android.content.DialogInterface$OnCancelListener)
+    34:36:public CancelCollectDialog(android.content.Context,int)
+    39:41:public void setTitleContent(java.lang.String)
+com.hiveview.tv.view.CategoryLayout:
+    22:24:public CategoryLayout(android.content.Context)
+    50:50:public android.view.View getContentView()
+    54:54:public android.widget.ImageView getSearchView()
+    58:58:public android.widget.ImageView getSelectView()
+    62:62:public android.widget.ImageView getResetView()
+    66:66:public com.hiveview.tv.view.TextViewGallery getCategoryView()
+com.hiveview.tv.view.CategoryPopupWindow
+com.hiveview.tv.view.CategoryPopupWindow$1
+com.hiveview.tv.view.CategoryPopupWindow$ReleasePopupWindow
+com.hiveview.tv.view.CategoryViewPager:
+    15:16:public CategoryViewPager(android.content.Context)
+com.hiveview.tv.view.ChannelItemsView:
+    122:140:public void setDataSource(java.util.ArrayList)
+com.hiveview.tv.view.ChannelItemsView$RecommendRecordLayoutListener
+com.hiveview.tv.view.CustomDrawingOrderLayout:
+    public static final java.lang.String TAG
+com.hiveview.tv.view.GuidePageView:
+    private static final java.lang.String TAG
+    51:51:public android.view.View getvStart()
+    55:56:public void setvStart(android.view.View)
+    526:527:public void setGuidePageCompleteListener(com.hiveview.tv.view.GuidePageView$GuidePageCompleteListener)
+    549:549:public int getCurrentPageIndex()
+    554:561:public void btnPerformClick(android.view.KeyEvent)
+    564:566:public void setButtonFocusTrue()
+com.hiveview.tv.view.GuidePageView$FixedSpeedScroller:
+    446:448:public GuidePageView$FixedSpeedScroller(com.hiveview.tv.view.GuidePageView,android.content.Context)
+    465:466:public void setmDuration(int)
+    469:469:public int getmDuration()
+com.hiveview.tv.view.HiveViewErrorDialog:
+    33:35:public HiveViewErrorDialog(android.content.Context,boolean,android.content.DialogInterface$OnCancelListener)
+com.hiveview.tv.view.HiveViewNetFaultDialog:
+    private static final java.lang.String TAG
+    32:34:public HiveViewNetFaultDialog(android.content.Context,boolean,android.content.DialogInterface$OnCancelListener)
+    37:39:public HiveViewNetFaultDialog(android.content.Context,int)
+com.hiveview.tv.view.HiveviewHdmiInView:
+    private static final java.lang.String TAG
+    public static final java.lang.String ACTION_SMALL_SCREEN_SHOW
+    public static final java.lang.String ACTION_SMALL_SCREEN_UNSHOW
+    public static final java.lang.String ACTION_SMALL_SCREEN_PAUSE
+    public static final java.lang.String ACTION_SMALL_SCREEN_RESUME
+    public static final java.lang.String ACTION_SMALL_SCREEN_SWITCH
+    public static final java.lang.String VIDEO_DISABLE
+com.hiveview.tv.view.HomeMenuPopuwindowsView:
+    private static final java.lang.String TAG
+    private android.widget.ImageView search_image
+    private android.widget.ImageView recoder_image
+    private android.widget.ImageView collect_image
+    private android.widget.ImageView app_image
+    private android.widget.ImageView external_image
+    private android.widget.ImageView setting_image
+com.hiveview.tv.view.Matrix3DView:
+    private android.view.View[] views
+    private com.hiveview.tv.view.Matrix3DView$onMatrixPageChangeListener matrixListener
+    86:88:public Matrix3DView(android.content.Context)
+    94:103:public void initMatrix()
+    184:328:private void setCurrentItem(int,int)
+    331:337:public void showNext()
+    340:346:public void showPrevious()
+    350:413:public void setCurrentItem(int)
+    418:419:public void setOnMatrixPageChangeListener(com.hiveview.tv.view.Matrix3DView$onMatrixPageChangeListener)
+    428:431:public void setMatrixGameData(java.util.ArrayList)
+    435:442:public void setMatrixTVRecommendMediaData(java.util.ArrayList)
+    446:454:public void setMatrixTVProgramData(java.util.ArrayList)
+    457:459:public void setMatrixRecommendData(java.util.ArrayList)
+    462:464:public void setMatrixMovieData(java.util.ArrayList)
+    467:470:public void setMatrixAppData(java.util.ArrayList)
+    473:473:public com.hiveview.tv.view.MatrixAppView getMatrixAppView()
+    477:477:public com.hiveview.tv.view.MatrixGameView getMatrixGameView()
+    484:489:public void setOtherTabViewVisble()
+com.hiveview.tv.view.Matrix3DView$onMatrixPageChangeListener
+com.hiveview.tv.view.MatrixAppView:
+    private static final int APP_FOCUS_COUNT
+    private android.widget.TextView tvInstallCount
+    private android.widget.TextView installMemory
+    private android.widget.ProgressBar installMemoryBar
+    142:144:public MatrixAppView(android.content.Context)
+    453:457:public long getTotalInternalMemorySize()
+    521:531:public void setGameInstallCount(int)
+com.hiveview.tv.view.MatrixAppView$4
+com.hiveview.tv.view.MatrixBluelightView:
+    131:133:public MatrixBluelightView(android.content.Context)
+    293:324:private void setOnFocusViewChange(com.hiveview.tv.view.MatrixBluelightView$FocusViewItem)
+com.hiveview.tv.view.MatrixBluelightView$FocusViewItem
+com.hiveview.tv.view.MatrixCinemaView:
+    protected static final java.lang.String TAG
+    private static final int LOAD_DATA_SUCCESS
+    private static final int LOAD_DATA_FAIL
+    private android.widget.TextView[] desViews
+    private com.hiveview.tv.activity.HomeActivity homeActivity
+    139:142:public MatrixCinemaView(android.content.Context)
+    158:161:public MatrixCinemaView(android.content.Context,com.hiveview.tv.view.pager3d.TabBasePageView$RecommendViewFocusDirectionListener)
+    169:170:public void setPageChange(com.hiveview.tv.view.MatrixCinemaView$PageChange)
+    416:432:public void setPageChange()
+    554:554:public java.util.ArrayList getCinemaName()
+    889:916:public void openItemActivity(java.lang.String)
+com.hiveview.tv.view.MatrixCinemaView$3
+com.hiveview.tv.view.MatrixCinemaView$PageChange:
+    public abstract void nextPage()
+com.hiveview.tv.view.MatrixCinemaViewNew:
+    protected static final java.lang.String TAG
+    private static final int LOAD_DATA_SUCCESS
+    private static final int LOAD_DATA_FAIL
+    212:215:public MatrixCinemaViewNew(android.content.Context)
+    1382:1383:public int getShowPageIndex()
+    1387:1387:public int getPages()
+com.hiveview.tv.view.MatrixCinemaViewNew$PageChange:
+    public abstract void nextPage()
+    public abstract void previousPage()
+com.hiveview.tv.view.MatrixEducationView:
+    protected static final java.lang.String TAG
+    private static final int LOAD_DATA_SUCCESS
+    private static final int LOAD_DATA_FAIL
+    private android.widget.TextView[] desViews
+    private int[][] viewfliperData
+    private java.util.ArrayList educationName
+    private int[][] cinemaNo
+    private com.hiveview.tv.activity.HomeActivity homeActivity
+    130:133:public MatrixEducationView(android.content.Context)
+    360:376:public void setPageChange()
+    465:465:public java.util.ArrayList getCinemaName()
+    665:665:private void setBottomViewNextFocus()
+    766:783:public void viewfliperNext()
+    231:231:static synthetic void access$8(com.hiveview.tv.view.MatrixEducationView)
+    650:650:static synthetic void access$9(com.hiveview.tv.view.MatrixEducationView)
+com.hiveview.tv.view.MatrixEducationView$3
+com.hiveview.tv.view.MatrixEducationView$CinemaExternalClickListener
+com.hiveview.tv.view.MatrixEducationView$CinemaFavouriteClickListener
+com.hiveview.tv.view.MatrixEducationView$CinemaInstalledClickListener
+com.hiveview.tv.view.MatrixEducationView$CinemaRecordClickListener
+com.hiveview.tv.view.MatrixEducationView$CinemaSearchClickListener
+com.hiveview.tv.view.MatrixEducationView$CinemaSettingClickListener
+com.hiveview.tv.view.MatrixEducationView$PageChange:
+    public abstract void nextPage()
+com.hiveview.tv.view.MatrixGameView:
+    private android.widget.TextView tvInstallCount
+    private android.widget.TextView installMemory
+    private android.widget.ProgressBar installMemoryBar
+    134:136:public MatrixGameView(android.content.Context)
+    516:526:public void setGameInstallCount(int)
+com.hiveview.tv.view.MatrixGameView$4
+com.hiveview.tv.view.MatrixGameView$gameUserClickListener
+com.hiveview.tv.view.MatrixMovieView:
+    protected static final java.lang.String TAG
+    108:110:public MatrixMovieView(android.content.Context)
+    113:115:public MatrixMovieView(android.content.Context,com.hiveview.tv.view.pager3d.TabBasePageView$RecommendViewFocusDirectionListener)
+com.hiveview.tv.view.MatrixMovieView$MovieTabViewClickListener
+com.hiveview.tv.view.MatrixRecommendView:
+    private static final int RECOMMEND_FOCUS_COUNT
+    private com.hiveview.tv.service.HiveTVService service
+    303:305:public MatrixRecommendView(android.content.Context)
+    744:770:private void setTextViewVaule(com.hiveview.tv.service.entity.RecommendEntity)
+    234:234:static synthetic void access$16(com.hiveview.tv.view.MatrixRecommendView,com.hiveview.tv.service.entity.LiveStreamEntity)
+    232:232:static synthetic com.hiveview.tv.service.HiveTVService access$17(com.hiveview.tv.view.MatrixRecommendView)
+    1:1:static synthetic void access$18(com.hiveview.tv.view.MatrixRecommendView,int)
+com.hiveview.tv.view.MatrixRecommendView$GetTvList
+com.hiveview.tv.view.MatrixTVForeidgnView:
+    private static final java.lang.String TAG
+    public static final java.lang.String ACTION_SMALL_SCREEN_SHOW
+    public static final java.lang.String ACTION_SMALL_SCREEN_UNSHOW
+    public static final java.lang.String ACTION_SMALL_SCREEN_PAUSE
+    public static final int HANDLER_SMALL_SCREEN_SHOW
+    public static final int HANDLER_SMALL_SCREEN_UNSHOW
+    public static final int HANDLER_SMALL_SCREEN_PAUSE
+    public static final int HANDLER_TV_FROM_LAUNCHER_S
+    public static final java.lang.String EXTRA_URL
+    public static final java.lang.String EXTRA_CP
+    public static final java.lang.String EXTRA_IS_VIP
+    public static final java.lang.String EXTRA_TV_ID
+    public static final java.lang.String EXTRA_TV_NAME
+    protected static final int HANDLER_REQUESS_SECONDURI
+    private com.hiveview.tv.service.entity.LiveStreamEntity liveEntity
+    215:218:public MatrixTVForeidgnView(android.content.Context)
+    222:225:public MatrixTVForeidgnView(android.content.Context,com.hiveview.tv.view.pager3d.TabBasePageView$RecommendViewFocusDirectionListener)
+    547:547:static synthetic void access$34(com.hiveview.tv.view.MatrixTVForeidgnView,com.hiveview.tv.service.entity.LiveStreamEntity)
+    1:1:static synthetic void access$35(com.hiveview.tv.view.MatrixTVForeidgnView,int)
+com.hiveview.tv.view.MatrixTVForeidgnView$GetTvList
+com.hiveview.tv.view.MatrixTVView:
+    private static final java.lang.String TAG
+    private static final int TV_VIEW_INIT_UPDATE_EPG
+    private static final int TV_VIEW_SHOW_UPDATE_EPG
+    private static final int PROGRAM_CHANGED_UPDATE_EPG
+    private static final int CHANNEL_CHANGED_UPDATE_EPG
+    private static final int ACTIVITY_RESTART_UPDATE_EPG
+    private static final int GETEPGLIST_FAIL
+    private android.widget.TextView tvLastOneContent
+    private android.widget.TextView tvNextOneContent
+    private android.widget.TextView tvLastOneContent_time
+    private android.widget.TextView tvNextOneContent_time
+    private java.util.ArrayList currentEpgList
+    229:232:public MatrixTVView(android.content.Context)
+    439:540:private void getEpgList(java.lang.String)
+    194:194:static synthetic java.lang.String access$3(com.hiveview.tv.view.MatrixTVView)
+    211:211:static synthetic void access$4(com.hiveview.tv.view.MatrixTVView,java.util.ArrayList)
+    211:211:static synthetic java.util.ArrayList access$5(com.hiveview.tv.view.MatrixTVView)
+    160:160:static synthetic android.os.Handler access$6(com.hiveview.tv.view.MatrixTVView)
+    195:195:static synthetic void access$7(com.hiveview.tv.view.MatrixTVView,java.lang.String)
+    196:196:static synthetic void access$8(com.hiveview.tv.view.MatrixTVView,java.lang.String)
+    195:195:static synthetic java.lang.String access$9(com.hiveview.tv.view.MatrixTVView)
+    197:197:static synthetic void access$10(com.hiveview.tv.view.MatrixTVView,java.lang.String)
+    198:198:static synthetic void access$11(com.hiveview.tv.view.MatrixTVView,java.lang.String)
+    199:199:static synthetic void access$12(com.hiveview.tv.view.MatrixTVView,java.lang.String)
+    203:203:static synthetic android.widget.TextView access$13(com.hiveview.tv.view.MatrixTVView)
+    203:203:static synthetic android.widget.TextView access$14(com.hiveview.tv.view.MatrixTVView)
+    203:203:static synthetic android.widget.TextView access$15(com.hiveview.tv.view.MatrixTVView)
+    203:203:static synthetic android.widget.TextView access$16(com.hiveview.tv.view.MatrixTVView)
+    196:196:static synthetic java.lang.String access$17(com.hiveview.tv.view.MatrixTVView)
+    198:198:static synthetic java.lang.String access$18(com.hiveview.tv.view.MatrixTVView)
+    197:197:static synthetic java.lang.String access$19(com.hiveview.tv.view.MatrixTVView)
+    199:199:static synthetic java.lang.String access$20(com.hiveview.tv.view.MatrixTVView)
+com.hiveview.tv.view.MatrixTVView$4
+com.hiveview.tv.view.MatrixTVView$4$1
+com.hiveview.tv.view.MatrixVipBluelightView:
+    158:160:public MatrixVipBluelightView(android.content.Context)
+    375:442:private void setOnFocusViewChange(com.hiveview.tv.view.MatrixVipBluelightView$FocusViewItem)
+com.hiveview.tv.view.MatrixVipBluelightView$FocusViewItem
+com.hiveview.tv.view.MovieListItemPageView:
+    protected static final java.lang.String TAG
+com.hiveview.tv.view.NavigationNewTabView:
+    private static final java.lang.String TAG
+    private long mKeyDownTime
+    private int count
+com.hiveview.tv.view.NavigationNewTabView$onNavigationTabChangeListener:
+    public abstract void onScrollComplete(int)
+com.hiveview.tv.view.OnLivesTipsListItemPageView:
+    private static final java.lang.String TAG
+    private android.content.Context mContext
+    private android.widget.ImageView ivFocus05
+    private android.widget.ImageView ivFocus10
+    532:532:public com.hiveview.tv.view.OnLivesTipsListItemPageView$GetFocusEntity getFocusEntity()
+com.hiveview.tv.view.OnTvChannelPageView:
+    protected static final java.lang.String TAG
+com.hiveview.tv.view.OnliveTipsView:
+    private static final java.lang.String TAG
+    57:58:public void setImageView(android.widget.ImageView)
+    165:166:public void closeOnliveTip()
+com.hiveview.tv.view.PlayerRecordListItemPageView:
+    140:140:public com.hiveview.tv.view.PlayerRecordListItemPageView$GetFocusEntity getFocusEntity()
+com.hiveview.tv.view.SearchCategoryPopupWindow:
+    private static final int ITEM_WIDTH
+    private static final int ITEM_HEIGHT
+    private static final int LINEAR_SIZE
+    private static final int ITEM_MARGIN
+    234:234:public boolean isShowing()
+com.hiveview.tv.view.SearchConditionsFailed:
+    69:72:public SearchConditionsFailed(android.content.Context)
+    80:86:private void initHintView1(boolean)
+    94:110:private void initHintView2(boolean)
+    138:140:public void initView(boolean)
+    175:176:public void setSearchBtnOnClick(com.hiveview.tv.view.SearchConditionsFailed$SearchBtnOnClick)
+com.hiveview.tv.view.StorageAuxiliaryView:
+    48:50:public StorageAuxiliaryView(android.content.Context)
+com.hiveview.tv.view.TVSelectTelevisionPageViewItem:
+    39:40:public TVSelectTelevisionPageViewItem(android.content.Context,int,int)
+com.hiveview.tv.view.TeleplayTvItemView
+com.hiveview.tv.view.TeleplayVideoGroupView:
+    private com.hiveview.tv.view.TeleplayVideoGroupView$IButtonFocusListener buttonFocusListener
+    38:41:public TeleplayVideoGroupView(android.content.Context)
+    63:64:public void requestTheOneFouces()
+    74:86:public void createGroupButton(int,java.lang.String,int)
+    96:111:private void setButtonAsButtonGroup(int,android.widget.Button,java.lang.String)
+    162:162:public com.hiveview.tv.view.TeleplayVideoGroupView$IButtonFocusListener getButtonFocusListener()
+    166:167:public void setButtonFocusListener(com.hiveview.tv.view.TeleplayVideoGroupView$IButtonFocusListener)
+    23:23:static synthetic com.hiveview.tv.view.TeleplayVideoGroupView$IButtonFocusListener access$0(com.hiveview.tv.view.TeleplayVideoGroupView)
+com.hiveview.tv.view.TeleplayVideoGroupView$1
+com.hiveview.tv.view.TeleplayVideoGroupView$IButtonFocusListener:
+    public abstract void processFocus(int)
+com.hiveview.tv.view.TeleplayVideoPageView:
+    private android.view.View$OnClickListener clickListener
+    private android.view.View$OnFocusChangeListener focusChangeListener
+    54:57:public TeleplayVideoPageView(android.content.Context)
+    60:80:public void setVideoViewOnFocusListener(android.view.View$OnFocusChangeListener)
+    83:103:public void setVideoViewOnClickListener(android.view.View$OnClickListener)
+    141:142:public void getFocusView1()
+    152:153:public void getFocusView2()
+    163:164:public void getFocusView3()
+    174:175:public void getFocusView4()
+    183:193:public void setVideo1To10FocusUpId(int)
+    201:211:private void setVideo11To20DownFocusListener(android.view.View$OnKeyListener)
+    219:229:private void setVideo1To10DownFocusListener(android.view.View$OnKeyListener)
+    237:281:public void createPageView(int)
+    289:333:public void createPageViewText(int,java.lang.String,int)
+    336:341:public void setKeyDownToGroup(android.view.View$OnKeyListener)
+    350:353:private void setVideoView(android.widget.Button,int)
+    362:365:private void setVideoView(android.widget.Button,int,java.lang.String,int)
+com.hiveview.tv.view.TeleplayVideosPageView:
+    169:169:public com.hiveview.tv.view.TeleplayVideosPageView$OnBtnGetFocus getBtnGetFocus()
+    266:267:public void firstViewRequsetFocus()
+    469:475:public void setBtnDownRequestFocus1(int)
+    478:483:public void setBtnDownRequestFocus2(int)
+    522:523:public void clearFirstBtnColor()
+com.hiveview.tv.view.TextViewGallery:
+    private java.lang.String mField
+    private java.lang.Class mClazz
+    private int mTextViewTemplate
+    private static final int PAGER_DISPLAY_NUM
+    private static int DISPLAY_WIDTH
+    private static int ITEM_WIDTH
+    109:110:public com.hiveview.tv.view.TextViewGallery putData(java.lang.Integer,java.util.List)
+    119:124:public void display(int,java.lang.String,java.lang.Class)
+    132:147:private void initItemSize()
+    154:197:private void addViewPager(java.lang.Integer,java.util.List)
+    206:265:private void createViewPagerContainer(android.widget.FrameLayout,boolean)
+    273:355:private java.util.List initTextView(java.util.List)
+    462:463:public void setOnUserSelectedListener(com.hiveview.tv.view.TextViewGallery$onUserSelectedListener)
+    471:493:public void reset()
+    496:499:private int getDefaultItemPosition(int)
+    505:513:private void changeViewPageScroller(android.support.v4.view.ViewPager)
+    58:58:static synthetic com.hiveview.tv.view.TextViewGallery access$0(com.hiveview.tv.view.TextViewGallery)
+    56:56:static synthetic void access$1(int)
+    56:56:static synthetic int access$2()
+    57:57:static synthetic void access$3(int)
+    59:59:static synthetic java.util.Map access$4(com.hiveview.tv.view.TextViewGallery)
+    153:153:static synthetic void access$5(com.hiveview.tv.view.TextViewGallery,java.lang.Integer,java.util.List)
+    495:495:static synthetic int access$6(com.hiveview.tv.view.TextViewGallery,int)
+    51:51:static synthetic android.content.Context access$7(com.hiveview.tv.view.TextViewGallery)
+com.hiveview.tv.view.TextViewGallery$1
+com.hiveview.tv.view.TextViewGallery$2
+com.hiveview.tv.view.TextViewGallery$FixedSpeedScroller
+com.hiveview.tv.view.TextViewGallery$ViewPagerAdapter:
+    final synthetic com.hiveview.tv.view.TextViewGallery this$0
+    369:372:public TextViewGallery$ViewPagerAdapter(com.hiveview.tv.view.TextViewGallery,java.util.List)
+    380:380:public java.util.List getDataSource()
+    384:385:public void setDataSource(java.util.List)
+com.hiveview.tv.view.TipView:
+    76:81:public void showTipWithCode(java.lang.String)
+com.hiveview.tv.view.TvChannelPageViewItemView:
+    private static final java.lang.String TAG
+    232:284:public void setSelectTVData(com.hiveview.tv.service.entity.LiveMediaEntity)
+    292:307:public void setSelectTVImageData(com.hiveview.tv.service.entity.LiveMediaEntity)
+com.hiveview.tv.view.TvClassifyViewItemView:
+    private static final java.lang.String TAG
+    161:175:public void setTextData(com.hiveview.tv.service.entity.ChannelEntity)
+    218:224:public void setImageData(com.hiveview.tv.service.entity.ChannelEntity)
+com.hiveview.tv.view.TvPreloadingViewPager:
+    30:34:public TvPreloadingViewPager(android.content.Context)
+    41:41:public com.hiveview.tv.view.TvPreloadingViewPager$IPreLoadingListener getPreListener()
+    45:46:public void setPreListener(com.hiveview.tv.view.TvPreloadingViewPager$IPreLoadingListener)
+    49:49:public boolean isLoading()
+    53:54:public void setLoading(boolean)
+    158:158:public int getmDuration()
+    166:167:public void setmDuration(int)
+    172:173:public void setVideoPagers(com.hiveview.tv.view.TvPreloadingViewPager$VideosPagers)
+    176:176:public com.hiveview.tv.view.TvPreloadingViewPager$VideosPagers getVideoPagers()
+    19:19:static synthetic void access$2(com.hiveview.tv.view.TvPreloadingViewPager,int)
+com.hiveview.tv.view.TvPreloadingViewPager$FixedSpeedScroller:
+    129:131:public TvPreloadingViewPager$FixedSpeedScroller(com.hiveview.tv.view.TvPreloadingViewPager,android.content.Context)
+    148:149:public void setmDuration(int)
+    152:152:public int getmDuration()
+com.hiveview.tv.view.UpgradeLauncherDialog:
+    private com.hiveview.tv.service.entity.SYSUpDataEntity launcherEntity
+    private com.hiveview.tv.view.UpgradeLauncherDialog$DataUpdateCallBack callback
+    private android.view.View$OnClickListener upgradeClickListener
+    private android.view.View$OnClickListener cacleClickListener
+    19:21:public UpgradeLauncherDialog(android.content.Context,int)
+    24:26:protected UpgradeLauncherDialog(android.content.Context,boolean,android.content.DialogInterface$OnCancelListener)
+    29:31:public UpgradeLauncherDialog(android.content.Context)
+    35:84:private void init()
+    92:94:public void setLauncherData(com.hiveview.tv.service.entity.SYSUpDataEntity)
+    97:98:public void setOptionalModel(boolean)
+    101:101:public com.hiveview.tv.service.entity.SYSUpDataEntity getLauncherData()
+com.hiveview.tv.view.UpgradeLauncherDialog$1
+com.hiveview.tv.view.UpgradeLauncherDialog$2
+com.hiveview.tv.view.UpgradeLauncherDialog$3
+com.hiveview.tv.view.UpgradeLauncherDialog$DataUpdateCallBack
+com.hiveview.tv.view.VarietyCategoryPopupWindow:
+    private android.widget.PopupWindow mPopupWindow
+    private android.content.Context mContext
+    private java.util.List mData
+    private static final int ITEM_WIDTH
+    private static final int ITEM_HEIGHT
+    private static final int LINEAR_SIZE
+    private int[] TEMP_SIZE
+    private android.view.View mRootView
+    private android.widget.ImageView mVarietySearchTextView
+    private android.widget.LinearLayout mVarietyMainControl
+    private java.util.List linearLayouts
+    public com.hiveview.tv.view.VarietyCategoryPopupWindow$ReleasePopupWindow mReleasePopupWindow
+    private com.hiveview.tv.view.VarietyCategoryPopupWindow$onUserSelectedListener mUserSelectedListener
+    private static java.lang.String mSelectedTag
+    private java.util.List mTempTextView
+    51:56:public VarietyCategoryPopupWindow(android.content.Context,java.util.List,java.lang.String)
+    59:80:private void initPopupWindow()
+    83:97:private void initMyLinerLayout()
+    99:171:private void initMyTagView()
+    174:178:private int getTotalIndex(int,int)
+    182:194:private int getCount()
+    225:226:public void show(android.view.View,int,int,int)
+    229:232:public void dismiss()
+    235:236:public void setOnUserSelectedListener(com.hiveview.tv.view.VarietyCategoryPopupWindow$onUserSelectedListener)
+    243:243:public android.widget.ImageView getSearchView()
+    247:247:public boolean isShowing()
+    251:252:public void setReleasePopupWindow(com.hiveview.tv.view.VarietyCategoryPopupWindow$ReleasePopupWindow)
+    43:43:static synthetic void access$1(boolean)
+    38:38:static synthetic com.hiveview.tv.view.VarietyCategoryPopupWindow$onUserSelectedListener access$2(com.hiveview.tv.view.VarietyCategoryPopupWindow)
+    39:39:static synthetic java.lang.String access$3()
+com.hiveview.tv.view.VarietyCategoryPopupWindow$2
+com.hiveview.tv.view.VarietyCategoryPopupWindow$3
+com.hiveview.tv.view.VarietyCategoryPopupWindow$ReleasePopupWindow
+com.hiveview.tv.view.VarietyCategoryPopupWindow$onUserSelectedListener
+com.hiveview.tv.view.VarietyVideosPageView:
+    162:162:public com.hiveview.tv.view.VarietyVideosPageView$OnBtnGetFocus getBtnGetFocus()
+    259:260:public void firstViewRequsetFocus()
+    440:441:public void clearFirstBtnColor()
+com.hiveview.tv.view.VarietyViewPagerItem:
+    protected static final java.lang.String TAG
+com.hiveview.tv.view.VideoListItemPageView:
+    private static final java.lang.String TAG
+    86:86:public com.hiveview.tv.view.VideoListItemPageView$GetFocusEntity getFocusEntity()
+com.hiveview.tv.view.ViewPagerBaseView:
+    public com.hiveview.tv.view.ViewPagerBaseView$OnClickDpadListener onClickDpadListener
+    42:45:public ViewPagerBaseView(android.content.Context,com.hiveview.tv.view.ViewPagerBaseView$OnPageViewItemListener)
+    65:67:protected void initViewContainer(int)
+    public abstract void HandView(com.hiveview.box.framework.entity.HiveBaseEntity,int,boolean)
+    public abstract void HideView(int)
+    129:129:public void requestDefaultLetfAndDownFocus()
+    132:132:public void requestDefaultLetfAndUpFocus()
+    135:135:public void requestDefaultRightAndDownFocus()
+    138:138:public void requestDefaultRightAndUpFocus()
+    141:141:public void requestLastDefaultRightAndDownFocus()
+    144:144:public void requestLastDefaultRightAndUpFocus()
+    150:151:public void setDpadListener(com.hiveview.tv.view.ViewPagerBaseView$OnClickDpadListener)
+com.hiveview.tv.view.ViewPagerBaseView$OnClickDpadListener
+com.hiveview.tv.view.ViewPagerBaseView$OnPageViewItemListener:
+    public abstract void OnPageViewClick(android.view.View)
+    public abstract void onPageViewFocusChange(android.view.View,boolean)
+    public abstract void onPageViewKey(android.view.View,int,android.view.KeyEvent)
+com.hiveview.tv.view.locknet.LockNetDialogView:
+    75:91:public android.app.Dialog createLoadingDialog(android.graphics.Bitmap)
+com.hiveview.tv.view.locknet.LockVipDialogView:
+    62:73:public android.app.Dialog createLoadingDialog(android.graphics.Bitmap)
+com.hiveview.tv.view.onlive.OnliveEpg:
+    private static final int RQUEST_DATA_SUCCESS
+    private static final int RQUEST_DATA_FAIL
+    protected static final int RQUEST_CHANNEL_FAIL
+    protected static final int RQUEST_CHANNEL_SUCCESS
+    private static final int VIEW_REQUEST_FOCUS
+    225:233:private void changeViewPageScroller(android.support.v4.view.ViewPager)
+com.hiveview.tv.view.onlive.OnliveEpg$FixedSpeedScroller
+com.hiveview.tv.view.onlive.OnliveSelect:
+    private static final java.lang.String TAG
+    protected static final int REQUEST_CCTV_CHANNEL_SUCCESS
+    protected static final int REQUEST_CCTV_CHANNEL_FAIL
+    protected static final int REQUEST_TV_CHANNEL_SUCCESS
+    protected static final int REQUEST_TV_CHANNEL_FAIL
+    protected static final int REQUEST_LOCAL_CHANNEL_SUCCESS
+    protected static final int REQUEST_LOCAL_CHANNEL_FAIL
+    protected static final int REQUEST_HD_CHANNEL_SUCCESS
+    protected static final int REQUEST_HD_CHANNEL_FAIL
+    protected static final int REQUEST_PAY_CHANNEL_SUCCESS
+    protected static final int REQUEST_PAY_CHANNEL_FAIL
+com.hiveview.tv.view.onlive.VoiceOnliveEpg:
+    private static final int RQUEST_DATA_SUCCESS
+    private static final int RQUEST_DATA_FAIL
+    protected static final int RQUEST_CHANNEL_FAIL
+    protected static final int RQUEST_CHANNEL_SUCCESS
+    private static final int VIEW_REQUEST_FOCUS
+    149:149:public java.lang.String getmCurrentChannelName()
+    153:154:public void setmCurrentChannelName(java.lang.String)
+    157:158:public void setCurrentDate(java.lang.String)
+    254:262:private void changeViewPageScroller(android.support.v4.view.ViewPager)
+com.hiveview.tv.view.onlive.VoiceOnliveEpg$FixedSpeedScroller
+com.hiveview.tv.view.pager3d.Abstract3DPagerStrategy:
+    protected android.os.Handler activityHandler
+    160:161:public void setHandler(android.os.Handler)
+com.hiveview.tv.view.pager3d.Abstract3DPagerStrategy$LoadDataTask:
+    private static final java.lang.String TAG
+com.hiveview.tv.view.pager3d.Chlitina_HDMIInViewStrategy:
+    private android.view.View blackView
+    private android.view.View matrix_game_layout_4
+    private android.view.View matrix_game_layout_5
+    private android.view.View matrix_game_layout_6
+    245:246:public void setBlackView(android.view.View)
+com.hiveview.tv.view.pager3d.Chlitina_HDMIInViewStrategy$1:
+    78:79:public void previousPage()
+    82:83:public void nextPage()
+com.hiveview.tv.view.pager3d.Chlitina_HDMIInViewStrategy$BluelightFocusDirectioner
+com.hiveview.tv.view.pager3d.Chlitina_HDMIInViewStrategy$TvFocusDirectioner
+com.hiveview.tv.view.pager3d.FivePageViewStrategy
+com.hiveview.tv.view.pager3d.FivePageViewStrategy$AppFocusDirectioner
+com.hiveview.tv.view.pager3d.FivePageViewStrategy$GameFocusDirectioner
+com.hiveview.tv.view.pager3d.FivePageViewStrategy$MovieFocusDirectioner
+com.hiveview.tv.view.pager3d.FivePageViewStrategy$RecommendFocusDirectioner
+com.hiveview.tv.view.pager3d.FivePageViewStrategy$TvFocusDirectioner
+com.hiveview.tv.view.pager3d.FourPageViewStrategy
+com.hiveview.tv.view.pager3d.FourPageViewStrategy$1
+com.hiveview.tv.view.pager3d.FourPageViewStrategy$AppFocusDirectioner
+com.hiveview.tv.view.pager3d.FourPageViewStrategy$GameFocusDirectioner
+com.hiveview.tv.view.pager3d.FourPageViewStrategy$MovieFocusDirectioner
+com.hiveview.tv.view.pager3d.FourPageViewStrategy$RecommendFocusDirectioner
+com.hiveview.tv.view.pager3d.HDMIInNoBlueViewStrategy:
+    private android.view.View blackView
+    232:233:public void setBlackView(android.view.View)
+com.hiveview.tv.view.pager3d.HDMIInNoBlueViewStrategy$1:
+    84:85:public void previousPage()
+    88:89:public void nextPage()
+com.hiveview.tv.view.pager3d.HDMIInNoBlueViewStrategy$BluelightFocusDirectioner
+com.hiveview.tv.view.pager3d.HDMIInNoEDUViewStrategy:
+    private android.view.View blackView
+    com.hiveview.tv.view.MatrixEducationView educationView
+    private android.view.View matrix_education_layout_1
+    309:310:public void setBlackView(android.view.View)
+    53:53:static synthetic void access$6(com.hiveview.tv.view.pager3d.HDMIInNoEDUViewStrategy,android.view.View)
+com.hiveview.tv.view.pager3d.HDMIInNoEDUViewStrategy$1:
+    86:87:public void previousPage()
+    90:91:public void nextPage()
+com.hiveview.tv.view.pager3d.HDMIInNoEDUViewStrategy$EDU
+com.hiveview.tv.view.pager3d.HDMIInViewStrategy:
+    private android.view.View blackView
+    226:227:public void setBlackView(android.view.View)
+com.hiveview.tv.view.pager3d.HDMIInViewStrategy$1:
+    82:83:public void previousPage()
+    86:87:public void nextPage()
+com.hiveview.tv.view.pager3d.HiveAlphaViewFlipper:
+    21:22:public HiveAlphaViewFlipper(android.content.Context)
+    58:59:public void setDisplayedChild(int)
+com.hiveview.tv.view.pager3d.HiveViewFlipper:
+    96:97:public HiveViewFlipper(android.content.Context)
+    109:114:public void addChildView(android.view.View,int,android.view.ViewGroup$LayoutParams)
+    181:182:public void stopFlipping()
+    192:197:public void startFlipping()
+    304:305:public void setFlipperInChangeListener(com.hiveview.tv.view.pager3d.HiveViewFlipper$FlipperInChangeListener)
+    316:317:public void setFlipInterval(int)
+    328:328:public android.view.View getCurrentView()
+    340:340:public int getCurrentIndex()
+    344:344:public int getFlipperIndexInPage()
+    348:349:public void setFlipperIndexInPage(int)
+com.hiveview.tv.view.pager3d.HomeActions
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueNoEDUViewStrategy
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueNoEDUViewStrategy$1
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueNoEDUViewStrategy$2
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueNoEDUViewStrategy$AppFocusDirectioner
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueNoEDUViewStrategy$BluelightFocusDirectioner
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueNoEDUViewStrategy$CinemaFocusDirectioner
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueNoEDUViewStrategy$EDU
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueNoEDUViewStrategy$GameFocusDirectioner
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueNoEDUViewStrategy$RecommendFocusDirectioner
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueNoEDUViewStrategy$TvFocusDirectioner
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueViewStrategy:
+    private android.view.View blackView
+    224:225:public void setBlackView(android.view.View)
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueViewStrategy$1:
+    78:79:public void previousPage()
+    82:83:public void nextPage()
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueViewStrategy$BluelightFocusDirectioner
+com.hiveview.tv.view.pager3d.NoHDMIInNoBlueViewStrategy$TvFocusDirectioner
+com.hiveview.tv.view.pager3d.NoneHDMIInViewStrategy:
+    private android.view.View blackView
+    220:221:public void setBlackView(android.view.View)
+com.hiveview.tv.view.pager3d.NoneHDMIInViewStrategy$1:
+    79:80:public void previousPage()
+    83:84:public void nextPage()
+com.hiveview.tv.view.pager3d.NoneHDMIInViewStrategy$TvFocusDirectioner
+com.hiveview.tv.view.pager3d.PageChangeAnimationFactory:
+    181:189:public void get0ToUnitImmediatelyAnimation(com.hiveview.tv.view.pager3d.TabBasePageView)
+    200:203:public com.hiveview.tv.view.pager3d.MatrixRotateYAnimation getUnit2RotateYAnimation()
+    215:222:public void get0ToUnit2ImmediatelyRotateYAnimation(com.hiveview.tv.view.pager3d.TabBasePageView)
+    233:236:public com.hiveview.tv.view.pager3d.MatrixRotateYAnimation getNegUnitRotateAnimation()
+    268:278:public void get0ToNegUnitImmediatelyRotateAnimation(com.hiveview.tv.view.pager3d.TabBasePageView)
+    289:296:public void get0ToNegUnit2ImmediatelyRotateAnimation(com.hiveview.tv.view.pager3d.TabBasePageView)
+    345:351:public void getNegUnitToNeg2UnitRotateYAnimation(com.hiveview.tv.view.pager3d.TabBasePageView,android.view.animation.Animation$AnimationListener)
+com.hiveview.tv.view.pager3d.TabAppBasePageView:
+    42:44:public TabAppBasePageView(android.content.Context)
+com.hiveview.tv.view.pager3d.TabBasePageView:
+    protected android.os.Handler activityHandler
+    102:103:public TabBasePageView(android.content.Context)
+    134:135:public void setHandler(android.os.Handler)
+com.hiveview.tv.view.pager3d.View3DPager:
+    233:234:public void setHandler(android.os.Handler)
+com.hiveview.tv.view.television.ChannelChangedReceiver:
+    private static final java.lang.String TAG
+    private static final java.lang.String CHANNEL_SWITCHED_NOTIFY_ACTION
+    private static final java.lang.String PREFERENCE
+    35:37:public ChannelChangedReceiver(com.hiveview.tv.view.television.ChannelChangedListener)
+    44:44:public static com.hiveview.tv.view.television.ChannelChangedReceiver CreateChannelChangedReceiver(com.hiveview.tv.view.television.ChannelChangedListener)
+    52:57:public void registerChannelChangedReceiver(android.content.Context)
+com.hiveview.tv.view.television.EpgPageItem:
+    private android.view.View vContainer
+    200:212:public void setDataSources(java.util.ArrayList,int)
+    217:217:public boolean isActivity()
+    221:222:public void setActivity(boolean)
+    315:347:public void isPlayLocation(int)
+com.hiveview.tv.view.television.MarqueeText:
+    30:30:public boolean isStart()
+com.hiveview.tv.view.television.OnLiveEpgPageItem:
+    502:502:public boolean isActivity()
+    506:507:public void setActivity(boolean)
+com.hiveview.tv.view.television.OnVoiceEpgPageItem:
+    514:514:public boolean isActivity()
+    518:519:public void setActivity(boolean)
+com.hiveview.tv.view.television.ViewPageAdapter:
+    15:17:public ViewPageAdapter(java.util.List)
+    20:21:public void clearAllData()
+    24:25:public void changList(java.util.List)
+com.hiveview.tv.view.television.voicecontrol.ChannelChangedReceiver:
+    private static final java.lang.String TAG
+    private static final java.lang.String CHANNEL_SWITCHED_NOTIFY_ACTION
+    private static final java.lang.String KEY_CHANNEL_NAME
+    private static final java.lang.String KEY_CHANNEL_NUM
+    private static final java.lang.String PREFERENCE
+com.hiveview.tv.view.television.voicecontrol.PreLoadDataReceiver:
+    68:78:private void loadChannels()
+    40:40:static synthetic com.hiveview.tv.service.HiveTVService access$0(com.hiveview.tv.view.television.voicecontrol.PreLoadDataReceiver)
+    36:36:static synthetic com.hiveview.tv.service.dao.ChannelDAO access$1(com.hiveview.tv.view.television.voicecontrol.PreLoadDataReceiver)
+com.hiveview.tv.view.television.voicecontrol.PreLoadDataReceiver$1
+com.hiveview.tv.view.television.voicecontrol.SignalChangedReceiver:
+    private static final java.lang.String TAG
+    private static final java.lang.String SIGNAL_CHANGED_NOTIFY_ACTION
+com.hiveview.weather.common.AppConstant
+com.hiveview.weather.service.WeatherApplication:
+    20:20:public static android.content.Context getWeatherContext()
+com.hiveview.weather.service.WeatherLoadService:
+    public static final java.lang.String DATA_ACTION
+    public static final java.lang.String WEATHER_DATA_ACTION
+    public static final java.lang.String WEATHER_DATA_SUCCESS_ACTION
+    public static final java.lang.String WEATHER_DATA_FAIL_ACTION
+com.hiveview.weather.service.dao.BaseDAO:
+    public static final java.lang.String MATRIX_TYPE
+    public static final int MATRIX_GAME
+    public static final int MATRIX_TV
+    public static final int MATRIX_RECOMMEND
+    public static final int MATRIX_MOVIE
+    public static final int MATRIX_APP
+    protected static final char CHARACTER_SLASH
+    public static final java.lang.String AUTHORITIES
+    public static final java.lang.String TABLE_WEATHER
+    public abstract java.lang.String createTableString()
+    public abstract java.lang.String dropTable()
+    public abstract void insert(java.util.ArrayList)
+    public abstract void insert(com.hiveview.weather.service.entity.BaseEntity)
+    public abstract void delete(java.lang.String,java.lang.String[])
+    public abstract java.util.ArrayList query(java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)
+    public abstract void update(com.hiveview.weather.service.entity.BaseEntity,java.lang.String,java.lang.String[])
+com.hiveview.weather.service.dao.WeatherDAO:
+    47:70:public java.lang.String createTableString()
+    81:85:public java.lang.String dropTable()
+    184:184:public void update(com.hiveview.weather.service.entity.BaseEntity,java.lang.String,java.lang.String[])
+com.iflytek.STV.STV_Operator_Common:
+    public static final int IRCODE_STB_KEY_0
+    public static final int IRCODE_STB_KEY_1
+    public static final int IRCODE_STB_KEY_2
+    public static final int IRCODE_STB_KEY_3
+    public static final int IRCODE_STB_KEY_4
+    public static final int IRCODE_STB_KEY_5
+    public static final int IRCODE_STB_KEY_6
+    public static final int IRCODE_STB_KEY_7
+    public static final int IRCODE_STB_KEY_8
+    public static final int IRCODE_STB_KEY_9
+    public static final int IRCODE_STB_KEY_POWER
+    public static final int IRCODE_STB_KEY_VOLUME_INC
+    public static final int IRCODE_STB_KEY_VOLUME_DEC
+    public static final int IRCODE_STB_KEY_MUTE
+    public static final int IRCODE_STB_KEY_PROGRAM_INC
+    public static final int IRCODE_STB_KEY_PROGRAM_DEC
+    public static final int IRCODE_STB_KEY_UP
+    public static final int IRCODE_STB_KEY_DOWN
+    public static final int IRCODE_STB_KEY_LEFT
+    public static final int IRCODE_STB_KEY_RIGHT
+    public static final int IRCODE_STB_KEY_BACK
+    public static final int IRCODE_STB_KEY_CONFIRM
+    public static final int IRCODE_STB_KEY_EXIT
+    public static final int IRCODE_STB_KEY_MENU
+    public static final int IRCODE_STB_KEY_PREV
+    public static final int IRCODE_STB_KEY_NEXT
+    public static final int IRCODE_STB_KEY_HOME
+    public static final int IRCODE_STB_KEY_RED
+    public static final int IRCODE_STB_KEY_GREEN
+    public static final int IRCODE_STB_KEY_YELLOW
+    public static final int IRCODE_STB_KEY_BLUE
+    public static final int IRCODE_STB_KEY_GUIDE
+    public static final int IRCODE_STB_KEY_INFO
+    public static final int IRCODE_STB_KEY_STOP
+    public static final int IRCODE_STB_KEY_PAUSE
+    public static final int IRCODE_STB_KEY_PLAY
+    public static final int IRCODE_STB_KEY_STAR
+    public static final int IRCODE_STB_KEY_CELL
+    public static final int IRCODE_STB_KEY_LIST
+    private static final int INVOKE_FUNC_SHOW_EQUIP_LIST
+    private static final int INVOKE_FUNC_SHOW_MAIN_SETTINGS
+    private static final int FUNCTION_IS_DONGLE_READY
+    private static final int FUNCTION_CHANGE_CHANNEL
+    private static final int FUNCTION_NOTIFY_TV_KEY_PRESS
+    private static final int FUNCTION_IS_SHOWCOME_STB_AVAILABLE
+    private static final int FUNCTION_IS_SHOWCOME_STB_SET
+    private static final int FUNCTION_RESTORE_TO_FACTORY_STATE
+    private static final int FUNCTION_INFORM_DONGLE_CONNECTED
+    private static final int FUNCTION_IS_SWITCHER_ENABLE
+    private static final int FUNCTION_SHOW_STB_SETTING_UI
+    private static final int FUNCTION_SPECIAL_GET_STBINFOS
+    private static final int FUNCTION_SPECIAL_STB_CURRENT_PROGRAM
+    private static final int FUNCTION_SPECIAL_GET_IRINFOS
+    private static final int FUNCTION_SPECIAL_GET_CHANNELLIST
+    private static final int FUNCTION_SPECIAL_NOTIFY_STB_KEY
+    private static final java.lang.String INVOKE_USERDATA
+    private static final java.lang.String INVOKE_PARAM1
+    private static final java.lang.String INVOKE_PARAM2
+    private static final java.lang.String INVOKE_PARAM3
+    private static final java.lang.String INVOKE_PARAM4
+    private static final java.lang.String TVDCS_SERVICE
+    private static final java.lang.String STV_ADAPTER_SERVICE
+    private static final java.lang.String INVOKE_CMD_NO
+    private static final int ADAPT_CMD_STB_DEFINE_SCENES
+    private static final int ADAPT_CMD_STB_SET_CURRENT_SCENE
+    private static final int ADAPT_CMD_STB_TV_PLAY_STATUS
+    private static final int ADAPT_CMD_TLR_CHANNELCHANGE
+    308:319:private boolean unregisterServiceCallback()
+    346:346:private boolean invokeRemoteFunction(int)
+    372:372:private java.lang.String invokeRemoteFunctionForResult(int)
+    431:431:public boolean isStvConnected()
+    438:445:public void uninitOperator()
+    453:453:public boolean showEquipListUI()
+    485:485:public boolean showSTBSettingUI()
+    493:493:public boolean isDongleReady()
+    504:504:public boolean notifyTVKeyPress(int)
+    516:522:public boolean notifyTVKeyPress(java.lang.String,int)
+    634:634:public boolean isShowcomeSTBAvailable()
+    642:642:public boolean isSTBSet()
+    650:651:public void restoreToFactoryState()
+    658:689:public java.util.ArrayList getSTBSettingList()
+    697:712:public java.lang.String getCurrentSTBProgramName()
+    720:744:public java.util.ArrayList getSTBChannelNameList()
+    748:780:private java.util.ArrayList getIrSettingList(java.lang.String)
+    788:788:public java.util.ArrayList getACSettingList()
+    796:796:public java.util.ArrayList getFANSettingList()
+    804:804:public java.util.ArrayList getStereoSettingList()
+    875:893:public static void adapt_stb_setTVPlaying(android.content.Context,boolean)
+    901:902:public static void adapt_tlr_channelChange(android.content.Context,java.lang.String)
+    911:933:public static void adapt_tlr_channelChange(android.content.Context,java.lang.String,int)
+com.iflytek.STV.STV_Operator_Common$E_IRInfo
+com.iflytek.STV.STV_Operator_Common$E_STBInfo
+com.iflytek.STV.STV_Operator_Common$ProgramInfo
+com.iflytek.itvs.BuildConfig
+com.iflytek.itvs.ITVSInterface
+com.iflytek.itvs.ITVSInterface$1
+com.iflytek.itvs.ITVSInterface$2
+com.iflytek.itvs.ITVSInterface$ConnectionEvent
+com.iflytek.itvs.ITVSInterface$DeviceChangeListener
+com.iflytek.itvs.ITVSInterface$RemoteInvokeReturn
+com.iflytek.itvs.R
+com.iflytek.itvs.R$attr
+com.iflytek.itvs.R$drawable
+com.iflytek.itvs.R$string
+com.iflytek.itvs.R$style
+com.iflytek.remote.IRemoteCallBack$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_onInvokeCallBack
+com.iflytek.remote.IRemoteCallBack$Stub$Proxy:
+    89:89:public java.lang.String getInterfaceDescriptor()
+com.iflytek.remote.IRemoteInterface$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_registerAsyncInvoke
+    static final int TRANSACTION_unregisterAsyncInvoke
+    static final int TRANSACTION_asyncInvokeRemoteFunction
+    static final int TRANSACTION_invokeRemoteFuncForResult
+    23:30:public static com.iflytek.remote.IRemoteInterface asInterface(android.os.IBinder)
+    34:34:public android.os.IBinder asBinder()
+com.iflytek.remote.IRemoteInterface$Stub$Proxy
+com.iflytek.showcome.IRemoteCallBack$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_onInvokeCallBack
+com.iflytek.showcome.IRemoteCallBack$Stub$Proxy:
+    76:76:public java.lang.String getInterfaceDescriptor()
+com.iflytek.showcome.IRemoteInterface$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_registerAsyncInvoke
+    static final int TRANSACTION_asyncInvokeRemoteFunction
+    static final int TRANSACTION_unregisterAsyncInvoke
+    static final int TRANSACTION_isDongleReady
+    static final int TRANSACTION_queryChannelNamesByNumber
+    static final int TRANSACTION_getCurrentSTBChannelNames
+    static final int TRANSACTION_changeChannel
+    static final int TRANSACTION_notifyTVKeyPress
+    static final int TRANSACTION_isShowcomeSTBAvailable
+    static final int TRANSACTION_invokeRemoteFuncForResult
+    34:34:public android.os.IBinder asBinder()
+com.iflytek.showcome.IRemoteInterface$Stub$Proxy:
+    174:174:public java.lang.String getInterfaceDescriptor()
+com.iflytek.stvinterface.BuildConfig
+com.iflytek.stvinterface.R
+com.iflytek.stvinterface.R$attr
+com.iflytek.stvinterface.R$drawable
+com.iflytek.stvinterface.R$string
+com.iflytek.stvinterface.R$style
+com.iflytek.xiri.AppService:
+    public static final java.lang.String TAG
+    public static final java.lang.String NOTIFIYACTION
+    public static final java.lang.String CALLACTION
+    90:91:public static void setLocalAppListener(com.iflytek.xiri.AppService$ILocalAppListener)
+    94:95:public static void setTVLiveListener(com.iflytek.xiri.AppService$ITVLiveListener)
+    98:99:public static void setTVBackListener(com.iflytek.xiri.AppService$ITVBackListener)
+    110:112:public static void setVideoItemListener(com.iflytek.xiri.AppService$IVideoItemListener)
+    130:137:public static void updateTVChannel(android.content.Context,java.util.ArrayList)
+    151:159:public static void notifyTVLiveStatus(android.content.Context,java.lang.String,java.lang.Boolean)
+    163:171:public static void notifyTVBackStatus(android.content.Context,java.lang.String,java.lang.Boolean)
+com.iflytek.xiri.Feedback:
+    public static final int EXECUTION
+    public static final int SILENCE
+    public static final int DIALOG
+    public static final int ERROR
+com.iflytek.xiri.scene.Scene:
+    public static final java.lang.String ADDSCENECOMMAND_ACTION
+    public static final java.lang.String FUZZY_SCENE_SERVICE_ACTION
+    public static final java.lang.String COMMIT_ACTION
+com.mipt.qiyi.settings.util.Util
+com.nineoldandroids.animation.Animator:
+    public abstract long getStartDelay()
+    public abstract void setStartDelay(long)
+    public abstract com.nineoldandroids.animation.Animator setDuration(long)
+    public abstract long getDuration()
+    public abstract void setInterpolator(android.view.animation.Interpolator)
+    183:187:public void removeAllListeners()
+    217:217:public void setupStartValues()
+    229:229:public void setupEndValues()
+    240:240:public void setTarget(java.lang.Object)
+com.nineoldandroids.animation.AnimatorInflater
+com.nineoldandroids.animation.AnimatorSet:
+    140:151:public void playTogether(java.util.Collection)
+    160:170:public varargs void playSequentially(com.nineoldandroids.animation.Animator[])
+    179:189:public void playSequentially(java.util.List)
+    200:204:public java.util.ArrayList getChildAnimations()
+    216:224:public void setTarget(java.lang.Object)
+    234:237:public void setInterpolator(android.view.animation.Interpolator)
+    378:378:public long getStartDelay()
+    389:390:public void setStartDelay(long)
+    402:402:public long getDuration()
+    415:424:public com.nineoldandroids.animation.AnimatorSet setDuration(long)
+    429:432:public void setupStartValues()
+    436:439:public void setupEndValues()
+    1:1:public bridge synthetic com.nineoldandroids.animation.Animator setDuration(long)
+com.nineoldandroids.animation.AnimatorSet$Builder:
+    1064:1072:public com.nineoldandroids.animation.AnimatorSet$Builder before(com.nineoldandroids.animation.Animator)
+    1084:1092:public com.nineoldandroids.animation.AnimatorSet$Builder after(com.nineoldandroids.animation.Animator)
+    1105:1108:public com.nineoldandroids.animation.AnimatorSet$Builder after(long)
+com.nineoldandroids.animation.AnimatorSet$Dependency:
+    static final int WITH
+    static final int AFTER
+com.nineoldandroids.animation.ArgbEvaluator
+com.nineoldandroids.animation.Keyframe:
+    140:140:public static com.nineoldandroids.animation.Keyframe ofObject(float,java.lang.Object)
+    156:156:public static com.nineoldandroids.animation.Keyframe ofObject(float)
+    201:202:public void setFraction(float)
+    232:232:public java.lang.Class getType()
+com.nineoldandroids.animation.Keyframe$ObjectKeyframe
+com.nineoldandroids.animation.KeyframeSet:
+    85:111:public static varargs com.nineoldandroids.animation.KeyframeSet ofKeyframe(com.nineoldandroids.animation.Keyframe[])
+    116:127:public static varargs com.nineoldandroids.animation.KeyframeSet ofObject(java.lang.Object[])
+com.nineoldandroids.animation.ObjectAnimator:
+    private static final boolean DBG
+    142:142:public java.lang.String getPropertyName()
+    173:176:private ObjectAnimator(java.lang.Object,com.nineoldandroids.util.Property)
+    211:213:public static varargs com.nineoldandroids.animation.ObjectAnimator ofInt(java.lang.Object,com.nineoldandroids.util.Property,int[])
+    250:252:public static varargs com.nineoldandroids.animation.ObjectAnimator ofFloat(java.lang.Object,com.nineoldandroids.util.Property,float[])
+    274:277:public static varargs com.nineoldandroids.animation.ObjectAnimator ofObject(java.lang.Object,java.lang.String,com.nineoldandroids.animation.TypeEvaluator,java.lang.Object[])
+    297:300:public static varargs com.nineoldandroids.animation.ObjectAnimator ofObject(java.lang.Object,com.nineoldandroids.util.Property,com.nineoldandroids.animation.TypeEvaluator,java.lang.Object[])
+    322:325:public static varargs com.nineoldandroids.animation.ObjectAnimator ofPropertyValuesHolder(java.lang.Object,com.nineoldandroids.animation.PropertyValuesHolder[])
+    360:371:public varargs void setObjectValues(java.lang.Object[])
+    438:438:public java.lang.Object getTarget()
+    448:457:public void setTarget(java.lang.Object)
+    461:466:public void setupStartValues()
+    470:475:public void setupEndValues()
+com.nineoldandroids.animation.PreHoneycombCompat:
+    167:167:private PreHoneycombCompat()
+com.nineoldandroids.animation.PropertyValuesHolder:
+    204:207:public static varargs com.nineoldandroids.animation.PropertyValuesHolder ofObject(java.lang.String,com.nineoldandroids.animation.TypeEvaluator,java.lang.Object[])
+    224:227:public static varargs com.nineoldandroids.animation.PropertyValuesHolder ofObject(com.nineoldandroids.util.Property,com.nineoldandroids.animation.TypeEvaluator,java.lang.Object[])
+    250:260:public static varargs com.nineoldandroids.animation.PropertyValuesHolder ofKeyframe(java.lang.String,com.nineoldandroids.animation.Keyframe[])
+    281:291:public static varargs com.nineoldandroids.animation.PropertyValuesHolder ofKeyframe(com.nineoldandroids.util.Property,com.nineoldandroids.animation.Keyframe[])
+    337:344:public varargs void setKeyframes(com.nineoldandroids.animation.Keyframe[])
+    360:362:public varargs void setObjectValues(java.lang.Object[])
+    551:565:private void setupValue(java.lang.Object,com.nineoldandroids.animation.Keyframe)
+    576:577:void setupStartValue(java.lang.Object)
+    588:589:void setupEndValue(java.lang.Object)
+    659:661:public void setEvaluator(com.nineoldandroids.animation.TypeEvaluator)
+com.nineoldandroids.animation.PropertyValuesHolder$FloatPropertyValuesHolder:
+    901:905:public PropertyValuesHolder$FloatPropertyValuesHolder(java.lang.String,com.nineoldandroids.animation.FloatKeyframeSet)
+    908:915:public PropertyValuesHolder$FloatPropertyValuesHolder(com.nineoldandroids.util.Property,com.nineoldandroids.animation.FloatKeyframeSet)
+com.nineoldandroids.animation.PropertyValuesHolder$IntPropertyValuesHolder:
+    765:769:public PropertyValuesHolder$IntPropertyValuesHolder(java.lang.String,com.nineoldandroids.animation.IntKeyframeSet)
+    772:779:public PropertyValuesHolder$IntPropertyValuesHolder(com.nineoldandroids.util.Property,com.nineoldandroids.animation.IntKeyframeSet)
+com.nineoldandroids.animation.TimeAnimator
+com.nineoldandroids.animation.TimeAnimator$TimeListener
+com.nineoldandroids.animation.ValueAnimator:
+    private static final long DEFAULT_FRAME_DELAY
+    static final int ANIMATION_START
+    static final int ANIMATION_FRAME
+    static final int STOPPED
+    static final int RUNNING
+    static final int SEEKED
+    public static final int RESTART
+    public static final int REVERSE
+    public static final int INFINITE
+    298:300:public static varargs com.nineoldandroids.animation.ValueAnimator ofInt(int[])
+    329:331:public static varargs com.nineoldandroids.animation.ValueAnimator ofPropertyValuesHolder(com.nineoldandroids.animation.PropertyValuesHolder[])
+    352:355:public static varargs com.nineoldandroids.animation.ValueAnimator ofObject(com.nineoldandroids.animation.TypeEvaluator,java.lang.Object[])
+    433:445:public varargs void setObjectValues(java.lang.Object[])
+    476:476:public com.nineoldandroids.animation.PropertyValuesHolder[] getValues()
+    524:524:public long getDuration()
+    692:692:public long getStartDelay()
+    702:703:public void setStartDelay(long)
+    715:715:public static long getFrameDelay()
+    728:729:public static void setFrameDelay(long)
+    744:748:public java.lang.Object getAnimatedValue()
+    762:767:public java.lang.Object getAnimatedValue(java.lang.String)
+    780:781:public void setRepeatCount(int)
+    789:789:public int getRepeatCount()
+    800:801:public void setRepeatMode(int)
+    809:809:public int getRepeatMode()
+    820:824:public void addUpdateListener(com.nineoldandroids.animation.ValueAnimator$AnimatorUpdateListener)
+    830:835:public void removeAllUpdateListeners()
+    844:851:public void removeUpdateListener(com.nineoldandroids.animation.ValueAnimator$AnimatorUpdateListener)
+    865:870:public void setInterpolator(android.view.animation.Interpolator)
+    878:878:public android.view.animation.Interpolator getInterpolator()
+    898:901:public void setEvaluator(com.nineoldandroids.animation.TypeEvaluator)
+    1009:1018:public void reverse()
+    1153:1153:public float getAnimatedFraction()
+    1239:1239:public static int getCurrentAnimationsCount()
+    1249:1252:public static void clearAllAnimations()
+    1:1:public bridge synthetic com.nineoldandroids.animation.Animator setDuration(long)
+com.nineoldandroids.util.Property:
+    55:55:public static com.nineoldandroids.util.Property of(java.lang.Class,java.lang.Class,java.lang.String)
+    76:76:public boolean isReadOnly()
+    104:104:public java.lang.Class getType()
+com.nineoldandroids.util.ReflectiveProperty
+com.nineoldandroids.view.ViewHelper:
+    9:9:private ViewHelper()
+    12:12:public static float getAlpha(android.view.View)
+    16:21:public static void setAlpha(android.view.View,float)
+    24:24:public static float getPivotX(android.view.View)
+    36:36:public static float getPivotY(android.view.View)
+    48:48:public static float getRotation(android.view.View)
+    52:57:public static void setRotation(android.view.View,float)
+    60:60:public static float getRotationX(android.view.View)
+    64:69:public static void setRotationX(android.view.View,float)
+    72:72:public static float getRotationY(android.view.View)
+    76:81:public static void setRotationY(android.view.View,float)
+    84:84:public static float getScaleX(android.view.View)
+    88:93:public static void setScaleX(android.view.View,float)
+    96:96:public static float getScaleY(android.view.View)
+    100:105:public static void setScaleY(android.view.View,float)
+    108:108:public static float getScrollX(android.view.View)
+    112:117:public static void setScrollX(android.view.View,int)
+    120:120:public static float getScrollY(android.view.View)
+    124:129:public static void setScrollY(android.view.View,int)
+    132:132:public static float getTranslationX(android.view.View)
+    136:141:public static void setTranslationX(android.view.View,float)
+    144:144:public static float getTranslationY(android.view.View)
+    148:153:public static void setTranslationY(android.view.View,float)
+    156:156:public static float getX(android.view.View)
+    160:165:public static void setX(android.view.View,float)
+    168:168:public static float getY(android.view.View)
+    172:177:public static void setY(android.view.View,float)
+com.nineoldandroids.view.ViewHelper$Honeycomb:
+    179:179:private ViewHelper$Honeycomb()
+    181:181:static float getAlpha(android.view.View)
+    185:186:static void setAlpha(android.view.View,float)
+    189:189:static float getPivotX(android.view.View)
+    197:197:static float getPivotY(android.view.View)
+    205:205:static float getRotation(android.view.View)
+    209:210:static void setRotation(android.view.View,float)
+    213:213:static float getRotationX(android.view.View)
+    217:218:static void setRotationX(android.view.View,float)
+    221:221:static float getRotationY(android.view.View)
+    225:226:static void setRotationY(android.view.View,float)
+    229:229:static float getScaleX(android.view.View)
+    233:234:static void setScaleX(android.view.View,float)
+    237:237:static float getScaleY(android.view.View)
+    241:242:static void setScaleY(android.view.View,float)
+    245:245:static float getScrollX(android.view.View)
+    249:250:static void setScrollX(android.view.View,int)
+    253:253:static float getScrollY(android.view.View)
+    257:258:static void setScrollY(android.view.View,int)
+    261:261:static float getTranslationX(android.view.View)
+    265:266:static void setTranslationX(android.view.View,float)
+    269:269:static float getTranslationY(android.view.View)
+    273:274:static void setTranslationY(android.view.View,float)
+    277:277:static float getX(android.view.View)
+    281:282:static void setX(android.view.View,float)
+    285:285:static float getY(android.view.View)
+    289:290:static void setY(android.view.View,float)
+com.nineoldandroids.view.ViewPropertyAnimator
+com.nineoldandroids.view.ViewPropertyAnimatorHC
+com.nineoldandroids.view.ViewPropertyAnimatorHC$1
+com.nineoldandroids.view.ViewPropertyAnimatorHC$AnimatorEventListener
+com.nineoldandroids.view.ViewPropertyAnimatorHC$NameValuesHolder
+com.nineoldandroids.view.ViewPropertyAnimatorHC$PropertyBundle
+com.nineoldandroids.view.ViewPropertyAnimatorICS
+com.nineoldandroids.view.ViewPropertyAnimatorICS$1
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC$1
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC$AnimatorEventListener
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC$NameValuesHolder
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC$PropertyBundle
+org.neldtv.mstar.aidl.NelAIDLClient$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_surfaceResume
+    static final int TRANSACTION_mEthernetChange
+    static final int TRANSACTION_isHasInputSource
+    34:34:public android.os.IBinder asBinder()
+org.neldtv.mstar.aidl.NelAIDLClient$Stub$Proxy:
+    83:83:public java.lang.String getInterfaceDescriptor()
+org.neldtv.mstar.aidl.NelAIDLService$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_initCallBack
+    static final int TRANSACTION_initSourceVideo
+    static final int TRANSACTION_reOpenSourceVideo
+    static final int TRANSACTION_sourceVideoFillScreen
+    static final int TRANSACTION_sourceVideoPipscale
+    static final int TRANSACTION_closeSourceVideo
+    static final int TRANSACTION_openSourceChangeDialog
+    static final int TRANSACTION_setSourceID
+    static final int TRANSACTION_changeSource
+    static final int TRANSACTION_closeIRExe
+    static final int TRANSACTION_getSourceID
+    static final int TRANSACTION_getSourceName
+    static final int TRANSACTION_getSourceSelect
+    static final int TRANSACTION_sendIR
+    static final int TRANSACTION_openIRExeDialog
+    static final int TRANSACTION_getSupportedIRDevices
+    static final int TRANSACTION_setCurrentIRDevices
+    static final int TRANSACTION_setIRCommands
+    static final int TRANSACTION_setIRType
+    static final int TRANSACTION_screenOrientationCheck
+    static final int TRANSACTION_getResolution
+    static final int TRANSACTION_getDisplayPosition
+    static final int TRANSACTION_getSourceWHXY
+    static final int TRANSACTION_getTVVolume
+    static final int TRANSACTION_setTVVolume
+    static final int TRANSACTION_setTVMuteFlag
+    23:30:public static org.neldtv.mstar.aidl.NelAIDLService asInterface(android.os.IBinder)
+    34:34:public android.os.IBinder asBinder()
+org.neldtv.mstar.aidl.NelAIDLService$Stub$Proxy
+org.neldtv.tv.aidl.NelTVAIDLService$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_startTVSystem
+    static final int TRANSACTION_tuneDTVChannel
+    static final int TRANSACTION_openEPG
+    23:30:public static org.neldtv.tv.aidl.NelTVAIDLService asInterface(android.os.IBinder)
+    34:34:public android.os.IBinder asBinder()
+org.neldtv.tv.aidl.NelTVAIDLService$Stub$Proxy

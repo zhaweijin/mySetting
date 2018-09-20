@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewpager_item_video_item1"
+    android:layout_width="wrap_content"
+    android:layout_height="290dip"
+    android:background="#5500ff00" >
+
+    <LinearLayout
+        android:id="@+id/viewpager_item_item1_poster_layout"
+        style="@style/playerrecord_item_poster_layout_style" >
+
+        <ImageView
+            android:id="@+id/viewpager_item_item1_poster_iv"
+            style="@style/playerrecord_item_poster_iv_style" />
+    </LinearLayout>
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/viewpager_item_item1_title_tv"
+        style="@style/video_item_video_name_tv_style"
+        android:layout_below="@id/viewpager_item_item1_poster_layout"
+        android:layout_centerHorizontal="true"
+        android:text="名字" />
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/viewpager_item_item1_title_tv2"
+        style="@style/video_item_video_name_tv_style"
+        android:layout_alignBottom="@id/viewpager_item_item1_poster_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="剩余时间00:00" />
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/viewpager_item_item1_title_tv3"
+        style="@style/video_item_video_name_tv_style"
+        android:layout_above="@id/viewpager_item_item1_title_tv2"
+        android:layout_centerHorizontal="true"
+        android:text="第100集"
+        android:visibility="visible" />
+
+    <com.hiveview.tv.view.television.MarqueeText
+        android:id="@+id/viewpager_item_item1_title_tv4"
+        style="@style/video_item_video_name_tv_style"
+        android:layout_below="@id/viewpager_item_item1_title_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:text="点评"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/home_view"
+    android:layout_height="match_parent"
+     >
+
+    <include layout="@layout/background_layout" />
+
+    <com.hiveview.tv.view.NavigationNewTabView
+        android:id="@+id/navigation_tab_view"
+        android:layout_width="match_parent"
+        android:layout_height="89.244dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#74000000" >
+    </com.hiveview.tv.view.NavigationNewTabView>
+
+    <ImageView
+        android:id="@+id/home_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/logo"
+        android:contentDescription="@string/app_name" />
+
+    <com.hiveview.tv.view.AuxiliaryTimeView
+        android:id="@+id/auxiliary_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="52dp"
+        android:layout_marginTop="40dp" />
+
+    <com.hiveview.tv.view.AuxiliaryNetworkView
+        android:id="@+id/auxiliary_network_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="44dp"
+        android:layout_toLeftOf="@id/auxiliary_time_view" />
+
+    <com.hiveview.tv.view.AuxiliaryWeatherView
+        android:id="@+id/auxiliary_weather_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        android:layout_toLeftOf="@id/auxiliary_network_view" />
+
+    <com.hiveview.tv.view.AuxiliaryStorageView
+        android:id="@+id/auxiliary_storage_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@id/auxiliary_weather_view" />
+
+    <com.hiveview.tv.view.pager3d.View3DPager
+        android:id="@+id/matrix_pager_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89.224dp"
+        android:background="@color/transparent" >
+    </com.hiveview.tv.view.pager3d.View3DPager>
+    <!-- 
+<TextView 
+      android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="45dp"
+        android:layout_alignParentRight="true"
+        android:textSize="28sp"
+        android:layout_marginBottom="35dip"
+        android:text="@string/launcher_menu_prompt"
+    />
+     -->
+    <ImageView 
+       android:layout_width="@dimen/menu_width"
+        android:layout_height="@dimen/menu_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="51.48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15.18dp"
+        android:background="@drawable/menu"/>
+    <com.hiveview.tv.view.SubTabView
+        android:id="@+id/matrix_sub_tab_view"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dip"
+        android:visibility="gone"
+        android:background="@drawable/sub_navigation_bg" />
+
+
+<!--     <com.hiveview.tv.view.GuidePageView
+        android:id="@+id/v_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.hiveview.tv.view.GuidePageView> -->
+	<View   android:id="@+id/home_menu_back"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/home_background"
+        android:visibility="invisible"/>
+</RelativeLayout>

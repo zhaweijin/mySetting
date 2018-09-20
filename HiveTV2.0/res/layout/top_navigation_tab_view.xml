@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:baselineAligned="false" >
+
+    <ImageView
+        android:id="@+id/navigation_cursor_view"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:src="@drawable/navigation_tab_cursor" />
+
+    <TextView
+        android:id="@+id/navigation_tab_recommend_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/navigation_tab_recommend_text"
+        android:textColor="@android:color/white"
+        android:textSize="26.64sp" />
+
+    <TextView
+        android:id="@+id/navigation_tab_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="55.278dp"
+        android:layout_marginTop="37dp"
+        android:layout_toLeftOf="@id/navigation_tab_recommend_text"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/navigation_tab_tv_text"
+        android:textColor="@android:color/white"
+        android:textSize="26.64sp" />
+
+    <TextView
+        android:id="@+id/navigation_tab_game_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="55.278dp"
+        android:layout_marginTop="37dp"
+        android:layout_toLeftOf="@id/navigation_tab_tv_text"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusLeft="@id/navigation_tab_game_text"
+        android:singleLine="true"
+        android:text="@string/navigation_tab_game_text"
+        android:textColor="@android:color/white"
+        android:textSize="26.64sp" />
+
+    <TextView
+        android:id="@+id/navigation_tab_movie_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55.278dp"
+        android:layout_marginTop="37dp"
+        android:layout_toRightOf="@id/navigation_tab_recommend_text"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/navigation_tab_movie_text"
+        android:textColor="@android:color/white"
+        android:textSize="26.64sp" />
+
+    <TextView
+        android:id="@+id/navigation_tab_app_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55.278dp"
+        android:layout_marginTop="37dp"
+        android:layout_toRightOf="@id/navigation_tab_movie_text"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/navigation_tab_app_text"
+        android:textColor="@android:color/white"
+        android:textSize="26.64sp" />
+
+    <ImageView
+        android:id="@+id/navigation_tab_recommend_fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/navigation_tab_fade_bg"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/navigation_tab_tv_fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="-90dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/navigation_tab_recommend_fade"
+        android:background="@drawable/navigation_tab_fade_bg"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/navigation_tab_game_fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-90dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/navigation_tab_tv_fade"
+        android:background="@drawable/navigation_tab_fade_bg"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/navigation_tab_movie_fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-80dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/navigation_tab_recommend_fade"
+        android:background="@drawable/navigation_tab_fade_bg"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/navigation_tab_app_fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-80dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/navigation_tab_movie_fade"
+        android:background="@drawable/navigation_tab_fade_bg"
+        android:contentDescription="@string/app_name"
+        android:nextFocusLeft="@id/navigation_tab_app_fade"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_menu_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:paddingTop="15dip" >
+
+    <TextView
+        android:id="@+id/navigation_tab_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@id/navigation_tab_movie_text"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@id/matrix_tv_layout_4"
+        android:singleLine="true"
+        android:text="@string/navigation_tab_tv_text"
+        android:textColor="@android:color/white"
+        android:textSize="26.64sp" />
+
+    <ImageView
+        android:id="@+id/navigation_tab_tv_fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/navigation_tab_fade_bg"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

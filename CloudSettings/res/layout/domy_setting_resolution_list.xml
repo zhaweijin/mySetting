@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/customlist_backgroud"
+            android:layout_marginLeft="@dimen/d_13"
+            android:layout_marginRight="@dimen/d_13"/>
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="@dimen/d_10"
+            android:paddingBottom="@dimen/d_10">
+            
+            <LinearLayout
+                android:id="@+id/domy_custom_list_up_llyt"  
+                android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:paddingLeft="@dimen/d_40"
+		        android:paddingRight="@dimen/d_39">
+        
+		        <ImageView 
+		            android:id="@+id/domy_custom_list_up_imgv"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/display_outputmode_grid_item_image"
+		            android:scaleType="centerInside"
+		            android:visibility="invisible"
+		            android:layout_gravity="center"
+		            android:layout_marginRight="@dimen/d_10"/>
+        
+		        <TextView 
+		            android:id="@+id/domy_custom_list_up_textv"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/s_29"
+		            android:textColor="#636262"
+		            android:gravity="center"/>
+  
+    		</LinearLayout>
+        
+		    <LinearLayout
+		        android:id="@+id/domy_custom_list_mid_llyt" 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:background="@drawable/domy_setting_display_list_select"
+		        android:layout_below="@id/domy_custom_list_up_llyt">
+		        
+		        <ImageView 
+		            android:id="@+id/domy_custom_list_mid_imgv"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/domy_setting_resolution_list_mid_img"
+		            android:scaleType="centerInside"
+		            android:visibility="invisible"
+		            android:layout_gravity="center"
+		            android:layout_marginRight="@dimen/d_10"
+		            android:layout_marginLeft="@dimen/d_21"/>
+		        
+		        <TextView 
+		            android:id="@+id/domy_custom_list_mid_textv"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/s_29"
+		            android:textColor="@color/white_smoke"
+		            android:gravity="center"
+		            android:layout_marginRight="@dimen/d_20"/>
+		        
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:id="@+id/domy_custom_list_bottom_llyt"  
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:paddingLeft="@dimen/d_40"
+		        android:layout_below="@id/domy_custom_list_mid_llyt"
+		        android:paddingRight="@dimen/d_39">
+		        
+		        <ImageView 
+		            android:id="@+id/domy_custom_list_bottom_imgv"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/display_outputmode_grid_item_image"
+		            android:scaleType="centerInside"
+		            android:visibility="invisible"
+		            android:layout_gravity="center"
+		            android:layout_marginRight="@dimen/d_10"/>
+		        
+		        <TextView 
+		            android:id="@+id/domy_custom_list_bottom_textv"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/s_29"
+		            android:textColor="#636262"
+		            android:gravity="center"/>
+		  
+		    </LinearLayout>
+        
+    	</RelativeLayout>    
+    
+    </FrameLayout>
+    
+</RelativeLayout>

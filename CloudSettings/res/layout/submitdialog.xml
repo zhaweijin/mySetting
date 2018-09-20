@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_llyt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+<LinearLayout 
+    android:layout_marginLeft="@dimen/d_58"
+    android:layout_marginRight="@dimen/d_58"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:id="@+id/edit_text_llyt">
+    <TextView
+        android:id="@+id/type_txtv"
+        style="@style/TextAppearance"
+        android:layout_width="460dip"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/s_32"
+        android:text="@string/surenum"
+        android:textColor="@color/white_smoke"
+        android:includeFontPadding="false" />
+
+    <EditText 
+        android:id="@+id/value_edtv" 
+        style="@style/TextAppearance"
+        android:layout_width="200dip"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:selectAllOnFocus="false"
+        android:textSize="@dimen/s_26"
+        android:textColor="@color/white_smoke"
+        android:textCursorDrawable="@null"
+        android:layout_marginLeft="@dimen/d_10"/>
+</LinearLayout>
+
+<ImageView 
+        android:layout_marginLeft="@dimen/d_58"
+        android:layout_marginRight="@dimen/d_58"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_llyt"
+        android:layout_marginTop="@dimen/d_5"
+        android:background="@drawable/under_line_2"/>
+</RelativeLayout>

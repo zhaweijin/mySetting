@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inside_bg"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_rlyout_height"
+        android:layout_marginLeft="@dimen/title_rlyout_leftmargin"
+        android:layout_marginTop="@dimen/title_rlyout_topmargin"
+        android:layoutAnimation="@anim/title_anim_layout" >
+
+        <ImageView
+            android:id="@+id/ethernet_left_line"
+            android:layout_width="@dimen/title_left_line_width"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:src="@drawable/left_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/ethernet_left_line"
+            android:layout_marginLeft="@dimen/title_llyout_leftmargin"
+            android:layout_toRightOf="@id/ethernet_left_line"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yaokongshezhi"
+                android:textColor="@color/settings_ffffff"
+                android:textSize="@dimen/text_size_60" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yaokongqsheding"
+                android:textColor="@color/settings_9a9a9a"
+                android:textSize="@dimen/text_size_30" />
+        </LinearLayout>
+    </RelativeLayout>
+  <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       
+       >
+       
+       
+       <ImageView 
+           android:id="@+id/yaokongqi"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/yaokongqi"
+           android:layout_marginLeft="247dp"
+           android:layout_marginTop="50dp"
+           />
+
+
+
+       
+
+       <ImageView
+           android:id="@+id/cycle2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/cycle1"
+           android:layout_marginTop="160dp"
+           android:layout_marginLeft="27dp"
+           android:src="@drawable/bluetooth_cycle" />
+
+       <ImageView
+           android:id="@+id/cycle1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+             android:layout_marginTop="160dp"
+           android:layout_alignLeft="@+id/yaokongqi"
+           android:layout_marginLeft="17dp"
+           android:src="@drawable/bluetooth_cycle" />
+
+       <ImageView
+           android:id="@+id/hand"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignTop="@+id/cycle2"
+           android:layout_marginLeft="172dp"
+           android:layout_marginTop="14dp"
+           android:src="@drawable/bluetooth_hand" />
+       
+       
+       
+       <RelativeLayout 
+           android:id="@+id/warninglayout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/yaokongqi"
+           android:layout_marginLeft="78dp"
+           android:layout_marginTop="78dp"
+           android:layout_toRightOf="@+id/cycle2">
+
+       <ImageView
+           android:id="@+id/imageView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/warning1"
+           android:src="@drawable/back" 
+           android:layout_marginTop="10dp"
+           android:layout_alignLeft="@+id/warning1"
+           android:layout_marginLeft="20dp"/>
+
+       <ImageView
+           android:id="@+id/imageView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/and"
+           android:layout_marginLeft="10dp"
+           android:layout_toRightOf="@+id/and"
+           android:src="@drawable/menu"
+           android:layout_marginTop="10dp" />
+
+       <TextView
+           android:id="@+id/and"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/imageView1"
+           android:layout_marginLeft="10dp"
+           android:layout_toRightOf="@+id/imageView1"
+           android:text="@string/bluetooth_warningand"
+           android:textColor="@color/settings_ffffff"
+           android:textSize="@dimen/text_size_48" 
+           android:layout_marginTop="10dp"/>
+
+       <TextView
+           android:id="@+id/warning2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/imageView2"
+           android:layout_marginLeft="10dp"
+           android:layout_toRightOf="@+id/imageView2"
+           android:text="@string/bluetooth_warning2" 
+            android:textColor="@color/settings_ffffff"
+           android:textSize="@dimen/text_size_48"
+           android:layout_marginTop="10dp"/>
+
+       <TextView
+           android:id="@+id/warning1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:text="@string/bluetooth_warning1"
+           android:textColor="@color/settings_ffffff"
+           android:textSize="@dimen/text_size_48"
+           android:layout_marginLeft="20dp" />
+
+       </RelativeLayout>
+
+       <TextView
+           android:id="@+id/status"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/warninglayout"
+           android:layout_below="@+id/warninglayout"
+           android:textColor="@color/settings_ffffff"
+           android:textSize="@dimen/text_size_60"
+           android:layout_marginTop="66dp" 
+           android:layout_marginLeft="66dp"/>
+       
+   </RelativeLayout>
+
+</LinearLayout>

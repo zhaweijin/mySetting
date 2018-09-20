@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/background_layout" />
+
+
+    <com.hiveview.tv.view.ProgressDialog
+        android:id="@+id/iv_bulelight_loading"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_subject_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_command" >
+
+        <TextView
+            android:id="@+id/tv_subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_subject_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_subject_name"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="130dip"
+            android:paddingRight="130dip"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_command"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_toLeftOf="@+id/iv_pager_right"
+        android:layout_toRightOf="@+id/iv_pager_left" >
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_data"
+            android:textSize="40sp"
+            android:visibility="gone" />
+
+        <com.hiveview.box.framework.view.HivePreloadViewPager
+            android:id="@+id/vp_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_pager_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/fl_command"
+        android:layout_marginBottom="46dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/iv_page_left"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_pager_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/fl_command"
+        android:layout_marginBottom="46dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/iv_page_right"
+        android:visibility="invisible" />
+
+</RelativeLayout>

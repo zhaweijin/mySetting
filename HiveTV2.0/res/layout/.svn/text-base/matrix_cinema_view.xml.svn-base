@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/matrix_cinema_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_cinema_flipper_1"
+            android:layout_width="209.33dp"
+            android:layout_height="232dp"
+            android:background="@drawable/cinema_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_cinema_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/matrix_cinema_layout_1"
+        android:layout_marginLeft="-43dp"
+        android:layout_toRightOf="@id/matrix_cinema_layout_1"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@id/matrix_cinema_layout_1" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_cinema_flipper_2"
+            android:layout_width="209.33dp"
+            android:layout_height="232dp"
+            android:background="@drawable/cinema_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_cinema_layout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/matrix_cinema_layout_1"
+        android:layout_marginLeft="-43dp"
+        android:layout_toRightOf="@id/matrix_cinema_layout_2"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@id/matrix_cinema_layout_2" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_cinema_flipper_3"
+            android:layout_width="209.3dp"
+            android:layout_height="232dp"
+            android:background="@drawable/cinema_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_cinema_layout_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/matrix_cinema_layout_1"
+        android:layout_marginLeft="-43dp"
+        android:layout_toRightOf="@id/matrix_cinema_layout_3"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@id/matrix_cinema_layout_3" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_cinema_flipper_4"
+            android:layout_width="209.3dp"
+            android:layout_height="232dp"
+            android:background="@drawable/cinema_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_cinema_layout_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/matrix_cinema_layout_1"
+        android:layout_marginLeft="-43dp"
+        android:layout_toRightOf="@id/matrix_cinema_layout_4"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@id/matrix_cinema_layout_4" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_cinema_flipper_5"
+            android:layout_width="209.3dp"
+            android:layout_height="232dp"
+            android:background="@drawable/cinema_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_cinema_layout_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/matrix_cinema_layout_1"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="-43dp"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/matrix_recommend_layout_1"
+        android:nextFocusUp="@id/matrix_cinema_layout_1"
+        android:focusableInTouchMode="true" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_cinema_flipper_6"
+            android:layout_width="209.3dp"
+            android:layout_height="232dp"
+            android:background="@drawable/cinema_change_page" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_cinema_layout_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/matrix_cinema_layout_6"
+        android:layout_marginLeft="-43dp"
+        android:layout_toRightOf="@id/matrix_cinema_layout_6"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@id/matrix_cinema_layout_6" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_cinema_flipper_7"
+            android:layout_width="209.3dp"
+            android:layout_height="232dp"
+            android:background="@drawable/cinema_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_cinema_layout_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/matrix_cinema_layout_6"
+        android:layout_marginLeft="-43dp"
+        android:layout_toRightOf="@id/matrix_cinema_layout_7"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@id/matrix_cinema_layout_7" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_cinema_flipper_8"
+            android:layout_width="209.3dp"
+            android:layout_height="232dp"
+            android:background="@drawable/cinema_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_cinema_layout_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/matrix_cinema_layout_6"
+        android:layout_marginLeft="-43dp"
+        android:layout_toRightOf="@id/matrix_cinema_layout_8"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@id/matrix_cinema_layout_8" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_cinema_flipper_9"
+            android:layout_width="209.3dp"
+            android:layout_height="232dp"
+            android:background="@drawable/cinema_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matrix_cinema_layout_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/matrix_cinema_layout_6"
+        android:layout_marginLeft="-43dp"
+        android:layout_toRightOf="@id/matrix_cinema_layout_9"
+        android:background="@drawable/select_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@id/matrix_cinema_layout_9" >
+
+        <ViewFlipper
+            android:id="@+id/matrix_cinema_flipper_10"
+            android:layout_width="209.3dp"
+            android:layout_height="232dp"
+            android:background="@drawable/cinema_default" />
+    </RelativeLayout>
+
+</RelativeLayout>

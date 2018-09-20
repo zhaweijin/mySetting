@@ -1,0 +1,32 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/opt_textview_content"
+        android:layout_width="@dimen/testnet_width7"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/testcontent"
+        android:textSize="@dimen/testnet_textsize_18.66"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/opt_textview_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/untest"
+        android:textSize="@dimen/testnet_textsize_25.33"
+        android:layout_marginRight="@dimen/testnet_left_right2"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/opt_button_details" />
+
+    <Button
+        android:id="@+id/opt_button_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/testnet_top6"  />
+
+</merge>

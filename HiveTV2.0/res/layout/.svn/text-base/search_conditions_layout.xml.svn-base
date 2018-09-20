@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <TextView
+        android:id="@+id/error_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/search_movie_error_textview"
+        android:textColor="@color/whitetext"
+        android:textSize="32sp"
+        android:visibility="invisible" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="invisible" >
+<!-- 单片无详情   -->
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="wrap_content"
+            android:layout_height="390dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/movie_list_viewpager_bg"
+            android:gravity="center"
+            android:listSelector="@drawable/select_list_focus_bg"
+            android:numColumns="6"
+            android:overScrollMode="always"
+            android:scrollbars="none"
+            android:visibility="gone" >
+        </GridView>
+
+        <ImageView
+            android:id="@+id/image_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="118dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/movie_list_viewpager_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/image_bg_center"
+            android:layout_width="125.3dip"
+            android:layout_height="110dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/search_bg_2"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="1100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:descendantFocusability="afterDescendants"
+            android:focusable="false"
+            android:focusableInTouchMode="false" >
+
+            <LinearLayout
+                android:id="@+id/search_view"
+                android:layout_width="10000dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/search_focus_lines"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/movie_list_select_focus"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/search_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="23dip"
+        android:background="@drawable/search_left"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/search_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="23dip"
+        android:background="@drawable/search_right"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/search_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/select_list_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:onClick="searchBtn"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="322dip"
+            android:layout_height="50dip"
+            android:background="@drawable/movie_list_select_sure_bg"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/search_button1"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/search_button1"
+        android:background="@drawable/select_list_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:onClick="searchBtn"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="130.7dip"
+            android:layout_height="50dip"
+            android:background="@drawable/movie_list_select_reset_bg"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <com.hiveview.tv.view.ProgressDialog
+        android:id="@+id/pd_list_loading"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/search_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="47dip"
+        android:background="@drawable/select_list_focus_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:onClick="searchBtn"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="322dip"
+            android:layout_height="50dip"
+            android:background="@drawable/movie_list_select_search_bg"
+            android:gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

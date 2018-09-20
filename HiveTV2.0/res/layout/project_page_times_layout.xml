@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/video_item1"
+        style="@style/film_relative_item_layout"
+        android:layout_width="190dip"
+        android:layout_height="274dip"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/item1_poster_layout"
+            style="@style/film_relative_image_layout" >
+
+            <ImageView
+                android:id="@+id/item1_poster_iv"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/updata_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_alignBottom="@id/item1_poster_layout"
+            android:layout_alignLeft="@+id/item1_title_tv"
+            android:layout_alignRight="@id/item1_poster_layout"
+            android:layout_marginBottom="25dip"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="28dip"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="center"
+            android:text="sssdfsf" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/item1_title_tv"
+            style="@style/video_item_video_name_tv_style"
+            android:layout_below="@id/item1_poster_layout"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_item2"
+        style="@style/film_relative_item_layout"
+        android:layout_toRightOf="@id/video_item1"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/item2_poster_layout"
+            style="@style/film_relative_image_layout" >
+
+            <ImageView
+                android:id="@+id/item2_poster_iv"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/updata_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_alignBottom="@id/item2_poster_layout"
+            android:layout_alignLeft="@+id/item2_title_tv"
+            android:layout_alignRight="@id/item2_poster_layout"
+            android:layout_marginBottom="25dip"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="28dip"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="center" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/item2_title_tv"
+            style="@style/video_item_video_name_tv_style"
+            android:layout_below="@id/item2_poster_layout"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_item3"
+        style="@style/film_relative_item_layout"
+        android:layout_toRightOf="@id/video_item2"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/item3_poster_layout"
+            style="@style/film_relative_image_layout" >
+
+            <ImageView
+                android:id="@+id/item3_poster_iv"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/updata_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_alignBottom="@id/item3_poster_layout"
+            android:layout_alignLeft="@+id/item3_title_tv"
+            android:layout_alignRight="@id/item3_poster_layout"
+            android:layout_marginBottom="25dip"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="28dip"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="center" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/item3_title_tv"
+            style="@style/video_item_video_name_tv_style"
+            android:layout_below="@id/item3_poster_layout"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_item4"
+        style="@style/film_relative_item_layout"
+        android:layout_toRightOf="@id/video_item3"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/item4_poster_layout"
+            style="@style/film_relative_image_layout" >
+
+            <ImageView
+                android:id="@+id/item4_poster_iv"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/updata_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_alignBottom="@id/item4_poster_layout"
+            android:layout_alignLeft="@+id/item4_title_tv"
+            android:layout_alignRight="@id/item4_poster_layout"
+            android:layout_marginBottom="25dip"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="28dip"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="center" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/item4_title_tv"
+            style="@style/video_item_video_name_tv_style"
+            android:layout_below="@id/item4_poster_layout"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_item5"
+        style="@style/film_relative_item_layout"
+        android:layout_toRightOf="@id/video_item4"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/item5_poster_layout"
+            style="@style/film_relative_image_layout" >
+
+            <ImageView
+                android:id="@+id/item5_poster_iv"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/updata_tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_alignBottom="@id/item5_poster_layout"
+            android:layout_alignLeft="@+id/item5_title_tv"
+            android:layout_alignRight="@id/item5_poster_layout"
+            android:layout_marginBottom="25dip"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="28dip"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="center" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/item5_title_tv"
+            style="@style/video_item_video_name_tv_style"
+            android:layout_below="@id/item5_poster_layout"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_item6"
+        style="@style/film_relative_item_layout"
+        android:layout_toRightOf="@id/video_item5"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/item6_poster_layout"
+            style="@style/film_relative_image_layout" >
+
+            <ImageView
+                android:id="@+id/item6_poster_iv"
+                style="@style/film_relative_item_image" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/updata_tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_alignBottom="@id/item6_poster_layout"
+            android:layout_alignLeft="@+id/item6_title_tv"
+            android:layout_alignRight="@id/item6_poster_layout"
+            android:layout_marginBottom="25dip"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="28dip"
+            android:background="@drawable/variety_img_alpha"
+            android:gravity="center" />
+
+        <com.hiveview.tv.view.television.MarqueeText
+            android:id="@+id/item6_title_tv"
+            style="@style/video_item_video_name_tv_style"
+            android:layout_below="@id/item6_poster_layout"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

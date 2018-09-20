@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.hiveview.tv.view.ProjectItemView
+        android:id="@+id/item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" >
+    </com.hiveview.tv.view.ProjectItemView>
+
+    <com.hiveview.tv.view.ProjectItemView
+        android:id="@+id/item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item1"
+        android:visibility="invisible" >
+    </com.hiveview.tv.view.ProjectItemView>
+
+    <com.hiveview.tv.view.ProjectItemView
+        android:id="@+id/item3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item2"
+        android:visibility="invisible" >
+    </com.hiveview.tv.view.ProjectItemView>
+
+    <com.hiveview.tv.view.ProjectItemView
+        android:id="@+id/item4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item3"
+        android:measureAllChildren="true"
+        android:visibility="invisible" >
+    </com.hiveview.tv.view.ProjectItemView>
+
+    <com.hiveview.tv.view.ProjectItemView
+        android:id="@+id/item5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item4"
+        android:visibility="invisible" >
+    </com.hiveview.tv.view.ProjectItemView>
+
+    <com.hiveview.tv.view.ProjectItemView
+        android:id="@+id/item6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item5"
+        android:visibility="invisible" >
+    </com.hiveview.tv.view.ProjectItemView>
+
+</RelativeLayout>
